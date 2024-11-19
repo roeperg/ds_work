@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from dlprd.finance_rpt.rpt_agg_spend_metic</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from dlprd.finance_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="metric_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="metric_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="metric_level1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="metric_level2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="metric_level3" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="metric_level4" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="metric_values" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+            <Field name="audit_ins_key" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="audit_ins_ts" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="audit_upd_key" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="audit_upd_ts" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_6412_8f70da56f519f146884017a6e21a8961_\Engine_6412_bf0b83b6f3619547b55f6381c03d0a3a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SPEND MART TEST_Autosave</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f9414238-ad31-4598-904a-3ec617632886" />
+      <Telemetry>
+        <PreviousWorkflowId value="b5309ec3-2a31-4b61-8b86-2f5f928640b2" />
+        <OriginWorkflowId value="efabed7a-4454-433e-bec6-aeeeb6680fd3" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PULL SUPP SITE ARAVO 9-19-23.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HDR_ORACLE_ID" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="HDRthird_party_name" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="HDRactive" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="thirdpartytypehl" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="third_party_status" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="aravo_internal_id" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="tpcountryrpt1" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="organizationtype" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="minoritytype" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="third_party_created_date" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="DateTime" />
+            <Field name="doing_business_as" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="tpsubcategory" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="supplierinactivedate" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="DateTime" />
+            <Field name="SITE_oracle_id" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="SITEsupplier_name" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="SITEsite_id" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="SITEidentifier" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="SITEsite_name" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="SITEtpcountryrpt" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="siteenddate" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="DateTime" />
+            <Field name="sitetype" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="sitewhtenddate" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="DateTime" />
+            <Field name="sitewhtstartdate" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\SUPPLIER MASTER FY24\PULL SUPP SITE ARAVO 9-19-23.xlsx|||`Sheet1$`" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp-Fin-Athena</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:642f2d277901ae9f4a7bd309|||select dlprd.ued_ebiz_dwh.ap_suppliers.vendor_id,
+	dlprd.ued_ebiz_dwh.ap_suppliers.vendor_name,
+	dlprd.ued_ebiz_dwh.ap_suppliers.vendor_name_alt,
+	dlprd.ued_ebiz_dwh.ap_suppliers.segment1,
+	dlprd.ued_ebiz_dwh.ap_suppliers.creation_date,
+	dlprd.ued_ebiz_dwh.ap_suppliers.vendor_type_lookup_code,
+	dlprd.ued_ebiz_dwh.ap_suppliers.customer_num,
+	dlprd.ued_ebiz_dwh.ap_suppliers.parent_vendor_id,
+	dlprd.ued_ebiz_dwh.ap_suppliers.organization_type_lookup_code,
+	dlprd.ued_ebiz_dwh.ap_suppliers.start_date_active,
+	dlprd.ued_ebiz_dwh.ap_suppliers.end_date_active,
+	dlprd.ued_ebiz_dwh.ap_suppliers.minority_group_lookup_code,
+	dlprd.ued_ebiz_dwh.ap_suppliers.small_business_flag,
+	dlprd.ued_ebiz_dwh.ap_suppliers.women_owned_flag,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.creation_date as SITEcreation_date1,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.purchasing_site_flag as SITEPURCHFLAG,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.pay_site_flag as SITEPAYSITE,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.country as SITECOUNTRY,
+	dlprd.ued_ebiz_dwh.ap_suppliers.invoice_currency_code,
+	dlprd.ued_ebiz_dwh.ap_suppliers.payment_currency_code,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.customer_num as SITEcustomer_num1,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.inactive_date as SITE_INACTIVEDATE,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.payment_method_lookup_code as SITE_PAYMENTMETH,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.invoice_currency_code as SITEinvoice_currency_code1,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.payment_currency_code as SITEpayment_currency_code1,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.org_id as SITEORGID,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.small_business_code as SITE_SMBCODE,
+	dlprd.ued_ebiz_dwh.ap_supplier_sites_all.doing_bus_as_name as SITE_DBA,
+	dlprd.ent_ebiz_dwh.hr_all_organization_units.name as COUNTRYNAMESITE 
+from dlprd.ued_ebiz_dwh.ap_suppliers 
+	left join dlprd.ued_ebiz_dwh.ap_supplier_sites_all on dlprd.ued_ebiz_dwh.ap_suppliers.vendor_id = dlprd.ued_ebiz_dwh.ap_supplier_sites_all.vendor_id 
+	left join dlprd.ent_ebiz_dwh.hr_all_organization_units on dlprd.ued_ebiz_dwh.ap_supplier_sites_all.org_id = dlprd.ent_ebiz_dwh.hr_all_organization_units.organization_id</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp-Fin-Athena
+Query=select dlprd.ued_ebiz_dwh.ap...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="vendor_id" scale="9" size="40" source="File: Corp-Fin-Athena" type="FixedDecimal" />
+            <Field name="vendor_name" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="vendor_name_alt" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="segment1" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="creation_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="vendor_type_lookup_code" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="customer_num" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="parent_vendor_id" scale="9" size="40" source="File: Corp-Fin-Athena" type="FixedDecimal" />
+            <Field name="organization_type_lookup_code" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="start_date_active" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="end_date_active" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="minority_group_lookup_code" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="small_business_flag" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="women_owned_flag" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITEcreation_date1" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="SITEPURCHFLAG" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITEPAYSITE" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITECOUNTRY" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="invoice_currency_code" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="payment_currency_code" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITEcustomer_num1" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITE_INACTIVEDATE" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="SITE_PAYMENTMETH" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITEinvoice_currency_code1" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITEpayment_currency_code1" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITEORGID" scale="9" size="40" source="File: Corp-Fin-Athena" type="FixedDecimal" />
+            <Field name="SITE_SMBCODE" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="SITE_DBA" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="COUNTRYNAMESITE" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="222" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_30884_4d62fbaa4893e7478a1c622ff6528663_\Engine_30884_0c6bb5bb7dcbbd4387d71de7cf5597e2~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SUPPLIER COMPARE ARAVO ORACLE9-23</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d160ca60-09e0-4fbe-8095-3c1941a61028" />
+      <Telemetry>
+        <PreviousWorkflowId value="ce35c48e-ea9a-4da6-a58b-41f0d2762ef2" />
+        <OriginWorkflowId value="ce35c48e-ea9a-4da6-a58b-41f0d2762ef2" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

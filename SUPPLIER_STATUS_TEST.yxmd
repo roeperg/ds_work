@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="601" height="280" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Vendor STATUS TEST</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\CMAPP_SUPPLIER_Report.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CMAPP_SUPPLIER_Report.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Aravo Internal ID" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\CMAPP_SUPPLIER_Report.csv" type="V_String" />
+                <Field name="Third Party Identifier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\CMAPP_SUPPLIER_Report.csv" type="V_String" />
+                <Field name="Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\CMAPP_SUPPLIER_Report.csv" type="V_String" />
+                <Field name="ThirdPartyTypeHL" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\CMAPP_SUPPLIER_Report.csv" type="V_String" />
+                <Field name="Active?" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\CMAPP_SUPPLIER_Report.csv" type="V_String" />
+                <Field name="TPCountryRpt_Region_Grouping" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\CMAPP_SUPPLIER_Report.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="188" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>PITU5I</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,
+	AP.AP_SUPPLIERS.VENDOR_NAME,
+	AP.AP_SUPPLIERS.VENDOR_ID,
+	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,
+	AP.AP_SUPPLIERS.END_DATE_ACTIVE,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,
+	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE 
+from AP.AP_SUPPLIER_SITES_ALL 
+	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID 
+where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')</File>
+              <FormatSpecificOptions>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <PostSQL />
+                <PreSQL />
+                <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:PITU5I
+Query=select AP.AP_SUPPLIERS.SEGME...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SEGMENT1" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')" type="String" />
+                <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')" type="V_String" />
+                <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')" type="Double" />
+                <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')" type="String" />
+                <Field name="END_DATE_ACTIVE" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')" type="DateTime" />
+                <Field name="VENDOR_SITE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')" type="Double" />
+                <Field name="VENDOR_SITE_CODE" size="15" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')" type="String" />
+                <Field name="INACTIVE_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.SEGMENT1,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE','CUSTOMER')" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="271" y="116" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Third Party Identifier" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="SEGMENT1" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="175" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Third Party Identifier" selected="True" type="String" size="30" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="415" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="487" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [Active?] = &quot;TRUE&quot; then &quot;Y&quot; else &quot;N&quot; endif" field="ARAVO SUPP ACTIVE" size="1073741823" type="V_WString" />
+                <FormulaField expression="if([END_DATE_ACTIVE]&gt;DateTimeToday()) then &quot;Y&quot; ELSEIF isnull([END_DATE_ACTIVE]) then &quot;Y&quot; else &quot;N&quot; endif" field="ORACLE HEADER ACTIVE" size="1073741823" type="V_WString" />
+                <FormulaField expression="if ([INACTIVE_DATE] &gt; DateTimeToday()) then &quot;Y&quot; ELSEIF isnull([END_DATE_ACTIVE]) then &quot;Y&quot; else &quot;N&quot; endif" field="ORACLE SITE ACTIVE" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ARAVO SUPP ACTIVE = if [Active?] = "TRUE" then "Y" else "N" endif
+ORACLE HEADER ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="571" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_35260_d2a3614cfe7d4e609e0976ef092522c8_\Engine_30232_9bf938ecf58943d99f637df1c818d6af_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="Vendor Status Test">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Right" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SUPPLIER STATUS TEST</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4cb5b1f4-1cd0-48b9-ac27-e6415fb0f1f9" />
+      <Telemetry>
+        <PreviousWorkflowId value="e7e7afb6-edb6-416c-9e1b-23d6f79786dc" />
+        <OriginWorkflowId value="e7e7afb6-edb6-416c-9e1b-23d6f79786dc" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

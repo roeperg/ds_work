@@ -1,0 +1,798 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="1190" height="814" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 70</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="198" y="163" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="SEGMENT1" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="197" y="308" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ap_supplier_number" selected="True" type="Double" size="8" />
+                <SelectField field="Sum_spend_usd" selected="True" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="164" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\groeper\Development\c2188_ebiz.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>c2188_ebiz.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="VENDOR_ID" source="File: PITU5I" type="Double" />
+                <Field name="VENDOR_NAME" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="START_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+                <Field name="END_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+                <Field name="SEGMENT1" size="30" source="File: PITU5I" type="String" />
+                <Field name="ATTRIBUTE1" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: PITU5I" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="308" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\groeper\Development\c2188_gep.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>c2188_gep.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="level_1_sector1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="level_2_category1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="level_3_sub_category1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="level_4_commodity1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="data_source1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="po_hdr_number1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_name1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_name_normalized_gep1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_name_parent_gep1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="time_frame_month1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="time_frame_quarter1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="time_frame_year1" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+                <Field name="company_code1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="company_name1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="normalized_supplier_country1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ap_supplier_number" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+                <Field name="cost_center" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="Sum_spend_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="692" y="153" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Sum_spend_usd" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Sum_spend_usd - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="776" y="153" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="259" y="103" width="396" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Ok, we still need Spend, PO Hdr nr and the calculations
+for the supplier start and end date. The goal is to have 
+the raw data to create the pivot table that Jason requested.
+]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="318" y="307" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="SEGMENT1" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="ap_supplier_number" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_ap_supplier_number" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="366" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if IsNull([END_DATE_ACTIVE]) then &quot;Y&quot;&#xA;elseif [END_DATE_ACTIVE] &gt;= DateTimeNow() then &quot;Y&quot;&#xA;elseif [START_DATE_ACTIVE] &gt;= &quot;2022-08-01&quot; then &quot;Y&quot;&#xA;else &quot;N&quot;&#xA;endif&#xA;&#xA;" field="Currently Active (Y/N)" size="64" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Active in FY23/FY24</AnnotationText>
+              <DefaultAnnotationText>Currently Active (Y/N) = if IsNull([END_DATE_ACTIVE]) then "Y"
+elseif [END_DATE_...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="487" y="656" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [START_DATE_ACTIVE] &gt;= &quot;2022-08-01&quot; &#xA;and [START_DATE_ACTIVE] &lt; &quot;2024-08-01&quot; then &quot;Y&quot;&#xA;else &quot;N&quot;&#xA;endif&#xA;&#xA;" field="Started in FY23/FY24" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Started in FY24</AnnotationText>
+              <DefaultAnnotationText>Started in FY23/FY24 = if [START_DATE_ACTIVE] &gt;= "2022-08-01" 
+and [START_DATE_A...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="475" y="392" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_31084_5bef8afac26a4fec88e30e07cfc97a27_\Engine_31084_8089e50829d7f8459deb1fadc4baeb50~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="991" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="level_1_sector1" action="GroupBy" rename="level_1_sector1" />
+                <SummarizeField field="level_2_category1" action="GroupBy" rename="level_2_category1" />
+                <SummarizeField field="level_3_sub_category1" action="GroupBy" rename="level_3_sub_category1" />
+                <SummarizeField field="level_4_commodity1" action="GroupBy" rename="level_4_commodity1" />
+                <SummarizeField field="Sum_spend_usd" action="Sum" rename="Sum_spend_usd" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="127" y="560" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Left([cost_center], 12)" field="CDG Code" size="1073741823" type="V_WString" />
+                <FormulaField expression="Left([cost_center],3)" field="Company" size="1073741823" type="V_WString" />
+                <FormulaField expression="Substring([cost_center],4,3)" field="Department" size="1073741823" type="V_WString" />
+                <FormulaField expression="Substring([cost_center],8,4)" field="Group" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CDG Code = Left([cost_center], 12)
+Company = Left([cost_center],3)
+Department = ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="211" y="475" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="CDG Code" selected="True" />
+                <SelectField field="Company" selected="True" />
+                <SelectField field="Department" selected="True" />
+                <SelectField field="Group" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="319" y="475" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="CDG Code" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="679" y="584" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_31588_e5e1e9f15ed5474d8f4764dd1723e59e_\Engine_31588_073cc7dff69a9d4c98e868f1289b45a8~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="487" y="752" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>StartsWith([CDG Code], "--")</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>StartsWith([CDG Code], "--")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="583" y="656" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="VENDOR_ID" selected="True" rename="Vendor Id" />
+                <SelectField field="VENDOR_NAME" selected="True" rename="Vendor Name" />
+                <SelectField field="START_DATE_ACTIVE" selected="True" rename="Active Start Date" />
+                <SelectField field="END_DATE_ACTIVE" selected="True" rename="Active End Date" />
+                <SelectField field="SEGMENT1" selected="True" rename="eBiz Segment" />
+                <SelectField field="ATTRIBUTE1" selected="True" rename="Attribute 1" />
+                <SelectField field="VENDOR_TYPE_LOOKUP_CODE" selected="True" rename="Vendor Type Lookup Code" />
+                <SelectField field="level_1_sector1" selected="True" rename="Level 1 - Sector1" />
+                <SelectField field="level_2_category1" selected="True" rename="Level 2 - Category1" />
+                <SelectField field="level_3_sub_category1" selected="True" rename="Level 3 - Sub Category1" />
+                <SelectField field="level_4_commodity1" selected="True" rename="Level 4 - Commodity1" />
+                <SelectField field="data_source1" selected="True" rename="Data Source" />
+                <SelectField field="po_hdr_number1" selected="True" rename="Po Hdr Number" />
+                <SelectField field="supplier_name1" selected="True" rename="Supplier Name" />
+                <SelectField field="supplier_name_normalized_gep1" selected="True" rename="Supplier Name Normalized (GEP)" />
+                <SelectField field="supplier_name_parent_gep1" selected="True" rename="Supplier Name Parent (GEP)" />
+                <SelectField field="time_frame_month1" selected="True" rename="Time Frame Month" />
+                <SelectField field="time_frame_quarter1" selected="True" rename="Time Frame Quarter" />
+                <SelectField field="time_frame_year1" selected="True" rename="Time Frame Year" />
+                <SelectField field="company_code1" selected="True" rename="Company Code" />
+                <SelectField field="company_name1" selected="True" rename="Company Name" />
+                <SelectField field="normalized_supplier_country1" selected="True" rename="Normalized Supplier Country" />
+                <SelectField field="cost_center" selected="True" rename="Cost Center" />
+                <SelectField field="Sum_spend_usd" selected="True" rename="Total Spend (USD)" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="679" y="656" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\Preferred Partner Raw Data.xlsx|||Raw Data</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Preferred Partner Raw Data.xlsx
+Query=Raw Data</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="414" y="464" width="144" height="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Next challenge
+
+L1
+L2
+L3
+L4
+Spend
+PO Transaction 
+total active suppliers
+# of New Suppliers
+# of Deactivated Suppliers
+% spend with Preffered
+% spend with non-preferred
+]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="858" y="439" width="361" height="301" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 57</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="True" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="51">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="883" y="560" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="VENDOR_ID" action="GroupBy" rename="Vendor ID" />
+                    <SummarizeField field="VENDOR_NAME" action="GroupBy" rename="Vendor Name" />
+                    <SummarizeField field="START_DATE_ACTIVE" action="GroupBy" rename="Vendor Actrive Start Date" />
+                    <SummarizeField field="END_DATE_ACTIVE" action="GroupBy" rename="Vendor Active End Date" />
+                    <SummarizeField field="VENDOR_ID" action="Count" rename="Number of POs" />
+                    <SummarizeField field="Sum_spend_usd" action="Sum" rename="Total Spend" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="52">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1051" y="488" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_27552_cfe236438872453188793a2c898103a0_\Engine_27552_ac7ee2bc0fecb140a0c2f1ed090d99e5~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Profile</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="53">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="883" y="656" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="VENDOR_ID" action="GroupBy" rename="VENDOR_ID" />
+                    <SummarizeField field="VENDOR_NAME" action="GroupBy" rename="VENDOR_NAME" />
+                    <SummarizeField field="START_DATE_ACTIVE" action="GroupBy" rename="START_DATE_ACTIVE" />
+                    <SummarizeField field="END_DATE_ACTIVE" action="GroupBy" rename="END_DATE_ACTIVE" />
+                    <SummarizeField field="Sum_spend_usd" action="Sum" rename="Sum_spend_usd" />
+                    <SummarizeField field="VENDOR_ID" action="Count" rename="Count" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="54">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="979" y="560" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="1033">
+                    <Field field="Number of POs" order="Descending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Number of POs - Descending</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="55">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+                <Position x="1135" y="560" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\FY24_Summary_By_Vendor.xlsx|||Summary</File>
+                  <Passwords />
+                  <Disable>False</Disable>
+                  <FormatSpecificOptions>
+                    <PreserveFormat>False</PreserveFormat>
+                    <UNCLocal>False</UNCLocal>
+                    <SkipFieldNames>False</SkipFieldNames>
+                    <OutputOption>RemoveFile</OutputOption>
+                  </FormatSpecificOptions>
+                  <MultiFile value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>FY24_Summary_By_Vendor.xlsx
+Query=Summary</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="43" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="43" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>po_header_detail</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="647dc31a-d3f2-4127-b1b1-72ed3ed3ba2d" />
+      <Telemetry>
+        <PreviousWorkflowId value="d3a83116-e56f-45a1-a9e8-0ea6b1df2bd1" />
+        <OriginWorkflowId value="19c112b2-1260-4297-b69a-df9e0dfdd92a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

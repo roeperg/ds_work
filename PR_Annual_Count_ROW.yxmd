@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select r.REQUISITION_HEADER_ID,
+	s.VENDOR_NAME,
+	p.ORG_ID,
+	HR.HR_ALL_ORGANIZATION_UNITS.NAME 
+from PO.PO_REQUISITION_HEADERS_ALL r, PO.PO_REQUISITION_LINES_ALL rl, PO.PO_REQ_DISTRIBUTIONS_ALL rd, PO.PO_DISTRIBUTIONS_ALL pd, po.po_headers_all p, ap.ap_suppliers s, HR.HR_ALL_ORGANIZATION_UNITS 
+where r.REQUISITION_HEADER_ID = rl.REQUISITION_HEADER_ID 
+	and rd.REQUISITION_LINE_ID = rl.REQUISITION_LINE_ID 
+	and rd.DISTRIBUTION_ID = pd.REQ_DISTRIBUTION_ID 
+	and p.PO_HEADER_ID = pd.PO_HEADER_ID 
+	and s.VENDOR_ID = p.VENDOR_ID 
+	and p.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID 
+	and r.CREATION_DATE Between '01-AUG-2021' 
+	and '31-JUL-2022' 
+	and s.SEGMENT1 not in ('61831', '33210', '66514', '8947') 
+group by r.REQUISITION_HEADER_ID, 1, s.VENDOR_NAME, p.ORG_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select r.REQUISITION_HEADER_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="REQUISITION_HEADER_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select r.REQUISITION_HEADER_ID,&#xA;	s.VENDOR_NAME,&#xA;	p.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME &#xA;from PO.PO_REQUISITION_HEADERS_ALL r, PO.PO_REQUISITION_LINES_ALL rl, PO.PO_REQ_DISTRIBUTIONS_ALL rd, PO.PO_DISTRIBUTIONS_ALL pd, po.po_headers_all p, ap.ap_suppliers s, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where r.REQUISITION_HEADER_ID = rl.REQUISITION_HEADER_ID &#xA;	and rd.REQUISITION_LINE_ID = rl.REQUISITION_LINE_ID &#xA;	and rd.DISTRIBUTION_ID = pd.REQ_DISTRIBUTION_ID &#xA;	and p.PO_HEADER_ID = pd.PO_HEADER_ID &#xA;	and s.VENDOR_ID = p.VENDOR_ID &#xA;	and p.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and r.CREATION_DATE Between '01-AUG-2021' &#xA;	and '31-JUL-2022' &#xA;	and s.SEGMENT1 not in ('61831', '33210', '66514', '8947') &#xA;group by r.REQUISITION_HEADER_ID, 1, s.VENDOR_NAME, p.ORG_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME" type="Double" />
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select r.REQUISITION_HEADER_ID,&#xA;	s.VENDOR_NAME,&#xA;	p.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME &#xA;from PO.PO_REQUISITION_HEADERS_ALL r, PO.PO_REQUISITION_LINES_ALL rl, PO.PO_REQ_DISTRIBUTIONS_ALL rd, PO.PO_DISTRIBUTIONS_ALL pd, po.po_headers_all p, ap.ap_suppliers s, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where r.REQUISITION_HEADER_ID = rl.REQUISITION_HEADER_ID &#xA;	and rd.REQUISITION_LINE_ID = rl.REQUISITION_LINE_ID &#xA;	and rd.DISTRIBUTION_ID = pd.REQ_DISTRIBUTION_ID &#xA;	and p.PO_HEADER_ID = pd.PO_HEADER_ID &#xA;	and s.VENDOR_ID = p.VENDOR_ID &#xA;	and p.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and r.CREATION_DATE Between '01-AUG-2021' &#xA;	and '31-JUL-2022' &#xA;	and s.SEGMENT1 not in ('61831', '33210', '66514', '8947') &#xA;group by r.REQUISITION_HEADER_ID, 1, s.VENDOR_NAME, p.ORG_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME" type="V_String" />
+            <Field name="ORG_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select r.REQUISITION_HEADER_ID,&#xA;	s.VENDOR_NAME,&#xA;	p.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME &#xA;from PO.PO_REQUISITION_HEADERS_ALL r, PO.PO_REQUISITION_LINES_ALL rl, PO.PO_REQ_DISTRIBUTIONS_ALL rd, PO.PO_DISTRIBUTIONS_ALL pd, po.po_headers_all p, ap.ap_suppliers s, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where r.REQUISITION_HEADER_ID = rl.REQUISITION_HEADER_ID &#xA;	and rd.REQUISITION_LINE_ID = rl.REQUISITION_LINE_ID &#xA;	and rd.DISTRIBUTION_ID = pd.REQ_DISTRIBUTION_ID &#xA;	and p.PO_HEADER_ID = pd.PO_HEADER_ID &#xA;	and s.VENDOR_ID = p.VENDOR_ID &#xA;	and p.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and r.CREATION_DATE Between '01-AUG-2021' &#xA;	and '31-JUL-2022' &#xA;	and s.SEGMENT1 not in ('61831', '33210', '66514', '8947') &#xA;group by r.REQUISITION_HEADER_ID, 1, s.VENDOR_NAME, p.ORG_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME" type="Double" />
+            <Field name="NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select r.REQUISITION_HEADER_ID,&#xA;	s.VENDOR_NAME,&#xA;	p.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME &#xA;from PO.PO_REQUISITION_HEADERS_ALL r, PO.PO_REQUISITION_LINES_ALL rl, PO.PO_REQ_DISTRIBUTIONS_ALL rd, PO.PO_DISTRIBUTIONS_ALL pd, po.po_headers_all p, ap.ap_suppliers s, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where r.REQUISITION_HEADER_ID = rl.REQUISITION_HEADER_ID &#xA;	and rd.REQUISITION_LINE_ID = rl.REQUISITION_LINE_ID &#xA;	and rd.DISTRIBUTION_ID = pd.REQ_DISTRIBUTION_ID &#xA;	and p.PO_HEADER_ID = pd.PO_HEADER_ID &#xA;	and s.VENDOR_ID = p.VENDOR_ID &#xA;	and p.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and r.CREATION_DATE Between '01-AUG-2021' &#xA;	and '31-JUL-2022' &#xA;	and s.SEGMENT1 not in ('61831', '33210', '66514', '8947') &#xA;group by r.REQUISITION_HEADER_ID, 1, s.VENDOR_NAME, p.ORG_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_23464_8ed9a5bdc555476199941b83828043c6_\Engine_26596_93f746d51d244db2b0a6a84153b4fd1b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,
+	COUPA.DW_COUPA_REQ_HDR.STATUS,
+	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,
+	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,
+	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME 
+from COUPA.DW_COUPA_REQ_LINE 
+	inner join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID 
+
+group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE, COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select COUPA.DW_COUPA_REQ_HD...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="REQUISITION_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_LINE &#xA;	inner join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;&#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE, COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME" type="Int64" />
+            <Field name="STATUS" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_LINE &#xA;	inner join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;&#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE, COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME" type="V_String" />
+            <Field name="CREATED_AT_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_LINE &#xA;	inner join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;&#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE, COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME" type="DateTime" />
+            <Field name="REQUEST_TYPE" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_LINE &#xA;	inner join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;&#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE, COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME" type="V_String" />
+            <Field name="SUPPLIER_NAME" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_LINE &#xA;	inner join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;&#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE, COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_23464_8ed9a5bdc555476199941b83828043c6_\Engine_26596_e3e241cadf594648b5ef5123b55e82fb_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="270" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>DateRange</Operator>
+            <Field>CREATED_AT_DATE</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-08-31 08:51:40</PeriodDate>
+              <PeriodType>days</PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2021-08-01 00:00:00</StartDate>
+              <EndDate>2022-07-31 00:00:00</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[CREATED_AT_DATE] &gt;= "2021-08-01 00:00:00" AND
+[CREATED_AT_DATE] &lt;= "2022-07-31 ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="378" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[STATUS] in("ordered","partially_received","received")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[STATUS] in("ordered","partially_received","received")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="510" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_23464_8ed9a5bdc555476199941b83828043c6_\Engine_26596_ed94cb9e02694d3aa6998377cb1c6145_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_23464_8ed9a5bdc555476199941b83828043c6_\Engine_26596_6f6367eb115e48319e1c6c9e94c720cd_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>PR Annual Count ROW</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ca79cb10-9d4d-4687-8ce8-2830ee54626d" />
+      <Telemetry>
+        <PreviousWorkflowId value="bb9251da-3d27-456c-ab56-d6fba37dca33" />
+        <OriginWorkflowId value="bb9251da-3d27-456c-ab56-d6fba37dca33" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

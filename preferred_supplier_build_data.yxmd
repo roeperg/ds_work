@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="425" y="77" width="302" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 79</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="450" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select "dlprd"."fin_gep_src"."gep_spend_details"."level_1_sector" as "level_1_sector1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_2_category" as "level_2_category1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_3_sub_category" as "level_3_sub_category1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_4_commodity" as "level_4_commodity1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."data_source" as "data_source1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."po_hdr_number" as "po_hdr_number1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name" as "supplier_name1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep" as "supplier_name_normalized_gep1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_parent_gep" as "supplier_name_parent_gep1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."time_frame_month" as "time_frame_month1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."time_frame_quarter" as "time_frame_quarter1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."time_frame_year" as "time_frame_year1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."company_code" as "company_code1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."company_name" as "company_name1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."normalized_supplier_country" as "normalized_supplier_country1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."ap_supplier_number" as "ap_supplier_number",
+	"dlprd"."fin_gep_src"."gep_spend_details"."cost_center" as "cost_center",
+	Sum("dlprd"."fin_gep_src"."gep_spend_details"."spend_usd") as "spend_usd" 
+from "dlprd"."fin_gep_src"."gep_spend_details" 
+where "dlprd"."fin_gep_src"."gep_spend_details"."time_frame_quarter" in ('Q1-23', 'Q2-23', 'Q3-23', 'Q4-23', 'Q1-24', 'Q2-24', 'Q3-24', 'Q4-24') 
+group by "dlprd"."fin_gep_src"."gep_spend_details"."level_1_sector", "dlprd"."fin_gep_src"."gep_spend_details"."level_2_category", "dlprd"."fin_gep_src"."gep_spend_details"."level_3_sub_category", "dlprd"."fin_gep_src"."gep_spend_details"."level_4_commodity", "dlprd"."fin_gep_src"."gep_spend_details"."data_source", "dlprd"."fin_gep_src"."gep_spend_details"."po_hdr_number", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_parent_gep", "dlprd"."fin_gep_src"."gep_spend_details"."time_frame_month", "dlprd"."fin_gep_src"."gep_spend_details"."time_frame_quarter", "dlprd"."fin_gep_src"."gep_spend_details"."time_frame_year", "dlprd"."fin_gep_src"."gep_spend_details"."company_code", "dlprd"."fin_gep_src"."gep_spend_details"."company_name", "dlprd"."fin_gep_src"."gep_spend_details"."normalized_supplier_country", "dlprd"."fin_gep_src"."gep_spend_details"."ap_supplier_number", "dlprd"."fin_gep_src"."gep_spend_details"."cost_center"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select "dlprd"."fin_gep_src"...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="level_1_sector1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="level_2_category1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="level_3_sub_category1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="level_4_commodity1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="data_source1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="po_hdr_number1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_name1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_name_normalized_gep1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_name_parent_gep1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="time_frame_month1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="time_frame_quarter1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="time_frame_year1" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+                <Field name="company_code1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="company_name1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="normalized_supplier_country1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ap_supplier_number" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+                <Field name="cost_center" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="spend_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="606" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="606" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\groeper\Development\c2188_gep.yxdb</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>c2188_gep.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="101" y="77" width="304" height="209" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 78</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="126" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>PITU5I</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select ap.ap_suppliers.VENDOR_ID,
+	ap.ap_suppliers.VENDOR_NAME,
+	ap.ap_suppliers.START_DATE_ACTIVE,
+	ap.ap_suppliers.END_DATE_ACTIVE,
+	ap.ap_suppliers.SEGMENT1,
+	ap.ap_suppliers.ATTRIBUTE1,
+	ap.ap_suppliers.VENDOR_TYPE_LOOKUP_CODE 
+from ap.ap_suppliers 
+where ap.ap_suppliers.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY')</File>
+              <FormatSpecificOptions>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <PostSQL />
+                <PreSQL />
+                <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:PITU5I
+Query=select ap.ap_suppliers.VENDO...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="VENDOR_ID" source="File: PITU5I" type="Double" />
+                <Field name="VENDOR_NAME" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="START_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+                <Field name="END_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+                <Field name="SEGMENT1" size="30" source="File: PITU5I" type="String" />
+                <Field name="ATTRIBUTE1" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: PITU5I" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="282" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="282" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\groeper\Development\c2188_ebiz.yxdb</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>c2188_ebiz.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>preferred_supplier_build_data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="929c761f-ad79-4e9e-a497-4f43de661bcd" />
+      <Telemetry>
+        <PreviousWorkflowId value="a14af9b5-498e-41c7-a416-1beff4b7fba7" />
+        <OriginWorkflowId value="a14af9b5-498e-41c7-a416-1beff4b7fba7" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

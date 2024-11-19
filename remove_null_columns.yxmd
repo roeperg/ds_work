@@ -1,0 +1,1572 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Temp\ap_suppliers.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ap_suppliers.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_ID" source="File: PITU5I" type="Double" />
+            <Field name="LAST_UPDATE_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="LAST_UPDATED_BY" source="File: PITU5I" type="Double" />
+            <Field name="VENDOR_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="VENDOR_NAME_ALT" size="320" source="File: PITU5I" type="V_String" />
+            <Field name="SEGMENT1" size="30" source="File: PITU5I" type="String" />
+            <Field name="SUMMARY_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="ENABLED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="SEGMENT2" size="30" source="File: PITU5I" type="String" />
+            <Field name="SEGMENT3" size="30" source="File: PITU5I" type="String" />
+            <Field name="SEGMENT4" size="30" source="File: PITU5I" type="String" />
+            <Field name="SEGMENT5" size="30" source="File: PITU5I" type="String" />
+            <Field name="LAST_UPDATE_LOGIN" source="File: PITU5I" type="Double" />
+            <Field name="CREATION_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="CREATED_BY" source="File: PITU5I" type="Double" />
+            <Field name="EMPLOYEE_ID" source="File: PITU5I" type="Double" />
+            <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: PITU5I" type="String" />
+            <Field name="CUSTOMER_NUM" size="25" source="File: PITU5I" type="String" />
+            <Field name="ONE_TIME_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="PARENT_VENDOR_ID" source="File: PITU5I" type="Double" />
+            <Field name="MIN_ORDER_AMOUNT" source="File: PITU5I" type="Double" />
+            <Field name="SHIP_TO_LOCATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="BILL_TO_LOCATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="SHIP_VIA_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="FREIGHT_TERMS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="FOB_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="TERMS_ID" source="File: PITU5I" type="Double" />
+            <Field name="SET_OF_BOOKS_ID" source="File: PITU5I" type="Double" />
+            <Field name="CREDIT_STATUS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="CREDIT_LIMIT" source="File: PITU5I" type="Double" />
+            <Field name="ALWAYS_TAKE_DISC_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="PAY_DATE_BASIS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="PAY_GROUP_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="PAYMENT_PRIORITY" source="File: PITU5I" type="Double" />
+            <Field name="INVOICE_CURRENCY_CODE" size="15" source="File: PITU5I" type="String" />
+            <Field name="PAYMENT_CURRENCY_CODE" size="15" source="File: PITU5I" type="String" />
+            <Field name="INVOICE_AMOUNT_LIMIT" source="File: PITU5I" type="Double" />
+            <Field name="EXCHANGE_DATE_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="HOLD_ALL_PAYMENTS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="HOLD_FUTURE_PAYMENTS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="HOLD_REASON" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="DISTRIBUTION_SET_ID" source="File: PITU5I" type="Double" />
+            <Field name="ACCTS_PAY_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="DISC_LOST_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="DISC_TAKEN_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="EXPENSE_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="PREPAY_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="NUM_1099" size="30" source="File: PITU5I" type="String" />
+            <Field name="TYPE_1099" size="10" source="File: PITU5I" type="String" />
+            <Field name="WITHHOLDING_STATUS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="WITHHOLDING_START_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="ORGANIZATION_TYPE_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="VAT_CODE" size="30" source="File: PITU5I" type="String" />
+            <Field name="START_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+            <Field name="END_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+            <Field name="MINORITY_GROUP_LOOKUP_CODE" size="30" source="File: PITU5I" type="String" />
+            <Field name="PAYMENT_METHOD_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="BANK_ACCOUNT_NAME" size="80" source="File: PITU5I" type="V_String" />
+            <Field name="BANK_ACCOUNT_NUM" size="30" source="File: PITU5I" type="String" />
+            <Field name="BANK_NUM" size="25" source="File: PITU5I" type="String" />
+            <Field name="BANK_ACCOUNT_TYPE" size="25" source="File: PITU5I" type="String" />
+            <Field name="WOMEN_OWNED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="SMALL_BUSINESS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="STANDARD_INDUSTRY_CLASS" size="25" source="File: PITU5I" type="String" />
+            <Field name="HOLD_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="PURCHASING_HOLD_REASON" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="HOLD_BY" source="File: PITU5I" type="Int32" />
+            <Field name="HOLD_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="TERMS_DATE_BASIS" size="25" source="File: PITU5I" type="String" />
+            <Field name="PRICE_TOLERANCE" source="File: PITU5I" type="Double" />
+            <Field name="INSPECTION_REQUIRED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="RECEIPT_REQUIRED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="QTY_RCV_TOLERANCE" source="File: PITU5I" type="Double" />
+            <Field name="QTY_RCV_EXCEPTION_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="ENFORCE_SHIP_TO_LOCATION_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="DAYS_EARLY_RECEIPT_ALLOWED" source="File: PITU5I" type="Double" />
+            <Field name="DAYS_LATE_RECEIPT_ALLOWED" source="File: PITU5I" type="Double" />
+            <Field name="RECEIPT_DAYS_EXCEPTION_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="RECEIVING_ROUTING_ID" source="File: PITU5I" type="Double" />
+            <Field name="ALLOW_SUBSTITUTE_RECEIPTS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="ALLOW_UNORDERED_RECEIPTS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="HOLD_UNMATCHED_INVOICES_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="EXCLUSIVE_PAYMENT_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="AP_TAX_ROUNDING_RULE" size="1" source="File: PITU5I" type="String" />
+            <Field name="AUTO_TAX_CALC_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="AUTO_TAX_CALC_OVERRIDE" size="1" source="File: PITU5I" type="String" />
+            <Field name="AMOUNT_INCLUDES_TAX_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="TAX_VERIFICATION_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="NAME_CONTROL" size="4" source="File: PITU5I" type="String" />
+            <Field name="STATE_REPORTABLE_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="FEDERAL_REPORTABLE_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="ATTRIBUTE_CATEGORY" size="30" source="File: PITU5I" type="String" />
+            <Field name="ATTRIBUTE1" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE2" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE3" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE4" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE5" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE6" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE7" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE8" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE9" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE10" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE11" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE12" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE13" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE14" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE15" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="REQUEST_ID" source="File: PITU5I" type="Double" />
+            <Field name="PROGRAM_APPLICATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="PROGRAM_ID" source="File: PITU5I" type="Double" />
+            <Field name="PROGRAM_UPDATE_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="OFFSET_VAT_CODE" size="20" source="File: PITU5I" type="String" />
+            <Field name="VAT_REGISTRATION_NUM" size="20" source="File: PITU5I" type="String" />
+            <Field name="AUTO_CALCULATE_INTEREST_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="VALIDATION_NUMBER" source="File: PITU5I" type="Double" />
+            <Field name="EXCLUDE_FREIGHT_FROM_DISCOUNT" size="1" source="File: PITU5I" type="String" />
+            <Field name="TAX_REPORTING_NAME" size="80" source="File: PITU5I" type="V_String" />
+            <Field name="CHECK_DIGITS" size="30" source="File: PITU5I" type="String" />
+            <Field name="BANK_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="ALLOW_AWT_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="AWT_GROUP_ID" source="File: PITU5I" type="Int64" />
+            <Field name="GLOBAL_ATTRIBUTE1" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE2" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE3" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE4" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE5" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE6" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE7" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE8" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE9" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE10" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE11" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE12" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE13" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE14" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE15" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE16" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE17" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE18" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE19" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE20" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE_CATEGORY" size="30" source="File: PITU5I" type="String" />
+            <Field name="EDI_TRANSACTION_HANDLING" size="25" source="File: PITU5I" type="String" />
+            <Field name="EDI_PAYMENT_METHOD" size="25" source="File: PITU5I" type="String" />
+            <Field name="EDI_PAYMENT_FORMAT" size="25" source="File: PITU5I" type="String" />
+            <Field name="EDI_REMITTANCE_METHOD" size="25" source="File: PITU5I" type="String" />
+            <Field name="EDI_REMITTANCE_INSTRUCTION" size="256" source="File: PITU5I" type="V_String" />
+            <Field name="BANK_CHARGE_BEARER" size="1" source="File: PITU5I" type="String" />
+            <Field name="BANK_BRANCH_TYPE" size="25" source="File: PITU5I" type="String" />
+            <Field name="MATCH_OPTION" size="25" source="File: PITU5I" type="String" />
+            <Field name="FUTURE_DATED_PAYMENT_CCID" source="File: PITU5I" type="Int64" />
+            <Field name="CREATE_DEBIT_MEMO_FLAG" size="25" source="File: PITU5I" type="String" />
+            <Field name="OFFSET_TAX_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="PARTY_ID" source="File: PITU5I" type="Double" />
+            <Field name="PARENT_PARTY_ID" source="File: PITU5I" type="Double" />
+            <Field name="NI_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="TCA_SYNC_NUM_1099" size="30" source="File: PITU5I" type="String" />
+            <Field name="TCA_SYNC_VENDOR_NAME" size="360" source="File: PITU5I" type="V_String" />
+            <Field name="TCA_SYNC_VAT_REG_NUM" size="50" source="File: PITU5I" type="V_String" />
+            <Field name="UNIQUE_TAX_REFERENCE_NUM" source="File: PITU5I" type="Int64" />
+            <Field name="PARTNERSHIP_UTR" source="File: PITU5I" type="Int64" />
+            <Field name="PARTNERSHIP_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="CIS_ENABLED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="FIRST_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="SECOND_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="LAST_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="SALUTATION" size="30" source="File: PITU5I" type="String" />
+            <Field name="TRADING_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="WORK_REFERENCE" size="30" source="File: PITU5I" type="String" />
+            <Field name="COMPANY_REGISTRATION_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="NATIONAL_INSURANCE_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="VERIFICATION_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="VERIFICATION_REQUEST_ID" source="File: PITU5I" type="Int64" />
+            <Field name="MATCH_STATUS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="CIS_VERIFICATION_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="INDIVIDUAL_1099" size="30" source="File: PITU5I" type="String" />
+            <Field name="PAY_AWT_GROUP_ID" source="File: PITU5I" type="Int64" />
+            <Field name="CIS_PARENT_VENDOR_ID" source="File: PITU5I" type="Double" />
+            <Field name="BUS_CLASS_LAST_CERTIFIED_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="BUS_CLASS_LAST_CERTIFIED_BY" source="File: PITU5I" type="Double" />
+            <Field name="VAT_REGISTRATION_NUM#1" size="50" source="File: PITU5I" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1050" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_25320_240bb59d967b466f9258094fbf4835fb_\Engine_25320_61c04e7e901fa24daa50851b744b979a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="234" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields />
+          <DataFields>
+            <Field field="VENDOR_ID" selected="True" />
+            <Field field="LAST_UPDATE_DATE" selected="True" />
+            <Field field="LAST_UPDATED_BY" selected="True" />
+            <Field field="VENDOR_NAME" selected="True" />
+            <Field field="VENDOR_NAME_ALT" selected="True" />
+            <Field field="SEGMENT1" selected="True" />
+            <Field field="SUMMARY_FLAG" selected="True" />
+            <Field field="ENABLED_FLAG" selected="True" />
+            <Field field="SEGMENT2" selected="True" />
+            <Field field="SEGMENT3" selected="True" />
+            <Field field="SEGMENT4" selected="True" />
+            <Field field="SEGMENT5" selected="True" />
+            <Field field="LAST_UPDATE_LOGIN" selected="True" />
+            <Field field="CREATION_DATE" selected="True" />
+            <Field field="CREATED_BY" selected="True" />
+            <Field field="EMPLOYEE_ID" selected="True" />
+            <Field field="VENDOR_TYPE_LOOKUP_CODE" selected="True" />
+            <Field field="CUSTOMER_NUM" selected="True" />
+            <Field field="ONE_TIME_FLAG" selected="True" />
+            <Field field="PARENT_VENDOR_ID" selected="True" />
+            <Field field="MIN_ORDER_AMOUNT" selected="True" />
+            <Field field="SHIP_TO_LOCATION_ID" selected="True" />
+            <Field field="BILL_TO_LOCATION_ID" selected="True" />
+            <Field field="SHIP_VIA_LOOKUP_CODE" selected="True" />
+            <Field field="FREIGHT_TERMS_LOOKUP_CODE" selected="True" />
+            <Field field="FOB_LOOKUP_CODE" selected="True" />
+            <Field field="TERMS_ID" selected="True" />
+            <Field field="SET_OF_BOOKS_ID" selected="True" />
+            <Field field="CREDIT_STATUS_LOOKUP_CODE" selected="True" />
+            <Field field="CREDIT_LIMIT" selected="True" />
+            <Field field="ALWAYS_TAKE_DISC_FLAG" selected="True" />
+            <Field field="PAY_DATE_BASIS_LOOKUP_CODE" selected="True" />
+            <Field field="PAY_GROUP_LOOKUP_CODE" selected="True" />
+            <Field field="PAYMENT_PRIORITY" selected="True" />
+            <Field field="INVOICE_CURRENCY_CODE" selected="True" />
+            <Field field="PAYMENT_CURRENCY_CODE" selected="True" />
+            <Field field="INVOICE_AMOUNT_LIMIT" selected="True" />
+            <Field field="EXCHANGE_DATE_LOOKUP_CODE" selected="True" />
+            <Field field="HOLD_ALL_PAYMENTS_FLAG" selected="True" />
+            <Field field="HOLD_FUTURE_PAYMENTS_FLAG" selected="True" />
+            <Field field="HOLD_REASON" selected="True" />
+            <Field field="DISTRIBUTION_SET_ID" selected="True" />
+            <Field field="ACCTS_PAY_CODE_COMBINATION_ID" selected="True" />
+            <Field field="DISC_LOST_CODE_COMBINATION_ID" selected="True" />
+            <Field field="DISC_TAKEN_CODE_COMBINATION_ID" selected="True" />
+            <Field field="EXPENSE_CODE_COMBINATION_ID" selected="True" />
+            <Field field="PREPAY_CODE_COMBINATION_ID" selected="True" />
+            <Field field="NUM_1099" selected="True" />
+            <Field field="TYPE_1099" selected="True" />
+            <Field field="WITHHOLDING_STATUS_LOOKUP_CODE" selected="True" />
+            <Field field="WITHHOLDING_START_DATE" selected="True" />
+            <Field field="ORGANIZATION_TYPE_LOOKUP_CODE" selected="True" />
+            <Field field="VAT_CODE" selected="True" />
+            <Field field="START_DATE_ACTIVE" selected="True" />
+            <Field field="END_DATE_ACTIVE" selected="True" />
+            <Field field="MINORITY_GROUP_LOOKUP_CODE" selected="True" />
+            <Field field="PAYMENT_METHOD_LOOKUP_CODE" selected="True" />
+            <Field field="BANK_ACCOUNT_NAME" selected="True" />
+            <Field field="BANK_ACCOUNT_NUM" selected="True" />
+            <Field field="BANK_NUM" selected="True" />
+            <Field field="BANK_ACCOUNT_TYPE" selected="True" />
+            <Field field="WOMEN_OWNED_FLAG" selected="True" />
+            <Field field="SMALL_BUSINESS_FLAG" selected="True" />
+            <Field field="STANDARD_INDUSTRY_CLASS" selected="True" />
+            <Field field="HOLD_FLAG" selected="True" />
+            <Field field="PURCHASING_HOLD_REASON" selected="True" />
+            <Field field="HOLD_BY" selected="True" />
+            <Field field="HOLD_DATE" selected="True" />
+            <Field field="TERMS_DATE_BASIS" selected="True" />
+            <Field field="PRICE_TOLERANCE" selected="True" />
+            <Field field="INSPECTION_REQUIRED_FLAG" selected="True" />
+            <Field field="RECEIPT_REQUIRED_FLAG" selected="True" />
+            <Field field="QTY_RCV_TOLERANCE" selected="True" />
+            <Field field="QTY_RCV_EXCEPTION_CODE" selected="True" />
+            <Field field="ENFORCE_SHIP_TO_LOCATION_CODE" selected="True" />
+            <Field field="DAYS_EARLY_RECEIPT_ALLOWED" selected="True" />
+            <Field field="DAYS_LATE_RECEIPT_ALLOWED" selected="True" />
+            <Field field="RECEIPT_DAYS_EXCEPTION_CODE" selected="True" />
+            <Field field="RECEIVING_ROUTING_ID" selected="True" />
+            <Field field="ALLOW_SUBSTITUTE_RECEIPTS_FLAG" selected="True" />
+            <Field field="ALLOW_UNORDERED_RECEIPTS_FLAG" selected="True" />
+            <Field field="HOLD_UNMATCHED_INVOICES_FLAG" selected="True" />
+            <Field field="EXCLUSIVE_PAYMENT_FLAG" selected="True" />
+            <Field field="AP_TAX_ROUNDING_RULE" selected="True" />
+            <Field field="AUTO_TAX_CALC_FLAG" selected="True" />
+            <Field field="AUTO_TAX_CALC_OVERRIDE" selected="True" />
+            <Field field="AMOUNT_INCLUDES_TAX_FLAG" selected="True" />
+            <Field field="TAX_VERIFICATION_DATE" selected="True" />
+            <Field field="NAME_CONTROL" selected="True" />
+            <Field field="STATE_REPORTABLE_FLAG" selected="True" />
+            <Field field="FEDERAL_REPORTABLE_FLAG" selected="True" />
+            <Field field="ATTRIBUTE_CATEGORY" selected="True" />
+            <Field field="ATTRIBUTE1" selected="True" />
+            <Field field="ATTRIBUTE2" selected="True" />
+            <Field field="ATTRIBUTE3" selected="True" />
+            <Field field="ATTRIBUTE4" selected="True" />
+            <Field field="ATTRIBUTE5" selected="True" />
+            <Field field="ATTRIBUTE6" selected="True" />
+            <Field field="ATTRIBUTE7" selected="True" />
+            <Field field="ATTRIBUTE8" selected="True" />
+            <Field field="ATTRIBUTE9" selected="True" />
+            <Field field="ATTRIBUTE10" selected="True" />
+            <Field field="ATTRIBUTE11" selected="True" />
+            <Field field="ATTRIBUTE12" selected="True" />
+            <Field field="ATTRIBUTE13" selected="True" />
+            <Field field="ATTRIBUTE14" selected="True" />
+            <Field field="ATTRIBUTE15" selected="True" />
+            <Field field="REQUEST_ID" selected="True" />
+            <Field field="PROGRAM_APPLICATION_ID" selected="True" />
+            <Field field="PROGRAM_ID" selected="True" />
+            <Field field="PROGRAM_UPDATE_DATE" selected="True" />
+            <Field field="OFFSET_VAT_CODE" selected="True" />
+            <Field field="VAT_REGISTRATION_NUM" selected="True" />
+            <Field field="AUTO_CALCULATE_INTEREST_FLAG" selected="True" />
+            <Field field="VALIDATION_NUMBER" selected="True" />
+            <Field field="EXCLUDE_FREIGHT_FROM_DISCOUNT" selected="True" />
+            <Field field="TAX_REPORTING_NAME" selected="True" />
+            <Field field="CHECK_DIGITS" selected="True" />
+            <Field field="BANK_NUMBER" selected="True" />
+            <Field field="ALLOW_AWT_FLAG" selected="True" />
+            <Field field="AWT_GROUP_ID" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE1" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE2" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE3" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE4" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE5" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE6" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE7" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE8" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE9" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE10" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE11" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE12" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE13" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE14" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE15" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE16" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE17" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE18" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE19" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE20" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE_CATEGORY" selected="True" />
+            <Field field="EDI_TRANSACTION_HANDLING" selected="True" />
+            <Field field="EDI_PAYMENT_METHOD" selected="True" />
+            <Field field="EDI_PAYMENT_FORMAT" selected="True" />
+            <Field field="EDI_REMITTANCE_METHOD" selected="True" />
+            <Field field="EDI_REMITTANCE_INSTRUCTION" selected="True" />
+            <Field field="BANK_CHARGE_BEARER" selected="True" />
+            <Field field="BANK_BRANCH_TYPE" selected="True" />
+            <Field field="MATCH_OPTION" selected="True" />
+            <Field field="FUTURE_DATED_PAYMENT_CCID" selected="True" />
+            <Field field="CREATE_DEBIT_MEMO_FLAG" selected="True" />
+            <Field field="OFFSET_TAX_FLAG" selected="True" />
+            <Field field="PARTY_ID" selected="True" />
+            <Field field="PARENT_PARTY_ID" selected="True" />
+            <Field field="NI_NUMBER" selected="True" />
+            <Field field="TCA_SYNC_NUM_1099" selected="True" />
+            <Field field="TCA_SYNC_VENDOR_NAME" selected="True" />
+            <Field field="TCA_SYNC_VAT_REG_NUM" selected="True" />
+            <Field field="UNIQUE_TAX_REFERENCE_NUM" selected="True" />
+            <Field field="PARTNERSHIP_UTR" selected="True" />
+            <Field field="PARTNERSHIP_NAME" selected="True" />
+            <Field field="CIS_ENABLED_FLAG" selected="True" />
+            <Field field="FIRST_NAME" selected="True" />
+            <Field field="SECOND_NAME" selected="True" />
+            <Field field="LAST_NAME" selected="True" />
+            <Field field="SALUTATION" selected="True" />
+            <Field field="TRADING_NAME" selected="True" />
+            <Field field="WORK_REFERENCE" selected="True" />
+            <Field field="COMPANY_REGISTRATION_NUMBER" selected="True" />
+            <Field field="NATIONAL_INSURANCE_NUMBER" selected="True" />
+            <Field field="VERIFICATION_NUMBER" selected="True" />
+            <Field field="VERIFICATION_REQUEST_ID" selected="True" />
+            <Field field="MATCH_STATUS_FLAG" selected="True" />
+            <Field field="CIS_VERIFICATION_DATE" selected="True" />
+            <Field field="INDIVIDUAL_1099" selected="True" />
+            <Field field="PAY_AWT_GROUP_ID" selected="True" />
+            <Field field="CIS_PARENT_VENDOR_ID" selected="True" />
+            <Field field="BUS_CLASS_LAST_CERTIFIED_DATE" selected="True" />
+            <Field field="BUS_CLASS_LAST_CERTIFIED_BY" selected="True" />
+            <Field field="VAT_REGISTRATION_NUM#1" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Transpose all data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Name" action="GroupBy" rename="Name" />
+            <SummarizeField field="Value" action="CountNonNull" rename="CountNonNull" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Look for null values</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="474" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [CountNonNull]&gt;0 then [Name] else &quot;__Deselect__&quot; + [Name] endif" field="NewName" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Rename null fields</AnnotationText>
+          <DefaultAnnotationText><![CDATA[NewName = if [CountNonNull]>0 then [Name] else "__Deselect__" + [Name] endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="594" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="RecordNum" />
+            <Field name="Date" />
+            <Field name="Time" />
+            <Field name="Type" />
+            <Field name="User" />
+            <Field name="Machine" />
+            <Field name="Right_RecordNum" />
+            <Field name="Authentication_Package" />
+            <Field name="Client_Domain" />
+            <Field name="Client_Logon_ID" />
+            <Field name="Client_User_Name" />
+            <Field name="Domain" />
+            <Field name="Domain_Name" />
+            <Field name="Logon_GUID" />
+            <Field name="Logon_ID" />
+            <Field name="Logon_Process" />
+            <Field name="Logon_Type" />
+            <Field name="Primary_Domain" />
+            <Field name="Primary_Logon_ID" />
+            <Field name="Primary_User_Name" />
+            <Field name="Privileges" />
+            <Field name="Reason" />
+            <Field name="User_Name" />
+            <Field name="Workstation_Name" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Ignore</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>Name</OldName>
+            <NewName>NewName</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Dynamically rename headers</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_ID" source="File: PITU5I" type="Double" />
+            <Field name="LAST_UPDATE_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="LAST_UPDATED_BY" source="File: PITU5I" type="Double" />
+            <Field name="VENDOR_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="VENDOR_NAME_ALT" size="320" source="File: PITU5I" type="V_String" />
+            <Field name="SEGMENT1" size="30" source="File: PITU5I" type="String" />
+            <Field name="SUMMARY_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="ENABLED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__SEGMENT2" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__SEGMENT3" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__SEGMENT4" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__SEGMENT5" size="30" source="File: PITU5I" type="String" />
+            <Field name="LAST_UPDATE_LOGIN" source="File: PITU5I" type="Double" />
+            <Field name="CREATION_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="CREATED_BY" source="File: PITU5I" type="Double" />
+            <Field name="EMPLOYEE_ID" source="File: PITU5I" type="Double" />
+            <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: PITU5I" type="String" />
+            <Field name="CUSTOMER_NUM" size="25" source="File: PITU5I" type="String" />
+            <Field name="ONE_TIME_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__PARENT_VENDOR_ID" source="File: PITU5I" type="Double" />
+            <Field name="MIN_ORDER_AMOUNT" source="File: PITU5I" type="Double" />
+            <Field name="SHIP_TO_LOCATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="BILL_TO_LOCATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="SHIP_VIA_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="FREIGHT_TERMS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="FOB_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="TERMS_ID" source="File: PITU5I" type="Double" />
+            <Field name="SET_OF_BOOKS_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__CREDIT_STATUS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__CREDIT_LIMIT" source="File: PITU5I" type="Double" />
+            <Field name="ALWAYS_TAKE_DISC_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="PAY_DATE_BASIS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="PAY_GROUP_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="PAYMENT_PRIORITY" source="File: PITU5I" type="Double" />
+            <Field name="INVOICE_CURRENCY_CODE" size="15" source="File: PITU5I" type="String" />
+            <Field name="PAYMENT_CURRENCY_CODE" size="15" source="File: PITU5I" type="String" />
+            <Field name="INVOICE_AMOUNT_LIMIT" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__EXCHANGE_DATE_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="HOLD_ALL_PAYMENTS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="HOLD_FUTURE_PAYMENTS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="HOLD_REASON" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__DISTRIBUTION_SET_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__ACCTS_PAY_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__DISC_LOST_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__DISC_TAKEN_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__EXPENSE_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__PREPAY_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="NUM_1099" size="30" source="File: PITU5I" type="String" />
+            <Field name="TYPE_1099" size="10" source="File: PITU5I" type="String" />
+            <Field name="WITHHOLDING_STATUS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__WITHHOLDING_START_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="ORGANIZATION_TYPE_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="VAT_CODE" size="30" source="File: PITU5I" type="String" />
+            <Field name="START_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+            <Field name="END_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+            <Field name="MINORITY_GROUP_LOOKUP_CODE" size="30" source="File: PITU5I" type="String" />
+            <Field name="PAYMENT_METHOD_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__BANK_ACCOUNT_NAME" size="80" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__BANK_ACCOUNT_NUM" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__BANK_NUM" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__BANK_ACCOUNT_TYPE" size="25" source="File: PITU5I" type="String" />
+            <Field name="WOMEN_OWNED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="SMALL_BUSINESS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__STANDARD_INDUSTRY_CLASS" size="25" source="File: PITU5I" type="String" />
+            <Field name="HOLD_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="PURCHASING_HOLD_REASON" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="HOLD_BY" source="File: PITU5I" type="Int32" />
+            <Field name="HOLD_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="TERMS_DATE_BASIS" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__PRICE_TOLERANCE" source="File: PITU5I" type="Double" />
+            <Field name="INSPECTION_REQUIRED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="RECEIPT_REQUIRED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="QTY_RCV_TOLERANCE" source="File: PITU5I" type="Double" />
+            <Field name="QTY_RCV_EXCEPTION_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="ENFORCE_SHIP_TO_LOCATION_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="DAYS_EARLY_RECEIPT_ALLOWED" source="File: PITU5I" type="Double" />
+            <Field name="DAYS_LATE_RECEIPT_ALLOWED" source="File: PITU5I" type="Double" />
+            <Field name="RECEIPT_DAYS_EXCEPTION_CODE" size="25" source="File: PITU5I" type="String" />
+            <Field name="RECEIVING_ROUTING_ID" source="File: PITU5I" type="Double" />
+            <Field name="ALLOW_SUBSTITUTE_RECEIPTS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="ALLOW_UNORDERED_RECEIPTS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="HOLD_UNMATCHED_INVOICES_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="EXCLUSIVE_PAYMENT_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="AP_TAX_ROUNDING_RULE" size="1" source="File: PITU5I" type="String" />
+            <Field name="AUTO_TAX_CALC_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="AUTO_TAX_CALC_OVERRIDE" size="1" source="File: PITU5I" type="String" />
+            <Field name="AMOUNT_INCLUDES_TAX_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="TAX_VERIFICATION_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="__Deselect__NAME_CONTROL" size="4" source="File: PITU5I" type="String" />
+            <Field name="STATE_REPORTABLE_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="FEDERAL_REPORTABLE_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="ATTRIBUTE_CATEGORY" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__ATTRIBUTE1" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE2" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE3" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE4" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE5" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE6" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE7" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE8" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE9" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__ATTRIBUTE10" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE11" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE12" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE13" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE14" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="ATTRIBUTE15" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="REQUEST_ID" source="File: PITU5I" type="Double" />
+            <Field name="PROGRAM_APPLICATION_ID" source="File: PITU5I" type="Double" />
+            <Field name="PROGRAM_ID" source="File: PITU5I" type="Double" />
+            <Field name="PROGRAM_UPDATE_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="__Deselect__OFFSET_VAT_CODE" size="20" source="File: PITU5I" type="String" />
+            <Field name="VAT_REGISTRATION_NUM" size="20" source="File: PITU5I" type="String" />
+            <Field name="AUTO_CALCULATE_INTEREST_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__VALIDATION_NUMBER" source="File: PITU5I" type="Double" />
+            <Field name="EXCLUDE_FREIGHT_FROM_DISCOUNT" size="1" source="File: PITU5I" type="String" />
+            <Field name="TAX_REPORTING_NAME" size="80" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__CHECK_DIGITS" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__BANK_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="ALLOW_AWT_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__AWT_GROUP_ID" source="File: PITU5I" type="Int64" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE1" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE2" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE3" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE4" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE5" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE6" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE7" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE8" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE9" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE10" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE11" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE12" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE13" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE14" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE15" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE16" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE17" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE18" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE19" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__GLOBAL_ATTRIBUTE20" size="150" source="File: PITU5I" type="V_String" />
+            <Field name="GLOBAL_ATTRIBUTE_CATEGORY" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__EDI_TRANSACTION_HANDLING" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__EDI_PAYMENT_METHOD" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__EDI_PAYMENT_FORMAT" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__EDI_REMITTANCE_METHOD" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__EDI_REMITTANCE_INSTRUCTION" size="256" source="File: PITU5I" type="V_String" />
+            <Field name="BANK_CHARGE_BEARER" size="1" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__BANK_BRANCH_TYPE" size="25" source="File: PITU5I" type="String" />
+            <Field name="MATCH_OPTION" size="25" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__FUTURE_DATED_PAYMENT_CCID" source="File: PITU5I" type="Int64" />
+            <Field name="__Deselect__CREATE_DEBIT_MEMO_FLAG" size="25" source="File: PITU5I" type="String" />
+            <Field name="OFFSET_TAX_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="PARTY_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__PARENT_PARTY_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__NI_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="TCA_SYNC_NUM_1099" size="30" source="File: PITU5I" type="String" />
+            <Field name="TCA_SYNC_VENDOR_NAME" size="360" source="File: PITU5I" type="V_String" />
+            <Field name="TCA_SYNC_VAT_REG_NUM" size="50" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__UNIQUE_TAX_REFERENCE_NUM" source="File: PITU5I" type="Int64" />
+            <Field name="__Deselect__PARTNERSHIP_UTR" source="File: PITU5I" type="Int64" />
+            <Field name="__Deselect__PARTNERSHIP_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__CIS_ENABLED_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__FIRST_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__SECOND_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__LAST_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__SALUTATION" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__TRADING_NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="__Deselect__WORK_REFERENCE" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__COMPANY_REGISTRATION_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__NATIONAL_INSURANCE_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__VERIFICATION_NUMBER" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__VERIFICATION_REQUEST_ID" source="File: PITU5I" type="Int64" />
+            <Field name="__Deselect__MATCH_STATUS_FLAG" size="1" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__CIS_VERIFICATION_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="INDIVIDUAL_1099" size="30" source="File: PITU5I" type="String" />
+            <Field name="__Deselect__PAY_AWT_GROUP_ID" source="File: PITU5I" type="Int64" />
+            <Field name="__Deselect__CIS_PARENT_VENDOR_ID" source="File: PITU5I" type="Double" />
+            <Field name="__Deselect__BUS_CLASS_LAST_CERTIFIED_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="__Deselect__BUS_CLASS_LAST_CERTIFIED_BY" source="File: PITU5I" type="Double" />
+            <Field name="VAT_REGISTRATION_NUM#1" size="50" source="File: PITU5I" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+        <Position x="714" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Formula</Mode>
+          <Expression>Left([Name], 12)!="__Deselect__"</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Dynamically remove fields</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="594" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="VENDOR_ID" />
+          </KeyFields>
+          <DataFields>
+            <Field field="VENDOR_ID" selected="True" />
+            <Field field="LAST_UPDATE_DATE" selected="True" />
+            <Field field="LAST_UPDATED_BY" selected="True" />
+            <Field field="VENDOR_NAME" selected="True" />
+            <Field field="VENDOR_NAME_ALT" selected="True" />
+            <Field field="SEGMENT1" selected="True" />
+            <Field field="SUMMARY_FLAG" selected="True" />
+            <Field field="ENABLED_FLAG" selected="True" />
+            <Field field="LAST_UPDATE_LOGIN" selected="True" />
+            <Field field="CREATION_DATE" selected="True" />
+            <Field field="CREATED_BY" selected="True" />
+            <Field field="EMPLOYEE_ID" selected="True" />
+            <Field field="VENDOR_TYPE_LOOKUP_CODE" selected="True" />
+            <Field field="CUSTOMER_NUM" selected="True" />
+            <Field field="ONE_TIME_FLAG" selected="True" />
+            <Field field="MIN_ORDER_AMOUNT" selected="True" />
+            <Field field="SHIP_TO_LOCATION_ID" selected="True" />
+            <Field field="BILL_TO_LOCATION_ID" selected="True" />
+            <Field field="SHIP_VIA_LOOKUP_CODE" selected="True" />
+            <Field field="FREIGHT_TERMS_LOOKUP_CODE" selected="True" />
+            <Field field="FOB_LOOKUP_CODE" selected="True" />
+            <Field field="TERMS_ID" selected="True" />
+            <Field field="SET_OF_BOOKS_ID" selected="True" />
+            <Field field="ALWAYS_TAKE_DISC_FLAG" selected="True" />
+            <Field field="PAY_DATE_BASIS_LOOKUP_CODE" selected="True" />
+            <Field field="PAY_GROUP_LOOKUP_CODE" selected="True" />
+            <Field field="PAYMENT_PRIORITY" selected="True" />
+            <Field field="INVOICE_CURRENCY_CODE" selected="True" />
+            <Field field="PAYMENT_CURRENCY_CODE" selected="True" />
+            <Field field="INVOICE_AMOUNT_LIMIT" selected="True" />
+            <Field field="HOLD_ALL_PAYMENTS_FLAG" selected="True" />
+            <Field field="HOLD_FUTURE_PAYMENTS_FLAG" selected="True" />
+            <Field field="HOLD_REASON" selected="True" />
+            <Field field="NUM_1099" selected="True" />
+            <Field field="TYPE_1099" selected="True" />
+            <Field field="WITHHOLDING_STATUS_LOOKUP_CODE" selected="True" />
+            <Field field="ORGANIZATION_TYPE_LOOKUP_CODE" selected="True" />
+            <Field field="VAT_CODE" selected="True" />
+            <Field field="START_DATE_ACTIVE" selected="True" />
+            <Field field="END_DATE_ACTIVE" selected="True" />
+            <Field field="MINORITY_GROUP_LOOKUP_CODE" selected="True" />
+            <Field field="PAYMENT_METHOD_LOOKUP_CODE" selected="True" />
+            <Field field="WOMEN_OWNED_FLAG" selected="True" />
+            <Field field="SMALL_BUSINESS_FLAG" selected="True" />
+            <Field field="HOLD_FLAG" selected="True" />
+            <Field field="PURCHASING_HOLD_REASON" selected="True" />
+            <Field field="HOLD_BY" selected="True" />
+            <Field field="HOLD_DATE" selected="True" />
+            <Field field="TERMS_DATE_BASIS" selected="True" />
+            <Field field="INSPECTION_REQUIRED_FLAG" selected="True" />
+            <Field field="RECEIPT_REQUIRED_FLAG" selected="True" />
+            <Field field="QTY_RCV_TOLERANCE" selected="True" />
+            <Field field="QTY_RCV_EXCEPTION_CODE" selected="True" />
+            <Field field="ENFORCE_SHIP_TO_LOCATION_CODE" selected="True" />
+            <Field field="DAYS_EARLY_RECEIPT_ALLOWED" selected="True" />
+            <Field field="DAYS_LATE_RECEIPT_ALLOWED" selected="True" />
+            <Field field="RECEIPT_DAYS_EXCEPTION_CODE" selected="True" />
+            <Field field="RECEIVING_ROUTING_ID" selected="True" />
+            <Field field="ALLOW_SUBSTITUTE_RECEIPTS_FLAG" selected="True" />
+            <Field field="ALLOW_UNORDERED_RECEIPTS_FLAG" selected="True" />
+            <Field field="HOLD_UNMATCHED_INVOICES_FLAG" selected="True" />
+            <Field field="EXCLUSIVE_PAYMENT_FLAG" selected="True" />
+            <Field field="AP_TAX_ROUNDING_RULE" selected="True" />
+            <Field field="AUTO_TAX_CALC_FLAG" selected="True" />
+            <Field field="AUTO_TAX_CALC_OVERRIDE" selected="True" />
+            <Field field="AMOUNT_INCLUDES_TAX_FLAG" selected="True" />
+            <Field field="TAX_VERIFICATION_DATE" selected="True" />
+            <Field field="STATE_REPORTABLE_FLAG" selected="True" />
+            <Field field="FEDERAL_REPORTABLE_FLAG" selected="True" />
+            <Field field="ATTRIBUTE_CATEGORY" selected="True" />
+            <Field field="ATTRIBUTE2" selected="True" />
+            <Field field="ATTRIBUTE3" selected="True" />
+            <Field field="ATTRIBUTE4" selected="True" />
+            <Field field="ATTRIBUTE5" selected="True" />
+            <Field field="ATTRIBUTE6" selected="True" />
+            <Field field="ATTRIBUTE7" selected="True" />
+            <Field field="ATTRIBUTE8" selected="True" />
+            <Field field="ATTRIBUTE9" selected="True" />
+            <Field field="ATTRIBUTE11" selected="True" />
+            <Field field="ATTRIBUTE12" selected="True" />
+            <Field field="ATTRIBUTE13" selected="True" />
+            <Field field="ATTRIBUTE14" selected="True" />
+            <Field field="ATTRIBUTE15" selected="True" />
+            <Field field="REQUEST_ID" selected="True" />
+            <Field field="PROGRAM_APPLICATION_ID" selected="True" />
+            <Field field="PROGRAM_ID" selected="True" />
+            <Field field="PROGRAM_UPDATE_DATE" selected="True" />
+            <Field field="VAT_REGISTRATION_NUM" selected="True" />
+            <Field field="AUTO_CALCULATE_INTEREST_FLAG" selected="True" />
+            <Field field="EXCLUDE_FREIGHT_FROM_DISCOUNT" selected="True" />
+            <Field field="TAX_REPORTING_NAME" selected="True" />
+            <Field field="ALLOW_AWT_FLAG" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE4" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE_CATEGORY" selected="True" />
+            <Field field="BANK_CHARGE_BEARER" selected="True" />
+            <Field field="MATCH_OPTION" selected="True" />
+            <Field field="OFFSET_TAX_FLAG" selected="True" />
+            <Field field="PARTY_ID" selected="True" />
+            <Field field="TCA_SYNC_NUM_1099" selected="True" />
+            <Field field="TCA_SYNC_VENDOR_NAME" selected="True" />
+            <Field field="TCA_SYNC_VAT_REG_NUM" selected="True" />
+            <Field field="INDIVIDUAL_1099" selected="True" />
+            <Field field="VAT_REGISTRATION_NUM#1" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="474" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="594" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="VENDOR_ID" />
+          </KeyFields>
+          <DataFields>
+            <Field field="VENDOR_ID" selected="True" />
+            <Field field="LAST_UPDATE_DATE" selected="True" />
+            <Field field="LAST_UPDATED_BY" selected="True" />
+            <Field field="VENDOR_NAME" selected="True" />
+            <Field field="VENDOR_NAME_ALT" selected="True" />
+            <Field field="SEGMENT1" selected="True" />
+            <Field field="SUMMARY_FLAG" selected="True" />
+            <Field field="ENABLED_FLAG" selected="True" />
+            <Field field="SEGMENT2" selected="True" />
+            <Field field="SEGMENT3" selected="True" />
+            <Field field="SEGMENT4" selected="True" />
+            <Field field="SEGMENT5" selected="True" />
+            <Field field="LAST_UPDATE_LOGIN" selected="True" />
+            <Field field="CREATION_DATE" selected="True" />
+            <Field field="CREATED_BY" selected="True" />
+            <Field field="EMPLOYEE_ID" selected="True" />
+            <Field field="VENDOR_TYPE_LOOKUP_CODE" selected="True" />
+            <Field field="CUSTOMER_NUM" selected="True" />
+            <Field field="ONE_TIME_FLAG" selected="True" />
+            <Field field="PARENT_VENDOR_ID" selected="True" />
+            <Field field="MIN_ORDER_AMOUNT" selected="True" />
+            <Field field="SHIP_TO_LOCATION_ID" selected="True" />
+            <Field field="BILL_TO_LOCATION_ID" selected="True" />
+            <Field field="SHIP_VIA_LOOKUP_CODE" selected="True" />
+            <Field field="FREIGHT_TERMS_LOOKUP_CODE" selected="True" />
+            <Field field="FOB_LOOKUP_CODE" selected="True" />
+            <Field field="TERMS_ID" selected="True" />
+            <Field field="SET_OF_BOOKS_ID" selected="True" />
+            <Field field="CREDIT_STATUS_LOOKUP_CODE" selected="True" />
+            <Field field="CREDIT_LIMIT" selected="True" />
+            <Field field="ALWAYS_TAKE_DISC_FLAG" selected="True" />
+            <Field field="PAY_DATE_BASIS_LOOKUP_CODE" selected="True" />
+            <Field field="PAY_GROUP_LOOKUP_CODE" selected="True" />
+            <Field field="PAYMENT_PRIORITY" selected="True" />
+            <Field field="INVOICE_CURRENCY_CODE" selected="True" />
+            <Field field="PAYMENT_CURRENCY_CODE" selected="True" />
+            <Field field="INVOICE_AMOUNT_LIMIT" selected="True" />
+            <Field field="EXCHANGE_DATE_LOOKUP_CODE" selected="True" />
+            <Field field="HOLD_ALL_PAYMENTS_FLAG" selected="True" />
+            <Field field="HOLD_FUTURE_PAYMENTS_FLAG" selected="True" />
+            <Field field="HOLD_REASON" selected="True" />
+            <Field field="DISTRIBUTION_SET_ID" selected="True" />
+            <Field field="ACCTS_PAY_CODE_COMBINATION_ID" selected="True" />
+            <Field field="DISC_LOST_CODE_COMBINATION_ID" selected="True" />
+            <Field field="DISC_TAKEN_CODE_COMBINATION_ID" selected="True" />
+            <Field field="EXPENSE_CODE_COMBINATION_ID" selected="True" />
+            <Field field="PREPAY_CODE_COMBINATION_ID" selected="True" />
+            <Field field="NUM_1099" selected="True" />
+            <Field field="TYPE_1099" selected="True" />
+            <Field field="WITHHOLDING_STATUS_LOOKUP_CODE" selected="True" />
+            <Field field="WITHHOLDING_START_DATE" selected="True" />
+            <Field field="ORGANIZATION_TYPE_LOOKUP_CODE" selected="True" />
+            <Field field="VAT_CODE" selected="True" />
+            <Field field="START_DATE_ACTIVE" selected="True" />
+            <Field field="END_DATE_ACTIVE" selected="True" />
+            <Field field="MINORITY_GROUP_LOOKUP_CODE" selected="True" />
+            <Field field="PAYMENT_METHOD_LOOKUP_CODE" selected="True" />
+            <Field field="BANK_ACCOUNT_NAME" selected="True" />
+            <Field field="BANK_ACCOUNT_NUM" selected="True" />
+            <Field field="BANK_NUM" selected="True" />
+            <Field field="BANK_ACCOUNT_TYPE" selected="True" />
+            <Field field="WOMEN_OWNED_FLAG" selected="True" />
+            <Field field="SMALL_BUSINESS_FLAG" selected="True" />
+            <Field field="STANDARD_INDUSTRY_CLASS" selected="True" />
+            <Field field="HOLD_FLAG" selected="True" />
+            <Field field="PURCHASING_HOLD_REASON" selected="True" />
+            <Field field="HOLD_BY" selected="True" />
+            <Field field="HOLD_DATE" selected="True" />
+            <Field field="TERMS_DATE_BASIS" selected="True" />
+            <Field field="PRICE_TOLERANCE" selected="True" />
+            <Field field="INSPECTION_REQUIRED_FLAG" selected="True" />
+            <Field field="RECEIPT_REQUIRED_FLAG" selected="True" />
+            <Field field="QTY_RCV_TOLERANCE" selected="True" />
+            <Field field="QTY_RCV_EXCEPTION_CODE" selected="True" />
+            <Field field="ENFORCE_SHIP_TO_LOCATION_CODE" selected="True" />
+            <Field field="DAYS_EARLY_RECEIPT_ALLOWED" selected="True" />
+            <Field field="DAYS_LATE_RECEIPT_ALLOWED" selected="True" />
+            <Field field="RECEIPT_DAYS_EXCEPTION_CODE" selected="True" />
+            <Field field="RECEIVING_ROUTING_ID" selected="True" />
+            <Field field="ALLOW_SUBSTITUTE_RECEIPTS_FLAG" selected="True" />
+            <Field field="ALLOW_UNORDERED_RECEIPTS_FLAG" selected="True" />
+            <Field field="HOLD_UNMATCHED_INVOICES_FLAG" selected="True" />
+            <Field field="EXCLUSIVE_PAYMENT_FLAG" selected="True" />
+            <Field field="AP_TAX_ROUNDING_RULE" selected="True" />
+            <Field field="AUTO_TAX_CALC_FLAG" selected="True" />
+            <Field field="AUTO_TAX_CALC_OVERRIDE" selected="True" />
+            <Field field="AMOUNT_INCLUDES_TAX_FLAG" selected="True" />
+            <Field field="TAX_VERIFICATION_DATE" selected="True" />
+            <Field field="NAME_CONTROL" selected="True" />
+            <Field field="STATE_REPORTABLE_FLAG" selected="True" />
+            <Field field="FEDERAL_REPORTABLE_FLAG" selected="True" />
+            <Field field="ATTRIBUTE_CATEGORY" selected="True" />
+            <Field field="ATTRIBUTE1" selected="True" />
+            <Field field="ATTRIBUTE2" selected="True" />
+            <Field field="ATTRIBUTE3" selected="True" />
+            <Field field="ATTRIBUTE4" selected="True" />
+            <Field field="ATTRIBUTE5" selected="True" />
+            <Field field="ATTRIBUTE6" selected="True" />
+            <Field field="ATTRIBUTE7" selected="True" />
+            <Field field="ATTRIBUTE8" selected="True" />
+            <Field field="ATTRIBUTE9" selected="True" />
+            <Field field="ATTRIBUTE10" selected="True" />
+            <Field field="ATTRIBUTE11" selected="True" />
+            <Field field="ATTRIBUTE12" selected="True" />
+            <Field field="ATTRIBUTE13" selected="True" />
+            <Field field="ATTRIBUTE14" selected="True" />
+            <Field field="ATTRIBUTE15" selected="True" />
+            <Field field="REQUEST_ID" selected="True" />
+            <Field field="PROGRAM_APPLICATION_ID" selected="True" />
+            <Field field="PROGRAM_ID" selected="True" />
+            <Field field="PROGRAM_UPDATE_DATE" selected="True" />
+            <Field field="OFFSET_VAT_CODE" selected="True" />
+            <Field field="VAT_REGISTRATION_NUM" selected="True" />
+            <Field field="AUTO_CALCULATE_INTEREST_FLAG" selected="True" />
+            <Field field="VALIDATION_NUMBER" selected="True" />
+            <Field field="EXCLUDE_FREIGHT_FROM_DISCOUNT" selected="True" />
+            <Field field="TAX_REPORTING_NAME" selected="True" />
+            <Field field="CHECK_DIGITS" selected="True" />
+            <Field field="BANK_NUMBER" selected="True" />
+            <Field field="ALLOW_AWT_FLAG" selected="True" />
+            <Field field="AWT_GROUP_ID" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE1" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE2" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE3" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE4" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE5" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE6" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE7" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE8" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE9" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE10" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE11" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE12" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE13" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE14" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE15" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE16" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE17" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE18" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE19" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE20" selected="True" />
+            <Field field="GLOBAL_ATTRIBUTE_CATEGORY" selected="True" />
+            <Field field="EDI_TRANSACTION_HANDLING" selected="True" />
+            <Field field="EDI_PAYMENT_METHOD" selected="True" />
+            <Field field="EDI_PAYMENT_FORMAT" selected="True" />
+            <Field field="EDI_REMITTANCE_METHOD" selected="True" />
+            <Field field="EDI_REMITTANCE_INSTRUCTION" selected="True" />
+            <Field field="BANK_CHARGE_BEARER" selected="True" />
+            <Field field="BANK_BRANCH_TYPE" selected="True" />
+            <Field field="MATCH_OPTION" selected="True" />
+            <Field field="FUTURE_DATED_PAYMENT_CCID" selected="True" />
+            <Field field="CREATE_DEBIT_MEMO_FLAG" selected="True" />
+            <Field field="OFFSET_TAX_FLAG" selected="True" />
+            <Field field="PARTY_ID" selected="True" />
+            <Field field="PARENT_PARTY_ID" selected="True" />
+            <Field field="NI_NUMBER" selected="True" />
+            <Field field="TCA_SYNC_NUM_1099" selected="True" />
+            <Field field="TCA_SYNC_VENDOR_NAME" selected="True" />
+            <Field field="TCA_SYNC_VAT_REG_NUM" selected="True" />
+            <Field field="UNIQUE_TAX_REFERENCE_NUM" selected="True" />
+            <Field field="PARTNERSHIP_UTR" selected="True" />
+            <Field field="PARTNERSHIP_NAME" selected="True" />
+            <Field field="CIS_ENABLED_FLAG" selected="True" />
+            <Field field="FIRST_NAME" selected="True" />
+            <Field field="SECOND_NAME" selected="True" />
+            <Field field="LAST_NAME" selected="True" />
+            <Field field="SALUTATION" selected="True" />
+            <Field field="TRADING_NAME" selected="True" />
+            <Field field="WORK_REFERENCE" selected="True" />
+            <Field field="COMPANY_REGISTRATION_NUMBER" selected="True" />
+            <Field field="NATIONAL_INSURANCE_NUMBER" selected="True" />
+            <Field field="VERIFICATION_NUMBER" selected="True" />
+            <Field field="VERIFICATION_REQUEST_ID" selected="True" />
+            <Field field="MATCH_STATUS_FLAG" selected="True" />
+            <Field field="CIS_VERIFICATION_DATE" selected="True" />
+            <Field field="INDIVIDUAL_1099" selected="True" />
+            <Field field="PAY_AWT_GROUP_ID" selected="True" />
+            <Field field="CIS_PARENT_VENDOR_ID" selected="True" />
+            <Field field="BUS_CLASS_LAST_CERTIFIED_DATE" selected="True" />
+            <Field field="BUS_CLASS_LAST_CERTIFIED_BY" selected="True" />
+            <Field field="VAT_REGISTRATION_NUM#1" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="714" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="VENDOR_ID" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="714" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="VENDOR_ID" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="834" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Original Rows&quot;" field="Label" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Count] + 1" field="Count" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Original Rows
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[Label = "Original Rows"
+Count = [Count] + 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="834" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Rows After Removing Null Columns&quot;" field="Label" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Count] + 1" field="Count" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Rows After Removing Null Columns
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[Label = "Rows After Removing Null Columns"
+Count = [Count] + 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="954" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="474" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="209" width="146" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 4</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="102" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>PITU5I</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="17"><![CDATA[aka:5fda36ca022c061b0852e8f1|||select * from ap.ap_suppliers s 
+ where nvl(s.end_date_active, sysdate + 1) > to_date('2024-07-31','YYYY-MM-DD') ]]></File>
+              <FormatSpecificOptions>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <PostSQL />
+                <PreSQL />
+                <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:PITU5I
+Query=select * from ap.ap_supplier...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="VENDOR_ID" source="File: PITU5I" type="Double" />
+                <Field name="LAST_UPDATE_DATE" source="File: PITU5I" type="DateTime" />
+                <Field name="LAST_UPDATED_BY" source="File: PITU5I" type="Double" />
+                <Field name="VENDOR_NAME" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="VENDOR_NAME_ALT" size="320" source="File: PITU5I" type="V_String" />
+                <Field name="SEGMENT1" size="30" source="File: PITU5I" type="String" />
+                <Field name="SUMMARY_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="ENABLED_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="SEGMENT2" size="30" source="File: PITU5I" type="String" />
+                <Field name="SEGMENT3" size="30" source="File: PITU5I" type="String" />
+                <Field name="SEGMENT4" size="30" source="File: PITU5I" type="String" />
+                <Field name="SEGMENT5" size="30" source="File: PITU5I" type="String" />
+                <Field name="LAST_UPDATE_LOGIN" source="File: PITU5I" type="Double" />
+                <Field name="CREATION_DATE" source="File: PITU5I" type="DateTime" />
+                <Field name="CREATED_BY" source="File: PITU5I" type="Double" />
+                <Field name="EMPLOYEE_ID" source="File: PITU5I" type="Double" />
+                <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: PITU5I" type="String" />
+                <Field name="CUSTOMER_NUM" size="25" source="File: PITU5I" type="String" />
+                <Field name="ONE_TIME_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="PARENT_VENDOR_ID" source="File: PITU5I" type="Double" />
+                <Field name="MIN_ORDER_AMOUNT" source="File: PITU5I" type="Double" />
+                <Field name="SHIP_TO_LOCATION_ID" source="File: PITU5I" type="Double" />
+                <Field name="BILL_TO_LOCATION_ID" source="File: PITU5I" type="Double" />
+                <Field name="SHIP_VIA_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="FREIGHT_TERMS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="FOB_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="TERMS_ID" source="File: PITU5I" type="Double" />
+                <Field name="SET_OF_BOOKS_ID" source="File: PITU5I" type="Double" />
+                <Field name="CREDIT_STATUS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="CREDIT_LIMIT" source="File: PITU5I" type="Double" />
+                <Field name="ALWAYS_TAKE_DISC_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="PAY_DATE_BASIS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="PAY_GROUP_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="PAYMENT_PRIORITY" source="File: PITU5I" type="Double" />
+                <Field name="INVOICE_CURRENCY_CODE" size="15" source="File: PITU5I" type="String" />
+                <Field name="PAYMENT_CURRENCY_CODE" size="15" source="File: PITU5I" type="String" />
+                <Field name="INVOICE_AMOUNT_LIMIT" source="File: PITU5I" type="Double" />
+                <Field name="EXCHANGE_DATE_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="HOLD_ALL_PAYMENTS_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="HOLD_FUTURE_PAYMENTS_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="HOLD_REASON" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="DISTRIBUTION_SET_ID" source="File: PITU5I" type="Double" />
+                <Field name="ACCTS_PAY_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+                <Field name="DISC_LOST_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+                <Field name="DISC_TAKEN_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+                <Field name="EXPENSE_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+                <Field name="PREPAY_CODE_COMBINATION_ID" source="File: PITU5I" type="Double" />
+                <Field name="NUM_1099" size="30" source="File: PITU5I" type="String" />
+                <Field name="TYPE_1099" size="10" source="File: PITU5I" type="String" />
+                <Field name="WITHHOLDING_STATUS_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="WITHHOLDING_START_DATE" source="File: PITU5I" type="DateTime" />
+                <Field name="ORGANIZATION_TYPE_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="VAT_CODE" size="30" source="File: PITU5I" type="String" />
+                <Field name="START_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+                <Field name="END_DATE_ACTIVE" source="File: PITU5I" type="DateTime" />
+                <Field name="MINORITY_GROUP_LOOKUP_CODE" size="30" source="File: PITU5I" type="String" />
+                <Field name="PAYMENT_METHOD_LOOKUP_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="BANK_ACCOUNT_NAME" size="80" source="File: PITU5I" type="V_String" />
+                <Field name="BANK_ACCOUNT_NUM" size="30" source="File: PITU5I" type="String" />
+                <Field name="BANK_NUM" size="25" source="File: PITU5I" type="String" />
+                <Field name="BANK_ACCOUNT_TYPE" size="25" source="File: PITU5I" type="String" />
+                <Field name="WOMEN_OWNED_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="SMALL_BUSINESS_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="STANDARD_INDUSTRY_CLASS" size="25" source="File: PITU5I" type="String" />
+                <Field name="HOLD_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="PURCHASING_HOLD_REASON" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="HOLD_BY" source="File: PITU5I" type="Int32" />
+                <Field name="HOLD_DATE" source="File: PITU5I" type="DateTime" />
+                <Field name="TERMS_DATE_BASIS" size="25" source="File: PITU5I" type="String" />
+                <Field name="PRICE_TOLERANCE" source="File: PITU5I" type="Double" />
+                <Field name="INSPECTION_REQUIRED_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="RECEIPT_REQUIRED_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="QTY_RCV_TOLERANCE" source="File: PITU5I" type="Double" />
+                <Field name="QTY_RCV_EXCEPTION_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="ENFORCE_SHIP_TO_LOCATION_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="DAYS_EARLY_RECEIPT_ALLOWED" source="File: PITU5I" type="Double" />
+                <Field name="DAYS_LATE_RECEIPT_ALLOWED" source="File: PITU5I" type="Double" />
+                <Field name="RECEIPT_DAYS_EXCEPTION_CODE" size="25" source="File: PITU5I" type="String" />
+                <Field name="RECEIVING_ROUTING_ID" source="File: PITU5I" type="Double" />
+                <Field name="ALLOW_SUBSTITUTE_RECEIPTS_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="ALLOW_UNORDERED_RECEIPTS_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="HOLD_UNMATCHED_INVOICES_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="EXCLUSIVE_PAYMENT_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="AP_TAX_ROUNDING_RULE" size="1" source="File: PITU5I" type="String" />
+                <Field name="AUTO_TAX_CALC_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="AUTO_TAX_CALC_OVERRIDE" size="1" source="File: PITU5I" type="String" />
+                <Field name="AMOUNT_INCLUDES_TAX_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="TAX_VERIFICATION_DATE" source="File: PITU5I" type="DateTime" />
+                <Field name="NAME_CONTROL" size="4" source="File: PITU5I" type="String" />
+                <Field name="STATE_REPORTABLE_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="FEDERAL_REPORTABLE_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="ATTRIBUTE_CATEGORY" size="30" source="File: PITU5I" type="String" />
+                <Field name="ATTRIBUTE1" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE2" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE3" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE4" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE5" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE6" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE7" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE8" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE9" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE10" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE11" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE12" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE13" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE14" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="ATTRIBUTE15" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="REQUEST_ID" source="File: PITU5I" type="Double" />
+                <Field name="PROGRAM_APPLICATION_ID" source="File: PITU5I" type="Double" />
+                <Field name="PROGRAM_ID" source="File: PITU5I" type="Double" />
+                <Field name="PROGRAM_UPDATE_DATE" source="File: PITU5I" type="DateTime" />
+                <Field name="OFFSET_VAT_CODE" size="20" source="File: PITU5I" type="String" />
+                <Field name="VAT_REGISTRATION_NUM" size="20" source="File: PITU5I" type="String" />
+                <Field name="AUTO_CALCULATE_INTEREST_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="VALIDATION_NUMBER" source="File: PITU5I" type="Double" />
+                <Field name="EXCLUDE_FREIGHT_FROM_DISCOUNT" size="1" source="File: PITU5I" type="String" />
+                <Field name="TAX_REPORTING_NAME" size="80" source="File: PITU5I" type="V_String" />
+                <Field name="CHECK_DIGITS" size="30" source="File: PITU5I" type="String" />
+                <Field name="BANK_NUMBER" size="30" source="File: PITU5I" type="String" />
+                <Field name="ALLOW_AWT_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="AWT_GROUP_ID" source="File: PITU5I" type="Int64" />
+                <Field name="GLOBAL_ATTRIBUTE1" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE2" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE3" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE4" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE5" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE6" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE7" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE8" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE9" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE10" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE11" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE12" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE13" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE14" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE15" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE16" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE17" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE18" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE19" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE20" size="150" source="File: PITU5I" type="V_String" />
+                <Field name="GLOBAL_ATTRIBUTE_CATEGORY" size="30" source="File: PITU5I" type="String" />
+                <Field name="EDI_TRANSACTION_HANDLING" size="25" source="File: PITU5I" type="String" />
+                <Field name="EDI_PAYMENT_METHOD" size="25" source="File: PITU5I" type="String" />
+                <Field name="EDI_PAYMENT_FORMAT" size="25" source="File: PITU5I" type="String" />
+                <Field name="EDI_REMITTANCE_METHOD" size="25" source="File: PITU5I" type="String" />
+                <Field name="EDI_REMITTANCE_INSTRUCTION" size="256" source="File: PITU5I" type="V_String" />
+                <Field name="BANK_CHARGE_BEARER" size="1" source="File: PITU5I" type="String" />
+                <Field name="BANK_BRANCH_TYPE" size="25" source="File: PITU5I" type="String" />
+                <Field name="MATCH_OPTION" size="25" source="File: PITU5I" type="String" />
+                <Field name="FUTURE_DATED_PAYMENT_CCID" source="File: PITU5I" type="Int64" />
+                <Field name="CREATE_DEBIT_MEMO_FLAG" size="25" source="File: PITU5I" type="String" />
+                <Field name="OFFSET_TAX_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="PARTY_ID" source="File: PITU5I" type="Double" />
+                <Field name="PARENT_PARTY_ID" source="File: PITU5I" type="Double" />
+                <Field name="NI_NUMBER" size="30" source="File: PITU5I" type="String" />
+                <Field name="TCA_SYNC_NUM_1099" size="30" source="File: PITU5I" type="String" />
+                <Field name="TCA_SYNC_VENDOR_NAME" size="360" source="File: PITU5I" type="V_String" />
+                <Field name="TCA_SYNC_VAT_REG_NUM" size="50" source="File: PITU5I" type="V_String" />
+                <Field name="UNIQUE_TAX_REFERENCE_NUM" source="File: PITU5I" type="Int64" />
+                <Field name="PARTNERSHIP_UTR" source="File: PITU5I" type="Int64" />
+                <Field name="PARTNERSHIP_NAME" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="CIS_ENABLED_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="FIRST_NAME" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="SECOND_NAME" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="LAST_NAME" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="SALUTATION" size="30" source="File: PITU5I" type="String" />
+                <Field name="TRADING_NAME" size="240" source="File: PITU5I" type="V_String" />
+                <Field name="WORK_REFERENCE" size="30" source="File: PITU5I" type="String" />
+                <Field name="COMPANY_REGISTRATION_NUMBER" size="30" source="File: PITU5I" type="String" />
+                <Field name="NATIONAL_INSURANCE_NUMBER" size="30" source="File: PITU5I" type="String" />
+                <Field name="VERIFICATION_NUMBER" size="30" source="File: PITU5I" type="String" />
+                <Field name="VERIFICATION_REQUEST_ID" source="File: PITU5I" type="Int64" />
+                <Field name="MATCH_STATUS_FLAG" size="1" source="File: PITU5I" type="String" />
+                <Field name="CIS_VERIFICATION_DATE" source="File: PITU5I" type="DateTime" />
+                <Field name="INDIVIDUAL_1099" size="30" source="File: PITU5I" type="String" />
+                <Field name="PAY_AWT_GROUP_ID" source="File: PITU5I" type="Int64" />
+                <Field name="CIS_PARENT_VENDOR_ID" source="File: PITU5I" type="Double" />
+                <Field name="BUS_CLASS_LAST_CERTIFIED_DATE" source="File: PITU5I" type="DateTime" />
+                <Field name="BUS_CLASS_LAST_CERTIFIED_BY" source="File: PITU5I" type="Double" />
+                <Field name="VAT_REGISTRATION_NUM#1" size="50" source="File: PITU5I" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="17" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>alteryx_v_python_test</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f4da1151-97af-40a7-940a-12e18891555c" />
+      <Telemetry>
+        <PreviousWorkflowId value="be4e9e9c-6d6b-440e-b24a-233b068a32f2" />
+        <OriginWorkflowId value="be4e9e9c-6d6b-440e-b24a-233b068a32f2" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

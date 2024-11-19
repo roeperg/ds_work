@@ -1,0 +1,1025 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="918" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_27576_e031491802a14be3bb663a1f467ffd7a_\Engine_27576_258f3b59a6a8fa4d91aba931b8411ea8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="486" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Purchase Category" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Purchase Category - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>COUPA_ID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-10-02 21:03:15</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2024-10-02 21:03:15</StartDate>
+              <EndDate>2024-10-02 21:03:15</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([COUPA_ID])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="618" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsEmpty</Operator>
+            <Field>Purchase Category</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-10-02 21:10:37</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-10-02 21:10:37</StartDate>
+              <EndDate>2024-10-02 21:10:37</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IsEmpty([Purchase Category])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_27576_e031491802a14be3bb663a1f467ffd7a_\Engine_27576_1fd4a61f7c1ceb4eb8d49177ab6b6a7a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="294" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Record ID#" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Record ID# - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1122" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\CMAPP\No purchase category.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>No purchase category.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\groeper\Development\CMAPP\PROJECT_TABLE.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PROJECT_TABLE.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Record ID#" source="PythonTool:" type="Int64" />
+            <Field name="Date Created" source="PythonTool:" type="Date" />
+            <Field name="Related Agreement" source="PythonTool:" type="Double" />
+            <Field name="Link to MSA" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Effective Start Date" source="PythonTool:" type="Date" />
+            <Field name="Contract Expiration Date" source="PythonTool:" type="Date" />
+            <Field name="Documents" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Country" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="BU/FG" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Short Description Entry" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project Start Date" source="PythonTool:" type="Date" />
+            <Field name="Project End Date" source="PythonTool:" type="Date" />
+            <Field name="Total Spend Amount (USD)" source="PythonTool:" type="Double" />
+            <Field name="Related Project" source="PythonTool:" type="Double" />
+            <Field name="Total Savings (USD)" source="PythonTool:" type="Double" />
+            <Field name="Supplier Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Executed Contract" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Currently Active" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project Closed - FY" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project Start Fiscal" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Executed Contract Link" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Fiscal Effective" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="GBS Savings Initiative" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Sourcing Process Steps" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Region" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="FY21 Planned Savings" source="PythonTool:" type="Bool" />
+            <Field name="Data_Sharing" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Employee - Legal Full Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Purchase Category - Account Code" source="PythonTool:" type="Double" />
+            <Field name="Purchase Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Box Link to Contract" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="638.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="638.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="638.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Sector (Merge)" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="640.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="640.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="640.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Aravo Engagement ID (Merge)" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Data Shared" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="COUPA_ID" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Aravo Engagement Name (Merge)" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Coupa Contract ID#" source="PythonTool:" type="Double" />
+            <Field name="75.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="75.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="75.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contracts" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contracts2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Privacy and security exhibits" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Add Privacy and Security Exhibit" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Documents2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Add Document2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="CRBot - Slack Recipient Corp ID - Email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="CRBot-Coupa ID - Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="CRBot-Coupa ID - Created Date" source="PythonTool:" type="Date" />
+            <Field name="Privacy and Security Exhibit - Privacy Document" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Privacy and Security Exhibit - PSE Version (Effective Date)" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Privacy and Security Exhibit - Comments" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Privacy and Security Exhibit - Privacy Document Execution Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Privacy and Security Exhibit - PSE Document URL Link" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project records" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Add Project2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project_Contract_Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="COUPA VALUES" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Account Code" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Purchase Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Category Manager" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Level 1" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Sector" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Category Manager - NEW Formula" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="75.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project Driver" source="PythonTool:" type="Double" />
+            <Field name="640.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Category Manager _Merge_" source="PythonTool:" type="Double" />
+            <Field name="638.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Requester (Merge) INPUT" source="PythonTool:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings>
+        <Position x="870" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Region"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="742" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>All</FieldType>
+          <Fields orderChanged="False">
+            <Field name="Order ID" />
+            <Field name="Order Date" />
+            <Field name="Dispatch Date" />
+            <Field name="Delivery Mode" />
+            <Field name="Customer ID" />
+            <Field name="Customer Name" />
+            <Field name="Segment" />
+            <Field name="City" />
+            <Field name="State/Province" />
+            <Field name="Country/Region" />
+            <Field name="Region" />
+            <Field name="Product ID" />
+            <Field name="Category" />
+            <Field name="aaa" />
+            <Field name="bbb" />
+            <Field name="ccc" />
+            <Field name="*Unknown" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>IIF(isEmpty([_CurrentField_]),Null(),[_CurrentField_])</Expression>
+          <ChangeFieldType value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF(isEmpty([_CurrentField_]),Null(),[_CurrentField_])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="954" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_27576_e031491802a14be3bb663a1f467ffd7a_\Engine_27576_e64f599e61d986498963e3250bdb32ec~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="766" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Short Description Entry</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-10-06 17:40:59</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>SCC Repapering CONDOR</Operand>
+              <StartDate>2024-10-06 17:40:59</StartDate>
+              <EndDate>2024-10-06 17:40:59</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Short Description Entry] = "SCC Repapering CONDOR"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="490" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Short Description Entry" selected="True" />
+            <SelectField field="Purchase Category" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="578" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Purchase Category" action="GroupBy" rename="Purchase Category" />
+            <SummarizeField field="Purchase Category" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1026" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Short Description Entry" action="GroupBy" rename="Short Description Entry" />
+            <SummarizeField field="Contract Status" action="GroupBy" rename="Contract Status" />
+            <SummarizeField field="Contract Status" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="866" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Record ID#" selected="True" />
+            <SelectField field="Purchase Category" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Short Description Entry</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-10-06 17:40:59</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>SCC Repapering CONDOR</Operand>
+              <StartDate>2024-10-06 17:40:59</StartDate>
+              <EndDate>2024-10-06 17:40:59</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Short Description Entry] = "SCC Repapering CONDOR"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="198" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;=</Operator>
+            <Field>Date Created</Field>
+            <Operands>
+              <PeriodDate>2024-10-06 18:02:21</PeriodDate>
+              <PeriodType>days</PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2024-10-06 18:02:21</StartDate>
+              <EndDate>2024-10-06 18:02:21</EndDate>
+              <Operand>2023-01-01</Operand>
+              <DateType>fixed</DateType>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Date Created] &gt;= "2023-01-01"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="666" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_27576_e031491802a14be3bb663a1f467ffd7a_\Engine_27576_96c74a1d3965aa40aaa446c127213208~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="28" y="4" width="137" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Using CSV</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Using CSV</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="53" y="53" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\groeper\Downloads\Projects.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Projects.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Record ID#" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="GBS Savings Initiative" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="FY21 Planned Savings" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Supplier Name" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Project Name" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Short Description Entry" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Contract Status" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Sourcing Process Steps" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Category Manager _Merge_" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Sector (Merge)" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Project Driver" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Requester (Merge) INPUT" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="BU/FG" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Region" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Country" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Total Spend Amount (USD)" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Total Savings (USD)" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Project Start Date" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Project End Date" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Project Closed - FY" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Project_Contract_Type" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Contract Currently Active" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Contract Effective Start Date" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Contract Expiration Date" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Executed Contract" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Documents" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Executed Contract Link" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Link to MSA" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Fiscal Effective" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Project Start Fiscal" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Employee - Legal Full Name" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Purchase Category - Account Code" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Purchase Category" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Aravo Engagement ID (Merge)" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Aravo Engagement Name (Merge)" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Box Link to Contract" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="COUPA_ID" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Coupa Contract ID#" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Related Project" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Related Agreement" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Contracts" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Contracts2" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Privacy and security exhibits" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Add Privacy and Security Exhibit" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Documents2" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Add Document2" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Data Shared" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Data_Sharing" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="CRBot - Slack Recipient Corp ID - Email" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="CRBot-Coupa ID - Status" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="CRBot-Coupa ID - Created Date" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Privacy and Security Exhibit - Privacy Document" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Privacy and Security Exhibit - PSE Version (Effective Date)" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Privacy and Security Exhibit - Comments" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Privacy and Security Exhibit - Privacy Document Execution Date" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Privacy and Security Exhibit - PSE Document URL Link" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Project records" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Add Project2" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="COUPA VALUES" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Related Purchase Category2 - Account Code" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Related Purchase Category2 - Purchase Category" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Related Purchase Category2 - Category Manager" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Related Purchase Category2 - Level 1" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Related Purchase Category2 - Sector" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+                <Field name="Related Purchase Category2 - Category Manager - NEW Formula" size="254" source="File: C:\Users\groeper\Downloads\Projects.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="53" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\groeper\Downloads\created.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>created.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Record ID#" size="254" source="File: C:\Users\groeper\Downloads\created.csv" type="V_String" />
+                <Field name="Date Created" size="254" source="File: C:\Users\groeper\Downloads\created.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="174" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Record ID#" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Record ID#" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Record ID#" selected="True" rename="Right_Record ID#" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="53" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\groeper\Downloads\trash.xlsx|||`trash$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>trash.xlsx
+Query=`trash$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Record ID#" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="GBS Savings Initiative" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="FY21 Planned Savings" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Supplier Name" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Project Name" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Short Description Entry" size="1315" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_WString" />
+                <Field name="Contract Status" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Sourcing Process Steps" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Category Manager _Merge_" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Sector (Merge)" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Project Driver" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Requester (Merge) INPUT" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="BU/FG" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Region" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Country" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Total Spend Amount (USD)" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Total Savings (USD)" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Project Start Date" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Date" />
+                <Field name="Project End Date" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Date" />
+                <Field name="Project Closed - FY" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Project_Contract_Type" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Contract Currently Active" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Contract Effective Start Date" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Date" />
+                <Field name="Contract Expiration Date" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Executed Contract" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Documents" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Executed Contract Link" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Link to MSA" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Fiscal Effective" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Project Start Fiscal" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Employee - Legal Full Name" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Purchase Category - Account Code" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Purchase Category" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Aravo Engagement ID (Merge)" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Aravo Engagement Name (Merge)" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_WString" />
+                <Field name="Box Link to Contract" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="COUPA_ID" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Coupa Contract ID#" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Related Project" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Related Agreement" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Contracts" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Contracts2" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Privacy and security exhibits" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Add Privacy and Security Exhibit" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Documents2" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Add Document2" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Data Shared" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Data_Sharing" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="CRBot - Slack Recipient Corp ID - Email" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="CRBot-Coupa ID - Status" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="CRBot-Coupa ID - Created Date" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Privacy and Security Exhibit - Privacy Document" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Privacy and Security Exhibit - PSE Version (Effective Date)" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Date" />
+                <Field name="Privacy and Security Exhibit - Comments" size="267" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_WString" />
+                <Field name="Privacy and Security Exhibit - Privacy Document Execution Date" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Date" />
+                <Field name="Privacy and Security Exhibit - PSE Document URL Link" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="Project records" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Add Project2" size="255" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="V_String" />
+                <Field name="COUPA VALUES" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Related Purchase Category2 - Account Code" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Related Purchase Category2 - Purchase Category" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Related Purchase Category2 - Category Manager" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Related Purchase Category2 - Level 1" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Related Purchase Category2 - Sector" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+                <Field name="Related Purchase Category2 - Category Manager - NEW Formula" source="File: C:\Users\groeper\Downloads\trash.xlsx|||`trash$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\groeper\Downloads\created.xlsx|||`created$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>created.xlsx
+Query=`created$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Record ID#" source="File: C:\Users\groeper\Downloads\created.xlsx|||`created$`" type="Double" />
+                <Field name="Date Created" source="File: C:\Users\groeper\Downloads\created.xlsx|||`created$`" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="False" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output26" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output26" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output26" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="27" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="True" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>purchase category dive</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1d878544-f7e9-49a0-83e8-a349ad78599a" />
+      <Telemetry>
+        <PreviousWorkflowId value="4830a567-6451-498c-a8f6-b3a5daef1686" />
+        <OriginWorkflowId value="4830a567-6451-498c-a8f6-b3a5daef1686" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

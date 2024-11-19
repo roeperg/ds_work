@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,
+	pol.CREATION_DATE PO_Line_Creation_Date,
+	pol.ITEM_DESCRIPTION PO_Description,
+	s.VENDOR_NAME Supplier_Name,
+	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,
+	pol.PO_LINE_ID as "PO LIne",
+	pol.UNIT_PRICE as "PO Unit Price",
+	pol.QUANTITY as "Po QTY",
+	pol.AMOUNT as "PO AMOUNT",
+	poh.CURRENCY_CODE as "PO CURRENCY",
+	s.SEGMENT1 as "SUPPLIER NUMBER",
+	poh.PO_HEADER_ID 
+from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS 
+where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) 
+	and (pll.PO_LINE_ID = pol.PO_LINE_ID) 
+	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) 
+	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) 
+	and (inv.INVOICE_ID = invd.INVOICE_ID) 
+	and (invp.INVOICE_ID = inv.INVOICE_ID) 
+	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID 
+	and poh.VENDOR_ID = s.VENDOR_ID 
+	and pol.CREATION_DATE Between '01-JAN-2020' 
+	and '01-AUG-2022' 
+	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') 
+	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>False</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select distinct poh.SEGMENT1...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PO_NUMBER" size="20" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="String" />
+            <Field name="PO_LINE_CREATION_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="DateTime" />
+            <Field name="PO_DESCRIPTION" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="V_String" />
+            <Field name="SUPPLIER_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="V_String" />
+            <Field name="OU" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="V_String" />
+            <Field name="PO LIne" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="Double" />
+            <Field name="PO Unit Price" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="Double" />
+            <Field name="Po QTY" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="Double" />
+            <Field name="PO AMOUNT" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="Double" />
+            <Field name="PO CURRENCY" size="15" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="String" />
+            <Field name="SUPPLIER NUMBER" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="String" />
+            <Field name="PO_HEADER_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	pol.CREATION_DATE PO_Line_Creation_Date,&#xA;	pol.ITEM_DESCRIPTION PO_Description,&#xA;	s.VENDOR_NAME Supplier_Name,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME as OU,&#xA;	pol.PO_LINE_ID as &quot;PO LIne&quot;,&#xA;	pol.UNIT_PRICE as &quot;PO Unit Price&quot;,&#xA;	pol.QUANTITY as &quot;Po QTY&quot;,&#xA;	pol.AMOUNT as &quot;PO AMOUNT&quot;,&#xA;	poh.CURRENCY_CODE as &quot;PO CURRENCY&quot;,&#xA;	s.SEGMENT1 as &quot;SUPPLIER NUMBER&quot;,&#xA;	poh.PO_HEADER_ID &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_SUPPLIERS s, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, HR.HR_ALL_ORGANIZATION_UNITS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID) &#xA;	and (invp.INVOICE_ID = inv.INVOICE_ID) &#xA;	and pol.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	and poh.VENDOR_ID = s.VENDOR_ID &#xA;	and pol.CREATION_DATE Between '01-JAN-2020' &#xA;	and '01-AUG-2022' &#xA;	and s.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514') &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_15084_dab86229c8114248bcb678211602438a_\Engine_32188_29c5f7339087440e894f84cac6f9417a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="186" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="PO_NUMBER" />
+            <Field field="PO LIne" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="438" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="INVOICE_NUMBER" />
+            <Field field="INV LINE NUM" />
+            <Field field="INVOICE_TYPE_LOOKUP_CODE" />
+            <Field field="INV LINE TYPE LOOKUP CODE" />
+            <Field field="PO HEADER ID CONSOLIDATE" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PO_LINE_CREATION_DATE" selected="False" />
+            <SelectField field="PO_DESCRIPTION" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="558" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PO_NUMBER" selected="True" />
+            <SelectField field="INVOICE_NUMBER" selected="True" />
+            <SelectField field="INVOICE_CURRENCY" selected="True" />
+            <SelectField field="INV LINE AMOUNT" selected="True" />
+            <SelectField field="INV LINE NUM" selected="True" />
+            <SelectField field="INV LINE TYPE LOOKUP CODE" selected="True" />
+            <SelectField field="PO HEADER ID CONSOLIDATE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Po QTY]*[PO Unit Price]" field="PO AMOUNT" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[PO AMOUNT = [Po QTY]*[PO Unit Price]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="534" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PO_NUMBER" action="GroupBy" rename="PO_NUMBER" />
+            <SummarizeField field="SUPPLIER_NAME" action="GroupBy" rename="SUPPLIER_NAME" />
+            <SummarizeField field="OU" action="GroupBy" rename="OU" />
+            <SummarizeField field="PO AMOUNT" action="Sum" rename="Sum_PO AMOUNT" />
+            <SummarizeField field="PO CURRENCY" action="GroupBy" rename="PO CURRENCY" />
+            <SummarizeField field="SUPPLIER NUMBER" action="GroupBy" rename="SUPPLIER NUMBER" />
+            <SummarizeField field="PO_HEADER_ID" action="GroupBy" rename="PO_HEADER_ID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="642" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PO_HEADER_ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PO HEADER ID CONSOLIDATE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_PO_HEADER_ID" selected="False" input="Left_" />
+                <SelectField field="Right_PO HEADER ID CONSOLIDATE" selected="False" input="Right_" />
+                <SelectField field="Right_PO_NUMBER" selected="False" rename="Right_PO_NUMBER" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="762" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="OU" selected="True" />
+            <SelectField field="SUPPLIER NUMBER" selected="True" rename="Supplier Number" />
+            <SelectField field="SUPPLIER_NAME" selected="True" rename="Supplier Name" description="SUPPLIER NAME" />
+            <SelectField field="PO_NUMBER" selected="True" rename="PO Number" />
+            <SelectField field="Sum_ITEM AMOUNT" selected="True" rename="Total Inv Item Matched" description="Sum of Item INV Lines" />
+            <SelectField field="Sum_PO AMOUNT" selected="True" rename="Total PO Funding" description="Total PO Funding" />
+            <SelectField field="PO CURRENCY" selected="True" rename="Currency" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1050" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_15084_dab86229c8114248bcb678211602438a_\Engine_32188_e58796cedeac4c8daae6e28976abf716_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="786" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PO HEADER ID CONSOLIDATE" action="GroupBy" rename="PO HEADER ID CONSOLIDATE" />
+            <SummarizeField field="ITEM AMOUNT" action="Sum" rename="Sum_ITEM AMOUNT" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Contains('ITEM',[INV LINE TYPE LOOKUP CODE],1) then [INV LINE AMOUNT] else 0 endif" field="ITEM AMOUNT" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ITEM AMOUNT = if Contains('ITEM',[INV LINE TYPE LOOKUP CODE],1) then [INV LINE A...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,
+	inv.CREATION_DATE INVOICE_CREATION_DATE,
+	inv.INVOICE_DATE Invoice_Date,
+	inv.INVOICE_NUM Invoice_Number,
+	inv.DESCRIPTION Invoice_Description,
+	inv.INVOICE_CURRENCY_CODE Invoice_Currency,
+	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as "INV LINE PRICE",
+	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as "INV LINE QTY",
+	AP.AP_INVOICE_LINES_ALL.AMOUNT as "INV LINE AMOUNT",
+	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as "INV LINE NUM",
+	inv.INVOICE_ID,
+	inv.INVOICE_TYPE_LOOKUP_CODE,
+	invp.REVERSAL_FLAG,
+	inv.INVOICE_AMOUNT,
+	inv.PO_HEADER_ID,
+	poh.PO_HEADER_ID as "PO_HEADER_ID from PO",
+	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,
+	AP.AP_SUPPLIERS.VENDOR_NAME,
+	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as "INV LINE TYPE LOOKUP CODE",
+	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as "PO_HEADER_ID INVL",
+	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as "PO LINE ID INVL",
+	pol.PO_LINE_ID as "PO LINE ID POL" 
+from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS 
+where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) 
+	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) 
+	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) 
+	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) 
+	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) 
+	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) 
+	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) 
+	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) 
+	and inv.CREATION_DATE Between ' 01-AUG-2021' 
+	and '01-AUG-2022' 
+	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL 
+	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) 
+	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' 
+	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>False</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select distinct poh.SEGMENT1...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PO_NUMBER" size="20" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="String" />
+            <Field name="INVOICE_CREATION_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="DateTime" />
+            <Field name="INVOICE_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="DateTime" />
+            <Field name="INVOICE_NUMBER" size="50" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="V_String" />
+            <Field name="INVOICE_DESCRIPTION" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="V_String" />
+            <Field name="INVOICE_CURRENCY" size="15" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="String" />
+            <Field name="INV LINE PRICE" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+            <Field name="INV LINE QTY" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+            <Field name="INV LINE AMOUNT" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+            <Field name="INV LINE NUM" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+            <Field name="INVOICE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Int64" />
+            <Field name="INVOICE_TYPE_LOOKUP_CODE" size="25" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="String" />
+            <Field name="REVERSAL_FLAG" size="1" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="String" />
+            <Field name="INVOICE_AMOUNT" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+            <Field name="PO_HEADER_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Int64" />
+            <Field name="PO_HEADER_ID from PO" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+            <Field name="INVOICE_ID2" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Int64" />
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="V_String" />
+            <Field name="INV LINE TYPE LOOKUP CODE" size="25" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="String" />
+            <Field name="PO_HEADER_ID INVL" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+            <Field name="PO LINE ID INVL" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+            <Field name="PO LINE ID POL" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct poh.SEGMENT1 PO_Number,&#xA;	inv.CREATION_DATE INVOICE_CREATION_DATE,&#xA;	inv.INVOICE_DATE Invoice_Date,&#xA;	inv.INVOICE_NUM Invoice_Number,&#xA;	inv.DESCRIPTION Invoice_Description,&#xA;	inv.INVOICE_CURRENCY_CODE Invoice_Currency,&#xA;	AP.AP_INVOICE_LINES_ALL.UNIT_PRICE as &quot;INV LINE PRICE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.QUANTITY_INVOICED as &quot;INV LINE QTY&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.AMOUNT as &quot;INV LINE AMOUNT&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_NUMBER as &quot;INV LINE NUM&quot;,&#xA;	inv.INVOICE_ID,&#xA;	inv.INVOICE_TYPE_LOOKUP_CODE,&#xA;	invp.REVERSAL_FLAG,&#xA;	inv.INVOICE_AMOUNT,&#xA;	inv.PO_HEADER_ID,&#xA;	poh.PO_HEADER_ID as &quot;PO_HEADER_ID from PO&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.INVOICE_ID as INVOICE_ID2,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE as &quot;INV LINE TYPE LOOKUP CODE&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_HEADER_ID as &quot;PO_HEADER_ID INVL&quot;,&#xA;	AP.AP_INVOICE_LINES_ALL.PO_LINE_ID as &quot;PO LINE ID INVL&quot;,&#xA;	pol.PO_LINE_ID as &quot;PO LINE ID POL&quot; &#xA;from PO.PO_HEADERS_ALL poh, PO.PO_LINES_ALL pol, AP.AP_INVOICES_ALL inv, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_LINE_LOCATIONS_ALL pll, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp, AP.AP_INVOICE_LINES_ALL, AP.AP_SUPPLIERS &#xA;where (pod.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+)) &#xA;	and (pll.PO_LINE_ID = pol.PO_LINE_ID(+)) &#xA;	and (pol.PO_HEADER_ID = poh.PO_HEADER_ID(+)) &#xA;	and (invd.PO_DISTRIBUTION_ID = pod.PO_DISTRIBUTION_ID(+)) &#xA;	and (inv.INVOICE_ID = invd.INVOICE_ID(+)) &#xA;	and (invp.INVOICE_ID(+) = inv.INVOICE_ID) &#xA;	and inv.INVOICE_ID = AP.AP_INVOICE_LINES_ALL.INVOICE_ID(+) &#xA;	and inv.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID(+) &#xA;	and inv.CREATION_DATE Between ' 01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICE_LINES_ALL.UNIT_PRICE is not NULL &#xA;	and (invp.REVERSAL_FLAG = 'N' or invp.REVERSAL_FLAG is Null) &#xA;	and AP.AP_INVOICE_LINES_ALL.LINE_TYPE_LOOKUP_CODE = 'ITEM' &#xA;	and AP.AP_SUPPLIERS.SEGMENT1 not in ('96788', '61831', '8947', '33210', '66514')" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="462" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_15084_dab86229c8114248bcb678211602438a_\Engine_32188_16cd2ff3f8bf4b90a409cfafeef23612_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="282" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if isnull([PO_HEADER_ID INVL]) then[PO_HEADER_ID from PO] else [PO_HEADER_ID INVL] endif" field="PO HEADER ID CONSOLIDATE" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PO HEADER ID CONSOLIDATE = if isnull([PO_HEADER_ID INVL]) then[PO_HEADER_ID from...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="906" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [Total Inv Item Matched]=[Total PO Funding] then 'MATCH' elseif [Total Inv Item Matched]&gt;[Total PO Funding] then 'OVER' else 'UNDER' endif" field="PO STATUS" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [PO STATUS] = 'OVER' then ([Total Inv Item Matched]-[Total PO Funding])/[Total PO Funding] else null() endif" field="OVER %" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PO STATUS = if [Total Inv Item Matched]=[Total PO Funding] then 'MATCH' elseif [...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Unique" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>PO INVOICE COMPARISON OPTIMIZED R3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f185a15f-627d-4483-9fde-95a299bff4cc" />
+      <Telemetry>
+        <PreviousWorkflowId value="872c8c59-2e27-46a7-94b1-deca35fea02c" />
+        <OriginWorkflowId value="9764741d-1c23-4825-98be-2e85c3e62b9e" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
