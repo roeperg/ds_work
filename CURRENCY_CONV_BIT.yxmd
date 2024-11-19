@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp-Fin-Athena</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:642f2d277901ae9f4a7bd309|||select DLPRD.UED_EBIZ_DWH.gl_daily_rates.FROM_CURRENCY,
+              DLPRD.UED_EBIZ_DWH.gl_daily_rates.CONVERSION_RATE,
+              DLPRD.UED_EBIZ_DWH.gl_daily_rates.CONVERSION_DATE,
+              DLPRD.UED_EBIZ_DWH.gl_daily_rates.CONVERSION_TYPE 
+                     from DLPRD.UED_EBIZ_DWH.gl_daily_rates 
+                     where DLPRD.UED_EBIZ_DWH.gl_daily_rates.CONVERSION_TYPE = 'Corporate' 
+                     and DLPRD.UED_EBIZ_DWH.gl_daily_rates.TO_CURRENCY = 'USD'</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp-Fin-Athena
+Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FROM_CURRENCY" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="CONVERSION_RATE" source="File: Corp-Fin-Athena" type="Double" />
+            <Field name="CONVERSION_DATE" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="CONVERSION_TYPE" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_3620_7761d9d9b672f0489b915800071614b2_\Engine_3620_c6a3fb42bbcaa84bb1be96238bb0e0db~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CURRENCY CONV BIT</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4b78743d-06b3-470d-bfae-55425ee89859" />
+      <Telemetry>
+        <PreviousWorkflowId value="3d2130c1-a214-4a68-b76a-fb220e7052e8" />
+        <OriginWorkflowId value="3d2130c1-a214-4a68-b76a-fb220e7052e8" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

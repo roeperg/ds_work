@@ -1,0 +1,2353 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="678" y="426" width="649" height="381" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>FILE FORMATS</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="726" y="512" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from
+dlprd.fin_cmapp_src.cmapp_suppliers
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from
+dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="date_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="date_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="aravo_internal_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="third_party_identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="nbr_of_projects" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="nbr_of_master_agreements" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="nbr_of_engagements" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="nbr_of_privacy_and_security_exhibits" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="privacy_and_security_exhibit_in_place" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="total_tier_value" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="pse_required" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="total_active_engagement_count" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="total_pse_flag" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="tier_1_engagements" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="tier_2_engagements" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="tier_3_engagements" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="overarching_tier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="pse_exceptions" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="exception_comments" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="third_party_type_hl" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="active" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="tpcountryrpt_region_grouping" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="703" y="619" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from
+dlprd.fin_cmapp_src.cmapp_minimum_commitments
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from
+dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="above_5fy_commit" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fy_commit_2" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fy_commit_3" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fy_commit_4" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fy_commit_5" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="comments" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contr_dur" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="exec_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="curt_fy_min_commit_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="dt_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="dir_approval" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_qtr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fy" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fy_prepayment_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="met_wth_car_sec" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="override_qtr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="prepayment_amt_due_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="prepayment_required" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_overview" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="rel_proj" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="summary" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="tot_min_commit_amt_proj" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="gbs_leader" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="943" y="475" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from
+dlprd.fin_cmapp_src.cmapp_pse
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from
+dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="date_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="date_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="privacy_document" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="pse_version_effective_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="privacy_exception" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="pse_document_url_link" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="pse_document_system" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="pse_document_id" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="pse_document_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_master_agreement" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="related_project" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="project_related_supplier2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="project_related_supplier2_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_supplier" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="supplier_third_party_identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_document" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="privacy_document_execution_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="privacy_document_location_box_coupa_cmapp" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="comments" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_contr_eff_strt_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_contr_expir_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="943" y="559" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from
+dlprd.fin_cmapp_src.cmapp_parent_contract
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from
+dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="date_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="date_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="amendment_number" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_contract" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="contract_document_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="msa_document_url" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contract_tags" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contract_effective_start_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="contract_effective_end_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="expiration_warning" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="expired" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_master_agreement" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="master_agreement_supplier_ma_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="master_agreement_related_supplier3_third_party_identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="master_agreement_related_supplier3_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contract_description" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_supplier" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="supplier_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_third_party_identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_third_party_type_hl" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_project" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="master_agreement_related_supplier3" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="master_agreement_agrmt_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="calculated_end_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="943" y="631" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from
+dlprd.fin_cmapp_src.cmapp_master_agreement
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from
+dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="dt_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="agrmt_eff_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="agrmt_expir_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="mnth2mnth_upon_expir" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="payment_terms" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="intu_contr_enty" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="agrmt_sts" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="agrmt_driver" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sector_cat" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="nbr_of_engagements" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="requestor" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="agrmt_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="notes" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="notify_checkbox" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sourcing_mgr_2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="tot_spend_amt_usd_allcurtproj" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="mstr_agrmt_supp_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="auto_renews" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="evergreen_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_employee" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="employee_legal_full_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="category_manager" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_project" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="related_project2" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="agrmt_driver_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="requestor_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="box_link_to_contract" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_supplier3" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_supplier3_third_party_identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_supplier3_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="duplicate_remove" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="nbr_of_projects" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="supplier_ma_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="test_hide_invalid_ma" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="total_msa_contracts" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="most_current_msa_exp_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="active_msa_document_count" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="related_supplier3_privacy_and_security_exhibit_in_place" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ma_status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="missing_element" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_supplier3_pse_required" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="pse_check" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="nbr_of_documents" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="most_current_msa_start_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="related_supplier3_active" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1159" y="475" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from
+dlprd.fin_cmapp_src.cmapp_yearly_spend
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from
+dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="dt_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contr_val_tot" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fy" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_project" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="proj_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_agrmt_supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="currency" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="spend_amt_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="project_bu" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="bu" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cgd" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="record_owner_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_rec_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="proj_related_currency" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_currency_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_conversion_rate" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="proj_cgda" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="512" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_32236_037fe2551d90fb48b3f2c7ba3929b59c_\Engine_32236_495614168b81fa4bb74f475730f1fb9a~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="799" y="619" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_32236_037fe2551d90fb48b3f2c7ba3929b59c_\Engine_32236_2023346bda741a47b34bc87491ced8b3~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1027" y="475" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_32236_037fe2551d90fb48b3f2c7ba3929b59c_\Engine_32236_1de3b1e49e35cf4fb814b187e248fe39~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1051" y="559" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_32236_037fe2551d90fb48b3f2c7ba3929b59c_\Engine_32236_71a6ca3ea9fe6646bdf5cea35bbb5186~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1039" y="631" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_32236_037fe2551d90fb48b3f2c7ba3929b59c_\Engine_32236_b987383be491974390af00260b8766e2~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1243" y="475" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_32236_037fe2551d90fb48b3f2c7ba3929b59c_\Engine_32236_f44b0eeead45da43aea779b4969168ec~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1085" y="54" width="481" height="382" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Validate Cost Savings</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1110" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from
+dlprd.fin_cmapp_src.cmapp_cost_savings</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from
+dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="dt_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_proj" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="sav_val_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_year_fyxx" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fy_sav_tot" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="tot_impact" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="proj_type_of_sav" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_src_mgr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="justification" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="currency" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fy_sav_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="tot_impact_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="budg_amt_by_fy" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="budg_amt_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="strt_of_fy_sav" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="eofy_sav" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_drvr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sav_end_dt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sav_r2r_realloc_oppor" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sav_strt_dt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sub_sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sector_lead" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_short_desc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="num_dys_sav" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="sav_per_dys" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fisc_mon_strt_of_sav" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_year" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="nxt_fisc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_contr_eff_strt_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_contr_expr_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_contr_signed_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="fisc_cst_reduct" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="curt_fisc_after_jan" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="eofisc_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="dys_until_eofisc" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="fisc_cst_avoid" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="proj_intr_sourcing" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cst_reduct_carryover" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="cst_avoid_carryover" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="annu_cst_avoid" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="annu_cst_reduct" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="proj_tot_spnd_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fisc_quarter" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_qtr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="justi_doc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="overwrite_sav_calc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_cost_reduc2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="annul_cost_reduc2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="annul_cost_avoid2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_cost_avoid2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="loc_sav" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="intu_denali" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="bu_fg" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fin_appr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="finc_valid_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="valid_finc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_rec_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="proj_fy21_gbs_sav" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="valid_ci_finc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_proj2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="finc_approver_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_bu_fg" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_ets_flag" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_mnthly_sav" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="need_to_del" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_fisc_eff" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_filter" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="proj_auto_sav_valdn" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="vald_sourc_mgr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_intu_denali" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1194" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_059495f20c8cfc48a2b8fe02c6b064ab~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1110" y="212" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>True</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Cost_Savings VALIDATE.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Date Created" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Date Modified" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Record Owner" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Last Modified By" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Related Project" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Savings / Value Type" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Year (FYxx)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Year Savings Total" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Total Impact ($)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Type of Savings" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Sourcing Manager / Project Driver" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Justification" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Currency" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Year Savings (USD)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Total Impact (USD)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Budgeted Amount (by FY)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Budgeted Amount (USD)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Start of Fiscal Year Savings" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="End of Fiscal Year Savings" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project Driver" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project Name" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Savings End Date" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Savings have an R2R reallocation opportunity" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Savings Start Date" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Sector" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Sector &amp; Sub-Sector" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Sector Lead" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Short Description" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Number of days for savings" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Savings per day" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Month (start of savings)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Year" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Next Fiscal" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Contract Effective Start Date" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Contract Expiration Date" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Contract Signed Date" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Cost Reduction" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Current Fiscal after Jan" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="End of Fiscal date" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Days until end of fiscal" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Cost Avoidance" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - International Sourcing" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Cost Reduction Carryover" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Cost Avoidance Carryover" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Annual Cost Avoidance" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Annual Cost Reduction" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Total Spend Amount (USD)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Quarter" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Qtr" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Justification Document" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Overwrite savings calculations" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Cost Reduction2" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Annual Cost Reduction2" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Annual Cost Avoidance2" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Fiscal Cost Avoidance2" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Life of Contract Savings %" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Intuit or Denali" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="BU/FG" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Finance Approver" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Finance Validation Date" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Validated by Finance?" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Record ID#" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - FY21 GBS Savings Initiative" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Validated by CI and Finance?" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Related Project2" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Finance_Approver_txt" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Last_Modified_By_txt" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - BU/FG" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - ETS_Flag" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Projected Monthly Savings" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Need to Delete?" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Fiscal Effective" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project Filter" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Auto-Savings Validation" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Validated by Sourcing Portfolio Manager" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+                <Field name="Project - Intuit or Denali" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Cost_Savings VALIDATE.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1218" y="212" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1266" y="140" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="record_id" selected="True" type="V_String" size="21" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1362" y="152" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="record_id" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Record ID#" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Justification" selected="True" rename="Right_Justification" input="Right_" />
+                    <SelectField field="Right_Currency" selected="True" rename="Right_Currency" input="Right_" />
+                    <SelectField field="Right_Last_Modified_By_txt" selected="True" rename="Right_Last_Modified_By_txt" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1482" y="128" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_f834ab1a8709b94e843815c3461c8f60~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1482" y="152" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_8b7d21fbf944ef469ecd64a9af933227~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1458" y="188" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_71283b6f512b634eabc8a376977a5eb2~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1470" y="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_f978167a38def9459cf1be87d27f6afa~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1362" y="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from
+dlprd.fin_cmapp_src.cmapp_cost_savings
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from
+dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="dt_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_proj" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="sav_val_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_year_fyxx" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fy_sav_tot" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="tot_impact" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="proj_type_of_sav" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_src_mgr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="justification" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="currency" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fy_sav_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="tot_impact_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="budg_amt_by_fy" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="budg_amt_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="strt_of_fy_sav" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="eofy_sav" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_drvr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sav_end_dt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sav_r2r_realloc_oppor" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sav_strt_dt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sub_sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sector_lead" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_short_desc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="num_dys_sav" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="sav_per_dys" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fisc_mon_strt_of_sav" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_year" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="nxt_fisc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_contr_eff_strt_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_contr_expr_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_contr_signed_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="fisc_cst_reduct" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="curt_fisc_after_jan" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="eofisc_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="dys_until_eofisc" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="fisc_cst_avoid" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="proj_intr_sourcing" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cst_reduct_carryover" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="cst_avoid_carryover" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="annu_cst_avoid" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="annu_cst_reduct" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="proj_tot_spnd_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="fisc_quarter" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_qtr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="justi_doc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="overwrite_sav_calc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_cost_reduc2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="annul_cost_reduc2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="annul_cost_avoid2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_cost_avoid2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="loc_sav" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="intu_denali" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="bu_fg" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fin_appr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="finc_valid_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="valid_finc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_rec_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="proj_fy21_gbs_sav" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="valid_ci_finc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_proj2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="finc_approver_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_bu_fg" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_ets_flag" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_mnthly_sav" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="need_to_del" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_fisc_eff" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_filter" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="proj_auto_sav_valdn" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="vald_sourc_mgr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_intu_denali" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="642" width="613" height="525" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Validate DOCUMENTS TABLE</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="91" y="715" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from dlprd.fin_cmapp_src.cmapp_documents</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="dt_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="document_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_agrmt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="agremeent_supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="doc_url_formula" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_project" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="short_doc_desc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="exhbt_incld_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fin_exe_doc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="exe_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contract_sgnd_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="contract_eff_start_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="contract_expr_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_supp_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_drvr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_psa_reqd" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_notes" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_tot_spend_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_drvr_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_agrmt_3rd_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_rel_supp2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="coupa_attachment" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_rel_supp2_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="211" y="715" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="record_id" selected="True" type="V_String" size="21" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="919" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>True</QuoteRecordBreak>
+                <CodePage>28594</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Documents VALIDATE.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Date Created" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Date Modified" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Document Type" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Agreement - Supplier Name" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="DOC URL FORMULA" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Related Project" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Project Name" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Short Document Description" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Exhibit included in the contract" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Final &amp; Executed Document" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Executed Contract" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Project - Supplier Name" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Project Driver" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Project - Sector" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Project - Total Spend Amount (USD)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Last Modified By" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Project_Driver_txt" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Record Owner" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+                <Field name="Project - Related Supplier2" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Documents VALIDATE.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="187" y="919" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="355" y="751" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="record_id" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Record ID#" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_audit_ins_key" selected="True" rename="Right_audit_ins_key" input="Right_" />
+                    <SelectField field="Right_audit_ins_ts" selected="True" rename="Right_audit_ins_ts" input="Right_" />
+                    <SelectField field="Right_audit_upd_key" selected="True" rename="Right_audit_upd_key" input="Right_" />
+                    <SelectField field="Right_audit_upd_ts" selected="True" rename="Right_audit_upd_ts" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="463" y="703" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_beca56801212634784cf6dca1de7a510~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="475" y="799" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_67798e1e9384c5469aa1aabb4e9288ef~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="583" y="751" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_385c76b40ef1e54f88ab7911f94c2932~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="463" y="751" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="163" y="691" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_ac4712a5bbd51640a81a23040b8663d7~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="439" y="991" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select *
+from dlprd.fin_cmapp_src.cmapp_documents
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select *
+from dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="dt_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="document_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_agrmt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="agremeent_supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="doc_url_formula" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_project" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="short_doc_desc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="exhbt_incld_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fin_exe_doc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="exe_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contract_sgnd_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="contract_eff_start_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="contract_expr_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_supp_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_drvr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_psa_reqd" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_notes" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_tot_spend_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_drvr_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_agrmt_3rd_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_rel_supp2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="coupa_attachment" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_rel_supp2_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="559" y="991" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_4635f952c3ac7c4fa5f3c97d1b312f9d~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="80" width="605" height="478" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>VALIDATE PROJECT SUBSET CMAPP</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select dlprd.fin_cmapp_src.cmapp_projects.link_contr,
+	dlprd.fin_cmapp_src.cmapp_projects.coupa_id,
+	dlprd.fin_cmapp_src.cmapp_projects.coupa_flag,
+	dlprd.fin_cmapp_src.cmapp_projects.dt_created,
+	dlprd.fin_cmapp_src.cmapp_projects.emp_email,
+	dlprd.fin_cmapp_src.cmapp_projects.oracle_id,
+	dlprd.fin_cmapp_src.cmapp_projects.proj_driver_txt,
+	dlprd.fin_cmapp_src.cmapp_projects.record_id,
+	dlprd.fin_cmapp_src.cmapp_projects.contr_status,
+	dlprd.fin_cmapp_src.cmapp_projects.requester_txt,
+	dlprd.fin_cmapp_src.cmapp_projects.supplier_name,
+	dlprd.fin_cmapp_src.cmapp_projects.tot_spend_amt_usd,
+	dlprd.fin_cmapp_src.cmapp_projects.proj_completion_ts,
+	dlprd.fin_cmapp_src.cmapp_projects.coupa_contr_id 
+from dlprd.fin_cmapp_src.cmapp_projects</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select dlprd.fin_cmapp_src.c...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="link_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="coupa_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="coupa_flag" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="emp_email" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="oracle_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="proj_driver_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="contr_status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="requester_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="tot_spend_amt_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="proj_completion_ts" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="coupa_contr_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="201" y="129" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_c64afb41a987f947bef4183455366e06~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="92" y="333" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>True</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Projects cmapp copy 1-23-24.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Box Link to Contract" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="COUPA_ID" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="COUPA_FLAG" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Date Created" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Related Supplier2 - Third Party Identifier" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Project_Driver_Text" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Contract Status" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Coupa Contract ID#" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Requester_Text" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Related Supplier2 - Third Party Name" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="PROJECT_COMPLETE_TIMESTAMP" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Agreement_Paper_Type" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Contract Effective Start Date" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Last Modified By" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="PROJECT_CLOSE_USER" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="COUPA SUM_PR VALUE USD" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="CONSUMPTION_FIXED_FLAG" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Contract Stated Value" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+                <Field name="Total Spend Amount (USD)" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\CMAPP TESTING\Projects cmapp copy 1-23-24.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="334" y="262" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="record_id" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Record ID#" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_link_contr" selected="True" input="Left_" />
+                    <SelectField field="Right_Box Link to Contract" selected="True" input="Right_" />
+                    <SelectField field="Left_coupa_id" selected="True" input="Left_" />
+                    <SelectField field="Right_COUPA_ID" selected="True" rename="Right_COUPA_ID" input="Right_" />
+                    <SelectField field="Left_coupa_flag" selected="True" input="Left_" />
+                    <SelectField field="Right_COUPA_FLAG" selected="True" rename="Right_COUPA_FLAG" input="Right_" />
+                    <SelectField field="Left_dt_created" selected="True" input="Left_" />
+                    <SelectField field="Right_Date Created" selected="True" input="Right_" />
+                    <SelectField field="Left_emp_email" selected="True" input="Left_" />
+                    <SelectField field="Right_Employee - Email" selected="True" input="Right_" />
+                    <SelectField field="Left_oracle_id" selected="True" input="Left_" />
+                    <SelectField field="Right_Related Supplier2 - Third Party Identifier" selected="True" input="Right_" />
+                    <SelectField field="Left_proj_driver_txt" selected="True" input="Left_" />
+                    <SelectField field="Right_Project_Driver_Text" selected="True" input="Right_" />
+                    <SelectField field="Left_record_id" selected="True" input="Left_" />
+                    <SelectField field="Right_Record ID#" selected="True" input="Right_" />
+                    <SelectField field="Left_contr_status" selected="True" input="Left_" />
+                    <SelectField field="Right_Contract Status" selected="True" input="Right_" />
+                    <SelectField field="Left_coupa_contr_id" selected="True" input="Left_" />
+                    <SelectField field="Right_Coupa Contract ID#" selected="True" input="Right_" />
+                    <SelectField field="Left_requester_txt" selected="True" input="Left_" />
+                    <SelectField field="Right_Requester_Text" selected="True" input="Right_" />
+                    <SelectField field="Left_supplier_name" selected="True" input="Left_" />
+                    <SelectField field="Right_Related Supplier2 - Third Party Name" selected="True" input="Right_" />
+                    <SelectField field="Left_tot_spend_amt_usd" selected="True" input="Left_" />
+                    <SelectField field="Right_Highly Sensitive" selected="True" input="Right_" />
+                    <SelectField field="Left_proj_completion_ts" selected="True" input="Left_" />
+                    <SelectField field="Right_PROJECT_COMPLETE_TIMESTAMP" selected="True" input="Right_" />
+                    <SelectField field="Right_Agreement_Paper_Type" selected="True" input="Right_" />
+                    <SelectField field="Right_Contract Effective Start Date" selected="True" input="Right_" />
+                    <SelectField field="Right_Last Modified By" selected="True" input="Right_" />
+                    <SelectField field="Right_PROJECT_CLOSE_USER" selected="True" input="Right_" />
+                    <SelectField field="Right_COUPA SUM_PR VALUE USD" selected="True" input="Right_" />
+                    <SelectField field="Right_CONSUMPTION_FIXED_FLAG" selected="True" input="Right_" />
+                    <SelectField field="Right_Total Spend Amount (USD)" selected="True" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="189" y="334" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="202" y="248" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="record_id" selected="True" type="V_String" size="21" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="442" y="250" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_a7e04eff39d02c4bb551ea56a05615e2~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="526" y="262" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_93abeecd2781e54fb902c91c4e349612~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="418" y="322" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_886bfc31c9cd6849b87a2b59f10274a4~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="550" y="142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[link_contr] in ([Box Link to Contract])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[link_contr] in ([Box Link to Contract])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="454" y="382" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select *
+from dlprd.fin_cmapp_src.cmapp_projects
+limit 100</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select *
+from dlprd.fin_cmap...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="sourcing_q_agrmt_true_up" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sourcing_q_enterprise_prd_use" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sourcing_q_lending_services" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sourcing_q_mktg_services" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sourcing_q_pse_request" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="addressed_spend" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="agrmt_ownr_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="agrmt_paper_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="billing_consolidator" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="link_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="bu" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="bus_req_mngr_snapshot" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="buss_justfn" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cat_mgr_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cat_mgr_merge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cds_doc_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="common_id_for_mul_projects" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="contr_eff_strt_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="contr_expir_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="contr_id" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contr_naming_cert" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contr_cnfm_cmplxty2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contr_curr_active" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contr_sgd_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="contr_status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contr_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cosa_review" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cost_mdl_upl_cert1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cost_mdl_upl_cert2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="country" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="coupa_contr_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="coupa_flag" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="coupa_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="credit_rebates" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="currency" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="data_sharing" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="dt_created" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="dt_modified" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="eff_qtr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="emp_corporate_id" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="emp_email" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="empl_lgl_full_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="emp_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="engagement_identifier" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="engagement_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ets_flag" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="exhibit_included_in_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="finance_approver_text" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="finance_lead_text" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fisc_eff" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fixed_assets" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fy21_plan_sav" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="gbs_sav_init" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="hedging_or_derivative" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="high_sensitive" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="intu_contr_enty" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="intu_denali" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="item_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="last_modified_by_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="lease_or_embd_lease" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="legal_resource" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="legal_request" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="legal_resource_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="lgl_support_req" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="link_msa" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="m2m_convert" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="min_commit_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="min_commit" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="min_commit_cert" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="msa_status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="msa_not_applicable" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="new_supplier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="non_monetary_value_add" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="oracle_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="outsrcd_acctg_svcs" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="payment_terms" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="perpetual_licenses" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="prepay_purch" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="pse_version_eff_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="prod_country_of_origin" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_driver" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_end_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_notes_merge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_start_dt" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="proj_start_fisc" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_cplx" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_contr_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_driver_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="purchase_cat" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="record_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="record_owner" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="record_owner_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ref_cds_link" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="region" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_agreement" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="related_agreement_supp_ma_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_contr_doc_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="related_contr_tags" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_contr_type" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="rel_contr_type_contr_grouping" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_engagement" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_msa_contr_doc" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="msa_doc_url" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rel_privacy_security_exhibit" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="rel_proj" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="rel_supp2" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+                <Field name="renewal_override" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="renewal_required" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="renewal_reqd" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="requester_merge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="requester_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="retailer_distributor" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rev_share_recvd" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="rfp_info" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sam_overage_risk" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sector_merge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sector_lead_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="short_description" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sourc_process_steps" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="src_review_cplxty" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="src_bypass" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="src_dirc_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sow_tot_cost" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="supplier_wht_labeled" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="temp_supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="tot_sav" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="tot_sav_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="tot_spend_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="tot_spend_amt_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="user_view_high_sensitive_proj" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="intu_paper" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="proj_completion_ts" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="history_load_flag" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="contract_stated_value" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="consumption_fixed_flag" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="574" y="382" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_24248_16da9af6ff424940bc09dfca9aa50715_\Engine_24248_2fe3bd123eceb44db16b7ff1fe5328fb~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="48" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Left" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="VALIDATE COST SAVINGS">
+      <Origin ToolID="48" Connection="Right" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Left" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Right" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Left" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Right" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CMAPP MANUAL FILE CHECK</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="434c6576-9c2b-4800-b2d8-89abb20c7bae" />
+      <Telemetry>
+        <PreviousWorkflowId value="09d68e07-6ea8-40c8-a635-c87f7833c30d" />
+        <OriginWorkflowId value="09d68e07-6ea8-40c8-a635-c87f7833c30d" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

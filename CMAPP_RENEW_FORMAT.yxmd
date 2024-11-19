@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="196" y="365" width="901" height="237" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>CMAPP REPORT</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="221" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Projects_Renew_Data.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Related Project" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Contract Status" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Autorenew_Language" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Contract has auto renewal clause?" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Project Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Related Contract - Document Type" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Project_Contract_Type" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Total Spend Amount (USD)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Contract Effective Start Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Contract Expiration Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Project Driver Email" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Project End Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Date Created" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Renewal Override" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Renewal_Required" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="M2M_Convert" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Related Supplier2" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+                <Field name="Related Supplier2 - Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS Renewals\Projects_Renew_Data.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="330" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Record ID#" selected="True" rename="Follow_PROJ" />
+                <SelectField field="Related Project" selected="True" rename="Renewed_PROJ" />
+                <SelectField field="Contract Status" selected="False" />
+                <SelectField field="Autorenew_Language" selected="False" />
+                <SelectField field="Contract has auto renewal clause?" selected="False" />
+                <SelectField field="Project Name" selected="False" />
+                <SelectField field="Related Contract - Document Type" selected="False" />
+                <SelectField field="Project_Contract_Type" selected="False" />
+                <SelectField field="Total Spend Amount (USD)" selected="False" />
+                <SelectField field="Contract Effective Start Date" selected="False" />
+                <SelectField field="Contract Expiration Date" selected="False" />
+                <SelectField field="Project Driver Email" selected="False" />
+                <SelectField field="Project End Date" selected="False" />
+                <SelectField field="Date Created" selected="False" />
+                <SelectField field="Renewal Override" selected="False" />
+                <SelectField field="Renewal_Required" selected="False" />
+                <SelectField field="M2M_Convert" selected="False" />
+                <SelectField field="Related Supplier2" selected="False" />
+                <SelectField field="Related Supplier2 - Third Party Name" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="438" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Renewed_PROJ" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Record ID#" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Record ID#" selected="False" input="Right_" />
+                    <SelectField field="Right_Related Project" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="534" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Renewed_PROJ" selected="True" />
+                <SelectField field="Contract Status" selected="True" />
+                <SelectField field="Autorenew_Language" selected="True" />
+                <SelectField field="Contract has auto renewal clause?" selected="True" />
+                <SelectField field="Project Name" selected="True" />
+                <SelectField field="Related Contract - Document Type" selected="True" />
+                <SelectField field="Project_Contract_Type" selected="True" />
+                <SelectField field="Total Spend Amount (USD)" selected="True" />
+                <SelectField field="Contract Effective Start Date" selected="True" />
+                <SelectField field="Contract Expiration Date" selected="True" />
+                <SelectField field="Project Driver Email" selected="True" />
+                <SelectField field="Project End Date" selected="True" />
+                <SelectField field="Date Created" selected="True" />
+                <SelectField field="Renewal Override" selected="True" />
+                <SelectField field="Renewal_Required" selected="True" />
+                <SelectField field="M2M_Convert" selected="True" />
+                <SelectField field="Related Supplier2" selected="True" />
+                <SelectField field="Related Supplier2 - Third Party Name" selected="True" />
+                <SelectField field="Follow_PROJ" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1014" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_46744_db638940a57e45c5b79e8abb00996442_\Engine_40148_4b2697dc0bf3479e8a7618e1748b317d_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="630" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Follow_PROJ" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Record ID#" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Record ID#" selected="False" input="Right_" />
+                    <SelectField field="Right_Related Project" selected="False" input="Right_" />
+                    <SelectField field="Right_Contract Status" selected="False" rename="Right_Contract Status" input="Right_" />
+                    <SelectField field="Right_Autorenew_Language" selected="False" rename="Right_Autorenew_Language" input="Right_" />
+                    <SelectField field="Right_Contract has auto renewal clause?" selected="False" rename="Right_Contract has auto renewal clause?" input="Right_" />
+                    <SelectField field="Right_Project Name" selected="False" rename="Right_Project Name" input="Right_" />
+                    <SelectField field="Right_Related Contract - Document Type" selected="False" rename="Right_Related Contract - Document Type" input="Right_" />
+                    <SelectField field="Right_Project_Contract_Type" selected="False" rename="Right_Project_Contract_Type" input="Right_" />
+                    <SelectField field="Right_Total Spend Amount (USD)" selected="False" rename="Right_Total Spend Amount (USD)" input="Right_" />
+                    <SelectField field="Right_Contract Effective Start Date" selected="False" rename="Right_Contract Effective Start Date" input="Right_" />
+                    <SelectField field="Right_Contract Expiration Date" selected="False" rename="Right_Contract Expiration Date" input="Right_" />
+                    <SelectField field="Right_Project Driver Email" selected="False" rename="Right_Project Driver Email" input="Right_" />
+                    <SelectField field="Right_Project End Date" selected="False" rename="Right_Project End Date" input="Right_" />
+                    <SelectField field="Right_Date Created" selected="False" rename="Right_Date Created" input="Right_" />
+                    <SelectField field="Right_Renewal Override" selected="False" rename="Right_Renewal Override" input="Right_" />
+                    <SelectField field="Right_Renewal_Required" selected="False" rename="Right_Renewal_Required" input="Right_" />
+                    <SelectField field="Right_M2M_Convert" selected="False" rename="Right_M2M_Convert" input="Right_" />
+                    <SelectField field="Right_Related Supplier2" selected="True" rename="Right_Related Supplier2" input="Right_" />
+                    <SelectField field="Right_Related Supplier2 - Third Party Name" selected="True" rename="Right_Related Supplier2 - Third Party Name" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="822" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>([Contract Status] = "Contract Complete" or 
+[Contract Status] = "Complete - No Contract") and [SUPP MATCH TEST]="Green"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>([Contract Status] = "Contract Complete" or 
+[Contract Status] = "Complete - No ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="726" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [Related Supplier2]=[Right_Related Supplier2] then &quot;Green&quot; elseif right([Related Supplier2 - Third Party Name],5)= right([Right_Related Supplier2],5) then &quot;Green&quot; else &quot;ERROR&quot; endif" field="SUPP MATCH TEST" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>SUPP MATCH TEST = if [Related Supplier2]=[Right_Related Supplier2] then "Green" ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="918" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Related Supplier2" selected="False" />
+                <SelectField field="Right_Related Supplier2 - Third Party Name" selected="False" />
+                <SelectField field="SUPP MATCH TEST" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CMAPP_RENEW_FORMAT</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="220792bd-c8c1-412b-b033-5f16229fae06" />
+      <Telemetry>
+        <PreviousWorkflowId value="52ed62e6-40a2-4990-96e8-e25df52cc4d1" />
+        <OriginWorkflowId value="52ed62e6-40a2-4990-96e8-e25df52cc4d1" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

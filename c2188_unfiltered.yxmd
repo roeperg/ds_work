@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select "dlprd"."fin_gep_src"."gep_spend_details"."level_1_sector" as "level_1_sector1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_2_category" as "level_2_category1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_3_sub_category" as "level_3_sub_category1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_4_commodity" as "level_4_commodity1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."data_source" as "data_source1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."po_hdr_number" as "po_hdr_number1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name" as "supplier_name1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep" as "supplier_name_normalized_gep1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_parent_gep" as "supplier_name_parent_gep1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."time_frame_month" as "time_frame_month1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."time_frame_quarter" as "time_frame_quarter1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."time_frame_year" as "time_frame_year1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."company_code" as "company_code1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."company_name" as "company_name1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."normalized_supplier_country" as "normalized_supplier_country1",
+	"dlprd"."fin_gep_src"."gep_spend_details"."spend_usd",
+	"dlprd"."fin_gep_src"."gep_spend_details"."ap_supplier_number",
+	"dlprd"."fin_gep_src"."gep_spend_details"."po_line_amount_billed" 
+from "dlprd"."fin_gep_src"."gep_spend_details" 
+where "dlprd"."fin_gep_src"."gep_spend_details"."time_frame_quarter" in ('Q1-24', 'Q2-24', 'Q3-24', 'Q4-24') 
+group by "dlprd"."fin_gep_src"."gep_spend_details"."level_1_sector", "dlprd"."fin_gep_src"."gep_spend_details"."level_2_category", "dlprd"."fin_gep_src"."gep_spend_details"."level_3_sub_category", "dlprd"."fin_gep_src"."gep_spend_details"."level_4_commodity", "dlprd"."fin_gep_src"."gep_spend_details"."data_source", "dlprd"."fin_gep_src"."gep_spend_details"."po_hdr_number", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_parent_gep", "dlprd"."fin_gep_src"."gep_spend_details"."time_frame_month", "dlprd"."fin_gep_src"."gep_spend_details"."time_frame_quarter", "dlprd"."fin_gep_src"."gep_spend_details"."time_frame_year", "dlprd"."fin_gep_src"."gep_spend_details"."company_code", "dlprd"."fin_gep_src"."gep_spend_details"."company_name", "dlprd"."fin_gep_src"."gep_spend_details"."normalized_supplier_country", "dlprd"."fin_gep_src"."gep_spend_details"."spend_usd", "dlprd"."fin_gep_src"."gep_spend_details"."ap_supplier_number", "dlprd"."fin_gep_src"."gep_spend_details"."po_line_amount_billed"</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select "dlprd"."fin_gep_src"...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="level_1_sector1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="level_2_category1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="level_3_sub_category1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="level_4_commodity1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="data_source1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="po_hdr_number1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="supplier_name1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="supplier_name_normalized_gep1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="supplier_name_parent_gep1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="time_frame_month1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="time_frame_quarter1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="time_frame_year1" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+            <Field name="company_code1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="company_name1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="normalized_supplier_country1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="spend_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+            <Field name="ap_supplier_number" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+            <Field name="po_line_amount_billed" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="270" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Temp\unfiltered_spend.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>unfiltered_spend.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>c2188_unfiltered</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="903a18ef-1f33-42a8-bd4f-ce3aaf5ca568" />
+      <Telemetry>
+        <PreviousWorkflowId value="3fe6e83a-ffbb-4094-abae-94bab6d8cd0c" />
+        <OriginWorkflowId value="3fe6e83a-ffbb-4094-abae-94bab6d8cd0c" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

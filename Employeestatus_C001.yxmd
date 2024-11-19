@@ -1,0 +1,1469 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="64" width="1345" height="831" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Employee Status Final</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+          <Caption>Employee Status Final</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Caption>Employee Status Final</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="113" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>PITU5I</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,
+	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,
+	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,
+	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,
+	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,
+	HR.PER_ALL_PEOPLE_F.LAST_NAME,
+	HR.PER_ALL_PEOPLE_F.FIRST_NAME,
+	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,
+	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,
+	HR.PER_ALL_PEOPLE_F.VENDOR_ID,
+	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,
+	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,
+	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY 
+from HR.PER_ALL_PEOPLE_F 
+where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) 
+	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')</File>
+              <FormatSpecificOptions>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <PostSQL />
+                <PreSQL />
+                <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:PITU5I
+Query=select HR.PER_ALL_PEOPLE_F.P...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="BUSINESS_GROUP_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="PERSON_TYPE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMPLOYEE_NUMBER" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="ATTRIBUTE_CATEGORY" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="570" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_18604_0cec8068127c460bb9713573285dde8b_\Engine_20452_4ebdf854f9134dddbeae3baa18022415_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1026" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [CURRENT_EMPLOYEE_FLAG]=&quot;Y&quot; THEN 1 ELSE 0 ENDIF" field="CURRENT_FLAG" size="1" type="Bool" />
+                <FormulaField expression="IF [EMPLOYEE_TYPE_ALT]=&quot;employee&quot; THEN &quot;EMPLOYEE&quot; ELSE &quot;NON&quot; ENDIF" field="EMPLOYEE_V_NON" size="1073741823" type="V_WString" />
+                <FormulaField expression="IF [EMPLOYEE_V_NON]=&quot;EMPLOYEE&quot; THEN 1 ELSE 0 ENDIF" field="EMPLOYEE_FLAG" size="1" type="Bool" />
+                <FormulaField expression="if [ROLE_NAME] in (&quot;CFO&quot;,&quot;CEO&quot;,&quot;SVP&quot;,&quot;SLT&quot;) THEN 0 ELSE 1 ENDIF" field="NONEXEC_FLAG" size="1" type="Bool" />
+                <FormulaField expression="IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" field="EMPLOYEE_TEST" size="1" type="Bool" />
+                <FormulaField expression="IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" field="EMP_iSSUE" size="1073741823" type="V_WString" />
+                <FormulaField expression="LOWERCASE([EMAIL_ADDRESS])" field="EMAIL_ADDRESS" size="240" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CURRENT_FLAG = IF [CURRENT_EMPLOYEE_FLAG]="Y" THEN 1 ELSE 0 ENDIF
+EMPLOYEE_V_NON...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="Summarize: GroupBy - FIRST_NAME" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="Summarize: GroupBy - LAST_NAME" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="USER_ID" size="150" source="Summarize: GroupBy - USER_ID" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: GroupBy - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="Summarize: GroupBy - EFFECTIVE_START_DATE" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - job_EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE_ALT" type="V_String" />
+                <Field name="ROLE_NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+                <Field name="CURRENT_FLAG" source="Formula: IF [CURRENT_EMPLOYEE_FLAG]=&quot;Y&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_V_NON" size="1073741823" source="Formula: IF [EMPLOYEE_TYPE_ALT]=&quot;employee&quot; THEN &quot;EMPLOYEE&quot; ELSE &quot;NON&quot; ENDIF" type="V_WString" />
+                <Field name="EMPLOYEE_FLAG" source="Formula: IF [EMPLOYEE_V_NON]=&quot;EMPLOYEE&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="NONEXEC_FLAG" source="Formula: if [ROLE_NAME] in (&quot;CFO&quot;,&quot;CEO&quot;,&quot;SVP&quot;,&quot;SLT&quot;) THEN 0 ELSE 1 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="474" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="PERSON_ID" selected="True" />
+                <SelectField field="EMPLOYEE_NUMBER" selected="True" />
+                <SelectField field="FIRST_NAME" selected="True" />
+                <SelectField field="LAST_NAME" selected="True" />
+                <SelectField field="EMAIL_ADDRESS" selected="True" />
+                <SelectField field="USER_ID" selected="True" />
+                <SelectField field="EFFECTIVE_START_DATE" selected="True" />
+                <SelectField field="EFFECTIVE_END_DATE" selected="True" />
+                <SelectField field="BUSINESS_GROUP_ID" selected="False" />
+                <SelectField field="PERSON_TYPE_ID" selected="False" />
+                <SelectField field="VENDOR_ID" selected="False" />
+                <SelectField field="ATTRIBUTE_CATEGORY" selected="False" />
+                <SelectField field="CURRENT_EMPLOYEE_FLAG" selected="True" />
+                <SelectField field="Right_PERSON_ID" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="EMPLOYEE_NUMBER" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1290" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_18604_0cec8068127c460bb9713573285dde8b_\Engine_20452_c878d60407f24c8f84ed2ec8ce45d3c2_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="666" y="197" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>EMAIL_ADDRESS</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-04-05 13:07:14</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2023-04-05 13:07:14</StartDate>
+                  <EndDate>2023-04-05 13:07:14</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([EMAIL_ADDRESS])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: Longest - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="EMPLOYEE_NUMBER" order="Asc" />
+                <Field field="PERSON_ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: Longest - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="EMPLOYEE_NUMBER" order="Asc" />
+                <Field field="PERSON_ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="198" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>ToDate([EFFECTIVE_END_DATE]) &gt;= "2015-08-01" OR ISEMPTY([EFFECTIVE_END_DATE])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ToDate([EFFECTIVE_END_DATE]) &gt;= "2015-08-01" OR ISEMPTY([EFFECTIVE_END_DATE])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="BUSINESS_GROUP_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="PERSON_TYPE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMPLOYEE_NUMBER" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="ATTRIBUTE_CATEGORY" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="BUSINESS_GROUP_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="PERSON_TYPE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMPLOYEE_NUMBER" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="ATTRIBUTE_CATEGORY" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="570" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="EMPLOYEE_NUMBER" action="GroupBy" rename="EMPLOYEE_NUMBER" />
+                <SummarizeField field="FIRST_NAME" action="Max" rename="FIRST_NAME" />
+                <SummarizeField field="LAST_NAME" action="Max" rename="LAST_NAME" />
+                <SummarizeField field="EMAIL_ADDRESS" action="Max" rename="EMAIL_ADDRESS" />
+                <SummarizeField field="USER_ID" action="Max" rename="USER_ID" />
+                <SummarizeField field="EFFECTIVE_END_DATE" action="Max" rename="EFFECTIVE_END_DATE" />
+                <SummarizeField field="CURRENT_EMPLOYEE_FLAG" action="Longest" rename="CURRENT_EMPLOYEE_FLAG" />
+                <SummarizeField field="PERSON_ID" action="GroupBy" rename="PERSON_ID" />
+                <SummarizeField field="EFFECTIVE_START_DATE" action="Max" rename="EFFECTIVE_START_DATE" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: Longest - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="EMPLOYEE_NUMBER" order="Asc" />
+                <Field field="PERSON_ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="102" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>PITU5I</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,
+	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,
+	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,
+	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,
+	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,
+	HR.PER_JOBS.NAME 
+from HR.PER_ALL_ASSIGNMENTS_F 
+	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID</File>
+              <FormatSpecificOptions>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <PostSQL />
+                <PreSQL />
+                <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:PITU5I
+Query=select HR.PER_ALL_ASSIGNMENT...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SUPERVISOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="Int64" />
+                <Field name="PERSON_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="Int64" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE1" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="V_String" />
+                <Field name="JOB_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="Int64" />
+                <Field name="NAME" size="700" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="210" y="341" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="PERSON_ID" action="GroupBy" rename="PERSON_ID" />
+                <SummarizeField field="EFFECTIVE_END_DATE" action="Max" rename="Max_EFFECTIVE_END_DATE" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="Max_EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="DateTime" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="PERSON_ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="330" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="PERSON_ID" />
+                <Field field="Max_EFFECTIVE_END_DATE" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="PERSON_ID" />
+                <Field field="EFFECTIVE_END_DATE" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Max_EFFECTIVE_END_DATE" selected="False" input="Left_" />
+                    <SelectField field="Right_PERSON_ID" selected="False" rename="Right_PERSON_ID" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="Max_EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="DateTime" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="PERSON_ID" />
+                <Field field="Max_EFFECTIVE_END_DATE" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="SUPERVISOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="Int64" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE1" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="V_String" />
+                <Field name="JOB_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="Int64" />
+                <Field name="NAME" size="700" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="PERSON_ID" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="SUPERVISOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="Int64" />
+                <Field name="PERSON_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="Int64" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE1" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="V_String" />
+                <Field name="JOB_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="Int64" />
+                <Field name="NAME" size="700" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_ASSIGNMENTS_F.SUPERVISOR_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.PERSON_ID,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.ASS_ATTRIBUTE3 as EMPLOYEE_TYPE1,&#xA;	HR.PER_ALL_ASSIGNMENTS_F.JOB_ID,&#xA;	HR.PER_JOBS.NAME &#xA;from HR.PER_ALL_ASSIGNMENTS_F &#xA;	left join HR.PER_JOBS on HR.PER_ALL_ASSIGNMENTS_F.JOB_ID = HR.PER_JOBS.JOB_ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="PERSON_ID" />
+                <Field field="EFFECTIVE_END_DATE" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="450" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="PERSON_ID" action="GroupBy" rename="PERSON_ID" />
+                <SummarizeField field="SUPERVISOR_ID" action="GroupBy" rename="SUPERVISOR_ID" />
+                <SummarizeField field="EFFECTIVE_END_DATE" action="GroupBy" rename="EFFECTIVE_END_DATE" />
+                <SummarizeField field="EMPLOYEE_TYPE1" action="GroupBy" rename="EMPLOYEE_TYPE1" />
+                <SummarizeField field="JOB_ID" action="GroupBy" rename="JOB_ID" />
+                <SummarizeField field="NAME" action="GroupBy" rename="NAME" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE1" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE1" type="V_String" />
+                <Field name="JOB_ID" source="Summarize: GroupBy - JOB_ID" type="Int64" />
+                <Field name="NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="PERSON_ID" order="Asc" />
+                <Field field="SUPERVISOR_ID" order="Asc" />
+                <Field field="EFFECTIVE_END_DATE" order="Asc" />
+                <Field field="EMPLOYEE_TYPE1" order="Asc" />
+                <Field field="JOB_ID" order="Asc" />
+                <Field field="NAME" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="522" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_18604_0cec8068127c460bb9713573285dde8b_\Engine_20452_379d5dfe4f3a4218a917fe0d13a7c4f6_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="762" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_18604_0cec8068127c460bb9713573285dde8b_\Engine_20452_462140e6195d4281a1dbb2082a595df3_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="762" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="PERSON_ID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="PERSON_ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_PERSON_ID" selected="False" rename="Right_PERSON_ID" input="Right_" />
+                    <SelectField field="Right_EFFECTIVE_END_DATE" selected="True" rename="job_EFFECTIVE_END_DATE" input="Right_" />
+                    <SelectField field="Right_EMPLOYEE_TYPE1" selected="True" rename="EMPLOYEE_TYPE_ALT" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: Longest - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="PERSON_ID" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: Longest - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE1" type="V_String" />
+                <Field name="JOB_ID" source="Summarize: GroupBy - JOB_ID" type="Int64" />
+                <Field name="NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="PERSON_ID" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE1" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE1" type="V_String" />
+                <Field name="JOB_ID" source="Summarize: GroupBy - JOB_ID" type="Int64" />
+                <Field name="NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="PERSON_ID" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="282" y="113" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="PERSON_ID" action="GroupBy" rename="PERSON_ID" />
+                <SummarizeField field="EFFECTIVE_END_DATE" action="Max" rename="Max_EFFECTIVE_END_DATE" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="Max_EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="PERSON_ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="377" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="PERSON_ID" />
+                <Field field="Max_EFFECTIVE_END_DATE" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="PERSON_ID" />
+                <Field field="EFFECTIVE_END_DATE" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_PERSON_ID" selected="False" input="Left_" />
+                    <SelectField field="Left_Max_EFFECTIVE_END_DATE" selected="False" input="Left_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="Max_EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="PERSON_ID" />
+                <Field field="Max_EFFECTIVE_END_DATE" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="BUSINESS_GROUP_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="PERSON_TYPE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMPLOYEE_NUMBER" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="ATTRIBUTE_CATEGORY" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="PERSON_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="BUSINESS_GROUP_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="PERSON_TYPE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMPLOYEE_NUMBER" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="Int64" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+                <Field name="ATTRIBUTE_CATEGORY" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="PERSON_ID" />
+                <Field field="EFFECTIVE_END_DATE" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="882" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="EMPLOYEE_NUMBER" action="GroupBy" rename="EMPLOYEE_NUMBER" />
+                <SummarizeField field="FIRST_NAME" action="GroupBy" rename="FIRST_NAME" />
+                <SummarizeField field="LAST_NAME" action="GroupBy" rename="LAST_NAME" />
+                <SummarizeField field="EMAIL_ADDRESS" action="GroupBy" rename="EMAIL_ADDRESS" />
+                <SummarizeField field="USER_ID" action="GroupBy" rename="USER_ID" />
+                <SummarizeField field="EFFECTIVE_END_DATE" action="GroupBy" rename="EFFECTIVE_END_DATE" />
+                <SummarizeField field="CURRENT_EMPLOYEE_FLAG" action="GroupBy" rename="CURRENT_EMPLOYEE_FLAG" />
+                <SummarizeField field="PERSON_ID" action="GroupBy" rename="PERSON_ID" />
+                <SummarizeField field="EFFECTIVE_START_DATE" action="GroupBy" rename="EFFECTIVE_START_DATE" />
+                <SummarizeField field="SUPERVISOR_ID" action="GroupBy" rename="SUPERVISOR_ID" />
+                <SummarizeField field="job_EFFECTIVE_END_DATE" action="GroupBy" rename="job_EFFECTIVE_END_DATE" />
+                <SummarizeField field="EMPLOYEE_TYPE_ALT" action="GroupBy" rename="EMPLOYEE_TYPE_ALT" />
+                <SummarizeField field="NAME" action="GroupBy" rename="ROLE_NAME" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="Summarize: GroupBy - FIRST_NAME" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="Summarize: GroupBy - LAST_NAME" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="Summarize: GroupBy - EMAIL_ADDRESS" type="V_String" />
+                <Field name="USER_ID" size="150" source="Summarize: GroupBy - USER_ID" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: GroupBy - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="Summarize: GroupBy - EFFECTIVE_START_DATE" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - job_EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE_ALT" type="V_String" />
+                <Field name="ROLE_NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="EMPLOYEE_NUMBER" order="Asc" />
+                <Field field="FIRST_NAME" order="Asc" />
+                <Field field="LAST_NAME" order="Asc" />
+                <Field field="EMAIL_ADDRESS" order="Asc" />
+                <Field field="USER_ID" order="Asc" />
+                <Field field="EFFECTIVE_END_DATE" order="Asc" />
+                <Field field="CURRENT_EMPLOYEE_FLAG" order="Asc" />
+                <Field field="PERSON_ID" order="Asc" />
+                <Field field="EFFECTIVE_START_DATE" order="Asc" />
+                <Field field="SUPERVISOR_ID" order="Asc" />
+                <Field field="job_EFFECTIVE_END_DATE" order="Asc" />
+                <Field field="EMPLOYEE_TYPE_ALT" order="Asc" />
+                <Field field="NAME" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1122" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="SUPERVISOR_ID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="PERSON_ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_EMPLOYEE_NUMBER" selected="True" rename="SUPV_EMP_NUMBER" input="Right_" />
+                    <SelectField field="Right_FIRST_NAME" selected="False" rename="Right_FIRST_NAME" input="Right_" />
+                    <SelectField field="Right_LAST_NAME" selected="False" rename="Right_LAST_NAME" input="Right_" />
+                    <SelectField field="Right_EMAIL_ADDRESS" selected="True" rename="SUPERVIISOR_EMAIL_ADDRESS" input="Right_" />
+                    <SelectField field="Right_USER_ID" selected="False" rename="Right_USER_ID" input="Right_" />
+                    <SelectField field="Right_EFFECTIVE_END_DATE" selected="False" rename="Right_EFFECTIVE_END_DATE" input="Right_" />
+                    <SelectField field="Right_CURRENT_EMPLOYEE_FLAG" selected="False" rename="SUPERVISOR_CURRENT_EMPLOYEE_FLAG" input="Right_" />
+                    <SelectField field="Right_PERSON_ID" selected="False" rename="Right_PERSON_ID" input="Right_" />
+                    <SelectField field="Right_EFFECTIVE_START_DATE" selected="False" rename="Right_EFFECTIVE_START_DATE" input="Right_" />
+                    <SelectField field="Right_SUPERVISOR_ID" selected="False" rename="Right_SUPERVISOR_ID" input="Right_" />
+                    <SelectField field="Right_job_EFFECTIVE_END_DATE" selected="False" rename="Right_job_EFFECTIVE_END_DATE" input="Right_" />
+                    <SelectField field="Right_EMPLOYEE_TYPE_ALT" selected="False" rename="Right_EMPLOYEE_TYPE_ALT" input="Right_" />
+                    <SelectField field="Right_ROLE_NAME" selected="False" rename="Right_ROLE_NAME" input="Right_" />
+                    <SelectField field="Right_CURRENT_FLAG" selected="False" rename="Right_CURRENT_FLAG" input="Right_" />
+                    <SelectField field="Right_EMPLOYEE_V_NON" selected="False" rename="Right_EMPLOYEE_V_NON" input="Right_" />
+                    <SelectField field="Right_EMPLOYEE_FLAG" selected="False" rename="Right_EMPLOYEE_FLAG" input="Right_" />
+                    <SelectField field="Right_NONEXEC_FLAG" selected="False" rename="Right_NONEXEC_FLAG" input="Right_" />
+                    <SelectField field="Right_EMPLOYEE_TEST" selected="True" rename="SUPV_EMPLOYEE_TEST" input="Right_" />
+                    <SelectField field="Right_EMP_iSSUE" selected="True" rename="SUPV_EMP_iSSUE" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="Summarize: GroupBy - FIRST_NAME" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="Summarize: GroupBy - LAST_NAME" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="USER_ID" size="150" source="Summarize: GroupBy - USER_ID" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: GroupBy - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="Summarize: GroupBy - EFFECTIVE_START_DATE" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - job_EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE_ALT" type="V_String" />
+                <Field name="ROLE_NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+                <Field name="CURRENT_FLAG" source="Formula: IF [CURRENT_EMPLOYEE_FLAG]=&quot;Y&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_V_NON" size="1073741823" source="Formula: IF [EMPLOYEE_TYPE_ALT]=&quot;employee&quot; THEN &quot;EMPLOYEE&quot; ELSE &quot;NON&quot; ENDIF" type="V_WString" />
+                <Field name="EMPLOYEE_FLAG" source="Formula: IF [EMPLOYEE_V_NON]=&quot;EMPLOYEE&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="NONEXEC_FLAG" source="Formula: if [ROLE_NAME] in (&quot;CFO&quot;,&quot;CEO&quot;,&quot;SVP&quot;,&quot;SLT&quot;) THEN 0 ELSE 1 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="SUPERVISOR_ID" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="Summarize: GroupBy - FIRST_NAME" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="Summarize: GroupBy - LAST_NAME" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="USER_ID" size="150" source="Summarize: GroupBy - USER_ID" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: GroupBy - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="Summarize: GroupBy - EFFECTIVE_START_DATE" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - job_EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE_ALT" type="V_String" />
+                <Field name="ROLE_NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+                <Field name="CURRENT_FLAG" source="Formula: IF [CURRENT_EMPLOYEE_FLAG]=&quot;Y&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_V_NON" size="1073741823" source="Formula: IF [EMPLOYEE_TYPE_ALT]=&quot;employee&quot; THEN &quot;EMPLOYEE&quot; ELSE &quot;NON&quot; ENDIF" type="V_WString" />
+                <Field name="EMPLOYEE_FLAG" source="Formula: IF [EMPLOYEE_V_NON]=&quot;EMPLOYEE&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="NONEXEC_FLAG" source="Formula: if [ROLE_NAME] in (&quot;CFO&quot;,&quot;CEO&quot;,&quot;SVP&quot;,&quot;SLT&quot;) THEN 0 ELSE 1 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+                <Field name="SUPV_EMP_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="SUPERVIISOR_EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="SUPV_EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="SUPV_EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="SUPERVISOR_ID" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="Summarize: GroupBy - FIRST_NAME" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="Summarize: GroupBy - LAST_NAME" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="USER_ID" size="150" source="Summarize: GroupBy - USER_ID" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: GroupBy - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="Summarize: GroupBy - EFFECTIVE_START_DATE" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - job_EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE_ALT" type="V_String" />
+                <Field name="ROLE_NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+                <Field name="CURRENT_FLAG" source="Formula: IF [CURRENT_EMPLOYEE_FLAG]=&quot;Y&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_V_NON" size="1073741823" source="Formula: IF [EMPLOYEE_TYPE_ALT]=&quot;employee&quot; THEN &quot;EMPLOYEE&quot; ELSE &quot;NON&quot; ENDIF" type="V_WString" />
+                <Field name="EMPLOYEE_FLAG" source="Formula: IF [EMPLOYEE_V_NON]=&quot;EMPLOYEE&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="NONEXEC_FLAG" source="Formula: if [ROLE_NAME] in (&quot;CFO&quot;,&quot;CEO&quot;,&quot;SVP&quot;,&quot;SLT&quot;) THEN 0 ELSE 1 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="PERSON_ID" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1218" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="Summarize: GroupBy - FIRST_NAME" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="Summarize: GroupBy - LAST_NAME" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="USER_ID" size="150" source="Summarize: GroupBy - USER_ID" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: GroupBy - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="Summarize: GroupBy - EFFECTIVE_START_DATE" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - job_EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE_ALT" type="V_String" />
+                <Field name="ROLE_NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+                <Field name="CURRENT_FLAG" source="Formula: IF [CURRENT_EMPLOYEE_FLAG]=&quot;Y&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_V_NON" size="1073741823" source="Formula: IF [EMPLOYEE_TYPE_ALT]=&quot;employee&quot; THEN &quot;EMPLOYEE&quot; ELSE &quot;NON&quot; ENDIF" type="V_WString" />
+                <Field name="EMPLOYEE_FLAG" source="Formula: IF [EMPLOYEE_V_NON]=&quot;EMPLOYEE&quot; THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="NONEXEC_FLAG" source="Formula: if [ROLE_NAME] in (&quot;CFO&quot;,&quot;CEO&quot;,&quot;SVP&quot;,&quot;SLT&quot;) THEN 0 ELSE 1 ENDIF" type="Bool" />
+                <Field name="EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+                <Field name="SUPV_EMP_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="SUPERVIISOR_EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="SUPV_EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="SUPV_EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="714" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="EMPLOYEE_NUMBER" action="GroupBy" rename="EMPLOYEE_NUMBER" />
+                <SummarizeField field="PERSON_ID" action="Max" rename="PERSON_ID" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="EMPLOYEE_NUMBER" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="786" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="EMPLOYEE_NUMBER" />
+                <Field field="PERSON_ID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="EMPLOYEE_NUMBER" />
+                <Field field="PERSON_ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_EMPLOYEE_NUMBER" selected="False" input="Left_" />
+                    <SelectField field="Left_PERSON_ID" selected="False" input="Left_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="EMPLOYEE_NUMBER" />
+                <Field field="PERSON_ID" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: Longest - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE1" type="V_String" />
+                <Field name="JOB_ID" source="Summarize: GroupBy - JOB_ID" type="Int64" />
+                <Field name="NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="FIRST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="LAST_NAME" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="USER_ID" size="150" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="V_String" />
+                <Field name="EFFECTIVE_END_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="CURRENT_EMPLOYEE_FLAG" size="30" source="Summarize: Longest - CURRENT_EMPLOYEE_FLAG" type="String" />
+                <Field name="PERSON_ID" source="Summarize: GroupBy - PERSON_ID" type="Int64" />
+                <Field name="EFFECTIVE_START_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select HR.PER_ALL_PEOPLE_F.PERSON_ID,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_START_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE,&#xA;	HR.PER_ALL_PEOPLE_F.BUSINESS_GROUP_ID,&#xA;	HR.PER_ALL_PEOPLE_F.PERSON_TYPE_ID,&#xA;	HR.PER_ALL_PEOPLE_F.LAST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.FIRST_NAME,&#xA;	HR.PER_ALL_PEOPLE_F.EMPLOYEE_NUMBER,&#xA;	HR.PER_ALL_PEOPLE_F.EMAIL_ADDRESS,&#xA;	HR.PER_ALL_PEOPLE_F.VENDOR_ID,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE7 as USER_ID,&#xA;	HR.PER_ALL_PEOPLE_F.CURRENT_EMPLOYEE_FLAG,&#xA;	HR.PER_ALL_PEOPLE_F.ATTRIBUTE_CATEGORY &#xA;from HR.PER_ALL_PEOPLE_F &#xA;where (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE is Null) &#xA;	or (HR.PER_ALL_PEOPLE_F.EFFECTIVE_END_DATE &gt; '01-JAN-2015')" type="DateTime" />
+                <Field name="SUPERVISOR_ID" source="Summarize: GroupBy - SUPERVISOR_ID" type="Int64" />
+                <Field name="job_EFFECTIVE_END_DATE" source="Summarize: GroupBy - EFFECTIVE_END_DATE" type="DateTime" />
+                <Field name="EMPLOYEE_TYPE_ALT" size="150" source="Summarize: GroupBy - EMPLOYEE_TYPE1" type="V_String" />
+                <Field name="JOB_ID" source="Summarize: GroupBy - JOB_ID" type="Int64" />
+                <Field name="NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="EMPLOYEE_NUMBER" />
+                <Field field="PERSON_ID" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1338" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FIRST_NAME" selected="False" />
+                <SelectField field="LAST_NAME" selected="False" />
+                <SelectField field="USER_ID" selected="False" />
+                <SelectField field="EFFECTIVE_END_DATE" selected="False" />
+                <SelectField field="CURRENT_EMPLOYEE_FLAG" selected="False" />
+                <SelectField field="PERSON_ID" selected="False" />
+                <SelectField field="EFFECTIVE_START_DATE" selected="False" />
+                <SelectField field="SUPERVISOR_ID" selected="False" />
+                <SelectField field="job_EFFECTIVE_END_DATE" selected="False" />
+                <SelectField field="EMPLOYEE_TYPE_ALT" selected="False" />
+                <SelectField field="CURRENT_FLAG" selected="False" />
+                <SelectField field="EMPLOYEE_V_NON" selected="False" />
+                <SelectField field="EMPLOYEE_FLAG" selected="False" />
+                <SelectField field="NONEXEC_FLAG" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EMPLOYEE_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="ROLE_NAME" size="700" source="Summarize: GroupBy - NAME" type="V_String" />
+                <Field name="EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+                <Field name="SUPV_EMP_NUMBER" size="30" source="Summarize: GroupBy - EMPLOYEE_NUMBER" type="String" />
+                <Field name="SUPERVIISOR_EMAIL_ADDRESS" size="240" source="Formula: LOWERCASE([EMAIL_ADDRESS])" type="V_String" />
+                <Field name="SUPV_EMPLOYEE_TEST" source="Formula: IF [CURRENT_FLAG]=1 AND [EMPLOYEE_FLAG]=1 AND [NONEXEC_FLAG]=1 THEN 1 ELSE 0 ENDIF" type="Bool" />
+                <Field name="SUPV_EMP_iSSUE" size="1073741823" source="Formula: IF [EMPLOYEE_TEST]=1 THEN &quot;OK&quot; ELSE &quot;&quot; endif +&#xA;if [CURRENT_FLAG]=0 THEN &quot;NOT CURRENT|&quot; ELSE &quot;&quot; endif +&#xA;if [EMPLOYEE_FLAG]=0 THEN &quot;NOT INTUIT EMP|&quot; ELSE &quot;&quot; endif +&#xA;if [NONEXEC_FLAG]=0 THEN &quot;EXEC LEVEL&quot; ELSE &quot;&quot; endif" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="450" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_18604_0cec8068127c460bb9713573285dde8b_\Engine_20452_f024769db3954c90a70b9c4741bbfa96_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="48" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="50" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="50" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="46" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="46" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="42" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Join" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Join" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Join" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Join" />
+      <Destination ToolID="53" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="50" Connection="Join" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="50" Connection="Left" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Join" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Employee_status2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="637f764b-056a-4950-9d17-3181ef57c457" />
+      <Telemetry>
+        <PreviousWorkflowId value="2d4a41ff-342d-4f35-bec4-625f46160994" />
+        <OriginWorkflowId value="2d4a41ff-342d-4f35-bec4-625f46160994" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (28)</Name>
+          <ToolId value="28" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="55" Selected="False" />
+        <Tool ToolId="45" Selected="False" />
+        <Tool ToolId="44" Selected="False" />
+        <Tool ToolId="36" Selected="False" />
+        <Tool ToolId="33" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

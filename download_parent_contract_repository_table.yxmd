@@ -1,0 +1,799 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_32708_9cd1b75fb6f04452af4e00fff1c06168_\Engine_32708_47c1af8530d7aa41a2d4321c72a65f69~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="690" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\groeper\Development\CMAPP\PROJECT_TABLE.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PROJECT_TABLE.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="117">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="474" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Record ID#" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Record ID#" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Record ID#" selected="True" rename="Right_Record ID#" input="Right_" />
+                <SelectField field="Right_Related Agreement" selected="True" rename="Right_Related Agreement" input="Right_" />
+                <SelectField field="Right_Link to MSA" selected="True" rename="Right_Link to MSA" input="Right_" />
+                <SelectField field="Right_Contract Status" selected="True" rename="Right_Contract Status" input="Right_" />
+                <SelectField field="Right_Contract Effective Start Date" selected="True" rename="Right_Contract Effective Start Date" input="Right_" />
+                <SelectField field="Right_Contract Expiration Date" selected="True" rename="Right_Contract Expiration Date" input="Right_" />
+                <SelectField field="Right_Documents" selected="True" rename="Right_Documents" input="Right_" />
+                <SelectField field="Right_Country" selected="True" rename="Right_Country" input="Right_" />
+                <SelectField field="Right_BU/FG" selected="True" rename="Right_BU/FG" input="Right_" />
+                <SelectField field="Right_Short Description Entry" selected="True" rename="Right_Short Description Entry" input="Right_" />
+                <SelectField field="Right_Project Start Date" selected="True" rename="Right_Project Start Date" input="Right_" />
+                <SelectField field="Right_Project End Date" selected="True" rename="Right_Project End Date" input="Right_" />
+                <SelectField field="Right_Total Spend Amount (USD)" selected="True" rename="Right_Total Spend Amount (USD)" input="Right_" />
+                <SelectField field="Right_Related Project" selected="True" rename="Right_Related Project" input="Right_" />
+                <SelectField field="Right_Total Savings (USD)" selected="True" rename="Right_Total Savings (USD)" input="Right_" />
+                <SelectField field="Right_Supplier Name" selected="True" rename="Right_Supplier Name" input="Right_" />
+                <SelectField field="Right_Executed Contract" selected="True" rename="Right_Executed Contract" input="Right_" />
+                <SelectField field="Right_Contract Currently Active" selected="True" rename="Right_Contract Currently Active" input="Right_" />
+                <SelectField field="Right_Project Closed - FY" selected="True" rename="Right_Project Closed - FY" input="Right_" />
+                <SelectField field="Right_Project Start Fiscal" selected="True" rename="Right_Project Start Fiscal" input="Right_" />
+                <SelectField field="Right_Executed Contract Link" selected="True" rename="Right_Executed Contract Link" input="Right_" />
+                <SelectField field="Right_Fiscal Effective" selected="True" rename="Right_Fiscal Effective" input="Right_" />
+                <SelectField field="Right_GBS Savings Initiative" selected="True" rename="Right_GBS Savings Initiative" input="Right_" />
+                <SelectField field="Right_Sourcing Process Steps" selected="True" rename="Right_Sourcing Process Steps" input="Right_" />
+                <SelectField field="Right_Region" selected="True" rename="Right_Region" input="Right_" />
+                <SelectField field="Right_FY21 Planned Savings" selected="True" rename="Right_FY21 Planned Savings" input="Right_" />
+                <SelectField field="Right_Data_Sharing" selected="True" rename="Right_Data_Sharing" input="Right_" />
+                <SelectField field="Right_Employee - Legal Full Name" selected="True" rename="Right_Employee - Legal Full Name" input="Right_" />
+                <SelectField field="Right_Purchase Category - Account Code" selected="True" rename="Right_Purchase Category - Account Code" input="Right_" />
+                <SelectField field="Right_Purchase Category" selected="True" rename="Right_Purchase Category" input="Right_" />
+                <SelectField field="Right_Box Link to Contract" selected="True" rename="Right_Box Link to Contract" input="Right_" />
+                <SelectField field="Right_638.value.email" selected="True" rename="Right_638.value.email" input="Right_" />
+                <SelectField field="Right_638.value.id" selected="True" rename="Right_638.value.id" input="Right_" />
+                <SelectField field="Right_638.value.name" selected="True" rename="Right_638.value.name" input="Right_" />
+                <SelectField field="Right_Sector (Merge)" selected="True" rename="Right_Sector (Merge)" input="Right_" />
+                <SelectField field="Right_640.value.email" selected="True" rename="Right_640.value.email" input="Right_" />
+                <SelectField field="Right_640.value.id" selected="True" rename="Right_640.value.id" input="Right_" />
+                <SelectField field="Right_640.value.name" selected="True" rename="Right_640.value.name" input="Right_" />
+                <SelectField field="Right_Aravo Engagement ID (Merge)" selected="True" rename="Right_Aravo Engagement ID (Merge)" input="Right_" />
+                <SelectField field="Right_Data Shared" selected="True" rename="Right_Data Shared" input="Right_" />
+                <SelectField field="Right_COUPA_ID" selected="True" rename="Right_COUPA_ID" input="Right_" />
+                <SelectField field="Right_Project Name" selected="True" rename="Right_Project Name" input="Right_" />
+                <SelectField field="Right_Aravo Engagement Name (Merge)" selected="True" rename="Right_Aravo Engagement Name (Merge)" input="Right_" />
+                <SelectField field="Right_Coupa Contract ID#" selected="True" rename="Right_Coupa Contract ID#" input="Right_" />
+                <SelectField field="Right_75.value.email" selected="True" rename="Right_75.value.email" input="Right_" />
+                <SelectField field="Right_75.value.id" selected="True" rename="Right_75.value.id" input="Right_" />
+                <SelectField field="Right_75.value.name" selected="True" rename="Right_75.value.name" input="Right_" />
+                <SelectField field="Right_Contracts" selected="True" rename="Right_Contracts" input="Right_" />
+                <SelectField field="Right_Contracts2" selected="True" rename="Right_Contracts2" input="Right_" />
+                <SelectField field="Right_Privacy and security exhibits" selected="True" rename="Right_Privacy and security exhibits" input="Right_" />
+                <SelectField field="Right_Add Privacy and Security Exhibit" selected="True" rename="Right_Add Privacy and Security Exhibit" input="Right_" />
+                <SelectField field="Right_Documents2" selected="True" rename="Right_Documents2" input="Right_" />
+                <SelectField field="Right_Add Document2" selected="True" rename="Right_Add Document2" input="Right_" />
+                <SelectField field="Right_CRBot - Slack Recipient Corp ID - Email" selected="True" rename="Right_CRBot - Slack Recipient Corp ID - Email" input="Right_" />
+                <SelectField field="Right_CRBot-Coupa ID - Status" selected="True" rename="Right_CRBot-Coupa ID - Status" input="Right_" />
+                <SelectField field="Right_CRBot-Coupa ID - Created Date" selected="True" rename="Right_CRBot-Coupa ID - Created Date" input="Right_" />
+                <SelectField field="Right_Privacy and Security Exhibit - Privacy Document" selected="True" rename="Right_Privacy and Security Exhibit - Privacy Document" input="Right_" />
+                <SelectField field="Right_Privacy and Security Exhibit - PSE Version (Effective Date)" selected="True" rename="Right_Privacy and Security Exhibit - PSE Version (Effective Date)" input="Right_" />
+                <SelectField field="Right_Privacy and Security Exhibit - Comments" selected="True" rename="Right_Privacy and Security Exhibit - Comments" input="Right_" />
+                <SelectField field="Right_Privacy and Security Exhibit - Privacy Document Execution Date" selected="True" rename="Right_Privacy and Security Exhibit - Privacy Document Execution Date" input="Right_" />
+                <SelectField field="Right_Privacy and Security Exhibit - PSE Document URL Link" selected="True" rename="Right_Privacy and Security Exhibit - PSE Document URL Link" input="Right_" />
+                <SelectField field="Right_Project records" selected="True" rename="Right_Project records" input="Right_" />
+                <SelectField field="Right_Add Project2" selected="True" rename="Right_Add Project2" input="Right_" />
+                <SelectField field="Right_Project_Contract_Type" selected="True" rename="Right_Project_Contract_Type" input="Right_" />
+                <SelectField field="Right_COUPA VALUES" selected="True" rename="Right_COUPA VALUES" input="Right_" />
+                <SelectField field="Right_Related Purchase Category2 - Account Code" selected="True" rename="Right_Related Purchase Category2 - Account Code" input="Right_" />
+                <SelectField field="Right_Related Purchase Category2 - Purchase Category" selected="True" rename="Right_Related Purchase Category2 - Purchase Category" input="Right_" />
+                <SelectField field="Right_Related Purchase Category2 - Category Manager" selected="True" rename="Right_Related Purchase Category2 - Category Manager" input="Right_" />
+                <SelectField field="Right_Related Purchase Category2 - Level 1" selected="True" rename="Right_Related Purchase Category2 - Level 1" input="Right_" />
+                <SelectField field="Right_Related Purchase Category2 - Sector" selected="True" rename="Right_Related Purchase Category2 - Sector" input="Right_" />
+                <SelectField field="Right_Related Purchase Category2 - Category Manager - NEW Formula" selected="True" rename="Right_Related Purchase Category2 - Category Manager - NEW Formula" input="Right_" />
+                <SelectField field="Right_75.value.userName" selected="True" rename="Right_75.value.userName" input="Right_" />
+                <SelectField field="Right_Project Driver" selected="True" rename="Right_Project Driver" input="Right_" />
+                <SelectField field="Right_640.value.userName" selected="True" rename="Right_640.value.userName" input="Right_" />
+                <SelectField field="Right_Category Manager _Merge_" selected="True" rename="Right_Category Manager _Merge_" input="Right_" />
+                <SelectField field="Right_638.value.userName" selected="True" rename="Right_638.value.userName" input="Right_" />
+                <SelectField field="Right_Requester (Merge) INPUT" selected="True" rename="Right_Requester (Merge) INPUT" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="606" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Record ID#" selected="True" />
+            <SelectField field="Date Created" selected="True" type="Date" size="10" />
+            <SelectField field="Related Agreement" selected="True" />
+            <SelectField field="Link to MSA" selected="True" />
+            <SelectField field="Contract Status" selected="True" />
+            <SelectField field="Contract Effective Start Date" selected="True" type="Date" size="10" />
+            <SelectField field="Contract Expiration Date" selected="True" type="Date" size="10" />
+            <SelectField field="Documents" selected="True" />
+            <SelectField field="Country" selected="True" />
+            <SelectField field="BU/FG" selected="True" />
+            <SelectField field="Short Description Entry" selected="True" />
+            <SelectField field="Project Start Date" selected="True" type="Date" size="10" />
+            <SelectField field="Project End Date" selected="True" type="Date" size="10" />
+            <SelectField field="Total Spend Amount (USD)" selected="True" />
+            <SelectField field="Related Project" selected="True" />
+            <SelectField field="Total Savings (USD)" selected="True" />
+            <SelectField field="Supplier Name" selected="True" />
+            <SelectField field="Executed Contract" selected="True" />
+            <SelectField field="Contract Currently Active" selected="True" />
+            <SelectField field="Project Closed - FY" selected="True" />
+            <SelectField field="Project Start Fiscal" selected="True" />
+            <SelectField field="Executed Contract Link" selected="True" />
+            <SelectField field="Fiscal Effective" selected="True" />
+            <SelectField field="GBS Savings Initiative" selected="True" />
+            <SelectField field="Sourcing Process Steps" selected="True" />
+            <SelectField field="Region" selected="True" />
+            <SelectField field="FY21 Planned Savings" selected="True" />
+            <SelectField field="Data_Sharing" selected="True" />
+            <SelectField field="Employee - Legal Full Name" selected="True" />
+            <SelectField field="Purchase Category - Account Code" selected="True" />
+            <SelectField field="Purchase Category" selected="True" />
+            <SelectField field="Box Link to Contract" selected="True" />
+            <SelectField field="638.value.email" selected="True" />
+            <SelectField field="638.value.id" selected="True" />
+            <SelectField field="638.value.name" selected="True" />
+            <SelectField field="Sector (Merge)" selected="True" />
+            <SelectField field="640.value.email" selected="True" />
+            <SelectField field="640.value.id" selected="True" />
+            <SelectField field="640.value.name" selected="True" />
+            <SelectField field="Aravo Engagement ID (Merge)" selected="True" />
+            <SelectField field="Data Shared" selected="True" />
+            <SelectField field="COUPA_ID" selected="True" />
+            <SelectField field="Project Name" selected="True" />
+            <SelectField field="Aravo Engagement Name (Merge)" selected="True" />
+            <SelectField field="Coupa Contract ID#" selected="True" />
+            <SelectField field="75.value.email" selected="True" />
+            <SelectField field="75.value.id" selected="True" />
+            <SelectField field="75.value.name" selected="True" />
+            <SelectField field="Contracts" selected="True" />
+            <SelectField field="Contracts2" selected="True" />
+            <SelectField field="Privacy and security exhibits" selected="True" />
+            <SelectField field="Add Privacy and Security Exhibit" selected="True" />
+            <SelectField field="Documents2" selected="True" />
+            <SelectField field="Add Document2" selected="True" />
+            <SelectField field="CRBot - Slack Recipient Corp ID - Email" selected="True" />
+            <SelectField field="CRBot-Coupa ID - Status" selected="True" />
+            <SelectField field="CRBot-Coupa ID - Created Date" selected="True" type="Date" size="10" />
+            <SelectField field="Privacy and Security Exhibit - Privacy Document" selected="True" />
+            <SelectField field="Privacy and Security Exhibit - PSE Version (Effective Date)" selected="True" />
+            <SelectField field="Privacy and Security Exhibit - Comments" selected="True" />
+            <SelectField field="Privacy and Security Exhibit - Privacy Document Execution Date" selected="True" />
+            <SelectField field="Privacy and Security Exhibit - PSE Document URL Link" selected="True" />
+            <SelectField field="Project records" selected="True" />
+            <SelectField field="Add Project2" selected="True" />
+            <SelectField field="Project_Contract_Type" selected="True" />
+            <SelectField field="COUPA VALUES" selected="True" />
+            <SelectField field="Related Purchase Category2 - Account Code" selected="True" />
+            <SelectField field="Related Purchase Category2 - Purchase Category" selected="True" />
+            <SelectField field="Related Purchase Category2 - Category Manager" selected="True" />
+            <SelectField field="Related Purchase Category2 - Level 1" selected="True" />
+            <SelectField field="Related Purchase Category2 - Sector" selected="True" />
+            <SelectField field="Related Purchase Category2 - Category Manager - NEW Formula" selected="True" />
+            <SelectField field="75.value.userName" selected="True" />
+            <SelectField field="Project Driver" selected="True" />
+            <SelectField field="640.value.userName" selected="True" />
+            <SelectField field="Category Manager _Merge_" selected="True" />
+            <SelectField field="638.value.userName" selected="True" />
+            <SelectField field="Requester (Merge) INPUT" selected="True" />
+            <SelectField field="Right_Record ID#" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="123">
+      <GuiSettings Plugin="JupyterCode">
+        <Position x="114" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <WorkflowName>c:\users\groeper\development\cmapp\download_parent_contract_repository_table.yxmd</WorkflowName>
+          <JupyterProduction>false</JupyterProduction>
+          <vEnvName>designerbasetools_venv</vEnvName>
+          <DefaultVenv>1</DefaultVenv>
+          <productionModeScript />
+          <Port>50585</Port>
+          <JupyterGuidDir>0e6b3c014bae8f8e5afd8c3d197e6a6a</JupyterGuidDir>
+          <JupyterGuidCopy />
+          <LastExecutedByEngineVersion>2023.2.1.226</LastExecutedByEngineVersion>
+          <Notebook><![CDATA[{"cells":[{"metadata":{"ayx":{"cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","contents_keyword":"Alteryx.help()","label":"info"}},"cell_type":"markdown","source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"metadata":{"ayx":{"cell_css":"border: 1px solid #58a; margin: 2px;","contents_keyword":"installPackages","label":"deps"}},"cell_type":"code","source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Package\n","#Package.installPackages(['pandas','numpy'])"],"execution_count":1,"outputs":[]},{"metadata":{},"cell_type":"code","source":["from ayx import Alteryx\n","import pandas as pd\n","import json\n","import requests\n","\n"],"execution_count":2,"outputs":[]},{"metadata":{},"cell_type":"code","source":["headers = {\n","    'QB-Realm-Hostname': 'https://intuitcorp.quickbase.com',\n","    'User-Agent': '{User-Agent}',\n","    'Authorization': 'QB-USER-TOKEN byg59k_k_0_ch28y3ybhdbuxfzkdnzacdu8frq',\n","    'Content-Type': 'application/json',\n","}\n","\n","testlength = 10\n","start, end = [0,10001]\n","\n","while testlength != 0:\n","    body = {\n","      \"from\": \"brs5frizx\",\n","      \"select\": [\n","        3,6,9,10,11,15,16,17,18,19\n","        ,24,26,27,28,29,30,31,32,33,42\n","        ,43,44,45,46,47,48,49\n","      ],\n","      \"where\": \"{3.GT.'%d'}AND{3.LT.'%d'}\" %(start,end),\n","      \"sortBy\": [\n","        {\n","          \"fieldId\": 3,\n","          \"order\": \"ASC\"\n","        },\n","      ],\n","      #\"groupBy\": [\n","      #  {\n","      #    \"fieldId\": 6,\n","      #    \"grouping\": \"equal-values\"\n","      #  }\n","      #],\n","     \"options\": {\n","        \"skip\": 0,\n","        \"top\": 0,\n","      }}\n","\n","    r = requests.post('''https://api.quickbase.com/v1/records/query''',\n","    headers = headers,\n","    json = body\n","    )\n","\n","    # check keys\n","\n","    response_list = r.json()['data']\n","    testlength = len(response_list)\n","    if testlength > 0:\n","        field_list = r.json()['fields']\n","        dataFrame = pd.json_normalize(response_list)\n","        Alteryx.write(dataFrame, 1)\n","\n","        fieldFrame = pd.json_normalize(field_list)\n","        fieldFrame = fieldFrame.drop('type', axis=1)\n","        \n","        Alteryx.write(fieldFrame, 2)\n","        start += 10000\n","        end   += 10000\n","        print(start,end)\n","\n"],"execution_count":3,"outputs":[]},{"metadata":{},"cell_type":"code","source":[],"execution_count":4,"outputs":[]}],"metadata":{"kernelspec":{"name":"designerbasetools_venv","display_name":"designerbasetools_venv","language":"python"},"language_info":{"name":"python","version":"3.8.16","mimetype":"text/x-python","codemirror_mode":{"name":"ipython","version":3},"pygments_lexer":"ipython3","nbconvert_exporter":"python","file_extension":".py"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="28" y="4" width="253" height="349" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 124</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="54" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="User Token" />
+                <Field name="Table ID" />
+                <Field name="Report ID" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>byg59k_k_0_ch28y3ybhdbuxfzkdnzacdu8frq</c>
+                  <c>bnskksae5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c />
+                  <c />
+                  <c />
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="109">
+          <GuiSettings>
+            <Position x="198" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.User Token" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Users\groeper\Development\Alteryx\workflows\quickbase_qid.yxmc" />
+        </Node>
+        <Node ToolID="110">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="54" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="User Token" />
+                <Field name="Table ID" />
+                <Field name="Report ID" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>byg59k_k_0_ch28y3ybhdbuxfzkdnzacdu8frq</c>
+                  <c>bnskksae5</c>
+                  <c>321</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="111">
+          <GuiSettings>
+            <Position x="198" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.User Token"><![CDATA[User Token=User Token
+Table ID=Table ID
+Report ID=Report ID
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Users\groeper\Development\Alteryx\workflows\quickbase_qid.yxmc" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="54" y="197" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="User Token" />
+                <Field name="Table ID" />
+                <Field name="Report ID" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>byg59k_k_0_ch28y3ybhdbuxfzkdnzacdu8frq</c>
+                  <c>bnskksae5</c>
+                  <c>321</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="115">
+          <GuiSettings>
+            <Position x="198" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.User Token"><![CDATA[User Token=User Token
+Table ID=Table ID
+Report ID=Report ID
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="C:\Users\groeper\Development\Alteryx\workflows\quickbase_qid.yxmc" />
+        </Node>
+        <Node ToolID="116">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="53" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="User Token" />
+                <Field name="Table ID" />
+                <Field name="Report ID" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>byg59k_k_0_ch28y3ybhdbuxfzkdnzacdu8frq</c>
+                  <c>bnskksae5</c>
+                  <c>322</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings>
+            <Position x="198" y="53" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.User Token"><![CDATA[User Token=User Token
+Table ID=Table ID
+Report ID=Report ID
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="C:\Users\groeper\Development\Alteryx\workflows\quickbase_qid.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_30236_bc6dbfcf45d94298ad163483c31fa577_\Engine_30236_0bb59c579438ef41bc45e3b062bf633c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="127">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="378" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="10" selected="False" />
+            <Field name="11" selected="False" />
+            <Field name="15" selected="False" />
+            <Field name="16" selected="False" />
+            <Field name="17" selected="False" />
+            <Field name="18" selected="False" />
+            <Field name="19" selected="False" />
+            <Field name="24" selected="False" />
+            <Field name="26" selected="False" />
+            <Field name="27" selected="False" />
+            <Field name="28" selected="False" />
+            <Field name="29" selected="False" />
+            <Field name="3" selected="False" />
+            <Field name="30" selected="False" />
+            <Field name="31" selected="False" />
+            <Field name="32" selected="False" />
+            <Field name="33" selected="False" />
+            <Field name="42" selected="False" />
+            <Field name="43" selected="False" />
+            <Field name="44" selected="False" />
+            <Field name="45" selected="False" />
+            <Field name="46" selected="False" />
+            <Field name="47" selected="False" />
+            <Field name="48" selected="False" />
+            <Field name="49" selected="False" />
+            <Field name="6" selected="False" />
+            <Field name="9" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Warn</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName />
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="128">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="288" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Remove</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <RemovePrefixSuffix>
+            <Type>Suffix</Type>
+            <Text>.value</Text>
+            <OnError>Warn</OnError>
+          </RemovePrefixSuffix>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="10" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="11" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="15" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="16" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="17" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="18" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="19" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="24" source="PythonTool:" type="Double" />
+            <Field name="26" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="27" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="28" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="29" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="3" source="PythonTool:" type="Int64" />
+            <Field name="30" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="31" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="32" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="33" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="42" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="43" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="44" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="45" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="46" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="47" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="48" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="49" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="6" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="9" source="PythonTool:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="129">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="462" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">parent_contract_repository_table.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>parent_contract_repository_table.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="117" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="Output15" />
+      <Destination ToolID="117" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="117" Connection="Join" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output1" />
+      <Destination ToolID="128" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output2" />
+      <Destination ToolID="127" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="128" Connection="Output" />
+      <Destination ToolID="127" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output" />
+      <Destination ToolID="122" Connection="User Token" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="109" Connection="Output15" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="111" Connection="Output15" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="122" Connection="Output15" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="109" Connection="User Token" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="111" Connection="User Token" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="115" Connection="User Token" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Output" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Output" />
+      <Destination ToolID="129" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>download_parent_contract_repository_table</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6b6290e4-223e-4803-b4cd-7fa1e82894d0" />
+      <Telemetry>
+        <PreviousWorkflowId value="2738def6-8438-4d9c-96f4-4d7cbbbbcd69" />
+        <OriginWorkflowId value="1a15aa7f-a79b-43c7-9d6d-77c6b008bd32" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

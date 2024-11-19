@@ -1,0 +1,1579 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="User Token" />
+            <Field name="Table ID" />
+            <Field name="Report ID" />
+          </Fields>
+          <Data>
+            <r>
+              <c>byg59k_k_0_ch28y3ybhdbuxfzkdnzacdu8frq</c>
+              <c>bnskksae5</c>
+              <c>312</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="195" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.User Token"><![CDATA[User Token=User Token
+Table ID=Table ID
+Report ID=Report ID
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro=".\Alteryx\quickbase_qid.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="342" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Uppercase([ADDRESSED_SPEND]) == &quot;YES&quot; then &quot;YES&quot; else &quot;NO&quot; endif&#xA;" field="ADDRESSED_SPEND" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ADDRESSED_SPEND = if Uppercase([ADDRESSED_SPEND]) == "YES" then "YES" else "NO" ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="476" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if not IsEmpty([PROJECT_COMPLETE_TIMESTAMP]) &#xA;then [PROJECT_COMPLETE_TIMESTAMP]&#xA;  elseif [Contract Status] in (&quot;Contract Complete&quot;) and IsEmpty([Contract Signed Date]) then [Contract Effective Start Date]&#xA;  elseif [Contract Status] in (&quot;Contract Complete&quot;) then [Contract Signed Date]&#xA;  else [Project End Date]&#xA;endif&#xA;&#xA;" field="Anchor Date" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[
+Anchor Date]]></AnnotationText>
+          <DefaultAnnotationText>Anchor Date = if not IsEmpty([PROJECT_COMPLETE_TIMESTAMP]) 
+then [PROJECT_COMPLE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="402" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Contract Status" action="GroupBy" rename="Contract Status" />
+            <SummarizeField field="Contract Status" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1038" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_32100_0a57a7ff636b4997ad53c30261216daf_\Engine_32100_d1769461f62ae14994ef3460a6f2b7cc~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="616" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Date Created] &gt;= ToDate("2022-08-01")
+and [Contract Status] in ("Contract Complete", "Complete - No Contract")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Date Created] &gt;= ToDate("2022-08-01")
+and [Contract Status] in ("Contract Compl...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="918" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Purchase Category" action="GroupBy" rename="Purchase Category" />
+            <SummarizeField field="Date Created" action="CountDistinct" rename="CountDistinct_Date Created" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="757" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Anchor Date] &gt;= ToDate("2023-08-01")
+and [Anchor Date] &lt;= ToDate("2024-07-31")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Anchor Date] &gt;= ToDate("2023-08-01")
+and [Anchor Date] &lt;= ToDate("2024-07-31")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="897" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Purchase Category" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Purchase Category" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Purchase Category" selected="False" rename="Right_Purchase Category" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2034" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_32100_0a57a7ff636b4997ad53c30261216daf_\Engine_32100_20da7c2074e80d4d837f1604fd4a51c4~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1182" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Level 2 Cat" action="GroupBy" rename="Level 2 Cat" />
+            <SummarizeField field="Level 2 Cat" action="Count" rename="Annual Projects" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1741" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="RecordID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1600" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Annual Projects" selected="True" />
+            <SelectField field="Supplier Contracts" selected="True" />
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="Level 2 - Category" selected="True" />
+            <SelectField field="Actual Spend (USD)" selected="True" />
+            <SelectField field="Sum_Total Spend Amount (USD)" selected="False" type="Int64" size="8" />
+            <SelectField field="Sum_Total Savings (USD)" selected="False" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1038" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Contract Status</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-09-24 18:35:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Contract Complete</Operand>
+              <StartDate>2024-09-24 18:35:52</StartDate>
+              <EndDate>2024-09-24 18:35:52</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Contract Status] = "Contract Complete"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1179" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Level 2 Cat" action="GroupBy" rename="Level 2 Cat" />
+            <SummarizeField field="Level 2 Cat" action="Count" rename="Supplier Contracts" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1319" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Level 2 Cat" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Level 2 Cat" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Level 2 Cat" selected="True" input="Left_" />
+                <SelectField field="Left_Annual Projects" selected="True" input="Left_" />
+                <SelectField field="Right_Level 2 Cat" selected="False" rename="Right_Level 2 Cat" input="Right_" />
+                <SelectField field="Right_Supplier Contracts" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1350" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="16" />
+          <Fields>
+            <Field name="Level 2 - Category" />
+            <Field name="Actual Spend (USD)" />
+          </Fields>
+          <Data>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>1,178,581,035</c>
+            </r>
+            <r>
+              <c>HOSTING</c>
+              <c>629,818,311</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>440,869,109</c>
+            </r>
+            <r>
+              <c>CUSTOMER CARE</c>
+              <c>425,318,002</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>354,364,612</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>319,727,572</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>240,631,479</c>
+            </r>
+            <r>
+              <c>PRODUCT DEVELOPMENT &amp; INFORMATION TECHNOLOGY SERVICES</c>
+              <c>227,882,764</c>
+            </r>
+            <r>
+              <c>IN-PRODUCT 3RD PARTY</c>
+              <c>203,244,011</c>
+            </r>
+            <r>
+              <c>PAID SEARCH</c>
+              <c>176,524,974</c>
+            </r>
+            <r>
+              <c>SOCIAL MEDIA</c>
+              <c>140,775,423</c>
+            </r>
+            <r>
+              <c>OFFLINE MEDIA</c>
+              <c>108,960,415</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>105,240,999</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>89,875,924</c>
+            </r>
+            <r>
+              <c>EMPLOYEE SERVICES</c>
+              <c>64,204,029</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>507,245,282</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1460" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Level 2 Cat" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Level 2 - Category" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Level 2 Cat" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2022" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\Contracts_and_projects.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contracts_and_projects.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1881" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Level 2 - Category" selected="True" />
+            <SelectField field="Actual Spend (USD)" selected="True" />
+            <SelectField field="Annual Projects" selected="True" />
+            <SelectField field="Supplier Contracts" selected="True" />
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="738" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="199" />
+          <Fields>
+            <Field name="Level 2 Cat" />
+            <Field name="Purchase Category" />
+          </Fields>
+          <Data>
+            <r>
+              <c>CUSTOMER CARE</c>
+              <c>Contact Center Services.Domain Expert Services</c>
+            </r>
+            <r>
+              <c>CUSTOMER CARE</c>
+              <c>Contact Center Services.Inbound Customer Sales</c>
+            </r>
+            <r>
+              <c>CUSTOMER CARE</c>
+              <c>Contact Center Services.Inbound Customer Services &amp; Support</c>
+            </r>
+            <r>
+              <c>CUSTOMER CARE</c>
+              <c>Contact Center Services.Outbound Telemarketing</c>
+            </r>
+            <r>
+              <c>CUSTOMER CARE</c>
+              <c>Contact Center Services.Product Expert Services</c>
+            </r>
+            <r>
+              <c>CUSTOMER CARE</c>
+              <c>Contact Center Services.Rebate Processing</c>
+            </r>
+            <r>
+              <c>CUSTOMER CARE</c>
+              <c>Contact Center Services.Sales/Support/Service</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Advertising Media.Digital Other</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Advertising Media.Display Media</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Advertising Media.Radio, Print, Outdoor, Other - Advertising</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Advertising Media.Tv Media</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Agency Fee.Creative, Brand, &amp; Production</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Agency Fee.Direct Mail</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Agency Fee.Direct Response</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Agency Fee.Radio, Print, Outdoor, Other - Agency</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Agency Fee.Tv Media</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Production.Display Creative</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Production.Other Creative</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Production.Radio, Print, Outdoor, Other - Production</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Production.Television</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Promo, Retail And Merchandising Services.Print, Packaging, Displays Production</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Promo, Retail And Merchandising Services.Promo Items / Merchandise</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Promo, Retail And Merchandising Services.Retail Marketing / Merchandising Services</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Public Relations</c>
+            </r>
+            <r>
+              <c>DIGITAL MEDIA (DISPLAY, ONLINE AGENCY)</c>
+              <c>Marketing.Strategy &amp; Research</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>Hr Services.Employee Benefits.Home Furniture</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>Hr Services.Employee Benefits.Insurance</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>Hr Services.Employee Benefits.Legal</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>Hr Services.Employee Benefits.Medical</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>Hr Services.Employee Benefits.Membership, Subscriptions, &amp; Classes</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>Hr Services.Employee Benefits.Retirement</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>Hr Services.Employee Benefits.Wellness</c>
+            </r>
+            <r>
+              <c>EMPLOYEE BENEFITS</c>
+              <c>Hr Services.Employee Benefits.Workers Comp</c>
+            </r>
+            <r>
+              <c>EMPLOYEE SERVICES</c>
+              <c>Hr Services.Contingent Labor</c>
+            </r>
+            <r>
+              <c>EMPLOYEE SERVICES</c>
+              <c>Hr Services.Employee Recognition</c>
+            </r>
+            <r>
+              <c>EMPLOYEE SERVICES</c>
+              <c>Hr Services.Employee Relocation</c>
+            </r>
+            <r>
+              <c>EMPLOYEE SERVICES</c>
+              <c>Hr Services.Hr Independent Contractors</c>
+            </r>
+            <r>
+              <c>EMPLOYEE SERVICES</c>
+              <c>Hr Services.Learning &amp; Development</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Café &amp; Catering</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Construction</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Document Management</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Electrical Products &amp; Cabling</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Facilities Equipment Maintenance &amp; Leases</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Facilities Projects</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Furniture</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Furniture.&gt;= $5K Usd - Furniture</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Integrated Facilities Management</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Janitorial Services</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Office Supplies</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Physical Security</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Property Lease Administration Services</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Property Leases &amp; Rents</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Shuttle</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Space Planning</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Subscriptions</c>
+            </r>
+            <r>
+              <c>WORKPLACE SERVICES</c>
+              <c>Workplace Services.Vending</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Audio Visual Hardware</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Audio Visual Hardware.&gt;= $5K Usd Per Unit - Audio Visual Hardware</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Audio Visual Hardware.Under $5K Usd Per Unit - Audio Visual Hardware</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Computer Accessories</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Computer Accessories.Under $5K Usd Per Unit - Computer Accessories</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Infrastructure Hardware</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Infrastructure Hardware Maintenance &amp; Support</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Infrastructure Hardware Maintenance &amp; Support .&gt;= $250K Usd Per Unit - Infrastructure Hardware Maintenance &amp; Support</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Infrastructure Hardware Maintenance &amp; Support .Under $250K Usd Per Unit - Infrastructure Hardware Maintenance &amp; Support</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Infrastructure Hardware.&gt;= $5K Usd Per Unit - Infrastructure Hardware</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Infrastructure Hardware.Under $5K Usd Per Unit - Infrastructure Hardware</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Laptops</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Laptops.Under $5K Usd Per Unit - Laptops</c>
+            </r>
+            <r>
+              <c>HARDWARE</c>
+              <c>IT Hardware.Monitors.Under $5K Usd Per Unit - Monitors</c>
+            </r>
+            <r>
+              <c>HOSTING</c>
+              <c>Infrastructure As A Service.Cloud</c>
+            </r>
+            <r>
+              <c>HOSTING</c>
+              <c>Infrastructure As A Service.Colocation Services</c>
+            </r>
+            <r>
+              <c>IN-PRODUCT 3RD PARTY</c>
+              <c>Business Unit In-Product Services.In-Product Offering (Revenue Share)</c>
+            </r>
+            <r>
+              <c>IN-PRODUCT 3RD PARTY</c>
+              <c>BUSINESS UNIT IN-PRODUCT SERVICES.IN-PRODUCT SERVICES</c>
+            </r>
+            <r>
+              <c>IN-PRODUCT 3RD PARTY</c>
+              <c>Business Unit In-Product Services.In-Product Services</c>
+            </r>
+            <r>
+              <c>IN-PRODUCT 3RD PARTY</c>
+              <c>Business Unit In-Product Services.In-Product Technology</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Internal Events/Offsites.Entertainment</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Internal Events/Offsites.Event Mgmt Fees</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Internal Events/Offsites.Food</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Internal Events/Offsites.Production</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Internal Events/Offsites.Travel/Lodging/Transportation</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Tradeshows/Sales Events.Entertainment</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Tradeshows/Sales Events.Event Mgmt Fees</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Tradeshows/Sales Events.Production</c>
+            </r>
+            <r>
+              <c>MARKETING EVENTS</c>
+              <c>Events.Tradeshows/Sales Events.Travel/Lodging/Transportation</c>
+            </r>
+            <r>
+              <c>OFFLINE MEDIA</c>
+              <c>Marketing.Advertising Media.Print, Packaging, &amp; Displays</c>
+            </r>
+            <r>
+              <c>OFFLINE MEDIA</c>
+              <c>Marketing.Production.Printed Materials</c>
+            </r>
+            <r>
+              <c>OFFLINE MEDIA</c>
+              <c>Marketing.Advertising Media.Partners, 3Rd Party, &amp; Affiliates</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Donations, Political Contributions, &amp; Government Payments.Charitable Contribution</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Donations, Political Contributions, &amp; Government Payments.Corporate Affairs Sponsorship</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Donations, Political Contributions, &amp; Government Payments.Political Contribution</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Logistics &amp; Internal Purchases.Distribution</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Logistics &amp; Internal Purchases.Freight Services</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Logistics &amp; Internal Purchases.Manufacturing</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Telecom.Mobile Devices &amp; Support</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Telecom.Telecom Expense Management</c>
+            </r>
+            <r>
+              <c>ZOTHERS</c>
+              <c>Telecom.Voice, Data Circuits, &amp; Internet (Including Campus Wireless)</c>
+            </r>
+            <r>
+              <c>PAID SEARCH</c>
+              <c>Marketing.Advertising Media.Search Media</c>
+            </r>
+            <r>
+              <c>PAID SEARCH</c>
+              <c>Marketing.Agency Fee.Search</c>
+            </r>
+            <r>
+              <c>PAID SEARCH</c>
+              <c>Marketing.Production.Search Engine Optimization</c>
+            </r>
+            <r>
+              <c>PRODUCT DEVELOPMENT &amp; INFORMATION TECHNOLOGY SERVICES</c>
+              <c>IT Professional Services.Engineering &amp; Technology Services.Api Enhancements</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>IT Professional Services.Engineering &amp; Technology Services.Data Reporting &amp; Analytics</c>
+            </r>
+            <r>
+              <c>PRODUCT DEVELOPMENT &amp; INFORMATION TECHNOLOGY SERVICES</c>
+              <c>IT Professional Services.Engineering &amp; Technology Services.Ongoing Applications Support</c>
+            </r>
+            <r>
+              <c>PRODUCT DEVELOPMENT &amp; INFORMATION TECHNOLOGY SERVICES</c>
+              <c>IT Professional Services.Engineering &amp; Technology Services.Other</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>IT Professional Services.Product Development.Software Development</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>IT Professional Services.Product Development.Systems Migrations</c>
+            </r>
+            <r>
+              <c>PRODUCT DEVELOPMENT &amp; INFORMATION TECHNOLOGY SERVICES</c>
+              <c>IT Professional Services.Technology Consulting.Api Enhancemenosp</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>IT Professional Services.Technology Consulting.Architecture &amp; Consulting Services</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Banking &amp; Financial Services</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Candidate Recruitment</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Consulting.Accounting Consulting</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Consulting.Audit Consulting</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Consulting.Hr Consulting</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Consulting.Insurance &amp; Brokerage</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Consulting.Management Consulting</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Consulting.Tax Consulting</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Credit Card &amp; Eft Fees</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Legal Services</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Lobbying</c>
+            </r>
+            <r>
+              <c>PROFESSIONAL SERVICES</c>
+              <c>Professional Services.Recurring Contracted Services</c>
+            </r>
+            <r>
+              <c>SOCIAL MEDIA</c>
+              <c>Marketing.Advertising Media.Social</c>
+            </r>
+            <r>
+              <c>SOCIAL MEDIA</c>
+              <c>Marketing.Advertising Media.Sponsorship Media</c>
+            </r>
+            <r>
+              <c>SOCIAL MEDIA</c>
+              <c>Marketing.Agency Fees.Digital, Web, Social</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Agent Tools / Virtual Expert Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Agent Tools / Virtual Expert Software.&gt;= $5K Usd - Agent Tools / Virtual Expert Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Agent Tools / Virtual Expert Software.Under $5K Usd - Agent Tools / Virtual Expert Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Data Engineering Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Data Engineering Software.&gt;= $5K Usd - Data Engineering Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Data Engineering Software.Under $5K Usd - Data Engineering Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Developer Software.&gt;= $5K Usd - Developer Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Developer Software.Under $5K Usd - Developer Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Finance &amp; Compliance Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Finance &amp; Compliance Software.&gt;= $5K Usd - Finance &amp; Compliance Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Finance &amp; Compliance Software.Under $5K Usd - Finance &amp; Compliance Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Marketing Technology Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Marketing Technology Software.&gt;= $5K Usd - Marketing Technology Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Marketing Technology Software.Under $5K Usd - Marketing Technology Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.People &amp; Places Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.People &amp; Places Software.&gt;= $5K Usd - People &amp; Places Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.People &amp; Places Software.Under $5K Usd - People &amp; Places Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Product Infrastructure Software.&gt;= $5K Usd - Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Product Infrastructure Software.Under $5K Usd - Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Revenue &amp; Billing Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Revenue &amp; Billing Software.Under $5K Usd - Revenue &amp; Billing Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Security Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Security Software.&gt;= $5K Usd - Security Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Security Software.Under $5K Usd - Security Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Workforce Productivity &amp; Collaboration Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>On Premise Software.Workforce Productivity &amp; Collaboration Software.&gt;= $5K Usd - Workforce Productivity &amp; Collaboration Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Agent Tools / Virtual Expert Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Agent Tools / Virtual Expert Software.&gt;= $250K Usd - Agent Tools / Virtual Expert Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Agent Tools / Virtual Expert Software.Under $250K Usd - Agent Tools / Virtual Expert Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Data Engineering Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Data Engineering Software.&gt;= $250K Usd - Data Engineering Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Data Engineering Software.Under $250K Usd - Data Engineering Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Developer Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Developer Software.&gt;= $250K Usd - Developer Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Developer Software.Under $250K Usd - Developer Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Finance &amp; Compliance Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Finance &amp; Compliance Software.&gt;= $250K Usd - Finance &amp; Compliance Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Finance &amp; Compliance Software.Under $250K Usd - Finance &amp; Compliance Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Marketing Technology Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Marketing Technology Software.&gt;= $250K Usd - Marketing Technology Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Marketing Technology Software.Under $250K Usd - Marketing Technology Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).People &amp; Places Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).People &amp; Places Software.&gt;= $250K Usd - People &amp; Places Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).People &amp; Places Software.Under $250K Usd - People &amp; Places Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Product Infrastructure Software.&gt;= $250K Usd - Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Product Infrastructure Software.Under $250K Usd - Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Revenue &amp; Billing Software.&gt;= $250K Usd - Revenue &amp; Billing Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Revenue &amp; Billing Software.Under $250K Usd - Revenue &amp; Billing Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Security Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Security Software.&gt;= $250K Usd - Security Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Security Software.Under $250K Usd - Security Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Workforce Productivity &amp; Collaboration Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Workforce Productivity &amp; Collaboration Software.&gt;= $250K Usd - Workforce Productivity &amp; Collaboration Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software As A Service(Saas).Workforce Productivity &amp; Collaboration Software.Under $250K Usd - Workforce Productivity &amp; Collaboration Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Agent Tools / Virtual Expert Software.&gt;= $250K Usd - Agent Tools / Virtual Expert Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Agent Tools / Virtual Expert Software.Under $250K Usd - Agent Tools / Virtual Expert Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Data Engineering Software.&gt;= $250K Usd - Data Engineering Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Data Engineering Software.Under $250K Usd - Data Engineering Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Developer Software.&gt;= $250K Usd - Developer Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Developer Software.Under $250K Usd - Developer Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Finance &amp; Compliance Software.&gt;= $250K Usd - Finance &amp; Compliance Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Finance &amp; Compliance Software.Under $250K Usd - Finance &amp; Compliance Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Marketing Technology Software.&gt;= $250K Usd - Marketing Technology Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Marketing Technology Software.Under $250K Usd - Marketing Technology Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.People &amp; Places Software.Under $250K Usd - People &amp; Places Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Product Infrastructure Software.&gt;= $250K Usd - Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Product Infrastructure Software.Under $250K Usd - Product Infrastructure Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Revenue &amp; Billing Software.&gt;= $250K Usd - Revenue &amp; Billing Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Security Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Security Software.Under $250K Usd - Security Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Workforce Productivity &amp; Collaboration Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Workforce Productivity &amp; Collaboration Software.&gt;= $250K Usd - Workforce Productivity &amp; Collaboration Software</c>
+            </r>
+            <r>
+              <c>SOFTWARE</c>
+              <c>Software Support Only.Workforce Productivity &amp; Collaboration Software.Under $250K Usd - Workforce Productivity &amp; Collaboration Software</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Category guesses</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1470" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="858" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\Category Guesswork.xlsx|||Guesses</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Category Guesswork.xlsx
+Query=Guesses</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="User Token" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output15" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output15" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="23" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="25" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="25" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="True" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>emma</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="07f6b4e8-fb1b-4854-87d0-fdfc6554305d" />
+      <Telemetry>
+        <PreviousWorkflowId value="4bd5211e-d97d-4c4d-81f9-da2b212261aa" />
+        <OriginWorkflowId value="4bd5211e-d97d-4c4d-81f9-da2b212261aa" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

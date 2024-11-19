@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">Paul Park adhoc\OSP data .csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>OSP data .csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Preferred Name" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Email - Primary Work" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Employee ID" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Worker Type" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Worker Class" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Contingent Worker Supplier" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Detailed Worker Status" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Most Recent Hire Date" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Most Recent Termination Date" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+            <Field name="Level 2 Organization" size="254" source="File: C:\Users\sgolrang\Desktop\Alteryx Training\Paul Park adhoc\OSP data .csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="174" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Employee ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="REQUESTED_BY_EMPLOYEE_NUMBER" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Contingent Worker Supplier" selected="True" />
+            <SelectField field="Most Recent Hire Date" selected="True" />
+            <SelectField field="Most Recent Termination Date" selected="True" />
+            <SelectField field="DW_COUPA_REQ_HDR_KEY" selected="True" rename="PR_Req_HDR_KEY" />
+            <SelectField field="REQUISITION_ID" selected="True" rename="PR_Requisition_ID" />
+            <SelectField field="SUBMITTED_AT_DATE" selected="True" rename="PR_Submitted_date" />
+            <SelectField field="STATUS" selected="True" rename="PR_Status" />
+            <SelectField field="BUYER_NOTE" selected="True" rename="PR_BuyerNote" />
+            <SelectField field="JUSTIFICATION" selected="True" rename="PR_Justification" />
+            <SelectField field="TOTAL" selected="True" rename="PR_Total" />
+            <SelectField field="CURRENCY_CODE" selected="True" rename="PR_CurrencyCode" />
+            <SelectField field="REQUESTED_BY_EMPLOYEE_NUMBER" selected="True" rename="PR_Requested_by_EmployeeID" />
+            <SelectField field="REQUESTED_BY_EMAIL" selected="True" rename="PR_Requested_by_Email" />
+            <SelectField field="DEPARTMENT" selected="True" rename="PR_Requested_Department" />
+            <SelectField field="CREATED_AT_DATE" selected="True" rename="PR_CreatedDate" />
+            <SelectField field="UPDATED_AT_DATE" selected="True" rename="PR_UpdatedDate" />
+            <SelectField field="APPROVED_BY_EMPLOYEE_NUMBER" selected="True" rename="PR_Approved_by_EmployeeID" />
+            <SelectField field="APPROVED_BY_EMAIL" selected="True" rename="PR_Approved_by_Email" />
+            <SelectField field="CREATED_BY_EMPLOYEE_NUMBER" selected="True" rename="PR_Createdby_EmployeeID" />
+            <SelectField field="CREATED_BY_EMAIL" selected="True" rename="PR_Createdby_Email" />
+            <SelectField field="UPDATED_BY_EMPLOYEE_NUMBER" selected="True" rename="PR_Updatedby_EmployeeID" />
+            <SelectField field="UPDATED_BY_EMAIL" selected="True" rename="PR_Updatedby_Email" />
+            <SelectField field="PROJECT_DRIVER" selected="True" rename="PR_ProjectDriver" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select * from coupa.DW_COUPA...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="aka:5f11ec5cf88a2f1cc8948256" Package="False" IsMacro="False" IsOutput="False" IsAlias="True" />
+          </Implicit>
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DW_COUPA_REQ_HDR_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="Double" />
+            <Field name="REQUISITION_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="Int64" />
+            <Field name="SUBMITTED_AT_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="DateTime" />
+            <Field name="STATUS" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="BUYER_NOTE" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="JUSTIFICATION" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="REJECT_REASON" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="TOTAL" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="Double" />
+            <Field name="CURRENCY_CODE" size="6" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="String" />
+            <Field name="REQUESTED_BY_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="REQUESTED_BY_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="REQUESTED_BY_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="DEPARTMENT" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_STREET_1" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_STREET_2" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_CITY" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_STATE" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_POSTAL_CODE" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_COUNTRY_CODE" size="4" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="String" />
+            <Field name="SHIP_TO_ADDRESS_ATTENTION" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="Int64" />
+            <Field name="SHIP_TO_ADDRESS_NAME" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_LOCATION_CODE" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="CREATED_AT_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="DateTime" />
+            <Field name="UPDATED_AT_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="DateTime" />
+            <Field name="APPROVED_BY_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="APPROVED_BY_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="APPROVED_BY_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="CREATED_BY_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="CREATED_BY_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="CREATED_BY_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="UPDATED_BY_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="UPDATED_BY_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="UPDATED_BY_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="AUDIT_INS_TS" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="DateTime" />
+            <Field name="AUDIT_INS_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="Int64" />
+            <Field name="AUDIT_UPD_TS" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="DateTime" />
+            <Field name="AUDIT_UPD_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="Int64" />
+            <Field name="PRM3_ENGAGEMENT_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="Double" />
+            <Field name="CMAPP_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="Double" />
+            <Field name="PROJECT_DRIVER" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="CURRENT_APPROVER" size="80" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="DOES_THE_FOLLOWING_STATEMENT_APPLY" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="DO_ANY1_OF_THE_BELOW_STATEMENTS_APPLY" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="DO_ANY_OF_THE_BELOW_STATEMENTS_APPLY" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+            <Field name="TAGS" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from coupa.DW_COUPA_REQ_HDR" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="558" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PR_Requisition_ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PO_Requisition_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_STATUS" selected="True" rename="Right_STATUS" input="Right_" />
+                <SelectField field="Right_CREATED_BY_EMAIL" selected="True" rename="Right_CREATED_BY_EMAIL" input="Right_" />
+                <SelectField field="Right_CREATED_BY_EMPLOYEE_NUMBER" selected="True" rename="Right_CREATED_BY_EMPLOYEE_NUMBER" input="Right_" />
+                <SelectField field="Right_REQUISITION_ID" selected="True" rename="Right_REQUISITION_ID" input="Right_" />
+                <SelectField field="Right_UPDATED_BY_EMAIL" selected="True" rename="Right_UPDATED_BY_EMAIL" input="Right_" />
+                <SelectField field="Right_UPDATED_BY_EMPLOYEE_NUMBER" selected="True" rename="Right_UPDATED_BY_EMPLOYEE_NUMBER" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select * from COUPA.DW_COUPA...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="aka:5f11ec5cf88a2f1cc8948256" Package="False" IsMacro="False" IsOutput="False" IsAlias="True" />
+          </Implicit>
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="COUPA_PO_HDR_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="ACKNOWLEDGED_AT" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="DateTime" />
+            <Field name="CREATED_AT" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="DateTime" />
+            <Field name="ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="STATUS" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="TRANSMISSION_STATUS" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="UPDATED_AT" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="DateTime" />
+            <Field name="VERSION" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="INTERNAL_REVISION" size="10" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="String" />
+            <Field name="EXPORTED" size="5" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="String" />
+            <Field name="ACCOUNTING_TOTAL" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="ACCOUNTING_TOTAL_CURRENCY" size="6" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="String" />
+            <Field name="CREATED_BY_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CREATED_BY_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CREATED_BY_FIRSTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CREATED_BY_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="CREATED_BY_LASTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CREATED_BY_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="REQUISITION_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="REQUESTER_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="REQUESTER_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="REQUESTER_FIRSTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="REQUESTER_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="REQUESTER_LASTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="REQUESTER_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_ATTENTION" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_CITY" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="SHIP_TO_ADDRESS_NAME" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_POSTAL_CODE" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_STATE" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_STREET1" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_STREET2" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_ADDRESS_COUNTRY" size="4" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="String" />
+            <Field name="SHIP_TO_USER_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_USER_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_USER_FIRSTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_USER_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="SHIP_TO_USER_LASTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SHIP_TO_USER_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SUPPLIER_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="SUPPLIER_NAME" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="SUPPLIER_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="UPDATED_BY_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="UPDATED_BY_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="UPDATED_BY_FIRSTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="UPDATED_BY_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="UPDATED_BY_LASTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="UPDATED_BY_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="PAYMENT_TERMS_CODE" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="PMNT_TRMS_DAYS_FOR_DISC_PMNT" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="PMNT_TRMS_DAYS_FOR_NET_PMNT" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="PAYMENT_TERMS_DISCOUNT_RATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="SHIPPING_TERMS_CODE" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="ATTACHMENT_TEXT_CONCAT" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_1" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_2" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_3" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_4" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_5" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_6" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_7" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_8" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_9" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="CUSTOM_FIELD_10" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+            <Field name="AUDIT_INS_TS" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="DateTime" />
+            <Field name="AUDIT_INS_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="AUDIT_UPD_TS" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="DateTime" />
+            <Field name="AUDIT_UPD_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="Double" />
+            <Field name="INTEGRATION_STATUS" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_HDR" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="354" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="COUPA_PO_HDR_KEY" selected="True" rename="PO_HDR_KEY" />
+            <SelectField field="CREATED_AT" selected="True" rename="PO_CreatedDate" />
+            <SelectField field="STATUS" selected="True" rename="PO_Status" />
+            <SelectField field="UPDATED_AT" selected="True" rename="PO_UpdatedDate" />
+            <SelectField field="ACCOUNTING_TOTAL" selected="True" rename="PO_Total" />
+            <SelectField field="ACCOUNTING_TOTAL_CURRENCY" selected="True" rename="PO_TotalCurrency" />
+            <SelectField field="CREATED_BY_EMAIL" selected="True" rename="PO_Createdby_Email" />
+            <SelectField field="CREATED_BY_EMPLOYEE_NUMBER" selected="True" rename="PO_Created_by_EmployeeID" />
+            <SelectField field="REQUISITION_ID" selected="True" rename="PO_Requisition_ID" />
+            <SelectField field="REQUESTER_EMAIL" selected="True" rename="PO_Requester_Email" />
+            <SelectField field="REQUESTER_EMPLOYEE_NUMBER" selected="True" rename="PO_Requester_EmployeeID" />
+            <SelectField field="SHIP_TO_USER_EMAIL" selected="True" rename="PO_Shiptouser_Email" />
+            <SelectField field="SHIP_TO_USER_EMPLOYEE_NUMBER" selected="True" rename="PO_Shiptouser_EmployeeID" />
+            <SelectField field="SUPPLIER_ID" selected="True" rename="PO_SupplierID" />
+            <SelectField field="SUPPLIER_NAME" selected="True" rename="PO_SupplierName" />
+            <SelectField field="SUPPLIER_NUMBER" selected="True" rename="PO_SupplierNumber" />
+            <SelectField field="UPDATED_BY_EMAIL" selected="True" rename="PO_Updatedby_Email" />
+            <SelectField field="UPDATED_BY_EMPLOYEE_NUMBER" selected="True" rename="PO_Updatedby_EmployeeID" />
+            <SelectField field="DESCRIPTION" selected="True" rename="PO_Description" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="654" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Paul Park adhoc\Test output 2.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Test output 2.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select * from COUPA.DW_COUPA...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="aka:5f11ec5cf88a2f1cc8948256" Package="False" IsMacro="False" IsOutput="False" IsAlias="True" />
+          </Implicit>
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="COUPA_PO_LINE_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="ACCOUNTING_TOTAL" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="ACCOUNTING_TOTAL_CURRENCY" size="6" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="String" />
+            <Field name="CREATED_AT" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="DateTime" />
+            <Field name="DESCRIPTION" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Int64" />
+            <Field name="INVOICED" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="ACTIVE_INVOICED_AMOUNT" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="LINE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="NEED_BY_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="DateTime" />
+            <Field name="ORDER_HEADER_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Int64" />
+            <Field name="PRICE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="QUANTITY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="RECEIVED" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="SOURCE_PART_NUM" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="STATUS" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SUB_LINE_NUM" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Int64" />
+            <Field name="SUPP_AUX_PART_NUM" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="TOTAL" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="CURRENCY" size="6" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="String" />
+            <Field name="TYPE" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="UPDATED_AT" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="DateTime" />
+            <Field name="VERSION" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Int64" />
+            <Field name="ACCOUNT_CODE" size="1024" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_1" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_2" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_3" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_4" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_5" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_6" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_7" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_8" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_9" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_10" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_11" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_12" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_13" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_14" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_15" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_16" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_17" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_18" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_19" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SEGMENT_20" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="ACCOUNT_NAME" size="1024" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="ACCOUNT_TYPE" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CONTRACT_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Int64" />
+            <Field name="CONTRACT_NAME" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="DEPARTMENT" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CREATED_BY_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CREATED_BY_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CREATED_BY_FIRSTNAME" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CREATED_BY_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Int64" />
+            <Field name="CREATED_BY_LASTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CREATED_BY_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SUPPLIER_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Int64" />
+            <Field name="SUPPLIER_NAME" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="SUPPLIER_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="UOM" size="6" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="String" />
+            <Field name="UPDATED_BY_EMAIL" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="UPDATED_BY_EMPLOYEE_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="UPDATED_BY_FIRSTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="UPDATED_BY_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Int64" />
+            <Field name="UPDATED_BY_LASTNAME" size="40" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="UPDATED_BY_LOGIN" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="COMMODITY" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_1" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_2" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_3" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_4" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_5" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_6" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_7" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_8" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_9" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="CUSTOM_FIELD_10" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="V_String" />
+            <Field name="AUDIT_INS_TS" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="DateTime" />
+            <Field name="AUDIT_INS_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+            <Field name="AUDIT_UPD_TS" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="DateTime" />
+            <Field name="AUDIT_UPD_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select * from COUPA.DW_COUPA_PO_LINE" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="258" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="COUPA_PO_HDR_KEY" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="COUPA_PO_LINE_KEY" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_ACCOUNTING_TOTAL" selected="True" rename="Right_ACCOUNTING_TOTAL" input="Right_" />
+                <SelectField field="Right_ACCOUNTING_TOTAL_CURRENCY" selected="True" rename="Right_ACCOUNTING_TOTAL_CURRENCY" input="Right_" />
+                <SelectField field="Right_CREATED_AT" selected="True" rename="Right_CREATED_AT" input="Right_" />
+                <SelectField field="Right_ID" selected="True" rename="Right_ID" input="Right_" />
+                <SelectField field="Right_STATUS" selected="True" rename="Right_STATUS" input="Right_" />
+                <SelectField field="Right_UPDATED_AT" selected="True" rename="Right_UPDATED_AT" input="Right_" />
+                <SelectField field="Right_VERSION" selected="True" rename="Right_VERSION" input="Right_" />
+                <SelectField field="Right_CREATED_BY_EMAIL" selected="True" rename="Right_CREATED_BY_EMAIL" input="Right_" />
+                <SelectField field="Right_CREATED_BY_EMPLOYEE_NUMBER" selected="True" rename="Right_CREATED_BY_EMPLOYEE_NUMBER" input="Right_" />
+                <SelectField field="Right_CREATED_BY_FIRSTNAME" selected="True" rename="Right_CREATED_BY_FIRSTNAME" input="Right_" />
+                <SelectField field="Right_CREATED_BY_ID" selected="True" rename="Right_CREATED_BY_ID" input="Right_" />
+                <SelectField field="Right_CREATED_BY_LASTNAME" selected="True" rename="Right_CREATED_BY_LASTNAME" input="Right_" />
+                <SelectField field="Right_CREATED_BY_LOGIN" selected="True" rename="Right_CREATED_BY_LOGIN" input="Right_" />
+                <SelectField field="Right_SUPPLIER_ID" selected="True" rename="Right_SUPPLIER_ID" input="Right_" />
+                <SelectField field="Right_SUPPLIER_NAME" selected="True" rename="Right_SUPPLIER_NAME" input="Right_" />
+                <SelectField field="Right_SUPPLIER_NUMBER" selected="True" rename="Right_SUPPLIER_NUMBER" input="Right_" />
+                <SelectField field="Right_UPDATED_BY_EMAIL" selected="True" rename="Right_UPDATED_BY_EMAIL" input="Right_" />
+                <SelectField field="Right_UPDATED_BY_EMPLOYEE_NUMBER" selected="True" rename="Right_UPDATED_BY_EMPLOYEE_NUMBER" input="Right_" />
+                <SelectField field="Right_UPDATED_BY_FIRSTNAME" selected="True" rename="Right_UPDATED_BY_FIRSTNAME" input="Right_" />
+                <SelectField field="Right_UPDATED_BY_ID" selected="True" rename="Right_UPDATED_BY_ID" input="Right_" />
+                <SelectField field="Right_UPDATED_BY_LASTNAME" selected="True" rename="Right_UPDATED_BY_LASTNAME" input="Right_" />
+                <SelectField field="Right_UPDATED_BY_LOGIN" selected="True" rename="Right_UPDATED_BY_LOGIN" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_1" selected="True" rename="Right_CUSTOM_FIELD_1" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_2" selected="True" rename="Right_CUSTOM_FIELD_2" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_3" selected="True" rename="Right_CUSTOM_FIELD_3" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_4" selected="True" rename="Right_CUSTOM_FIELD_4" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_5" selected="True" rename="Right_CUSTOM_FIELD_5" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_6" selected="True" rename="Right_CUSTOM_FIELD_6" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_7" selected="True" rename="Right_CUSTOM_FIELD_7" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_8" selected="True" rename="Right_CUSTOM_FIELD_8" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_9" selected="True" rename="Right_CUSTOM_FIELD_9" input="Right_" />
+                <SelectField field="Right_CUSTOM_FIELD_10" selected="True" rename="Right_CUSTOM_FIELD_10" input="Right_" />
+                <SelectField field="Right_AUDIT_INS_TS" selected="True" rename="Right_AUDIT_INS_TS" input="Right_" />
+                <SelectField field="Right_AUDIT_INS_KEY" selected="True" rename="Right_AUDIT_INS_KEY" input="Right_" />
+                <SelectField field="Right_AUDIT_UPD_TS" selected="True" rename="Right_AUDIT_UPD_TS" input="Right_" />
+                <SelectField field="Right_AUDIT_UPD_KEY" selected="True" rename="Right_AUDIT_UPD_KEY" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="22" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>EDPPRDRBI_OSP_Compliance</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3455a330-97de-44d1-9be4-036db837b4d1" />
+      <Telemetry>
+        <PreviousWorkflowId value="395bdaee-b7b2-4594-8d75-e9ece2f4689b" />
+        <OriginWorkflowId value="1d234c7a-fc98-48cc-98fa-a0302fd077c9" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

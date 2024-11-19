@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp-Fin-Athena</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:642f2d277901ae9f4a7bd309|||select dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.record_type_header,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.id,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.order_header_id,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.po_number,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.status,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.pending_cancel,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.version,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.justification,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.supplier_id,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.supplier_number,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.supplier_name,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.created_at,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.created_by_login,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.submitted_at,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.approved_by_logins,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.total,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.currency_code,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.currency_changed,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.coa_changed,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.does_the_following_statement_apply,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.if_the_scope_changed_is_the_below_true,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.if_the_scope_changed_are_the_below_true,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.if_the1_scope_changed_are_the_below_true,
+	dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.ingest_date,
+	dlprd.fin_coupa_src.coupa_po_hdr.id as id1,
+	dlprd.fin_coupa_src.coupa_po_hdr.version as version1,
+	dlprd.fin_coupa_src.coupa_po_hdr.internal_revision,
+	dlprd.fin_coupa_src.coupa_po_hdr.requisition_id 
+from dlprd.fin_coupa_src.coupa_bi_orderheaderchanges 
+	left join dlprd.fin_coupa_src.coupa_po_hdr on dlprd.fin_coupa_src.coupa_bi_orderheaderchanges.order_header_id = dlprd.fin_coupa_src.coupa_po_hdr.id</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp-Fin-Athena
+Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="record_type_header" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="order_header_id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="po_number" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="status" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="pending_cancel" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="version" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="justification" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="supplier_id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="supplier_number" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="supplier_name" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="created_at" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="created_by_login" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="submitted_at" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="approved_by_logins" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="total" scale="10" size="40" source="File: Corp-Fin-Athena" type="FixedDecimal" />
+            <Field name="currency_code" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="currency_changed" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="coa_changed" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="does_the_following_statement_apply" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="if_the_scope_changed_is_the_below_true" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="if_the_scope_changed_are_the_below_true" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="if_the1_scope_changed_are_the_below_true" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="ingest_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="id1" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="version1" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="internal_revision" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="requisition_id" source="File: Corp-Fin-Athena" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_32924_d065cdb93596c942b5a889abbe436ad4_\Engine_32924_fa1495d6ae8678419ca156266431f017~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>COUPA PO CHANGE REVIEW</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="625fe1ee-6a57-43d2-b3c3-0a82f7a8771f" />
+      <Telemetry>
+        <PreviousWorkflowId value="ff3cd7e5-51d8-44c4-b4ee-57845c98b134" />
+        <OriginWorkflowId value="ff3cd7e5-51d8-44c4-b4ee-57845c98b134" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

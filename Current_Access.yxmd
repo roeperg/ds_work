@@ -1,0 +1,1369 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="26" />
+          <Fields>
+            <Field name="EMAIL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>alberto_rojas@intuit.com</c>
+            </r>
+            <r>
+              <c>badrish_panikesari@intuit.com</c>
+            </r>
+            <r>
+              <c>bernadette_orende@intuit.com</c>
+            </r>
+            <r>
+              <c>brandon_duncan@intuit.com</c>
+            </r>
+            <r>
+              <c>caitlin_cross@intuit.com</c>
+            </r>
+            <r>
+              <c>carly_klem@intuit.com</c>
+            </r>
+            <r>
+              <c>chien_dinh@intuit.com</c>
+            </r>
+            <r>
+              <c>dapo_adegeye@intuit.com</c>
+            </r>
+            <r>
+              <c>dax_parreno@intuit.com</c>
+            </r>
+            <r>
+              <c>devon_rimer@intuit.com</c>
+            </r>
+            <r>
+              <c>donna_myers@intuit.com</c>
+            </r>
+            <r>
+              <c>eric_mcdaniel@intuit.com</c>
+            </r>
+            <r>
+              <c>eric_sisk@intuit.com</c>
+            </r>
+            <r>
+              <c>erica_garcia@intuit.com</c>
+            </r>
+            <r>
+              <c>grace_yang1@intuit.com</c>
+            </r>
+            <r>
+              <c>guy_heagney@intuit.com</c>
+            </r>
+            <r>
+              <c>henry_law@intuit.com</c>
+            </r>
+            <r>
+              <c>jeffrey_ariz@intuit.com</c>
+            </r>
+            <r>
+              <c>kathleen_russell@intuit.com</c>
+            </r>
+            <r>
+              <c>robert_weibel@intuit.com</c>
+            </r>
+            <r>
+              <c>scott_blazer@intuit.com</c>
+            </r>
+            <r>
+              <c>shauna_mckinney@intuit.com</c>
+            </r>
+            <r>
+              <c>sihem_moualhi@intuit.com</c>
+            </r>
+            <r>
+              <c>thomas_cratty@intuit.com</c>
+            </r>
+            <r>
+              <c>trent_downes@intuit.com</c>
+            </r>
+            <r>
+              <c>velu_muniswamy@intuit.com</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Members</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="34" />
+          <Fields>
+            <Field name="FILE" />
+            <Field name="EMAIL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>MARKETING</c>
+              <c>Alberto_Rojas@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Badrish_Panikesari@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Carly_Klem@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Chien_Dinh@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Donna_Myers@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Henry_Law@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Jeffrey_Ariz@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Kathleen_Russell@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Robert_Weibel@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Sihem_Moualhi@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Thomas_Cratty@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>Velu_Muniswamy@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>grace_yang1@intuit.com</c>
+            </r>
+            <r>
+              <c>MARKETING</c>
+              <c>trent_downes@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Alberto_Rojas@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Caitlin_Cross@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Dapo_Adegeye@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Eric_McDaniel@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Eric_Sisk@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Jeffrey_Ariz@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Kathleen_Russell@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Scott_Blazer@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>Shauna_McKinney@intuit.com</c>
+            </r>
+            <r>
+              <c>SERVICES</c>
+              <c>erica_garcia@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Alberto_Rojas@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Caitlin_Cross@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Dapo_Adegeye@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Eric_McDaniel@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Eric_Sisk@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Jeffrey_Ariz@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Kathleen_Russell@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Scott_Blazer@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>Shauna_McKinney@intuit.com</c>
+            </r>
+            <r>
+              <c>TECHNOLOGY</c>
+              <c>erica_garcia@intuit.com</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Current Access
+]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="618" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EMAIL" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="EMAIL" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_EMAIL" selected="False" rename="Right_EMAIL" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="32" />
+          <Fields>
+            <Field name="Name" />
+            <Field name="Callsign" />
+            <Field name="Role" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Adriene Draper</c>
+              <c>adraper</c>
+              <c>Staff Procurement Analyst</c>
+            </r>
+            <r>
+              <c>Alberto Rojas</c>
+              <c>arojasfield</c>
+              <c>Principal Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Badrish Badri</c>
+              <c>N/A</c>
+              <c>Manager 2, Strategic Sourcing</c>
+            </r>
+            <r>
+              <c>Bernadette Orende</c>
+              <c>borende</c>
+              <c>Principal Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Brandon Duncan</c>
+              <c>bduncan</c>
+              <c>Group Manager - Strategic Sourcing</c>
+            </r>
+            <r>
+              <c>Caitlin Cross</c>
+              <c>ccross3</c>
+              <c>Staff Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Carly Klem</c>
+              <c>cklem</c>
+              <c>Manager 2, Procurement</c>
+            </r>
+            <r>
+              <c>Chien Dinh</c>
+              <c>cdinh</c>
+              <c>Senior Procurement Analyst</c>
+            </r>
+            <r>
+              <c>Dapo Adegeye</c>
+              <c>Dapo Adegeye</c>
+              <c>Principal Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Dax Parreno</c>
+              <c>dparreno</c>
+              <c>Senior Procurement Analyst</c>
+            </r>
+            <r>
+              <c>Devon Rimer</c>
+              <c>drimer</c>
+              <c>Principal Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Donna Myers</c>
+              <c>dmyers3</c>
+              <c>Staff Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Eric McDaniel</c>
+              <c>emcdaniel</c>
+              <c>Group Manager, Technology Sourcing</c>
+            </r>
+            <r>
+              <c>Erica Garcia</c>
+              <c>N/A</c>
+              <c>Manager 2, Procurement</c>
+            </r>
+            <r>
+              <c>Grace Yang</c>
+              <c>wyang1</c>
+              <c>Principal Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Gregory Roeper</c>
+              <c>groeper</c>
+              <c>Business Systems Analyst I</c>
+            </r>
+            <r>
+              <c>Guy Heagney</c>
+              <c>gheagney1</c>
+              <c>Principal Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Henry Law</c>
+              <c>hlaw</c>
+              <c>Staff Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Jason DeMello</c>
+              <c>jdemello</c>
+              <c>Manager 3, Program Management</c>
+            </r>
+            <r>
+              <c>Jeffrey Ariz</c>
+              <c>Jeff Ariz</c>
+              <c>Director, Strategic Sourcing</c>
+            </r>
+            <r>
+              <c>Johan Johansson</c>
+              <c>jjohansson</c>
+              <c>Manager 3, Strategic Sourcing</c>
+            </r>
+            <r>
+              <c>Kathleen Russell</c>
+              <c>khumphrey</c>
+              <c>Global Sourcing Leader - Services</c>
+            </r>
+            <r>
+              <c>Nathan Sisk</c>
+              <c>Nathan Sisk</c>
+              <c>Principal Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Robert Weibel</c>
+              <c>rweibel</c>
+              <c>Manager 3, Strategic Sourcing</c>
+            </r>
+            <r>
+              <c>Scott Blazer</c>
+              <c>sblazer</c>
+              <c>Staff Procurement Analyst</c>
+            </r>
+            <r>
+              <c>Shauna McKinney</c>
+              <c>smckinney</c>
+              <c>Senior Procurement Analyst</c>
+            </r>
+            <r>
+              <c>Sheila Golrang</c>
+              <c>sgolrang</c>
+              <c>Manager 2 Data and Analytics</c>
+            </r>
+            <r>
+              <c>Sihem Moualhi</c>
+              <c>smoualhi</c>
+              <c>Staff Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Sydney Nichols</c>
+              <c>snichols4</c>
+              <c>Staff Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Thomas Cratty</c>
+              <c>tcratty</c>
+              <c>Principal Strategic Sourcing Manager</c>
+            </r>
+            <r>
+              <c>Trent Downes</c>
+              <c>Trent Downes</c>
+              <c>Travel &amp; Expense Group Manager</c>
+            </r>
+            <r>
+              <c>Velu Muniswamy</c>
+              <c>vmuniswamy</c>
+              <c>Senior Strategic Sourcing Manager</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="216" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="LowerCase([EMAIL])" field="EMAIL" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[EMAIL = LowerCase([EMAIL])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="757" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="EMAIL" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>EMAIL - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="239" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="LowerCase(ReplaceChar([Name], &quot; &quot;, &quot;_&quot;) + &quot;@intuit.com&quot;)" field="EMAIL" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[EMAIL = LowerCase(ReplaceChar([Name], " ", "_") + "@intuit.com")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="376" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EMAIL" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="EMAIL" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_EMAIL" selected="False" rename="Right_EMAIL" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="966" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FILE" selected="False" />
+            <SelectField field="Name" selected="True" />
+            <SelectField field="Callsign" selected="True" />
+            <SelectField field="Role" selected="True" />
+            <SelectField field="EMAIL" selected="True" />
+            <SelectField field="MARKETING" selected="True" />
+            <SelectField field="SERVICES" selected="True" />
+            <SelectField field="TECHNOLOGY" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="330" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="EMAIL" />
+          </GroupFields>
+          <HeaderField field="FILE" />
+          <DataField field="EMAIL" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EMAIL" size="2147483647" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="MARKETING" size="2048" source="CrossTab:Header:FILE:MARKETING:Concat:" type="V_String" />
+            <Field name="SERVICES" size="2048" source="CrossTab:Header:FILE:SERVICES:Concat:" type="V_String" />
+            <Field name="TECHNOLOGY" size="2048" source="CrossTab:Header:FILE:TECHNOLOGY:Concat:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="444" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [MARKETING] == &quot;&quot;  THEN &quot;&quot; ELSE &quot;*&quot; ENDIF" field="MARKETING" size="2048" type="V_String" />
+            <FormulaField expression="IF [SERVICES] == &quot;&quot;  THEN &quot;&quot; ELSE &quot;*&quot; ENDIF" field="SERVICES" size="2048" type="V_String" />
+            <FormulaField expression="IF [TECHNOLOGY] == &quot;&quot;  THEN &quot;&quot; ELSE &quot;*&quot; ENDIF" field="TECHNOLOGY" size="2048" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>MARKETING = IF [MARKETING] == ""  THEN "" ELSE "*" ENDIF
+SERVICES = IF [SERVICES...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="512" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="EMAIL" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>EMAIL - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1050" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>MARKETING</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-11-01 17:49:46</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>*</Operand>
+              <StartDate>2024-11-01 17:49:46</StartDate>
+              <EndDate>2024-11-01 17:49:46</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[MARKETING] = "*"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1212" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="MARKETING" />
+          </GroupFields>
+          <HeaderField field="MARKETING" />
+          <DataField field="EMAIL" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MARKETING" size="2048" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="_" size="2048" source="CrossTab:Header:MARKETING:*:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1374" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Marketing&quot;" field="Channel" size="1073741823" type="V_WString" />
+            <FormulaField expression="[_]" field="List" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Channel = "Marketing"
+List = [_]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1050" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>SERVICES</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-11-01 17:55:28</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2024-11-01 17:55:28</StartDate>
+              <EndDate>2024-11-01 17:55:28</EndDate>
+              <Operand>*</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[SERVICES] = "*"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1212" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="SERVICES" />
+          </GroupFields>
+          <HeaderField field="SERVICES" />
+          <DataField field="EMAIL" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SERVICES" size="2048" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="_" size="2048" source="CrossTab:Header:SERVICES:*:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1374" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Services&quot;" field="Channel" size="1073741823" type="V_WString" />
+            <FormulaField expression="[_]" field="List" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Channel = "Services"
+List = [_]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1050" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>TECHNOLOGY</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-11-01 17:55:32</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2024-11-01 17:55:32</StartDate>
+              <EndDate>2024-11-01 17:55:32</EndDate>
+              <Operand>*</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[TECHNOLOGY] = "*"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1212" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="TECHNOLOGY" />
+          </GroupFields>
+          <HeaderField field="TECHNOLOGY" />
+          <DataField field="EMAIL" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="TECHNOLOGY" size="2048" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="_" size="2048" source="CrossTab:Header:TECHNOLOGY:*:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1374" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Technology&quot;" field="Channel" size="1073741823" type="V_WString" />
+            <FormulaField expression="[_]" field="List" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Channel = "Technology"
+List = [_]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1650" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1842" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Channel" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Channel - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1506" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="MARKETING" selected="False" />
+            <SelectField field="_" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1506" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SERVICES" selected="False" />
+            <SelectField field="_" selected="False" />
+            <SelectField field="MARKETING" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1506" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="TECHNOLOGY" selected="False" />
+            <SelectField field="_" selected="False" />
+            <SelectField field="MARKETING" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1998" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\groeper\Development\Preferred Supplier\FilterLists.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FilterLists.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;'&quot; + [EMAIL] +&quot;'&quot;" field="EMAIL" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[EMAIL = "'" + [EMAIL] +"'"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="894" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="EMAIL" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>EMAIL - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="1301" y="185" width="196" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 22</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1326" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">H:\Preferred Supplier\GSheet_Access.xlsx|||Current Access</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Current Access</AnnotationText>
+              <DefaultAnnotationText>GSheet_Access.xlsx
+Query=Current Access</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="869" y="17" width="196" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 21</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="894" y="66" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">H:\Preferred Supplier\GSheet_Access.xlsx|||No Access</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>No Access</AnnotationText>
+              <DefaultAnnotationText>GSheet_Access.xlsx
+Query=No Access</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Left" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Log" />
+      <Destination ToolID="22" Connection="Control" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Current_Access</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5b0f8058-a909-47d7-8c85-a4141821c0cd" />
+      <Telemetry>
+        <PreviousWorkflowId value="ce16ca2d-659a-4820-9fe1-aa013d9e4497" />
+        <OriginWorkflowId value="ce16ca2d-659a-4820-9fe1-aa013d9e4497" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

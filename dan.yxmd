@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2">
+  <Nodes>
+    <Node ToolID="25">
+      <GuiSettings Plugin="JupyterCode">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <DefaultVenv>1</DefaultVenv>
+          <JupyterGuidDir>0c5fcb223955926146d3dd3f0e5de017</JupyterGuidDir>
+          <productionModeScript>#################################
+# List all non-standard packages to be imported by your 
+# script here (only missing packages will be installed)
+from ayx import Package
+#Package.installPackages(['pandas','numpy'])
+
+
+#################################
+from ayx import Alteryx
+
+
+
+
+#################################
+import json
+import requests
+import pandas as pd
+
+headers = {
+    'QB-Realm-Hostname': 'https://intuitcorp.quickbase.com',
+    'User-Agent': '{User-Agent}',
+    'Authorization': 'QB-USER-TOKEN byg59k_k_0_ch28y3ybhdbuxfzkdnzacdu8frq',
+    'Content-Type': 'application/json',
+}
+
+body = {
+    'from': 'bnskksae5', 'select': '[1,2]'
+}
+
+r = requests.post('https://api.quickbase.com/v1/reports/307/run?tableId=bnskksae5&amp;top=100',
+headers = headers,
+json = body
+)
+
+if False:
+    r = requests.get(
+        'https://api.quickbase.com/v1/reports/307?tableId=bnskksae5',
+    #    'https://api.quickbase.com/v1/fields?tableId=bnskksae5',
+    headers = headers,
+    json = body
+    )
+
+
+"""
+get
+https://api.quickbase.com/v1/reports/307?tableId=bnskksae5
+"""
+response_list = json.loads(r.text)
+#print(response_list)
+print(len(response_list))
+dataFrame = pd.DataFrame.from_dict(response_list, orient='columns')
+#dataFrame = pd.DataFrame(response_list)
+Alteryx.write(dataFrame, 1)
+
+
+
+
+#################################
+
+</productionModeScript>
+          <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"}},"outputs":[],"source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Package\n","#Package.installPackages(['pandas','numpy'])"]},{"cell_type":"code","execution_count":2,"metadata":{},"outputs":[],"source":["from ayx import Alteryx\n","\n"]},{"cell_type":"code","execution_count":3,"metadata":{},"outputs":[],"source":["import json\n","import requests\n","import pandas as pd\n","\n","headers = {\n","    'QB-Realm-Hostname': 'https://intuitcorp.quickbase.com',\n","    'User-Agent': '{User-Agent}',\n","    'Authorization': 'QB-USER-TOKEN byg59k_k_0_ch28y3ybhdbuxfzkdnzacdu8frq',\n","    'Content-Type': 'application/json',\n","}\n","\n","body = {\n","    'from': 'bnskksae5', 'select': '[1,2]'\n","}\n","\n","if True:\n","\tr = requests.post('https://api.quickbase.com/v1/reports/307/run?tableId=bnskksae5&top=5',\n","\theaders = headers,\n","\tjson = body\n","\t)\n","else:\t\n","\tr = requests.post('https://api.quickbase.com/v1/reports/1000289/run?tableId=bnskksae5&top=2',\n","\theaders = headers,\n","\tjson = body\n","\t)\n","\n","response_list = r.json()['data']\n","dataFrame = pd.json_normalize(response_list)\n","\n","#dataFrame = pd.DataFrame(response_list)\n","#Alteryx.write(dataFrame, 1)\n","\n","print(dataFrame.head)\n","\n","\n","\n","Alteryx.write(dataFrame, 1)\n","\n"]},{"cell_type":"code","execution_count":4,"metadata":{},"outputs":[],"source":["\n"]}],"metadata":{"kernelspec":{"display_name":"designerbasetools_venv","language":"python","name":"designerbasetools_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.16"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+          <GuidDir>024ba534-da0f-49fa-9958-8806ee3abd38</GuidDir>
+          <Port>60120</Port>
+          <WorkflowName>c:\users\groeper\development\alteryx\dan.yxmd</WorkflowName>
+          <specialCellMetadata>[{"label":"info","contents_keyword":"Alteryx.help()","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","first_line":"Run `Alteryx.help()` for info about useful functions.","cell_type":"markdown","cell_class":"text_cell"},{"label":"deps","contents_keyword":"installPackages","cell_css":"border: 1px solid #58a; margin: 2px;","first_line":"# List all non-standard packages to be imported by your","cell_type":"code","cell_class":"code_cell"}]</specialCellMetadata>
+          <AssetManaged>True</AssetManaged>
+          <JupyterProduction>false</JupyterProduction>
+          <LastExecutedByEngineVersion>2023.2.1.226</LastExecutedByEngineVersion>
+          <vEnvName>designerbasetools_venv</vEnvName>
+          <JupyterGuidCopy />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_18612_b66ad0c94006401e80abe85039f5103e_\Engine_27372_2190ba7d265d45ee8569d76096b97614_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="25" Connection="Output1" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dan</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3d1bd022-2ade-4998-a64f-b23abb62d5f8" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="3d1bd022-2ade-4998-a64f-b23abb62d5f8" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

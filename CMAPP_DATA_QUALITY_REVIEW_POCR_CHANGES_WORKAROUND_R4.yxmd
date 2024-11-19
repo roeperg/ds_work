@@ -312,7 +312,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_fbe8a133af24c2448718311db8f1bfe4~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_71d78a57d74a4c4b8f677b0581b1b18a~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -364,7 +364,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_6b059b1b06d6d74caf0c411bbd1abbb0~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_6174a1ea3bb160488f460af219c1c991~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -505,7 +505,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_81144c6a97866c4aa9b3a77f7e14d3b1~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_54b73e634a80ae4d9f7b19f0dc4da770~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -829,7 +829,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_7df68ec606ae0948a186a3004bb64311~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_6975e9be3ba2a94abeb97e1a23cccb42~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1063,7 +1063,7 @@ Query=select dlprd.fin_cmapp_src.c...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_fe0def89b2a8ce4fb49918370f6cb587~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_ed20a2d7a054f04bab5bbe1c5be4b5f7~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1227,7 +1227,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_7ec1c62044abe449b7dfdf8d05931274~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_a82830708497da4085ab2ec8870dd6c5~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1298,7 +1298,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_7fe663231f907245b842fb52eafedbf1~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_8b06d3b3d6984d46b49dd1891b22d072~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1322,7 +1322,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
     </Node>
     <Node ToolID="307">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="88" y="2900" />
+        <Position x="90" y="2898" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1491,7 +1491,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
     </Node>
     <Node ToolID="320">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="263" y="2900" />
+        <Position x="258" y="2898" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1513,7 +1513,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
             <Field name="contract_id" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Double" />
             <Field name="PO ID" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Double" />
             <Field name="ERROR VALUE" size="255" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="V_String" />
-            <Field name="INTRODATE" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Date" />
+            <Field name="INTRODATE" size="255" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="V_String" />
             <Field name="CLEARDATE" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Date" />
           </RecordInfo>
         </MetaInfo>
@@ -1522,7 +1522,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
     </Node>
     <Node ToolID="321">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="438" y="2900" />
+        <Position x="438" y="2898" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1548,7 +1548,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
     </Node>
     <Node ToolID="322">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="612" y="2900" />
+        <Position x="606" y="2898" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1567,7 +1567,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="CMAPP_PROJECT_ID" source="File: C:\Users\groeper\Development\Daily\CMAPPERRLOG.xlsx|||Sheet1" type="Double" />
-            <Field name="ERROR VALUE" size="255" source="File: C:\Users\groeper\Development\Daily\CMAPPERRLOG.xlsx|||Sheet1" type="V_String" />
+            <Field name="ERROR VALUE" source="File: C:\Users\groeper\Development\Daily\CMAPPERRLOG.xlsx|||Sheet1" type="Double" />
             <Field name="INTRODATE" source="File: C:\Users\groeper\Development\Daily\CMAPPERRLOG.xlsx|||Sheet1" type="Date" />
             <Field name="CLEARDATE" source="File: C:\Users\groeper\Development\Daily\CMAPPERRLOG.xlsx|||Sheet1" type="Date" />
           </RecordInfo>
@@ -1818,7 +1818,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_36d579e9ae332b40b370fe5c5f55d4f3~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_3791098fbbd21846b9e6a525e58bfc3c~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1908,7 +1908,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="if isnull([CLEARDATE]) then todate(datetimetoday()) else [CLEARDATE] endif" field="CLEARDATE" size="1073741823" type="V_WString" />
+            <FormulaField expression="if isnull([CLEARDATE]) then todate(datetimetoday()) else [CLEARDATE] endif" field="CLEARDATE" size="8" type="Double" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -2575,7 +2575,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_5eacc1bb87775341ac9ce80c347aea6b~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_d9b0b9deab40e244999d6129135beb13~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2638,7 +2638,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_047b296553ae8940a7b528225966aa56~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_d8963c53314f9c45a4c8924d53519827~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2935,9 +2935,360 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
+    <Node ToolID="405">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="702" y="2766" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="406">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="186" y="2766" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="status" selected="True" />
+            <Field field="currency_code" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="requisition_id" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="Double" />
+            <Field name="status" size="20" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="V_String" />
+            <Field name="created_at_date" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="DateTime" />
+            <Field name="total" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="Double" />
+            <Field name="currency_code" size="3" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="407">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="594" y="2766" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="408">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="354" y="2766" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="ERROR VALUE" selected="True" />
+            <Field field="INTRODATE" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="requisition_id" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Double" />
+            <Field name="contract_id" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Double" />
+            <Field name="PO ID" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Double" />
+            <Field name="ERROR VALUE" size="10" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="String" />
+            <Field name="INTRODATE" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Date" />
+            <Field name="CLEARDATE" source="File: C:\Users\groeper\Development\Daily\COUPAERRLOG.xlsx|||Sheet1" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="422">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="197" y="3053" width="889" height="253" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 422</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="409">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="222" y="3174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="411">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="510" y="3102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="412">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="390" y="3198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="413">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="510" y="3198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="414">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="594" y="3102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="415">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="714" y="3102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="416">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="594" y="3198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="417">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="714" y="3198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="418">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="882" y="3126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="419">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="1002" y="3126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="420">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="882" y="3222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="421">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="1002" y="3222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="423">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="1877" y="3089" width="203" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 423</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="178">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1902" y="3138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\Daily\CMAPP AND COUPA DATA ERROR TRACKER.xlsx|||COUPA RAW DATA</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CMAPP AND COUPA DATA ERROR TRACKER.xlsx   Sheet COUPA RAW DATA</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
     <Node ToolID="404">
       <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
-        <Position x="1925" y="3089" width="203" height="225" />
+        <Position x="2117" y="3089" width="203" height="225" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2955,7 +3306,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="176">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="1950" y="3138" />
+            <Position x="2142" y="3138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3055,7 +3406,7 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
     </Node>
     <Node ToolID="402">
       <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
-        <Position x="1505" y="3089" width="140" height="561" />
+        <Position x="1505" y="3089" width="140" height="393" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3122,31 +3473,6 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
-        <Node ToolID="178">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="1530" y="3474" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\Daily\CMAPP AND COUPA DATA ERROR TRACKER.xlsx|||COUPA RAW DATA</File>
-              <Passwords />
-              <Disable>False</Disable>
-              <FormatSpecificOptions>
-                <PreserveFormat>False</PreserveFormat>
-                <UNCLocal>False</UNCLocal>
-                <SkipFieldNames>False</SkipFieldNames>
-                <OutputOption>Overwrite</OutputOption>
-              </FormatSpecificOptions>
-              <MultiFile value="False" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>CMAPP AND COUPA DATA ERROR TRACKER.xlsx   Sheet COUPA RAW DATA</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
-        </Node>
       </ChildNodes>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
     </Node>
@@ -3192,9 +3518,6 @@ Query=select DLPRD.UED_EBIZ_DWH.gl...</DefaultAnnotationText>
 Query=CMAPP</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
@@ -3376,7 +3699,7 @@ Query=CMAPP</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_76aa1153bdade04d8fc19e923d90bf39~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_d2f8e0f7a3e9df4db05fb137123ed4ad~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -3536,7 +3859,7 @@ PR VALUE CHECK = if isempty([PR VALUE]) or [PR VALUE]&lt;=1 then "...</DefaultAn
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_0f771103a0fe0b4483169438dc131beb~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_fd6e07d619ecdf4a9f40aae914c1ed4d~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -3581,7 +3904,7 @@ PR VALUE CHECK = if isempty([PR VALUE]) or [PR VALUE]&lt;=1 then "...</DefaultAn
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_b7de28e502df8440a51376d0d0d4455e~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_776dbff4ca96fd4684fa4e4c730f7c33~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -3854,7 +4177,7 @@ PR VALUE CHECK = if isempty([PR VALUE]) or [PR VALUE]&lt;=1 then "...</DefaultAn
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_086814f353708f479e396540a850c727~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_32f13f54383e0a45885c6f62cfa1a1b3~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -3941,7 +4264,7 @@ PR VALUE CHECK = if isempty([PR VALUE]) or [PR VALUE]&lt;=1 then "...</DefaultAn
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_58d06ba685e312408431dcb8ba0b61e0~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_895ed0d433492c4fbad2aaf423386779~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -4943,7 +5266,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_ab3ee2861478b84095fc12e154eafe54~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_577235ee72a6e643876ef057dc56ee17~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -5128,7 +5451,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_b08e12b517d573409c1f818ac1ef18f2~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_bfa81f9bab36f44abd5e45317e0da732~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -5279,7 +5602,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_fa298f5b284c5b41ade4009c1ea62644~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_ccb2fd014110ec499b2066ff6bd33671~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -5384,7 +5707,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_da614fbbe746654ca65916da181af7e2~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_002a9a74abb67445b8a6b406dc9075a7~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -5619,7 +5942,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_621cd735c9c3464883aac578515d9638~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_7c63022c218bf2439e74e293e883eb67~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -5696,6 +6019,12 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
                 <SelectField field="PO CURR" selected="True" />
                 <SelectField field="PO TOTAL" selected="True" />
                 <SelectField field="PR CREATE DATE" selected="False" />
+                <SelectField field="PO ID2" selected="True" />
+                <SelectField field="Count_contract_id" selected="True" />
+                <SelectField field="Count_PO ID" selected="True" />
+                <SelectField field="PR LINE KEY LIST" selected="True" />
+                <SelectField field="Concat_PO LINE NUMBER" selected="True" />
+                <SelectField field="MAX PO VERSION" selected="True" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -5917,7 +6246,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_820a3d9cc9aa5b4d99d2b89e6d321c62~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_c393ee58af1bca4f90cd6f851a3d529e~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -6029,7 +6358,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_4a033bf30d2a4544bb2f43d0b0925db1~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_cd934207fb9d3745920c0dfc2800638a~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -6126,7 +6455,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_27f5d25193a51646a84b784787aeb2ae~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_278ec4c5db004647b4d37bc74e88c856~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -6174,7 +6503,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_873da6f11447d446b3a5422d0bcebd21~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_1b8f14fe1885974aa19e20769f7836be~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -6465,7 +6794,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_b9a347d08155d94fa65e052066a580c1~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_497bcaef5a031d4da0140d682f22e8e2~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -6780,7 +7109,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_87d853f4a138ff48978b0ca61cb07af9~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_944e439109cb1d48b00e35f7f716dc1c~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -7111,7 +7440,7 @@ Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_541eefe1075f324ead4022b4c994914a~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_1fd05dae4bae4c429de4bf080bfe982e~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -7651,7 +7980,7 @@ CHECK = "999"
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_6702c39405f7d440a33fdb2c28a75911~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_306d3eb820f33642aa8024519e883927~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -7991,7 +8320,7 @@ CHECK = "999"
                   </Hints>
                 </View1>
               </Layout>
-              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33904_0c39b2e6c3104107989ce75b63a20b9d_\Engine_33904_b815026932bf4c4bbcb0bb38fe806e98~.yxdb</TempFile>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_26984_647d09f5202645678625aab43dacac3c_\Engine_26984_255b53bc9bad2547b6e13c7a91b0f273~.yxdb</TempFile>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -8255,7 +8584,7 @@ CHECK = "999"
     </Connection>
     <Connection>
       <Origin ToolID="307" Connection="Output" />
-      <Destination ToolID="310" Connection="Input" />
+      <Destination ToolID="406" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="309" Connection="Left" />
@@ -8311,15 +8640,15 @@ CHECK = "999"
     </Connection>
     <Connection>
       <Origin ToolID="320" Connection="Output" />
-      <Destination ToolID="326" Connection="Input" />
+      <Destination ToolID="408" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="321" Connection="Output" />
-      <Destination ToolID="357" Connection="Input" />
+      <Destination ToolID="407" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="322" Connection="Output" />
-      <Destination ToolID="358" Connection="Input" />
+      <Destination ToolID="405" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="323" Connection="Left" />
@@ -8554,8 +8883,28 @@ CHECK = "999"
       <Destination ToolID="400" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="403" Connection="Log" />
+      <Origin ToolID="405" Connection="Output" />
+      <Destination ToolID="358" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="406" Connection="Output" />
+      <Destination ToolID="310" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="407" Connection="Output" />
+      <Destination ToolID="357" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="408" Connection="Output" />
+      <Destination ToolID="326" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="423" Connection="Log" />
       <Destination ToolID="404" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="403" Connection="Log" />
+      <Destination ToolID="423" Connection="Control" />
     </Connection>
     <Connection>
       <Origin ToolID="402" Connection="Log" />
@@ -9366,7 +9715,7 @@ CHECK = "999"
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>test3</Name>
+      <Name>CMAPP_DATA_QUALITY_REVIEW_POCR_CHANGES_WORKAROUND_R4</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

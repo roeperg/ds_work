@@ -1,0 +1,1197 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Documents.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Document Type" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Final &amp; Executed Document" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Attachment" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Project - Supplier Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Project - Related Supplier2" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Project - Related Supplier2 - Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Related Agreement - Related Supplier3 - Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Short Document Description" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Exhibit included in the contract" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Executed Contract" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Date Created" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Coupa Attachment" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Related Agreement" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+            <Field name="Related Project" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Documents.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PARENT_Contract_Repository.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Amendment Number" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Contract - Document Type" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="MSA Document URL" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Contract Effective Start Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Contract Effective End Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Expiration Warning" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Expired" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Master Agreement - Supplier-MA Type" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Master Agreement - Related Supplier3" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Master Agreement - Related Supplier3 - Third Party Identifier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Master Agreement - Related Supplier3 - Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Contract Description" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Related Supplier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Supplier - Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Supplier - Third Party Identifier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Supplier - ThirdPartyTypeHL" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Related Contract" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Related Master Agreement" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Contract - Tags" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Projects" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Add Project" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Projects2" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Add Project2" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Date Created" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Last Modified By" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+            <Field name="Record Owner" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\PARENT_Contract_Repository.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Privacy_and_Security_Exhibits.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="Privacy Document" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="PSE Version (Effective Date)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="Privacy Exception" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="PSE Document URL Link" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="PSE Document System" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="PSE Document Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="Related Supplier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="Supplier - Third Party Identifier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="Supplier - Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="Privacy Document Execution Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="Privacy Document Location (Box,Coupa, CMAPP)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+            <Field name="Comments" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Privacy_and_Security_Exhibits.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Projects.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Link to MSA" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Intuit Contracting Entity" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Supplier Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Related Supplier2" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Sector (Merge)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Project Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Short Description" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Total Spend Amount (USD)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Total Savings (USD)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Contract Status" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Contract Currently Active" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Contract Signed Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Contract Effective Start Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Contract Expiration Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Service Start Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Project Driver" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Category Manager (Merge)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Requester (Merge)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Executed Contract" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Documents" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Box Link to Contract" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Contract_Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Project Start Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Project End Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="PR Number (Lookup)" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="COUPA_ID" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Coupa Contract ID#" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+            <Field name="Related Agreement" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Projects.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Suppliers.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Aravo Internal ID" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Third Party Identifier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="# of Engagements" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="# of Projects" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="# of Master agreements" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="# of Privacy and security exhibits" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Privacy and Security Exhibit in place" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="PSE_Required" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Overarching Tier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="PSE Exceptions" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Exception Comments" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="ThirdPartyTypeHL" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Active?" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="TPCountryRpt_Region_Grouping" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="TEST-NEW MA FORMAT" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Contracts" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Add Contract" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+            <Field name="Master Agreement Contracts" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Suppliers.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="282" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Aravo Internal ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Related Supplier" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_PSE Document System" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="774" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_8424_bdec7f69db6f4a989ad72292b5fd2884_\Engine_10888_0207bed99af846e89d7d89af9e70a5ca_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="402" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="# of Engagements" selected="False" />
+            <SelectField field="# of Projects" selected="False" />
+            <SelectField field="# of Master agreements" selected="False" />
+            <SelectField field="# of Privacy and security exhibits" selected="False" />
+            <SelectField field="TEST-NEW MA FORMAT" selected="False" />
+            <SelectField field="Add Contract" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Privacy Document" selected="True" />
+            <SelectField field="PSE Version (Effective Date)" selected="True" />
+            <SelectField field="Privacy Exception" selected="True" />
+            <SelectField field="PSE Document URL Link" selected="True" />
+            <SelectField field="PSE Document System" selected="True" />
+            <SelectField field="PSE Document Name" selected="True" />
+            <SelectField field="Related Supplier" selected="True" />
+            <SelectField field="Supplier - Third Party Identifier" selected="True" />
+            <SelectField field="Supplier - Third Party Name" selected="True" />
+            <SelectField field="Privacy Document Execution Date" selected="True" />
+            <SelectField field="Comments" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="498" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Aravo Internal ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Related Supplier3" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Related Supplier" selected="True" rename="Right_Related Supplier" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="582" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Master_Agreement.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Record ID#" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Supplier-MA Type" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Agreement Effective Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Agreement Expiration Date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Agreement Status" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Agreement Type" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Category Manager" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Contracts" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Intuit Contracting Entity" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="# of Engagements" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="# of Projects" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Related Supplier3" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Related Supplier3 - Third Party Identifier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+            <Field name="Related Supplier3 - Third Party Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS CardsCatalog\DATA\Master_Agreement.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="510" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Master Agreement - Supplier-MA Type" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Supplier-MA Type" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Supplier-MA Type" selected="True" input="Right_" />
+                <SelectField field="Right_Agreement Effective Date" selected="True" input="Right_" />
+                <SelectField field="Right_Agreement Expiration Date" selected="True" input="Right_" />
+                <SelectField field="Right_Agreement Status" selected="True" input="Right_" />
+                <SelectField field="Right_Agreement Type" selected="True" input="Right_" />
+                <SelectField field="Right_Category Manager" selected="True" input="Right_" />
+                <SelectField field="Right_Intuit Contracting Entity" selected="True" input="Right_" />
+                <SelectField field="Right_Related Supplier3" selected="True" input="Right_" />
+                <SelectField field="Right_Related Supplier3 - Third Party Identifier" selected="True" input="Right_" />
+                <SelectField field="Right_Related Supplier3 - Third Party Name" selected="True" input="Right_" />
+                <SelectField field="Left_Contract - Document Type" selected="True" input="Left_" />
+                <SelectField field="Left_MSA Document URL" selected="True" input="Left_" />
+                <SelectField field="Left_Contract Effective Start Date" selected="True" input="Left_" />
+                <SelectField field="Left_Contract Effective End Date" selected="True" input="Left_" />
+                <SelectField field="Left_Expiration Warning" selected="True" input="Left_" />
+                <SelectField field="Left_Expired" selected="True" input="Left_" />
+                <SelectField field="Left_Master Agreement - Supplier-MA Type" selected="True" input="Left_" />
+                <SelectField field="Left_Master Agreement - Related Supplier3 - Third Party Identifier" selected="True" input="Left_" />
+                <SelectField field="Left_Master Agreement - Related Supplier3 - Third Party Name" selected="True" input="Left_" />
+                <SelectField field="Left_Contract Description" selected="True" input="Left_" />
+                <SelectField field="Left_Related Supplier" selected="True" input="Left_" />
+                <SelectField field="Left_Related Master Agreement" selected="True" input="Left_" />
+                <SelectField field="Left_Contract - Tags" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Contract - Document Type" selected="True" />
+            <SelectField field="MSA Document URL" selected="True" />
+            <SelectField field="Contract Effective Start Date" selected="True" />
+            <SelectField field="Contract Effective End Date" selected="True" />
+            <SelectField field="Expiration Warning" selected="True" />
+            <SelectField field="Expired" selected="True" />
+            <SelectField field="Master Agreement - Supplier-MA Type" selected="True" />
+            <SelectField field="Master Agreement - Related Supplier3" selected="True" />
+            <SelectField field="Master Agreement - Related Supplier3 - Third Party Identifier" selected="True" />
+            <SelectField field="Master Agreement - Related Supplier3 - Third Party Name" selected="True" />
+            <SelectField field="Contract Description" selected="True" />
+            <SelectField field="Related Supplier" selected="True" />
+            <SelectField field="Related Master Agreement" selected="True" />
+            <SelectField field="Contract - Tags" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Supplier-MA Type" selected="True" />
+            <SelectField field="Agreement Effective Date" selected="True" />
+            <SelectField field="Agreement Expiration Date" selected="True" />
+            <SelectField field="Agreement Status" selected="True" />
+            <SelectField field="Agreement Type" selected="True" />
+            <SelectField field="Category Manager" selected="True" />
+            <SelectField field="Intuit Contracting Entity" selected="True" />
+            <SelectField field="Related Supplier3" selected="True" />
+            <SelectField field="Related Supplier3 - Third Party Identifier" selected="True" />
+            <SelectField field="Related Supplier3 - Third Party Name" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Related Supplier3</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-03-30 14:09:29</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2022-03-30 14:09:29</StartDate>
+              <EndDate>2022-03-30 14:09:29</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Related Supplier3])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="618" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="678" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Aravo Internal ID" />
+            <Field field="Third Party Identifier" />
+            <Field field="Third Party Name" />
+            <Field field="Privacy and Security Exhibit in place" />
+            <Field field="PSE_Required" />
+            <Field field="Overarching Tier" />
+            <Field field="PSE Exceptions" />
+            <Field field="Exception Comments" />
+            <Field field="ThirdPartyTypeHL" />
+            <Field field="Active?" />
+            <Field field="TPCountryRpt_Region_Grouping" />
+            <Field field="Contracts" />
+            <Field field="Master Agreement Contracts" />
+            <Field field="Privacy Document" />
+            <Field field="PSE Version (Effective Date)" />
+            <Field field="Privacy Exception" />
+            <Field field="PSE Document URL Link" />
+            <Field field="PSE Document Name" />
+            <Field field="Related Supplier" />
+            <Field field="Supplier - Third Party Identifier" />
+            <Field field="Supplier - Third Party Name" />
+            <Field field="Privacy Document Execution Date" />
+            <Field field="Comments" />
+            <Field field="Supplier-MA Type" />
+            <Field field="Agreement Effective Date" />
+            <Field field="Agreement Expiration Date" />
+            <Field field="Agreement Status" />
+            <Field field="Agreement Type" />
+            <Field field="Category Manager" />
+            <Field field="Intuit Contracting Entity" />
+            <Field field="Related Supplier3" />
+            <Field field="Related Supplier3 - Third Party Identifier" />
+            <Field field="Related Supplier3 - Third Party Name" />
+            <Field field="Contract - Document Type" />
+            <Field field="MSA Document URL" />
+            <Field field="Contract Effective Start Date" />
+            <Field field="Contract Effective End Date" />
+            <Field field="Expiration Warning" />
+            <Field field="Expired" />
+            <Field field="Master Agreement - Supplier-MA Type" />
+            <Field field="Master Agreement - Related Supplier3 - Third Party Identifier" />
+            <Field field="Master Agreement - Related Supplier3 - Third Party Name" />
+            <Field field="Contract Description" />
+            <Field field="Right_Related Supplier" />
+            <Field field="Related Master Agreement" />
+            <Field field="Contract - Tags" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="486" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Master Agreement - Related Supplier3" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="510" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Related Supplier3" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Supplier-MA Type" selected="False" />
+            <SelectField field="Agreement Effective Date" selected="False" />
+            <SelectField field="Agreement Expiration Date" selected="False" />
+            <SelectField field="Agreement Status" selected="False" />
+            <SelectField field="Agreement Type" selected="False" />
+            <SelectField field="Category Manager" selected="False" />
+            <SelectField field="Intuit Contracting Entity" selected="False" />
+            <SelectField field="Related Supplier3 - Third Party Identifier" selected="False" />
+            <SelectField field="Related Supplier3 - Third Party Name" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Master Agreement - Related Supplier3" selected="True" />
+            <SelectField field="MSA FLAG" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="402" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="1" field="MSA FLAG" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[MSA FLAG = 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="402" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="1" field="MASTER AGREEMENT FLAG" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[MASTER AGREEMENT FLAG = 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="726" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Aravo Internal ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Related Supplier3" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="822" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1002" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="906" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Aravo Internal ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Master Agreement - Related Supplier3" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1194" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_8424_bdec7f69db6f4a989ad72292b5fd2884_\Engine_10888_fbfd1d34cae84b4a8fab90f7c4746f37_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1098" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Contracts" selected="False" />
+            <SelectField field="Master Agreement Contracts" selected="False" />
+            <SelectField field="Related Supplier3" selected="False" />
+            <SelectField field="Master Agreement - Related Supplier3" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Left" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="26" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Unique" />
+      <Destination ToolID="26" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Left" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="14" Connection="Right" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Unique" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Unique" />
+      <Destination ToolID="29" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="26" Connection="Left" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Join" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="29" Connection="Left" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="29" Connection="Join" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CMAPP DEMO DATA</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="81698ae7-cf36-47ef-8aa1-fd3df999dc72" />
+      <Telemetry>
+        <PreviousWorkflowId value="f5657014-b2ee-4a3f-8299-9131bcab4e34" />
+        <OriginWorkflowId value="f5657014-b2ee-4a3f-8299-9131bcab4e34" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

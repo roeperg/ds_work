@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="366" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="INTUIT DATA TYPE SHARED" action="GroupBy" rename="INTUIT DATA TYPE SHARED" />
+            <SummarizeField field="ENG id" action="CountDistinct" rename="Unique Engagement Count" />
+            <SummarizeField field="supplierid" action="CountDistinct" rename="Unique Supplier Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="identifier" selected="False" />
+            <SelectField field="CoupaPRNumber" selected="False" />
+            <SelectField field="type" selected="False" />
+            <SelectField field="PA ID" selected="False" />
+            <SelectField field="ASMT ApprovalStatus" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Supplier_by_Data_TypeTEST R2.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ENG id" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="identifier" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="CoupaPRNumber" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="type" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="EngagementStatus" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="ENG created_date" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="EngagementTierHighes" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="ENG Active?" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="supplierid" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="Supplier Name" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="thirdpartystatus" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="ThirdPartyTypeHL" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="TPSubcategory" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="TPTpe" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="Supplier Active?" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="INTUIT DATA TYPE SHARED" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="PA ID" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+            <Field name="ASMT ApprovalStatus" size="254" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\GBS 3PRM Auto\Supplier_by_Data_TypeTEST R2.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="270" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>([EngagementStatus] = "Active" OR
+[EngagementStatus]  = "Approved - Not Active" OR
+[EngagementStatus]  = "Pending Final Approval") and [thirdpartystatus]="Approved"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>([EngagementStatus] = "Active" OR
+[EngagementStatus]  = "Approved - Not Active" ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="390" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>INTUIT DATA TYPE SHARED</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-03-08 11:07:42</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Corporate</Operand>
+              <StartDate>2023-03-08 11:07:42</StartDate>
+              <EndDate>2023-03-08 11:07:42</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([INTUIT DATA TYPE SHARED],"Corporate")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="390" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>INTUIT DATA TYPE SHARED</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-03-08 11:08:06</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Worker</Operand>
+              <StartDate>2023-03-08 11:08:06</StartDate>
+              <EndDate>2023-03-08 11:08:06</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([INTUIT DATA TYPE SHARED],"Worker")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>INTUIT DATA TYPE SHARED</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-03-08 11:08:20</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Customer</Operand>
+              <StartDate>2023-03-08 11:08:20</StartDate>
+              <EndDate>2023-03-08 11:08:20</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([INTUIT DATA TYPE SHARED],"Customer")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="510" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ENG id" action="CountDistinct" rename="Unique Engagement Count" />
+            <SummarizeField field="supplierid" action="CountDistinct" rename="Unique Supplier Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="522" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ENG id" action="CountDistinct" rename="Unique Engagement Count" />
+            <SummarizeField field="supplierid" action="CountDistinct" rename="Unique Supplier Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="522" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ENG id" action="CountDistinct" rename="Unique Engagement Count" />
+            <SummarizeField field="supplierid" action="CountDistinct" rename="Unique Supplier Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="618" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;CORPORATE SUM&quot;" field="NAME" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[NAME = "CORPORATE SUM"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="618" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;WORKER SUM&quot;" field="NAME" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[NAME = "WORKER SUM"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="618" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;CUSTOMER SUM&quot;" field="NAME" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[NAME = "CUSTOMER SUM"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="798" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="462" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if isempty([INTUIT DATA TYPE SHARED]) then &quot;NO DATA SHARE&quot; else [INTUIT DATA TYPE SHARED] endif" field="INTUIT DATA TYPE SHARED" size="254" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>INTUIT DATA TYPE SHARED = if isempty([INTUIT DATA TYPE SHARED]) then "NO DATA SH...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="894" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="NAME" selected="True" />
+            <SelectField field="Unique Engagement Count" selected="True" />
+            <SelectField field="Unique Supplier Count" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="438" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ENG id" action="CountDistinct" rename="Unique Engagement Count" />
+            <SummarizeField field="supplierid" action="CountDistinct" rename="Unique Supplier Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Count of Supp-ENG by Data Type</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6d473c94-0bd2-426d-b97b-33538e126fa8" />
+      <Telemetry>
+        <PreviousWorkflowId value="2e8302da-f48e-4587-974e-7eb1d300bb3b" />
+        <OriginWorkflowId value="2e8302da-f48e-4587-974e-7eb1d300bb3b" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

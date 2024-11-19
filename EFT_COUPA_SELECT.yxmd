@@ -1,0 +1,419 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,
+	COUPA.DW_COUPA_REQ_HDR.STATUS,
+	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,
+	COUPA.DW_COUPA_REQ_LINE.LINE_NUMBER,
+	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,
+	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NUMBER,
+	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME 
+from COUPA.DW_COUPA_REQ_HDR 
+	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID 
+where (COUPA.DW_COUPA_REQ_HDR.STATUS = 'ordered' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') 
+	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'partially_received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') 
+	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request')</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select COUPA.DW_COUPA_REQ_HD...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="REQUISITION_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.LINE_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where (COUPA.DW_COUPA_REQ_HDR.STATUS = 'ordered' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'partially_received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request')" type="Int64" />
+            <Field name="STATUS" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.LINE_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where (COUPA.DW_COUPA_REQ_HDR.STATUS = 'ordered' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'partially_received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request')" type="V_String" />
+            <Field name="REQUEST_TYPE" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.LINE_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where (COUPA.DW_COUPA_REQ_HDR.STATUS = 'ordered' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'partially_received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request')" type="V_String" />
+            <Field name="LINE_NUMBER" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.LINE_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where (COUPA.DW_COUPA_REQ_HDR.STATUS = 'ordered' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'partially_received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request')" type="Int64" />
+            <Field name="CREATED_AT_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.LINE_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where (COUPA.DW_COUPA_REQ_HDR.STATUS = 'ordered' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'partially_received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request')" type="DateTime" />
+            <Field name="SUPPLIER_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.LINE_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where (COUPA.DW_COUPA_REQ_HDR.STATUS = 'ordered' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'partially_received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request')" type="V_String" />
+            <Field name="SUPPLIER_NAME" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE,&#xA;	COUPA.DW_COUPA_REQ_LINE.LINE_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.SUPPLIER_NAME &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where (COUPA.DW_COUPA_REQ_HDR.STATUS = 'ordered' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'partially_received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request') &#xA;	or (COUPA.DW_COUPA_REQ_HDR.STATUS = 'received' and COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request')" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_1484_c0261f95e6f645af80f1abe30e732fc7_\Engine_15104_e096a4f4854e4d5dae4dc06ff9084540_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,
+	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,
+	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,
+	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,
+	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,
+	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,
+	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,
+	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,
+	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,
+	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE 
+from AP.AP_SUPPLIER_SITES_ALL</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select AP.AP_SUPPLIER_SITES_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_SITE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="Double" />
+            <Field name="CREATION_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="DateTime" />
+            <Field name="PURCHASING_SITE_FLAG" size="1" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="String" />
+            <Field name="PAY_SITE_FLAG" size="1" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="String" />
+            <Field name="PAYMENT_METHOD_LOOKUP_CODE" size="25" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="String" />
+            <Field name="PAY_GROUP_LOOKUP_CODE" size="25" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="String" />
+            <Field name="REMITTANCE_EMAIL" size="2000" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="V_String" />
+            <Field name="PARTY_SITE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="Int64" />
+            <Field name="LOCATION_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="Int64" />
+            <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="Double" />
+            <Field name="VENDOR_SITE_CODE" size="15" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="String" />
+            <Field name="VENDOR_SITE_CODE_ALT" size="320" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="V_String" />
+            <Field name="INACTIVE_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PURCHASING_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_SITE_FLAG,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAYMENT_METHOD_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PAY_GROUP_LOOKUP_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.PARTY_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.LOCATION_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE_ALT,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE &#xA;from AP.AP_SUPPLIER_SITES_ALL" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="138" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_1484_c0261f95e6f645af80f1abe30e732fc7_\Engine_15104_bb030b2dc9744131b77ce107b461ffa0_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="210" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>SUPPLIER_NUMBER</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>SUPPLIER_NUMBER</RootName>
+          <Delimeters value="-" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="402" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="SUPPLIER_NUMBER2" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="VENDOR_SITE_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="522" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_1484_c0261f95e6f645af80f1abe30e732fc7_\Engine_15104_5d8342e6449f4886bf3f9a6d3a2fb381_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="VENDOR_SITE_ID" selected="True" type="V_String" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="582" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="REQUISITION_ID" action="GroupBy" rename="REQUISITION_ID" />
+            <SummarizeField field="STATUS" action="GroupBy" rename="STATUS" />
+            <SummarizeField field="REQUEST_TYPE" action="GroupBy" rename="REQUEST_TYPE" />
+            <SummarizeField field="CREATED_AT_DATE" action="GroupBy" rename="CREATED_AT_DATE" />
+            <SummarizeField field="SUPPLIER_NUMBER" action="GroupBy" rename="SUPPLIER_NUMBER" />
+            <SummarizeField field="SUPPLIER_NAME" action="GroupBy" rename="SUPPLIER_NAME" />
+            <SummarizeField field="SUPPLIER_NUMBER1" action="GroupBy" rename="SUPPLIER_NUMBER1" />
+            <SummarizeField field="SUPPLIER_NUMBER2" action="GroupBy" rename="SUPPLIER_NUMBER2" />
+            <SummarizeField field="VENDOR_SITE_ID" action="GroupBy" rename="VENDOR_SITE_ID" />
+            <SummarizeField field="CREATION_DATE" action="GroupBy" rename="CREATION_DATE" />
+            <SummarizeField field="PURCHASING_SITE_FLAG" action="GroupBy" rename="PURCHASING_SITE_FLAG" />
+            <SummarizeField field="PAY_SITE_FLAG" action="GroupBy" rename="PAY_SITE_FLAG" />
+            <SummarizeField field="PAYMENT_METHOD_LOOKUP_CODE" action="GroupBy" rename="PAYMENT_METHOD_LOOKUP_CODE" />
+            <SummarizeField field="PAY_GROUP_LOOKUP_CODE" action="GroupBy" rename="PAY_GROUP_LOOKUP_CODE" />
+            <SummarizeField field="REMITTANCE_EMAIL" action="GroupBy" rename="REMITTANCE_EMAIL" />
+            <SummarizeField field="PARTY_SITE_ID" action="GroupBy" rename="PARTY_SITE_ID" />
+            <SummarizeField field="LOCATION_ID" action="GroupBy" rename="LOCATION_ID" />
+            <SummarizeField field="VENDOR_ID" action="GroupBy" rename="VENDOR_ID" />
+            <SummarizeField field="VENDOR_SITE_CODE" action="GroupBy" rename="VENDOR_SITE_CODE" />
+            <SummarizeField field="VENDOR_SITE_CODE_ALT" action="GroupBy" rename="VENDOR_SITE_CODE_ALT" />
+            <SummarizeField field="INACTIVE_DATE" action="GroupBy" rename="INACTIVE_DATE" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_1484_c0261f95e6f645af80f1abe30e732fc7_\Engine_15104_981e79ed5db24285b0ac04f33151dfd7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>EFT COUPA SELECT</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3c68dc15-d287-43b0-94ec-fc4a78e0d260" />
+      <Telemetry>
+        <PreviousWorkflowId value="f6b1f25b-605d-4444-a752-54abf5d61999" />
+        <OriginWorkflowId value="f6b1f25b-605d-4444-a752-54abf5d61999" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

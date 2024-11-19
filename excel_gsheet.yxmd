@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Phantom PRs Coupa.xlsx   Sheet Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="requisition_id" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="Double" />
+            <Field name="status" size="255" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="V_String" />
+            <Field name="created_at_date" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="DateTime" />
+            <Field name="total" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="Double" />
+            <Field name="currency_code" size="255" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Phantom PRs Coupa.xlsx   Sheet Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="requisition_id" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="Double" />
+            <Field name="status" size="255" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="V_String" />
+            <Field name="created_at_date" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="DateTime" />
+            <Field name="total" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="Double" />
+            <Field name="currency_code" size="255" source="File: C:\Users\groeper\Development\Daily\Phantom PRs Coupa.xlsx|||Sheet1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>excel_gsheet</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1477b87f-52ff-43a7-bcbf-a32507a28679" />
+      <Telemetry>
+        <PreviousWorkflowId value="cb946f0e-72bd-4c13-b0f8-aad42e130d63" />
+        <OriginWorkflowId value="cb946f0e-72bd-4c13-b0f8-aad42e130d63" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

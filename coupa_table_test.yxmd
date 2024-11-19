@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select *
+from COUPA.DW_COUPA_FA_APPROVER
+where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' 
+	and '01-FEB-2022'</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select *
+from COUPA.DW_COUPA...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DW_COUPA_FA_APPROVER_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="Double" />
+            <Field name="APPROVAL_CHAIN_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVAL_CHAIN_NAME" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="DOCUMENT_NUMBER" size="400" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="DOCUMENT_TYPE" size="400" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="DOCUMENT_STATUS" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVER_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVER_LOGIN" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVER_ROLE" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="DELEGATE_APPROVAL_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="DELEGATE_APPROVAL_IDS" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="DELEGATE_APPROVER_NAMES" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="OVERRIDE_APPROVER" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVAL_DATE_UTC" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="POSITION" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVAL_METHOD" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVER_TYPE" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVAL_KEY" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="STATUS" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="APPROVAL_REASONS" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="DOCUMENT_CURRENCY" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="CREATED_BY_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="CREATED_BY_LOGIN" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="CREATED_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="LAST_UPDATED_BY_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="UPDATED_BY_LOGIN" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="LAST_UPDATED_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="OWNED_BY_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="OWNED_BY_LOGIN" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="ASSIGNED_BY_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="ASSIGNED_BY_LOGIN" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="ASSIGNED_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="FIRST_NOTIFICATION_UTC" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="LAST_REMINDED_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="SKIP_ESCALATION" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="SUBMISSION_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="AUDIT_INS_TS" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="AUDIT_INS_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="Int64" />
+            <Field name="AUDIT_UPD_TS" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="DateTime" />
+            <Field name="AUDIT_UPD_KEY" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="Int64" />
+            <Field name="APPROVER" size="1000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="V_String" />
+            <Field name="PO_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select *&#xA;from COUPA.DW_COUPA_FA_APPROVER&#xA;where To_Date(COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC) Between '01-JAN-2022' &#xA;	and '01-FEB-2022'" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_10044_1a4dc96bdf20478aa6c1b33d7900a38b_\Engine_24532_f49ee8f37a1e4382b2eb2ad7e8b4d7d9_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>coupa table test</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="706a0024-402e-489c-b48c-d62e890140fd" />
+      <Telemetry>
+        <PreviousWorkflowId value="7a490574-f1b1-45a4-a23e-d82b0b856c6d" />
+        <OriginWorkflowId value="7a490574-f1b1-45a4-a23e-d82b0b856c6d" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

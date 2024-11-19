@@ -1,0 +1,903 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMAPP_3.0_Projects_Extract.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="0_Sourcing_Q_Agreement__True_Up_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="0_Sourcing_Q_Enterprise_Prod_Use" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="0_Sourcing_Q_Lending_Services" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="0_Sourcing_Q_Marketing_Services" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="0_Sourcing_Q_PSE_Request" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="ADDRESSED_SPEND" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Agreement_Owner_Text" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Agreement_Paper_Type" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Billing_Consolidator" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Box_Link_to_CDS" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Box_Link_to_Contract" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="BU_FG" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="BUS_REQR_MNGR_SNAPSHOT" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Business_Justification" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Cat_Manager_Text" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Category_Manager__Merge_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="CDS_Document_Name" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Common_ID_for_Multiple_projects" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_Confirm_Complexity_2" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_Currently_Active" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_Effective_Start_Date" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_Expiration_Date" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_ID_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_Name" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_Naming_Certification" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_Signed_Date" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Contract_Status" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="COSA_Review" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="COST_MODEL_UPLOAD_CERT1" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="COST_MODEL_UPLOAD_CERT2" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Country" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Coupa_Contract_ID_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="COUPA_FLAG" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="COUPA_ID" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Credit_Rebates" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Currency" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Data_Sharing" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Date_Created" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Date_Modified" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Effective_Quarter" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Employee___Legal_Full_Name" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Employee___Corporate_ID" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Employee___Email" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Employee_ID" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Engagement_Identifier" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Engagement_Name" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="ETS_Flag" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Exhibit_included_in_the_contract" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="FINANCE_APPROVER_TEXT" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="FINANCE_LEAD_TEXT" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Fiscal_Effective" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Fixed_Assets" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="FY21_Planned_Savings" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="GBS_Savings_Initiative" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Hedging_or_Derivative" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Highly_Sensitive" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Intuit_Contracting_Entity" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Intuit_or_Denali" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Item_Type" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Last_Modified_By" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="LAST_MODIFIED_BY_TEXT" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Lease_or_Embd_Lease" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Legal_Request" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Legal_Resource" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Legal_Resource_Text" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Legal_Support_Req" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Link_to_MSA" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="M2M_Convert" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="MIN_COMMIT_AMOUNT" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Min_Commitment" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Minimum_Commit_Cert" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="MSA_NOT_APPLICABLE" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="MSA_STATUS" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="New_Supplier_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Non_monetary_value_add" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Oracle_ID" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Outsrcd_Acctg_Svcs" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Payment_Terms" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Perpetual_Licenses" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Prepay_Purch" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Privacy_and_Security_Exhibit___PSE_Version__Effective_Date_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Prod_Country_of_Origin" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="PROJECT_COMPLETE_TIMESTAMP" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_Complexity" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_Contract_Type" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_Driver" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_Driver_Text" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_End_Date" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_Name" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_Notes__Merge_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_Start_Date" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Project_Start_Fiscal" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Purchase_Category" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Record_ID_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Record_Owner" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="RECORD_OWNER_TEXT" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Region" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Agreement" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Agreement___Supplier_MA_Type" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Contract___Document_Type" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Contract___Tags" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Contract_Type" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Contract_Type___CONTRACT_GROUPING" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Engagement" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_MSA_Contract_Document" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_MSA_Contract_Document___MSA_Document_URL" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Privacy_and_Security_Exhibit" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Project" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Related_Supplier2" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Renewal_Override" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Renewal_Required" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Renewal_Required_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Requester__Merge_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Requester_Text" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Retailer_Distributor" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Rev_Share_Recvd" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="RFP_Information" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="SAM_OVERAGE_RISK" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Sector__Merge_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Sector_Lead_Text" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Short_Description" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="SOURCING_BYPASS" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Sourcing_Director_Text" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Sourcing_Process_Steps" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Sourcing_Review_Complexity_1" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="SOW_Total_Cost" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Supplier_Name" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Supplier_Wht_Labeled" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Temporary_Supplier_Name" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Total_Savings____" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Total_Savings__USD_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Total_Spend_Amount____" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Total_Spend_Amount__USD_" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Users_who_can_view_Highly_Sensitive_Project" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+            <Field name="Using_Intuit_paper" size="254" source="File: G:\My Drive\CMAPP\CMAPP_3.0_Projects_Extract.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_21932_da221f8598e0594fa99779ae6f326f45_\Engine_21932_f0ba602e6044f44ba73bb483f4e11ab5~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Extract_FIN_DL_CMAPP_Projects.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="0_Sourcing_Q_Agreement__True_Up_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="0_Sourcing_Q_Enterprise_Prod_Use" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="0_Sourcing_Q_Lending_Services" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="0_Sourcing_Q_Marketing_Services" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="0_Sourcing_Q_PSE_Request" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="ADDRESSED_SPEND" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Agreement_Owner_Text" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Agreement_Paper_Type" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Billing_Consolidator" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Box_Link_to_CDS" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Box_Link_to_Contract" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="BU_FG" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="BUS_REQR_MNGR_SNAPSHOT" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Business_Justification" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Cat_Manager_Text" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Category_Manager__Merge_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="CDS_Document_Name" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Common_ID_for_Multiple_projects" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_Confirm_Complexity_2" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_Currently_Active" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_Effective_Start_Date" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_Expiration_Date" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_ID_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_Name" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_Naming_Certification" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_Signed_Date" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Contract_Status" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="COSA_Review" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="COST_MODEL_UPLOAD_CERT1" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="COST_MODEL_UPLOAD_CERT2" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Country" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Coupa_Contract_ID_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="COUPA_FLAG" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="COUPA_ID" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Credit_Rebates" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Currency" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Data_Sharing" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Date_Created" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Date_Modified" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Effective_Quarter" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Employee___Legal_Full_Name" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Employee___Corporate_ID" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Employee___Email" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Employee_ID" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Engagement_Identifier" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Engagement_Name" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="ETS_Flag" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Exhibit_included_in_the_contract" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="FINANCE_APPROVER_TEXT" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="FINANCE_LEAD_TEXT" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Fiscal_Effective" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Fixed_Assets" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="FY21_Planned_Savings" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="GBS_Savings_Initiative" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Hedging_or_Derivative" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Highly_Sensitive" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Intuit_Contracting_Entity" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Intuit_or_Denali" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Item_Type" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Last_Modified_By" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="LAST_MODIFIED_BY_TEXT" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Lease_or_Embd_Lease" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Legal_Request" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Legal_Resource" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Legal_Resource_Text" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Legal_Support_Req" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Link_to_MSA" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="M2M_Convert" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="MIN_COMMIT_AMOUNT" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Min_Commitment" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Minimum_Commit_Cert" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="MSA_NOT_APPLICABLE" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="MSA_STATUS" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="New_Supplier_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Non_monetary_value_add" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Oracle_ID" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Outsrcd_Acctg_Svcs" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Payment_Terms" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Perpetual_Licenses" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Prepay_Purch" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Privacy_and_Security_Exhibit___PSE_Version__Effective_Date_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Prod_Country_of_Origin" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="PROJECT_COMPLETE_TIMESTAMP" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_Complexity" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_Contract_Type" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_Driver" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_Driver_Text" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_End_Date" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_Name" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_Notes__Merge_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_Start_Date" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Project_Start_Fiscal" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Purchase_Category" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Record_ID_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Record_Owner" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="RECORD_OWNER_TEXT" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Region" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Agreement" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Agreement___Supplier_MA_Type" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Contract___Document_Type" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Contract___Tags" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Contract_Type" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Contract_Type___CONTRACT_GROUPING" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Engagement" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_MSA_Contract_Document" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_MSA_Contract_Document___MSA_Document_URL" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Privacy_and_Security_Exhibit" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Project" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Related_Supplier2" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Renewal_Override" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Renewal_Required_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Renewal_Required" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Requester__Merge_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Requester_Text" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Retailer_Distributor" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Rev_Share_Recvd" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="RFP_Information" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="SAM_OVERAGE_RISK" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Sector__Merge_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Sector_Lead_Text" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Short_Description" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="SOURCING_BYPASS" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Sourcing_Director_Text" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Sourcing_Process_Steps" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Sourcing_Review_Complexity_1" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="SOW_Total_Cost" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Supplier_Name" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Supplier_Wht_Labeled" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Temporary_Supplier_Name" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Total_Savings____" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Total_Savings__USD_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Total_Spend_Amount____" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Total_Spend_Amount__USD_" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Users_who_can_view_Highly_Sensitive_Project" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="Using_Intuit_paper" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+            <Field name="history_load_flag" size="254" source="File: G:\My Drive\CMAPP\Extract_FIN_DL_CMAPP_Projects.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_21932_da221f8598e0594fa99779ae6f326f45_\Engine_21932_a5869b4eb8c41644b716507be68187ba~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Record_ID_" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Record_ID_" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_0_Sourcing_Q_Agreement__True_Up_" selected="True" input="Left_" />
+                <SelectField field="Right_0_Sourcing_Q_Agreement__True_Up_" selected="True" rename="Right_0_Sourcing_Q_Agreement__True_Up_" input="Right_" />
+                <SelectField field="Left_0_Sourcing_Q_Enterprise_Prod_Use" selected="True" input="Left_" />
+                <SelectField field="Right_0_Sourcing_Q_Enterprise_Prod_Use" selected="True" rename="Right_0_Sourcing_Q_Enterprise_Prod_Use" input="Right_" />
+                <SelectField field="Left_0_Sourcing_Q_Lending_Services" selected="True" input="Left_" />
+                <SelectField field="Right_0_Sourcing_Q_Lending_Services" selected="True" rename="Right_0_Sourcing_Q_Lending_Services" input="Right_" />
+                <SelectField field="Left_0_Sourcing_Q_Marketing_Services" selected="True" input="Left_" />
+                <SelectField field="Right_0_Sourcing_Q_Marketing_Services" selected="True" rename="Right_0_Sourcing_Q_Marketing_Services" input="Right_" />
+                <SelectField field="Left_0_Sourcing_Q_PSE_Request" selected="True" input="Left_" />
+                <SelectField field="Right_0_Sourcing_Q_PSE_Request" selected="True" rename="Right_0_Sourcing_Q_PSE_Request" input="Right_" />
+                <SelectField field="Left_ADDRESSED_SPEND" selected="True" input="Left_" />
+                <SelectField field="Right_ADDRESSED_SPEND" selected="True" rename="Right_ADDRESSED_SPEND" input="Right_" />
+                <SelectField field="Left_Agreement_Owner_Text" selected="True" input="Left_" />
+                <SelectField field="Right_Agreement_Owner_Text" selected="True" rename="Right_Agreement_Owner_Text" input="Right_" />
+                <SelectField field="Left_Agreement_Paper_Type" selected="True" input="Left_" />
+                <SelectField field="Right_Agreement_Paper_Type" selected="True" rename="Right_Agreement_Paper_Type" input="Right_" />
+                <SelectField field="Left_Billing_Consolidator" selected="True" input="Left_" />
+                <SelectField field="Right_Billing_Consolidator" selected="True" rename="Right_Billing_Consolidator" input="Right_" />
+                <SelectField field="Left_Box_Link_to_CDS" selected="True" input="Left_" />
+                <SelectField field="Right_Box_Link_to_CDS" selected="True" rename="Right_Box_Link_to_CDS" input="Right_" />
+                <SelectField field="Left_Box_Link_to_Contract" selected="True" input="Left_" />
+                <SelectField field="Right_Box_Link_to_Contract" selected="True" rename="Right_Box_Link_to_Contract" input="Right_" />
+                <SelectField field="Left_BU_FG" selected="True" input="Left_" />
+                <SelectField field="Right_BU_FG" selected="True" rename="Right_BU_FG" input="Right_" />
+                <SelectField field="Left_BUS_REQR_MNGR_SNAPSHOT" selected="True" input="Left_" />
+                <SelectField field="Right_BUS_REQR_MNGR_SNAPSHOT" selected="True" rename="Right_BUS_REQR_MNGR_SNAPSHOT" input="Right_" />
+                <SelectField field="Left_Business_Justification" selected="True" input="Left_" />
+                <SelectField field="Right_Business_Justification" selected="True" rename="Right_Business_Justification" input="Right_" />
+                <SelectField field="Left_Cat_Manager_Text" selected="True" input="Left_" />
+                <SelectField field="Right_Cat_Manager_Text" selected="True" rename="Right_Cat_Manager_Text" input="Right_" />
+                <SelectField field="Left_Category_Manager__Merge_" selected="True" input="Left_" />
+                <SelectField field="Right_Category_Manager__Merge_" selected="True" rename="Right_Category_Manager__Merge_" input="Right_" />
+                <SelectField field="Left_CDS_Document_Name" selected="True" input="Left_" />
+                <SelectField field="Right_CDS_Document_Name" selected="True" rename="Right_CDS_Document_Name" input="Right_" />
+                <SelectField field="Left_Common_ID_for_Multiple_projects" selected="True" input="Left_" />
+                <SelectField field="Right_Common_ID_for_Multiple_projects" selected="True" rename="Right_Common_ID_for_Multiple_projects" input="Right_" />
+                <SelectField field="Left_Contract_Confirm_Complexity_2" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_Confirm_Complexity_2" selected="True" rename="Right_Contract_Confirm_Complexity_2" input="Right_" />
+                <SelectField field="Left_Contract_Currently_Active" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_Currently_Active" selected="True" rename="Right_Contract_Currently_Active" input="Right_" />
+                <SelectField field="Left_Contract_Effective_Start_Date" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_Effective_Start_Date" selected="True" rename="Right_Contract_Effective_Start_Date" input="Right_" />
+                <SelectField field="Left_Contract_Expiration_Date" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_Expiration_Date" selected="True" rename="Right_Contract_Expiration_Date" input="Right_" />
+                <SelectField field="Left_Contract_ID_" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_ID_" selected="True" rename="Right_Contract_ID_" input="Right_" />
+                <SelectField field="Left_Contract_Name" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_Name" selected="True" rename="Right_Contract_Name" input="Right_" />
+                <SelectField field="Left_Contract_Naming_Certification" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_Naming_Certification" selected="True" rename="Right_Contract_Naming_Certification" input="Right_" />
+                <SelectField field="Left_Contract_Signed_Date" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_Signed_Date" selected="True" rename="Right_Contract_Signed_Date" input="Right_" />
+                <SelectField field="Left_Contract_Status" selected="True" input="Left_" />
+                <SelectField field="Right_Contract_Status" selected="True" rename="Right_Contract_Status" input="Right_" />
+                <SelectField field="Left_COSA_Review" selected="True" input="Left_" />
+                <SelectField field="Right_COSA_Review" selected="True" rename="Right_COSA_Review" input="Right_" />
+                <SelectField field="Left_COST_MODEL_UPLOAD_CERT1" selected="True" input="Left_" />
+                <SelectField field="Right_COST_MODEL_UPLOAD_CERT1" selected="True" rename="Right_COST_MODEL_UPLOAD_CERT1" input="Right_" />
+                <SelectField field="Left_COST_MODEL_UPLOAD_CERT2" selected="True" input="Left_" />
+                <SelectField field="Right_COST_MODEL_UPLOAD_CERT2" selected="True" rename="Right_COST_MODEL_UPLOAD_CERT2" input="Right_" />
+                <SelectField field="Left_Country" selected="True" input="Left_" />
+                <SelectField field="Right_Country" selected="True" rename="Right_Country" input="Right_" />
+                <SelectField field="Left_Coupa_Contract_ID_" selected="True" input="Left_" />
+                <SelectField field="Right_Coupa_Contract_ID_" selected="True" rename="Right_Coupa_Contract_ID_" input="Right_" />
+                <SelectField field="Left_COUPA_FLAG" selected="True" input="Left_" />
+                <SelectField field="Right_COUPA_FLAG" selected="True" rename="Right_COUPA_FLAG" input="Right_" />
+                <SelectField field="Left_COUPA_ID" selected="True" input="Left_" />
+                <SelectField field="Right_COUPA_ID" selected="True" rename="Right_COUPA_ID" input="Right_" />
+                <SelectField field="Left_Credit_Rebates" selected="True" input="Left_" />
+                <SelectField field="Right_Credit_Rebates" selected="True" rename="Right_Credit_Rebates" input="Right_" />
+                <SelectField field="Left_Currency" selected="True" input="Left_" />
+                <SelectField field="Right_Currency" selected="True" rename="Right_Currency" input="Right_" />
+                <SelectField field="Left_Data_Sharing" selected="True" input="Left_" />
+                <SelectField field="Right_Data_Sharing" selected="True" rename="Right_Data_Sharing" input="Right_" />
+                <SelectField field="Left_Date_Created" selected="True" input="Left_" />
+                <SelectField field="Right_Date_Created" selected="True" rename="Right_Date_Created" input="Right_" />
+                <SelectField field="Left_Date_Modified" selected="True" input="Left_" />
+                <SelectField field="Right_Date_Modified" selected="True" rename="Right_Date_Modified" input="Right_" />
+                <SelectField field="Left_Effective_Quarter" selected="True" input="Left_" />
+                <SelectField field="Right_Effective_Quarter" selected="True" rename="Right_Effective_Quarter" input="Right_" />
+                <SelectField field="Left_Employee___Corporate_ID" selected="True" input="Left_" />
+                <SelectField field="Right_Employee___Corporate_ID" selected="True" rename="Right_Employee___Corporate_ID" input="Right_" />
+                <SelectField field="Left_Employee___Email" selected="True" input="Left_" />
+                <SelectField field="Right_Employee___Email" selected="True" rename="Right_Employee___Email" input="Right_" />
+                <SelectField field="Left_Employee___Legal_Full_Name" selected="True" input="Left_" />
+                <SelectField field="Right_Employee___Legal_Full_Name" selected="True" rename="Right_Employee___Legal_Full_Name" input="Right_" />
+                <SelectField field="Left_Employee_ID" selected="True" input="Left_" />
+                <SelectField field="Right_Employee_ID" selected="True" rename="Right_Employee_ID" input="Right_" />
+                <SelectField field="Left_Engagement_Identifier" selected="True" input="Left_" />
+                <SelectField field="Right_Engagement_Identifier" selected="True" rename="Right_Engagement_Identifier" input="Right_" />
+                <SelectField field="Left_Engagement_Name" selected="True" input="Left_" />
+                <SelectField field="Right_Engagement_Name" selected="True" rename="Right_Engagement_Name" input="Right_" />
+                <SelectField field="Left_ETS_Flag" selected="True" input="Left_" />
+                <SelectField field="Right_ETS_Flag" selected="True" rename="Right_ETS_Flag" input="Right_" />
+                <SelectField field="Left_Exhibit_included_in_the_contract" selected="True" input="Left_" />
+                <SelectField field="Right_Exhibit_included_in_the_contract" selected="True" rename="Right_Exhibit_included_in_the_contract" input="Right_" />
+                <SelectField field="Left_FINANCE_APPROVER_TEXT" selected="True" input="Left_" />
+                <SelectField field="Right_FINANCE_APPROVER_TEXT" selected="True" rename="Right_FINANCE_APPROVER_TEXT" input="Right_" />
+                <SelectField field="Left_FINANCE_LEAD_TEXT" selected="True" input="Left_" />
+                <SelectField field="Right_FINANCE_LEAD_TEXT" selected="True" rename="Right_FINANCE_LEAD_TEXT" input="Right_" />
+                <SelectField field="Right_Fiscal_Effective" selected="True" rename="Right_Fiscal_Effective" input="Right_" />
+                <SelectField field="Left_Fiscal_Effective" selected="True" input="Left_" />
+                <SelectField field="Right_Fixed_Assets" selected="True" rename="Right_Fixed_Assets" input="Right_" />
+                <SelectField field="Left_Fixed_Assets" selected="True" input="Left_" />
+                <SelectField field="Left_FY21_Planned_Savings" selected="True" input="Left_" />
+                <SelectField field="Right_FY21_Planned_Savings" selected="True" rename="Right_FY21_Planned_Savings" input="Right_" />
+                <SelectField field="Left_GBS_Savings_Initiative" selected="True" input="Left_" />
+                <SelectField field="Right_GBS_Savings_Initiative" selected="True" rename="Right_GBS_Savings_Initiative" input="Right_" />
+                <SelectField field="Left_Hedging_or_Derivative" selected="True" input="Left_" />
+                <SelectField field="Right_Hedging_or_Derivative" selected="True" rename="Right_Hedging_or_Derivative" input="Right_" />
+                <SelectField field="Left_Highly_Sensitive" selected="True" input="Left_" />
+                <SelectField field="Right_Highly_Sensitive" selected="True" rename="Right_Highly_Sensitive" input="Right_" />
+                <SelectField field="Right_history_load_flag" selected="True" input="Right_" />
+                <SelectField field="Left_Intuit_Contracting_Entity" selected="True" input="Left_" />
+                <SelectField field="Right_Intuit_Contracting_Entity" selected="True" rename="Right_Intuit_Contracting_Entity" input="Right_" />
+                <SelectField field="Left_Intuit_or_Denali" selected="True" input="Left_" />
+                <SelectField field="Right_Intuit_or_Denali" selected="True" rename="Right_Intuit_or_Denali" input="Right_" />
+                <SelectField field="Left_Item_Type" selected="True" input="Left_" />
+                <SelectField field="Right_Item_Type" selected="True" rename="Right_Item_Type" input="Right_" />
+                <SelectField field="Left_Last_Modified_By" selected="True" input="Left_" />
+                <SelectField field="Right_Last_Modified_By" selected="True" rename="Right_Last_Modified_By" input="Right_" />
+                <SelectField field="Left_LAST_MODIFIED_BY_TEXT" selected="True" input="Left_" />
+                <SelectField field="Right_LAST_MODIFIED_BY_TEXT" selected="True" rename="Right_LAST_MODIFIED_BY_TEXT" input="Right_" />
+                <SelectField field="Left_Lease_or_Embd_Lease" selected="True" input="Left_" />
+                <SelectField field="Right_Lease_or_Embd_Lease" selected="True" rename="Right_Lease_or_Embd_Lease" input="Right_" />
+                <SelectField field="Left_Legal_Request" selected="True" input="Left_" />
+                <SelectField field="Right_Legal_Request" selected="True" rename="Right_Legal_Request" input="Right_" />
+                <SelectField field="Left_Legal_Resource" selected="True" input="Left_" />
+                <SelectField field="Right_Legal_Resource" selected="True" rename="Right_Legal_Resource" input="Right_" />
+                <SelectField field="Left_Legal_Resource_Text" selected="True" input="Left_" />
+                <SelectField field="Right_Legal_Resource_Text" selected="True" rename="Right_Legal_Resource_Text" input="Right_" />
+                <SelectField field="Left_Legal_Support_Req" selected="True" input="Left_" />
+                <SelectField field="Right_Legal_Support_Req" selected="True" rename="Right_Legal_Support_Req" input="Right_" />
+                <SelectField field="Left_Link_to_MSA" selected="True" input="Left_" />
+                <SelectField field="Right_Link_to_MSA" selected="True" rename="Right_Link_to_MSA" input="Right_" />
+                <SelectField field="Left_M2M_Convert" selected="True" input="Left_" />
+                <SelectField field="Right_M2M_Convert" selected="True" rename="Right_M2M_Convert" input="Right_" />
+                <SelectField field="Left_MIN_COMMIT_AMOUNT" selected="True" input="Left_" />
+                <SelectField field="Right_MIN_COMMIT_AMOUNT" selected="True" rename="Right_MIN_COMMIT_AMOUNT" input="Right_" />
+                <SelectField field="Left_Min_Commitment" selected="True" input="Left_" />
+                <SelectField field="Right_Min_Commitment" selected="True" rename="Right_Min_Commitment" input="Right_" />
+                <SelectField field="Left_Minimum_Commit_Cert" selected="True" input="Left_" />
+                <SelectField field="Right_Minimum_Commit_Cert" selected="True" rename="Right_Minimum_Commit_Cert" input="Right_" />
+                <SelectField field="Left_MSA_NOT_APPLICABLE" selected="True" input="Left_" />
+                <SelectField field="Right_MSA_NOT_APPLICABLE" selected="True" rename="Right_MSA_NOT_APPLICABLE" input="Right_" />
+                <SelectField field="Left_MSA_STATUS" selected="True" input="Left_" />
+                <SelectField field="Right_MSA_STATUS" selected="True" rename="Right_MSA_STATUS" input="Right_" />
+                <SelectField field="Left_New_Supplier_" selected="True" input="Left_" />
+                <SelectField field="Right_New_Supplier_" selected="True" rename="Right_New_Supplier_" input="Right_" />
+                <SelectField field="Left_Non_monetary_value_add" selected="True" input="Left_" />
+                <SelectField field="Right_Non_monetary_value_add" selected="True" rename="Right_Non_monetary_value_add" input="Right_" />
+                <SelectField field="Left_Oracle_ID" selected="True" input="Left_" />
+                <SelectField field="Right_Oracle_ID" selected="True" rename="Right_Oracle_ID" input="Right_" />
+                <SelectField field="Left_Outsrcd_Acctg_Svcs" selected="True" input="Left_" />
+                <SelectField field="Right_Outsrcd_Acctg_Svcs" selected="True" rename="Right_Outsrcd_Acctg_Svcs" input="Right_" />
+                <SelectField field="Left_Payment_Terms" selected="True" input="Left_" />
+                <SelectField field="Right_Payment_Terms" selected="True" rename="Right_Payment_Terms" input="Right_" />
+                <SelectField field="Left_Perpetual_Licenses" selected="True" input="Left_" />
+                <SelectField field="Right_Perpetual_Licenses" selected="True" rename="Right_Perpetual_Licenses" input="Right_" />
+                <SelectField field="Left_Prepay_Purch" selected="True" input="Left_" />
+                <SelectField field="Right_Prepay_Purch" selected="True" rename="Right_Prepay_Purch" input="Right_" />
+                <SelectField field="Left_Privacy_and_Security_Exhibit___PSE_Version__Effective_Date_" selected="True" input="Left_" />
+                <SelectField field="Right_Privacy_and_Security_Exhibit___PSE_Version__Effective_Date_" selected="True" rename="Right_Privacy_and_Security_Exhibit___PSE_Version__Effective_Date_" input="Right_" />
+                <SelectField field="Left_Prod_Country_of_Origin" selected="True" input="Left_" />
+                <SelectField field="Right_Prod_Country_of_Origin" selected="True" rename="Right_Prod_Country_of_Origin" input="Right_" />
+                <SelectField field="Left_PROJECT_COMPLETE_TIMESTAMP" selected="True" input="Left_" />
+                <SelectField field="Right_PROJECT_COMPLETE_TIMESTAMP" selected="True" rename="Right_PROJECT_COMPLETE_TIMESTAMP" input="Right_" />
+                <SelectField field="Left_Project_Complexity" selected="True" input="Left_" />
+                <SelectField field="Right_Project_Complexity" selected="True" rename="Right_Project_Complexity" input="Right_" />
+                <SelectField field="Left_Project_Contract_Type" selected="True" input="Left_" />
+                <SelectField field="Right_Project_Contract_Type" selected="True" rename="Right_Project_Contract_Type" input="Right_" />
+                <SelectField field="Left_Project_Driver" selected="True" input="Left_" />
+                <SelectField field="Right_Project_Driver" selected="True" rename="Right_Project_Driver" input="Right_" />
+                <SelectField field="Left_Project_Driver_Text" selected="True" input="Left_" />
+                <SelectField field="Right_Project_Driver_Text" selected="True" rename="Right_Project_Driver_Text" input="Right_" />
+                <SelectField field="Left_Project_End_Date" selected="True" input="Left_" />
+                <SelectField field="Right_Project_End_Date" selected="True" rename="Right_Project_End_Date" input="Right_" />
+                <SelectField field="Left_Project_Name" selected="True" input="Left_" />
+                <SelectField field="Right_Project_Name" selected="True" rename="Right_Project_Name" input="Right_" />
+                <SelectField field="Left_Project_Notes__Merge_" selected="True" input="Left_" />
+                <SelectField field="Right_Project_Notes__Merge_" selected="True" rename="Right_Project_Notes__Merge_" input="Right_" />
+                <SelectField field="Left_Project_Start_Date" selected="True" input="Left_" />
+                <SelectField field="Right_Project_Start_Date" selected="True" rename="Right_Project_Start_Date" input="Right_" />
+                <SelectField field="Left_Project_Start_Fiscal" selected="True" input="Left_" />
+                <SelectField field="Right_Project_Start_Fiscal" selected="True" rename="Right_Project_Start_Fiscal" input="Right_" />
+                <SelectField field="Left_Purchase_Category" selected="True" input="Left_" />
+                <SelectField field="Right_Purchase_Category" selected="True" rename="Right_Purchase_Category" input="Right_" />
+                <SelectField field="Left_Record_ID_" selected="True" input="Left_" />
+                <SelectField field="Right_Record_ID_" selected="True" rename="Right_Record_ID_" input="Right_" />
+                <SelectField field="Left_Related_Agreement" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Agreement" selected="True" rename="Right_Related_Agreement" input="Right_" />
+                <SelectField field="Left_Record_Owner" selected="True" input="Left_" />
+                <SelectField field="Right_Record_Owner" selected="True" rename="Right_Record_Owner" input="Right_" />
+                <SelectField field="Left_RECORD_OWNER_TEXT" selected="True" input="Left_" />
+                <SelectField field="Right_RECORD_OWNER_TEXT" selected="True" rename="Right_RECORD_OWNER_TEXT" input="Right_" />
+                <SelectField field="Left_Region" selected="True" input="Left_" />
+                <SelectField field="Right_Region" selected="True" rename="Right_Region" input="Right_" />
+                <SelectField field="Left_Related_Agreement___Supplier_MA_Type" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Agreement___Supplier_MA_Type" selected="True" rename="Right_Related_Agreement___Supplier_MA_Type" input="Right_" />
+                <SelectField field="Left_Related_Contract___Document_Type" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Contract___Document_Type" selected="True" rename="Right_Related_Contract___Document_Type" input="Right_" />
+                <SelectField field="Left_Related_Contract___Tags" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Contract___Tags" selected="True" rename="Right_Related_Contract___Tags" input="Right_" />
+                <SelectField field="Left_Related_Contract_Type" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Contract_Type" selected="True" rename="Right_Related_Contract_Type" input="Right_" />
+                <SelectField field="Left_Related_Contract_Type___CONTRACT_GROUPING" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Contract_Type___CONTRACT_GROUPING" selected="True" rename="Right_Related_Contract_Type___CONTRACT_GROUPING" input="Right_" />
+                <SelectField field="Left_Related_Engagement" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Engagement" selected="True" rename="Right_Related_Engagement" input="Right_" />
+                <SelectField field="Left_Related_MSA_Contract_Document" selected="True" input="Left_" />
+                <SelectField field="Right_Related_MSA_Contract_Document" selected="True" rename="Right_Related_MSA_Contract_Document" input="Right_" />
+                <SelectField field="Left_Related_MSA_Contract_Document___MSA_Document_URL" selected="True" input="Left_" />
+                <SelectField field="Right_Related_MSA_Contract_Document___MSA_Document_URL" selected="True" rename="Right_Related_MSA_Contract_Document___MSA_Document_URL" input="Right_" />
+                <SelectField field="Left_Related_Privacy_and_Security_Exhibit" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Privacy_and_Security_Exhibit" selected="True" rename="Right_Related_Privacy_and_Security_Exhibit" input="Right_" />
+                <SelectField field="Left_Related_Project" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Project" selected="True" rename="Right_Related_Project" input="Right_" />
+                <SelectField field="Left_Related_Supplier2" selected="True" input="Left_" />
+                <SelectField field="Right_Related_Supplier2" selected="True" rename="Right_Related_Supplier2" input="Right_" />
+                <SelectField field="Left_Renewal_Override" selected="True" input="Left_" />
+                <SelectField field="Right_Renewal_Override" selected="True" rename="Right_Renewal_Override" input="Right_" />
+                <SelectField field="Left_Renewal_Required" selected="True" input="Left_" />
+                <SelectField field="Right_Renewal_Required" selected="True" rename="Right_Renewal_Required" input="Right_" />
+                <SelectField field="Left_Renewal_Required_" selected="True" input="Left_" />
+                <SelectField field="Right_Renewal_Required_" selected="True" rename="Right_Renewal_Required_" input="Right_" />
+                <SelectField field="Left_Requester__Merge_" selected="True" input="Left_" />
+                <SelectField field="Right_Requester__Merge_" selected="True" rename="Right_Requester__Merge_" input="Right_" />
+                <SelectField field="Left_Requester_Text" selected="True" input="Left_" />
+                <SelectField field="Right_Requester_Text" selected="True" rename="Right_Requester_Text" input="Right_" />
+                <SelectField field="Left_Rev_Share_Recvd" selected="True" input="Left_" />
+                <SelectField field="Right_Rev_Share_Recvd" selected="True" rename="Right_Rev_Share_Recvd" input="Right_" />
+                <SelectField field="Left_RFP_Information" selected="True" input="Left_" />
+                <SelectField field="Right_RFP_Information" selected="True" rename="Right_RFP_Information" input="Right_" />
+                <SelectField field="Left_Retailer_Distributor" selected="True" input="Left_" />
+                <SelectField field="Right_Retailer_Distributor" selected="True" rename="Right_Retailer_Distributor" input="Right_" />
+                <SelectField field="Left_SAM_OVERAGE_RISK" selected="True" input="Left_" />
+                <SelectField field="Right_SAM_OVERAGE_RISK" selected="True" rename="Right_SAM_OVERAGE_RISK" input="Right_" />
+                <SelectField field="Left_Sector__Merge_" selected="True" input="Left_" />
+                <SelectField field="Right_Sector__Merge_" selected="True" rename="Right_Sector__Merge_" input="Right_" />
+                <SelectField field="Left_Sector_Lead_Text" selected="True" input="Left_" />
+                <SelectField field="Right_Sector_Lead_Text" selected="True" rename="Right_Sector_Lead_Text" input="Right_" />
+                <SelectField field="Left_Short_Description" selected="True" input="Left_" />
+                <SelectField field="Right_Short_Description" selected="True" rename="Right_Short_Description" input="Right_" />
+                <SelectField field="Left_SOURCING_BYPASS" selected="True" input="Left_" />
+                <SelectField field="Right_SOURCING_BYPASS" selected="True" rename="Right_SOURCING_BYPASS" input="Right_" />
+                <SelectField field="Left_Sourcing_Director_Text" selected="True" input="Left_" />
+                <SelectField field="Right_Sourcing_Director_Text" selected="True" rename="Right_Sourcing_Director_Text" input="Right_" />
+                <SelectField field="Left_SOW_Total_Cost" selected="True" input="Left_" />
+                <SelectField field="Right_SOW_Total_Cost" selected="True" rename="Right_SOW_Total_Cost" input="Right_" />
+                <SelectField field="Left_Sourcing_Process_Steps" selected="True" input="Left_" />
+                <SelectField field="Right_Sourcing_Process_Steps" selected="True" rename="Right_Sourcing_Process_Steps" input="Right_" />
+                <SelectField field="Left_Sourcing_Review_Complexity_1" selected="True" input="Left_" />
+                <SelectField field="Right_Sourcing_Review_Complexity_1" selected="True" rename="Right_Sourcing_Review_Complexity_1" input="Right_" />
+                <SelectField field="Left_Supplier_Name" selected="True" input="Left_" />
+                <SelectField field="Right_Supplier_Name" selected="True" rename="Right_Supplier_Name" input="Right_" />
+                <SelectField field="Left_Supplier_Wht_Labeled" selected="True" input="Left_" />
+                <SelectField field="Right_Supplier_Wht_Labeled" selected="True" rename="Right_Supplier_Wht_Labeled" input="Right_" />
+                <SelectField field="Left_Temporary_Supplier_Name" selected="True" input="Left_" />
+                <SelectField field="Right_Temporary_Supplier_Name" selected="True" rename="Right_Temporary_Supplier_Name" input="Right_" />
+                <SelectField field="Left_Total_Savings____" selected="True" input="Left_" />
+                <SelectField field="Right_Total_Savings____" selected="True" rename="Right_Total_Savings____" input="Right_" />
+                <SelectField field="Left_Total_Savings__USD_" selected="True" input="Left_" />
+                <SelectField field="Right_Total_Savings__USD_" selected="True" rename="Right_Total_Savings__USD_" input="Right_" />
+                <SelectField field="Left_Total_Spend_Amount____" selected="True" input="Left_" />
+                <SelectField field="Right_Total_Spend_Amount____" selected="True" rename="Right_Total_Spend_Amount____" input="Right_" />
+                <SelectField field="Left_Total_Spend_Amount__USD_" selected="True" input="Left_" />
+                <SelectField field="Right_Total_Spend_Amount__USD_" selected="True" rename="Right_Total_Spend_Amount__USD_" input="Right_" />
+                <SelectField field="Left_Users_who_can_view_Highly_Sensitive_Project" selected="True" input="Left_" />
+                <SelectField field="Right_Users_who_can_view_Highly_Sensitive_Project" selected="True" rename="Right_Users_who_can_view_Highly_Sensitive_Project" input="Right_" />
+                <SelectField field="Left_Using_Intuit_paper" selected="True" input="Left_" />
+                <SelectField field="Right_Using_Intuit_paper" selected="True" rename="Right_Using_Intuit_paper" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_21932_da221f8598e0594fa99779ae6f326f45_\Engine_21932_acf1102ca97475419fab2905e7d34137~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="462" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_21932_da221f8598e0594fa99779ae6f326f45_\Engine_21932_101f92df9878a44eb125807f863325f8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="462" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_21932_da221f8598e0594fa99779ae6f326f45_\Engine_21932_25b7f5066a2baf4fb994ecb7e317f01a~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="0_Sourcing_Q_Agreement__True_Up_" selected="False" />
+            <SelectField field="Right_0_Sourcing_Q_Agreement__True_Up_" selected="False" />
+            <SelectField field="0_Sourcing_Q_Enterprise_Prod_Use" selected="False" />
+            <SelectField field="Right_0_Sourcing_Q_Enterprise_Prod_Use" selected="False" />
+            <SelectField field="0_Sourcing_Q_Lending_Services" selected="False" />
+            <SelectField field="Right_0_Sourcing_Q_Lending_Services" selected="False" />
+            <SelectField field="0_Sourcing_Q_Marketing_Services" selected="False" />
+            <SelectField field="Right_0_Sourcing_Q_Marketing_Services" selected="False" />
+            <SelectField field="0_Sourcing_Q_PSE_Request" selected="False" />
+            <SelectField field="Right_0_Sourcing_Q_PSE_Request" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="726" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_21932_da221f8598e0594fa99779ae6f326f45_\Engine_21932_5d6656d5e479844583f3c8c9adeafd55~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Left" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Right" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CHECK CMAPP GUSTAVO 7-15</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5d9fdd43-abf7-497c-b717-e8da7eb4ae56" />
+      <Telemetry>
+        <PreviousWorkflowId value="7bc0820c-4957-49c6-97cc-25e928a483b1" />
+        <OriginWorkflowId value="7bc0820c-4957-49c6-97cc-25e928a483b1" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

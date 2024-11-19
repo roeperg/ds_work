@@ -1,0 +1,1390 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="User Token" />
+            <Field name="Table ID" />
+            <Field name="Report ID" />
+          </Fields>
+          <Data>
+            <r>
+              <c />
+              <c>bnskksae5</c>
+              <c>309</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings>
+        <Position x="246" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.User Token"><![CDATA[User Token=User Token
+Table ID=Table ID
+Report ID=Report ID
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="quickbase_qid.yxmc" />
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="738" y="271" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_7824_7560572ca4c840dea8079b84d36889c4_\Engine_7824_3fc0ee04b5138b41903be8e568858ea0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="798" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Contract Minimum Contract Audit.xlsx&quot;" field="Path" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Set Excel output path</AnnotationText>
+          <DefaultAnnotationText><![CDATA[Path = "Contract Minimum Contract Audit.xlsx"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="271" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_7824_7560572ca4c840dea8079b84d36889c4_\Engine_7824_75d66ed5c42c114fbf99bf6eaffa9584~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="918" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Date Created" selected="True" />
+            <Field field="Min_Commitment" selected="True" />
+            <Field field="Contract ID#" selected="True" />
+            <Field field="Minimum commitments" selected="True" />
+            <Field field="COUPA_ID" selected="True" />
+            <Field field="Path" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date Created" size="20" source="PythonTool:" type="String" />
+            <Field name="Record ID#" source="PythonTool:" type="Int64" />
+            <Field name="Min_Commitment" size="3" source="PythonTool:" type="String" />
+            <Field name="534.value.email" size="29" source="PythonTool:" type="V_String" />
+            <Field name="534.value.id" size="13" source="PythonTool:" type="String" />
+            <Field name="534.value.name" size="20" source="PythonTool:" type="V_String" />
+            <Field name="Contract ID#" size="7" source="PythonTool:" type="String" />
+            <Field name="6.value.email" size="29" source="PythonTool:" type="V_String" />
+            <Field name="6.value.id" size="13" source="PythonTool:" type="V_String" />
+            <Field name="6.value.name" size="29" source="PythonTool:" type="V_String" />
+            <Field name="6.value.userName" size="20" source="PythonTool:" type="V_String" />
+            <Field name="638.value.email" size="29" source="PythonTool:" type="V_String" />
+            <Field name="638.value.id" size="13" source="PythonTool:" type="String" />
+            <Field name="638.value.name" size="20" source="PythonTool:" type="V_String" />
+            <Field name="Minimum Commit Cert" source="PythonTool:" type="Bool" />
+            <Field name="COUPA_ID" size="149" source="PythonTool:" type="V_String" />
+            <Field name="MIN_COMMIT_AMOUNT" source="PythonTool:" type="Double" />
+            <Field name="534.value.userName" size="9" source="PythonTool:" type="V_String" />
+            <Field name="638.value.userName" size="12" source="PythonTool:" type="V_String" />
+            <Field name="Purchase Category - Category Manager" source="PythonTool:" type="Double" />
+            <Field name="Category Manager" source="PythonTool:" type="Double" />
+            <Field name="Category Manager _Merge_" source="PythonTool:" type="Double" />
+            <Field name="Path" size="36" source="Formula: &quot;Contract Minimum Contract Audit.xlsx&quot;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1062" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeParse(Left([Date Created], 10),'%Y-%m-%d')" field="Date Created" size="20" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Convert dates</AnnotationText>
+          <DefaultAnnotationText><![CDATA[Date Created = DateTimeParse(Left([Date Created], 10),'%Y-%m-%d')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1170" y="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>Date Created</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-09-18 11:11:15</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2023-07-31</Operand>
+              <StartDate>2024-09-18 11:11:15</StartDate>
+              <EndDate>2024-09-18 11:11:15</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Date Created] &gt; "2023-07-31"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="133">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1206" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Record ID#</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-09-29 20:37:51</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>34847</Operand>
+              <StartDate>2024-09-29 20:37:51</StartDate>
+              <EndDate>2024-09-29 20:37:51</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Record ID#] = 34847</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="129">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="593" y="54" width="158" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 129</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="127">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="618" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="123">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1517" y="617" width="289" height="254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 123</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="121">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="1722" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>RightInputRows</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression />
+              <NamesFromRows>
+                <OnError>Warn</OnError>
+                <InputMode>Mapped</InputMode>
+                <OldName />
+              </NamesFromRows>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="1638" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Remove</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression />
+              <RemovePrefixSuffix>
+                <Type>Suffix</Type>
+                <Text>.value</Text>
+                <OnError>Warn</OnError>
+              </RemovePrefixSuffix>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="120">
+          <GuiSettings Plugin="JupyterCode">
+            <Position x="1542" y="739" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <DefaultVenv>1</DefaultVenv>
+              <JupyterGuidDir>787f4f6019e1417751945c4470ee8b7d</JupyterGuidDir>
+              <productionModeScript>#################################
+# List all non-standard packages to be imported by your 
+# script here (only missing packages will be installed)
+from ayx import Package
+#Package.installPackages(['pandas','numpy'])
+
+
+#################################
+from ayx import Alteryx
+
+
+
+
+#################################
+credentials = Alteryx.read("#1")
+#Alteryx.write(credentials, 2)
+#print(credentials.head())
+print(credentials["User Token"][0])
+print(credentials["QuickBase Table ID"][0])
+print(credentials["Report ID"][0])
+print(credentials["Path"][0])
+
+
+
+#################################
+import json
+import requests
+import pandas as pd
+
+headers = {
+    'QB-Realm-Hostname': 'https://intuitcorp.quickbase.com',
+    'User-Agent': '{User-Agent}',
+    'Authorization': f'QB-USER-TOKEN {credentials["User Token"][0]}',
+    'Content-Type': 'application/json',
+}
+
+body = {
+    'from': 'bnskksae5', 'select': '[1,2]'
+}
+
+
+tableid = credentials["QuickBase Table ID"][0]
+quieryid = credentials["Report ID"][0]
+
+# get https://api.quickbase.com/v1/reports/%s/run?tableId=%s&amp;top=5' %(credentials["Report ID"][0],credentials["QuickBase Table ID"][0] )
+
+if True:
+    r = requests.get('https://api.quickbase.com/v1/fields?tableId=%s' %tableid,
+    headers = headers,
+    json = body
+    )
+
+    response_list = r.json()
+    schema = pd.json_normalize(response_list)
+    #Alteryx.write(schema, 1)
+    labels = schema[['id','label']]
+    Alteryx.write(labels, 1)
+
+    #print(labels.head())
+    #print(schema.columns)
+
+
+
+
+#################################
+
+
+if False:
+    if True:
+        r = requests.post(cmd,
+        headers = headers,
+        json = body
+        )
+    else:
+        r = requests.post('https://api.quickbase.com/v1/reports/1000289/run?tableId=bnskksae5&amp;top=2',
+        headers = headers,
+        json = body
+        )
+
+    #print(r.json())
+    
+    response_list = r.json()['data']
+    dataFrame = pd.json_normalize(response_list)
+
+    print(dataFrame.head)
+
+    Alteryx.write(schema, 1)
+
+
+
+
+
+#################################
+</productionModeScript>
+              <Notebook><![CDATA[{"cells":[{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"outputs":[],"source":["# Run `Alteryx.help()` for info about useful functions.  \n","# i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":2,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"}},"outputs":[],"source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Package\n","#Package.installPackages(['pandas','numpy'])"]},{"cell_type":"code","execution_count":3,"metadata":{},"outputs":[],"source":["from ayx import Alteryx\n","\n"]},{"cell_type":"code","execution_count":4,"metadata":{"scrolled":true},"outputs":[],"source":["import json\n","import requests\n","import pandas as pd\n","\n","\n","credentials = Alteryx.read(\"#1\")\n","#Alteryx.write(credentials, 2)\n","print(credentials.head())\n","#print(credentials[\"User Token\"][0])\n","#print(credentials[\"Table ID\"][0])\n","#print(credentials[\"Report ID\"][0])\n"]},{"cell_type":"code","execution_count":5,"metadata":{},"outputs":[],"source":["if False:\n","    credentials = {'User Token':'YOUR USER TOKEN',\n","               'Table ID':'bnskksae5',\n","               'Report ID':'309',\n","              }\n"]},{"cell_type":"code","execution_count":6,"metadata":{},"outputs":[],"source":["\n","headers = {\n","    'QB-Realm-Hostname': 'https://intuitcorp.quickbase.com',\n","    'User-Agent': '{User-Agent}',\n","    'Authorization': f'QB-USER-TOKEN {credentials[\"User Token\"]}',\n","    'Content-Type': 'application/json',\n","}\n","\n","body = {}\n","\n","tableid = credentials[\"Table ID\"]\n","queryid = credentials[\"Report ID\"]\n"]},{"cell_type":"code","execution_count":7,"metadata":{},"outputs":[],"source":["cmd = 'https://api.quickbase.com/v1/reports/%s/run?tableId=%s'  %(queryid,tableid)\n","\n","print(cmd)\n","\n","\n","r = requests.post(cmd,\n","headers = headers,\n","json = body\n",")\n","print(r.json())\n","\n","response_list = r.json()['data']\n","dataFrame = pd.json_normalize(response_list)\n","\n","print(dataFrame.head)\n","\n","Alteryx.write(dataFrame, 1)\n","\n"]},{"cell_type":"code","execution_count":8,"metadata":{},"outputs":[],"source":["# get https://api.quickbase.com/v1/reports/%s/run?tableId=%s&top=5' %(credentials[\"Report ID\"][0],credentials[\"QuickBase Table ID\"][0] )\n","\n","r = requests.get('https://api.quickbase.com/v1/fields?tableId=%s' %tableid,\n","headers = headers,\n","json = body\n",")\n","\n","response_list = r.json()\n","schema = pd.json_normalize(response_list)\n","#Alteryx.write(schema, 1)\n","labels = schema[['id','label']]\n","Alteryx.write(labels, 2)\n","\n","#print(labels.head())\n","#print(schema.columns)\n","\n","\n","\n"]}],"metadata":{"kernelspec":{"display_name":"designerbasetools_venv","language":"python","name":"designerbasetools_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.16"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+              <GuidDir>024ba534-da0f-49fa-9958-8806ee3abd38</GuidDir>
+              <Port>49354</Port>
+              <WorkflowName>c:\users\groeper\development\alteryx\contract_minimum_check.yxmd</WorkflowName>
+              <specialCellMetadata>[{"label":"info","contents_keyword":"Alteryx.help()","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","first_line":"Run `Alteryx.help()` for info about useful functions.","cell_type":"markdown","cell_class":"text_cell"},{"label":"deps","contents_keyword":"installPackages","cell_css":"border: 1px solid #58a; margin: 2px;","first_line":"# List all non-standard packages to be imported by your","cell_type":"code","cell_class":"code_cell"}]</specialCellMetadata>
+              <AssetManaged>True</AssetManaged>
+              <JupyterProduction>false</JupyterProduction>
+              <LastExecutedByEngineVersion>2023.2.1.226</LastExecutedByEngineVersion>
+              <vEnvName>designerbasetools_venv</vEnvName>
+              <JupyterGuidCopy />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+        </Node>
+        <Node ToolID="115">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1710" y="787" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_22328_908641cf4fda46adbbbd952e8f9ab9a0_\Engine_22328_d1c347cf74896d4ea1501ab897d17c35~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="158" y="340" width="1085" height="893" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 88</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="183" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="0" field="Selected" size="2" type="Int16" />
+                <FormulaField expression="&quot;&quot;" field="Justification" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Selected = 0
+Justification = ""
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="366" y="437" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression><![CDATA[[MIN_COMMIT_AMOUNT] > 0
+and [Min_Commitment] == "Yes"
+and [Minimum Commit Cert] == 1
+]]></Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>All good</AnnotationText>
+              <DefaultAnnotationText>[MIN_COMMIT_AMOUNT] &gt; 0
+and [Min_Commitment] == "Yes"
+and [Minimum Commit Cert] ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="558" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [MIN_COMMIT_AMOUNT] &gt; 0&#xA;    and [Min_Commitment] == &quot;Yes&quot;&#xA;    and [Minimum Commit Cert] == 0&#xA;  then &quot;Needs Certification&quot;&#xA;//ELSEIF [MIN_COMMIT_AMOUNT] &gt; 0&#xA;//    and [Min_Commitment] == &quot;No&quot;&#xA;//    and [Minimum Commit Cert] == 1&#xA;//	then &quot;Min_Commitment is NO but Minimum Commit Cert is checked&quot;&#xA;ELSEIF [MIN_COMMIT_AMOUNT] = 0&#xA;    and [Min_Commitment] == &quot;Yes&quot;&#xA;	then &quot;Min_Commitment is Yes but MIN_COMMIT_AMOUNT is zero or negative&quot;&#xA;ELSEIF [MIN_COMMIT_AMOUNT] = 0&#xA;    and [Minimum Commit Cert] == 1&#xA;	then &quot;Minimum Commit Cert is checked but MIN_COMMIT_AMOUNT is zero or negative&quot;&#xA;ELSE&#xA;    &quot;&quot;&#xA;ENDIF&#xA;&#xA;" field="Justification" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Other permutations</AnnotationText>
+              <DefaultAnnotationText>Justification = IF [MIN_COMMIT_AMOUNT] &gt; 0
+    and [Min_Commitment] == "Yes"
+   ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="834" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="1" field="Selected" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Selected = 1
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="989" y="389" width="229" height="133" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Wireless out</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Wireless out</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="58">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+                <Position x="1014" y="438" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ByName_ErrorMode>Warning</ByName_ErrorMode>
+                  <ByName_OutputMode>All</ByName_OutputMode>
+                  <Mode>ByName</Mode>
+                  <SetOutputOrder value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+            </Node>
+            <Node ToolID="137">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="1134" y="438" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Justification" selected="True" size="2147483647" />
+                    <SelectField field="Total Spend Amount (USD)" selected="True" />
+                    <SelectField field="Total Savings (USD)" selected="True" />
+                    <SelectField field="Record ID#" selected="True" />
+                    <SelectField field="Category Manager _Merge_" selected="False" />
+                    <SelectField field="Purchase Category" selected="False" />
+                    <SelectField field="Related Purchase Category" selected="False" />
+                    <SelectField field="Project Name" selected="False" />
+                    <SelectField field="Related Supplier2 - Third Party Name" selected="False" />
+                    <SelectField field="Related Supplier2 - Third Party Identifier" selected="False" />
+                    <SelectField field="Related Supplier2" selected="False" />
+                    <SelectField field="Contract Status" selected="False" />
+                    <SelectField field="Contract Signed Date" selected="False" />
+                    <SelectField field="Project End Date" selected="False" />
+                    <SelectField field="Project Start Date" selected="False" />
+                    <SelectField field="Sector" selected="False" />
+                    <SelectField field="Sector (Merge)" selected="False" />
+                    <SelectField field="Box Link to Contract" selected="False" />
+                    <SelectField field="Date Created" selected="True" />
+                    <SelectField field="Contract Expiration Date" selected="True" />
+                    <SelectField field="Related Contract - Tags" selected="True" />
+                    <SelectField field="COUPA_ID" selected="True" size="2147483647" />
+                    <SelectField field="Contract Effective Start Date" selected="True" />
+                    <SelectField field="Selected" selected="True" />
+                    <SelectField field="Window Start Date" selected="False" />
+                    <SelectField field="Window End Date" selected="False" />
+                    <SelectField field="Path" selected="True" type="V_WString" size="2147483647" />
+                    <SelectField field="Category Manager Email" selected="True" />
+                    <SelectField field="Category Manager ID" selected="True" type="V_String" size="2147483647" />
+                    <SelectField field="Category Manager Name" selected="True" />
+                    <SelectField field="Contract ID#" selected="True" />
+                    <SelectField field="Min_Commitment" selected="True" />
+                    <SelectField field="Minimum commitments" selected="True" />
+                    <SelectField field="Minimum Commit Cert" selected="True" />
+                    <SelectField field="MIN_COMMIT_AMOUNT" selected="True" />
+                    <SelectField field="Total Minimum Commitment Amount" selected="True" type="V_WString" size="2147483647" />
+                    <SelectField field="534.value.email" selected="True" rename="Email" size="2147483647" />
+                    <SelectField field="534.value.id" selected="True" rename="ID" type="V_String" size="2147483647" />
+                    <SelectField field="534.value.name" selected="True" rename="Name" size="2147483647" />
+                    <SelectField field="638.value.name" selected="False" size="2147483647" />
+                    <SelectField field="6.value.email" selected="False" size="2147483647" />
+                    <SelectField field="6.value.id" selected="False" size="2147483647" />
+                    <SelectField field="6.value.name" selected="False" size="2147483647" />
+                    <SelectField field="6.value.userName" selected="False" size="2147483647" />
+                    <SelectField field="638.value.email" selected="False" size="2147483647" />
+                    <SelectField field="638.value.id" selected="False" type="V_String" size="2147483647" />
+                    <SelectField field="534.value.userName" selected="False" size="2147483647" />
+                    <SelectField field="638.value.userName" selected="False" size="2147483647" />
+                    <SelectField field="Purchase Category - Category Manager" selected="False" />
+                    <SelectField field="Category Manager" selected="False" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="327" y="582" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_7824_7560572ca4c840dea8079b84d36889c4_\Engine_7824_93ef88d08262224aa43a4882c9263cda~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="109">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="819" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Path] + &quot;|||Passed&quot;" field="Path" size="36" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Path = [Path] + "|||Passed"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+            <Position x="231" y="751" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="365" y="773" width="529" height="165" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Good Records</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Good Records</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="66">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+                <Position x="810" y="822" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <File MaxRecords="" FileFormat="25">Contract Minimum Audit.xlsx|||Good</File>
+                  <Passwords />
+                  <Disable>False</Disable>
+                  <FormatSpecificOptions>
+                    <PreserveFormat>False</PreserveFormat>
+                    <UNCLocal>False</UNCLocal>
+                    <SkipFieldNames>False</SkipFieldNames>
+                    <OutputOption>Overwrite</OutputOption>
+                  </FormatSpecificOptions>
+                  <MultiFile value="True" />
+                  <MultiFileType>Path</MultiFileType>
+                  <MultiFileField>Path</MultiFileField>
+                  <KeepField value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <AnnotationText>Good</AnnotationText>
+                  <DefaultAnnotationText>Contract Minimum Audit.xlsx
+Query=Good</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+            <Node ToolID="106">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="510" y="822" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="[Path]+&quot;|||Good&quot;" field="Path" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <AnnotationText>Format path</AnnotationText>
+                  <DefaultAnnotationText><![CDATA[Path = [Path]+"|||Good"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="71">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="630" y="822" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Justification" selected="False" />
+                    <SelectField field="Record ID#" selected="True" />
+                    <SelectField field="Category Manager _Merge_" selected="True" />
+                    <SelectField field="Date Created" selected="True" />
+                    <SelectField field="COUPA_ID" selected="True" />
+                    <SelectField field="MIN_COMMIT_AMOUNT" selected="True" />
+                    <SelectField field="534.value.email" selected="True" />
+                    <SelectField field="534.value.id" selected="True" />
+                    <SelectField field="534.value.name" selected="True" />
+                    <SelectField field="534.value.userName" selected="True" />
+                    <SelectField field="Selected" selected="False" />
+                    <SelectField field="Path" selected="True" />
+                    <SelectField field="Contract ID#" selected="True" />
+                    <SelectField field="Min_Commitment" selected="True" />
+                    <SelectField field="Minimum Commit Cert" selected="True" />
+                    <SelectField field="6.value.email" selected="False" />
+                    <SelectField field="6.value.id" selected="False" />
+                    <SelectField field="6.value.name" selected="False" />
+                    <SelectField field="6.value.userName" selected="False" />
+                    <SelectField field="638.value.email" selected="False" />
+                    <SelectField field="638.value.id" selected="False" />
+                    <SelectField field="638.value.name" selected="False" />
+                    <SelectField field="638.value.userName" selected="False" />
+                    <SelectField field="Purchase Category - Category Manager" selected="True" />
+                    <SelectField field="Category Manager" selected="True" />
+                    <SelectField field="Crap" selected="False" rename="Path" />
+                    <SelectField field="Sum_Total Spend Amount (USD)" selected="False" rename="Total Spend" />
+                    <SelectField field="Sum_Total Savings (USD)" selected="False" rename="Total Savings" />
+                    <SelectField field="Email" selected="True" />
+                    <SelectField field="ID" selected="True" />
+                    <SelectField field="Name" selected="True" />
+                    <SelectField field="Count" selected="False" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="67">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="390" y="822" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Operator>=</Operator>
+                    <Field>Selected</Field>
+                    <Operands>
+                      <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                      <DateType>fixed</DateType>
+                      <PeriodDate>2024-09-09 10:52:34</PeriodDate>
+                      <PeriodType>
+                      </PeriodType>
+                      <PeriodCount>0</PeriodCount>
+                      <Operand>0</Operand>
+                      <StartDate>2024-09-09 10:52:34</StartDate>
+                      <EndDate>2024-09-09 10:52:34</EndDate>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>[Selected] = 0</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="111">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="726" y="822" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="1033">
+                    <Field field="Date Created" order="Descending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Date Created - Descending</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="131">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1134" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Selected" action="GroupBy" rename="Selected" />
+                <SummarizeField field="Selected" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="342" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_18296_d9bb317537d64d169338090d485a0e81_\Engine_18296_720c27828edb4c47b4d8e573adfaf45e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="130">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="364" y="1013" width="572" height="195" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Need Verification</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Need Verification</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="56">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+                <Position x="809" y="1062" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <File MaxRecords="" FileFormat="25">Contract Minimum Audit.xlsx|||Bad</File>
+                  <Passwords />
+                  <Disable>False</Disable>
+                  <FormatSpecificOptions>
+                    <PreserveFormat>False</PreserveFormat>
+                    <UNCLocal>False</UNCLocal>
+                    <SkipFieldNames>False</SkipFieldNames>
+                    <OutputOption>Overwrite</OutputOption>
+                  </FormatSpecificOptions>
+                  <MultiFile value="True" />
+                  <MultiFileType>Path</MultiFileType>
+                  <MultiFileField>Path</MultiFileField>
+                  <KeepField value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <AnnotationText>Need verification</AnnotationText>
+                  <DefaultAnnotationText>Contract Minimum Audit.xlsx
+Query=Bad</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+            <Node ToolID="110">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="725" y="1062" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="1033">
+                    <Field field="Name" order="Ascending" />
+                    <Field field="Date Created" order="Ascending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Name - Ascending
+Date Created - Ascending</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="75">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="509" y="1062" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="[Path]+&quot;|||Need Verification&quot;" field="Path" size="1073741823" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <AnnotationText>Format path</AnnotationText>
+                  <DefaultAnnotationText><![CDATA[Path = [Path]+"|||Need Verification"
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="70">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="629" y="1062" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Selected" selected="False" />
+                    <SelectField field="Crap" selected="False" rename="Path" />
+                    <SelectField field="Sum_Total Spend Amount (USD)" selected="False" rename="Total Spend" />
+                    <SelectField field="Sum_Total Savings (USD)" selected="False" rename="Total Savings" />
+                    <SelectField field="Count" selected="False" />
+                    <SelectField field="Spend" selected="False" />
+                    <SelectField field="Savings" selected="False" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="65">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="389" y="1062" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Operator>&gt;=</Operator>
+                    <Field>Selected</Field>
+                    <Operands>
+                      <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                      <DateType>fixed</DateType>
+                      <PeriodDate>2024-09-29 20:26:49</PeriodDate>
+                      <PeriodType>
+                      </PeriodType>
+                      <PeriodCount>0</PeriodCount>
+                      <Operand>1</Operand>
+                      <StartDate>2024-09-29 20:26:49</StartDate>
+                      <EndDate>2024-09-29 20:26:49</EndDate>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>[Selected] &gt;= 1</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="690" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Length([Justification]) &gt; 0</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Length([Justification]) &gt; 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="120" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="124" Connection="User Token" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="Output15" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="Output15" />
+      <Destination ToolID="127" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="126" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="122" Connection="Output" />
+      <Destination ToolID="121" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output2" />
+      <Destination ToolID="121" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output1" />
+      <Destination ToolID="122" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output1" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="False" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="134" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="109" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="134" Connection="False" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="133" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output2" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="132" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="True" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="134" Connection="True" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>contract_minimum_check</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="59c8878f-39a0-48f6-9496-2a379172dcfb" />
+      <Telemetry>
+        <PreviousWorkflowId value="2738def6-8438-4d9c-96f4-4d7cbbbbcd69" />
+        <OriginWorkflowId value="1a15aa7f-a79b-43c7-9d6d-77c6b008bd32" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,3693 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="81" y="487" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>UserExport-bnskh5m2g.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="User ID or Group ID" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="Email Address" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="User Name" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="Role in App" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="App Level Permissions" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="User Status" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="Last Visited Time" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="Date Added" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="Show In User Pickers?" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="On Deny List?" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="Target Group Name" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+            <Field name="Parent Group Name" size="254" source="File: C:\Users\groeper\Development\CMAPP\UserExport-bnskh5m2g.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="81" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="150" />
+          <Fields>
+            <Field name="choicesLuid" />
+          </Fields>
+          <Data>
+            <r>
+              <c>60114787.cr64</c>
+            </r>
+            <r>
+              <c>60680027.tyyj</c>
+            </r>
+            <r>
+              <c>59377785.f84d</c>
+            </r>
+            <r>
+              <c>59621762.7taa</c>
+            </r>
+            <r>
+              <c>14133.df5e</c>
+            </r>
+            <r>
+              <c>31239.bqcy</c>
+            </r>
+            <r>
+              <c>54037988.bsgd</c>
+            </r>
+            <r>
+              <c>60474415.d9vy</c>
+            </r>
+            <r>
+              <c>58327571.3qwy</c>
+            </r>
+            <r>
+              <c>60587327.dpn6</c>
+            </r>
+            <r>
+              <c>53011879.bdfr</c>
+            </r>
+            <r>
+              <c>60398904.njp9</c>
+            </r>
+            <r>
+              <c>60599554.br6v</c>
+            </r>
+            <r>
+              <c>59327288.b7cn</c>
+            </r>
+            <r>
+              <c>58369035.dwiz</c>
+            </r>
+            <r>
+              <c>57409174.dgac</c>
+            </r>
+            <r>
+              <c>60596014.bkk3</c>
+            </r>
+            <r>
+              <c>60342965.mvj9</c>
+            </r>
+            <r>
+              <c>56986799.cery</c>
+            </r>
+            <r>
+              <c>60343191.b8dw</c>
+            </r>
+            <r>
+              <c>59632512.cvcg</c>
+            </r>
+            <r>
+              <c>58456349.d7j2</c>
+            </r>
+            <r>
+              <c>60323879.cjhy</c>
+            </r>
+            <r>
+              <c>54758574.babi</c>
+            </r>
+            <r>
+              <c>61092601.c68d</c>
+            </r>
+            <r>
+              <c>57513759.bcda</c>
+            </r>
+            <r>
+              <c>60615015.qy7s</c>
+            </r>
+            <r>
+              <c>60271678.vi8r</c>
+            </r>
+            <r>
+              <c>60303175.czy3</c>
+            </r>
+            <r>
+              <c>60217709.buqa</c>
+            </r>
+            <r>
+              <c>57921415.buz2</c>
+            </r>
+            <r>
+              <c>61229225.d68b</c>
+            </r>
+            <r>
+              <c>61264997.dckp</c>
+            </r>
+            <r>
+              <c>61259209.bym5</c>
+            </r>
+            <r>
+              <c>61303813.d5b8</c>
+            </r>
+            <r>
+              <c>61272092.dggi</c>
+            </r>
+            <r>
+              <c>56422.cpre</c>
+            </r>
+            <r>
+              <c>58822688.b8ju</c>
+            </r>
+            <r>
+              <c>61412939.dnba</c>
+            </r>
+            <r>
+              <c>61520923.ncge</c>
+            </r>
+            <r>
+              <c>61555113.dt9r</c>
+            </r>
+            <r>
+              <c>56229886.d8pp</c>
+            </r>
+            <r>
+              <c>61756616.3d6v</c>
+            </r>
+            <r>
+              <c>61746371.cy89</c>
+            </r>
+            <r>
+              <c>61797277.cizf</c>
+            </r>
+            <r>
+              <c>52893977.da7c</c>
+            </r>
+            <r>
+              <c>60810412.cfix</c>
+            </r>
+            <r>
+              <c>61945548.cjn6</c>
+            </r>
+            <r>
+              <c>61914519.dwa7</c>
+            </r>
+            <r>
+              <c>60772975.bh6d</c>
+            </r>
+            <r>
+              <c>61954493.b39c</c>
+            </r>
+            <r>
+              <c>61985711.dbfs</c>
+            </r>
+            <r>
+              <c>61942066.bja7</c>
+            </r>
+            <r>
+              <c>61999535.dz3z</c>
+            </r>
+            <r>
+              <c>61976127.bcax</c>
+            </r>
+            <r>
+              <c>62009822.cxck</c>
+            </r>
+            <r>
+              <c>62190720.c3eg</c>
+            </r>
+            <r>
+              <c>62347148.dfr7</c>
+            </r>
+            <r>
+              <c>62398118.dmny</c>
+            </r>
+            <r>
+              <c>62516680.d78r</c>
+            </r>
+            <r>
+              <c>62477480.b6u3</c>
+            </r>
+            <r>
+              <c>62572867.bdtm</c>
+            </r>
+            <r>
+              <c>62572863.diem</c>
+            </r>
+            <r>
+              <c>58234965.9v89</c>
+            </r>
+            <r>
+              <c>56026301.dhpd</c>
+            </r>
+            <r>
+              <c>62577034.d3br</c>
+            </r>
+            <r>
+              <c>62626283.dc9r</c>
+            </r>
+            <r>
+              <c>62680743.cz3d</c>
+            </r>
+            <r>
+              <c>62645941.m4mg</c>
+            </r>
+            <r>
+              <c>62690893.dftd</c>
+            </r>
+            <r>
+              <c>62674276.dgbj</c>
+            </r>
+            <r>
+              <c>62715947.dgsa</c>
+            </r>
+            <r>
+              <c>62715948.ddyk</c>
+            </r>
+            <r>
+              <c>62724247.dkhz</c>
+            </r>
+            <r>
+              <c>62741090.cuqy</c>
+            </r>
+            <r>
+              <c>62741084.5juj</c>
+            </r>
+            <r>
+              <c>62825379.ccqt</c>
+            </r>
+            <r>
+              <c>62821894.iud5</c>
+            </r>
+            <r>
+              <c>62845272.cdzp</c>
+            </r>
+            <r>
+              <c>62845270.dm4x</c>
+            </r>
+            <r>
+              <c>62842088.ct8i</c>
+            </r>
+            <r>
+              <c>62857780.bj6t</c>
+            </r>
+            <r>
+              <c>62897640.8emz</c>
+            </r>
+            <r>
+              <c>62848226.cq42</c>
+            </r>
+            <r>
+              <c>62979356.c3k7</c>
+            </r>
+            <r>
+              <c>63197866.csmr</c>
+            </r>
+            <r>
+              <c>63322233.dvjf</c>
+            </r>
+            <r>
+              <c>63388307.ctbu</c>
+            </r>
+            <r>
+              <c>63475002.vaxk</c>
+            </r>
+            <r>
+              <c>63466524.8kkt</c>
+            </r>
+            <r>
+              <c>63491532.ff62</c>
+            </r>
+            <r>
+              <c>63555444.cw6v</c>
+            </r>
+            <r>
+              <c>63587549.cqru</c>
+            </r>
+            <r>
+              <c>63587611.nduk</c>
+            </r>
+            <r>
+              <c>63527878.d63f</c>
+            </r>
+            <r>
+              <c>63609079.b297</c>
+            </r>
+            <r>
+              <c>64269109.5jxh</c>
+            </r>
+            <r>
+              <c>64280800.dga3</c>
+            </r>
+            <r>
+              <c>62373031.d58y</c>
+            </r>
+            <r>
+              <c>56461749.dffp</c>
+            </r>
+            <r>
+              <c>64274816.cwre</c>
+            </r>
+            <r>
+              <c>64357724.danf</c>
+            </r>
+            <r>
+              <c>64357667.b3hk</c>
+            </r>
+            <r>
+              <c>64329056.cxg7</c>
+            </r>
+            <r>
+              <c>14503.bif5</c>
+            </r>
+            <r>
+              <c>64367758.di6t</c>
+            </r>
+            <r>
+              <c>64406049.b6ph</c>
+            </r>
+            <r>
+              <c>63381334.bdph</c>
+            </r>
+            <r>
+              <c>64572279.caak</c>
+            </r>
+            <r>
+              <c>53140915.jv59</c>
+            </r>
+            <r>
+              <c>64830158.cn4m</c>
+            </r>
+            <r>
+              <c>64824502.bmy9</c>
+            </r>
+            <r>
+              <c>64849576.2p94</c>
+            </r>
+            <r>
+              <c>64843198.dvgz</c>
+            </r>
+            <r>
+              <c>64863528.dzvh</c>
+            </r>
+            <r>
+              <c>64838604.dcxp</c>
+            </r>
+            <r>
+              <c>64957288.czsd</c>
+            </r>
+            <r>
+              <c>53192664.wpag</c>
+            </r>
+            <r>
+              <c>56869928.74z7</c>
+            </r>
+            <r>
+              <c>64858331.dnk4</c>
+            </r>
+            <r>
+              <c>64552623.cjvy</c>
+            </r>
+            <r>
+              <c>64858330.qune</c>
+            </r>
+            <r>
+              <c>64858327.ddzz</c>
+            </r>
+            <r>
+              <c>64863329.cbdv</c>
+            </r>
+            <r>
+              <c>64945525.cct5</c>
+            </r>
+            <r>
+              <c>64970914.br7q</c>
+            </r>
+            <r>
+              <c>64998359.c7t7</c>
+            </r>
+            <r>
+              <c>64945060.beec</c>
+            </r>
+            <r>
+              <c>64994506.cpnc</c>
+            </r>
+            <r>
+              <c>53689776.37dy</c>
+            </r>
+            <r>
+              <c>65266930.bi38</c>
+            </r>
+            <r>
+              <c>65362511.dqdt</c>
+            </r>
+            <r>
+              <c>65374352.cvny</c>
+            </r>
+            <r>
+              <c>57944301.dkgz</c>
+            </r>
+            <r>
+              <c>54642505.c5dh</c>
+            </r>
+            <r>
+              <c>65616140.xhv2</c>
+            </r>
+            <r>
+              <c>64986795.dakr</c>
+            </r>
+            <r>
+              <c>65741487.brgs</c>
+            </r>
+            <r>
+              <c>65989962.dukh</c>
+            </r>
+            <r>
+              <c>66006637.b479</c>
+            </r>
+            <r>
+              <c>66049336.cfbb</c>
+            </r>
+            <r>
+              <c>66290955.b882</c>
+            </r>
+            <r>
+              <c>66291793.9bfq</c>
+            </r>
+            <r>
+              <c>66393620.c5w9</c>
+            </r>
+            <r>
+              <c>66423853.dq64</c>
+            </r>
+            <r>
+              <c>66425289.df8w</c>
+            </r>
+            <r>
+              <c>66423850.b2cq</c>
+            </r>
+            <r>
+              <c>66510737.c3t6</c>
+            </r>
+            <r>
+              <c>66857011.e35h</c>
+            </r>
+            <r>
+              <c>66881559.cgdh</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Current Choices</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="716" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Name" />
+            <Field field="Email Address" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Name" />
+            <Field field="Email" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Name" selected="True" rename="Right_Name" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1412" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="project_driver" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Name to test" selected="True" rename="Right_Name to test" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1328" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1111" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>User Status</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-10-29 11:30:13</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>registered</Operand>
+              <StartDate>2024-10-29 11:30:13</StartDate>
+              <EndDate>2024-10-29 11:30:13</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[User Status] = registered</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1712" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_28720_1ba6a6f76e174e1e9cf0fc34f01b7d84_\Engine_28720_23430a3e38aee5468d03996b15c64e41~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1581" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Email Address" selected="False" />
+            <SelectField field="User Name" selected="False" />
+            <SelectField field="App Level Permissions" selected="False" />
+            <SelectField field="Last Visited Time" selected="False" />
+            <SelectField field="Date Added" selected="False" />
+            <SelectField field="Target Group Name" selected="False" />
+            <SelectField field="Parent Group Name" selected="False" />
+            <SelectField field="choicesLuid" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1579" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_28720_1ba6a6f76e174e1e9cf0fc34f01b7d84_\Engine_28720_eed1c6b4f54cbb47855523106e919886~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1581" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Role in App" selected="False" />
+            <SelectField field="App Level Permissions" selected="False" />
+            <SelectField field="Date Added" selected="False" />
+            <SelectField field="Show In User Pickers?" selected="False" />
+            <SelectField field="On Deny List?" selected="False" />
+            <SelectField field="Target Group Name" selected="False" />
+            <SelectField field="Parent Group Name" selected="False" />
+            <SelectField field="choicesLuid" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="981" y="595" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[get
+https://api.quickbase.com/v1/fields?tableId=bnskksae5
+
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="691" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1244" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReplaceChar([Coupa Project Driver], 'Â', '')" field="project_driver" size="255" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[project_driver = ReplaceChar([Coupa Project Driver], 'Â', '')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1292" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>Email Address</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-10-29 18:09:07</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>intuit.com</Operand>
+              <StartDate>2024-10-29 18:09:07</StartDate>
+              <EndDate>2024-10-29 18:09:07</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([Email Address],"intuit.com")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1064" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="81" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\groeper\Development\CMAPP\ActiveDirectory.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ActiveDirectory.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Email" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Corporate ID" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1135" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_28720_1ba6a6f76e174e1e9cf0fc34f01b7d84_\Engine_28720_9c567f201fa2ee49b41ae957316de39b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings>
+        <Position x="775" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"project_driver"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="859" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="approved_by_email" selected="False" />
+            <SelectField field="approved_by_employee_number" selected="False" />
+            <SelectField field="approved_by_login" selected="False" />
+            <SelectField field="buy_desk_project_driver_full_name" selected="False" />
+            <SelectField field="buyer_note" selected="False" />
+            <SelectField field="cmapp_id" selected="False" />
+            <SelectField field="created_at_date" selected="False" />
+            <SelectField field="created_by_email" selected="False" />
+            <SelectField field="created_by_employee_number" selected="False" />
+            <SelectField field="created_by_login" selected="False" />
+            <SelectField field="currency_code" selected="False" />
+            <SelectField field="current_approver" selected="False" />
+            <SelectField field="department" selected="False" />
+            <SelectField field="do_any_of_the_below_statements_apply" selected="False" />
+            <SelectField field="do_any1_of_the_below_statements_apply" selected="False" />
+            <SelectField field="does_the_following_statement_apply" selected="False" />
+            <SelectField field="doesthefollowingstatementapply" selected="False" />
+            <SelectField field="fieldglass_wo_jira" selected="False" />
+            <SelectField field="ingest_date" selected="False" />
+            <SelectField field="justification" selected="False" />
+            <SelectField field="need_by_date" selected="False" />
+            <SelectField field="previous_pr_number" selected="False" />
+            <SelectField field="prm3_engagement_id" selected="False" />
+            <SelectField field="project_driver" selected="True" rename="Coupa Project Driver" />
+            <SelectField field="record_type" selected="False" />
+            <SelectField field="reject_reason" selected="False" />
+            <SelectField field="requested_by_email" selected="False" />
+            <SelectField field="requested_by_employee_number" selected="False" />
+            <SelectField field="requested_by_login" selected="False" />
+            <SelectField field="requisition_id" selected="False" />
+            <SelectField field="ship_to_address_attention" selected="False" />
+            <SelectField field="ship_to_address_city" selected="False" />
+            <SelectField field="ship_to_address_country_code" selected="False" />
+            <SelectField field="ship_to_address_id" selected="False" />
+            <SelectField field="ship_to_address_location_code" selected="False" />
+            <SelectField field="ship_to_address_name" selected="False" />
+            <SelectField field="ship_to_address_postal_code" selected="False" />
+            <SelectField field="ship_to_address_state" selected="False" />
+            <SelectField field="ship_to_address_street_1" selected="False" />
+            <SelectField field="ship_to_address_street_2" selected="False" />
+            <SelectField field="sourcing_group_name" selected="False" />
+            <SelectField field="status" selected="False" />
+            <SelectField field="submitted_at_date" selected="False" />
+            <SelectField field="tags" selected="False" />
+            <SelectField field="total" selected="False" />
+            <SelectField field="updated_at_date" selected="False" />
+            <SelectField field="updated_by_email" selected="False" />
+            <SelectField field="updated_by_employee_number" selected="False" />
+            <SelectField field="updated_by_login" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings>
+        <Position x="799" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">""</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="883" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" />
+            <SelectField field="User ID or Group ID" selected="True" />
+            <SelectField field="Email Address" selected="True" />
+            <SelectField field="User Status" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1135" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Coupa Project Driver" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="883" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\groeper\Development\CMAPP\project_drivers_from_coupa.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>project_drivers_from_coupa.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="787" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="project_driver" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="679" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="135" />
+          <Fields>
+            <Field name="project_driver" />
+          </Fields>
+          <Data>
+            <r>
+              <c>ADRIENE DRAPER</c>
+            </r>
+            <r>
+              <c>ALF JOHANSSON</c>
+            </r>
+            <r>
+              <c>ANDREA COLLINS</c>
+            </r>
+            <r>
+              <c>ANDREW BIRCHETT</c>
+            </r>
+            <r>
+              <c>ASHLEY WILSON</c>
+            </r>
+            <r>
+              <c>Abhishek Rashinkar</c>
+            </r>
+            <r>
+              <c>Adedapo Adegeye</c>
+            </r>
+            <r>
+              <c>Adriene Draper</c>
+            </r>
+            <r>
+              <c>Ajay Kamble</c>
+            </r>
+            <r>
+              <c>Ajay Yadav</c>
+            </r>
+            <r>
+              <c>Alberto Rojas</c>
+            </r>
+            <r>
+              <c>Alberto Rojas Field</c>
+            </r>
+            <r>
+              <c>Alejandro Jimenez-Zepeda</c>
+            </r>
+            <r>
+              <c>Allison Gentes</c>
+            </r>
+            <r>
+              <c>Amy Abulatta</c>
+            </r>
+            <r>
+              <c>Andrea Collins</c>
+            </r>
+            <r>
+              <c>Andy Birchett</c>
+            </r>
+            <r>
+              <c>Anna Webb</c>
+            </r>
+            <r>
+              <c>Arzu Ozbek</c>
+            </r>
+            <r>
+              <c>Ashley Bays</c>
+            </r>
+            <r>
+              <c>Ashley Wilson</c>
+            </r>
+            <r>
+              <c>Badrish Belagodu Panikesari</c>
+            </r>
+            <r>
+              <c>Badrish Panikesari</c>
+            </r>
+            <r>
+              <c>Beija Muniz</c>
+            </r>
+            <r>
+              <c>Bernadette Orende</c>
+            </r>
+            <r>
+              <c>Bhupender Kumar</c>
+            </r>
+            <r>
+              <c>Brandon Duncan</c>
+            </r>
+            <r>
+              <c>Caitlin Cross</c>
+            </r>
+            <r>
+              <c>Carly Klem</c>
+            </r>
+            <r>
+              <c>Cathy Kyriakis</c>
+            </r>
+            <r>
+              <c>Chien Dinh</c>
+            </r>
+            <r>
+              <c>Chris McGee</c>
+            </r>
+            <r>
+              <c>Christopher Bowers</c>
+            </r>
+            <r>
+              <c>Christopher Salis</c>
+            </r>
+            <r>
+              <c>Claudia Castro</c>
+            </r>
+            <r>
+              <c>Danielle Hughes</c>
+            </r>
+            <r>
+              <c>Dapo Adegeye</c>
+            </r>
+            <r>
+              <c>Dax Parreno</c>
+            </r>
+            <r>
+              <c>Deepak Ojha</c>
+            </r>
+            <r>
+              <c>Deepali Pisal</c>
+            </r>
+            <r>
+              <c>Devon Rimer</c>
+            </r>
+            <r>
+              <c>Donna Myers</c>
+            </r>
+            <r>
+              <c>Dusan Bosnjakovic</c>
+            </r>
+            <r>
+              <c>Eric McDaniel</c>
+            </r>
+            <r>
+              <c>Erica Grace</c>
+            </r>
+            <r>
+              <c>Erica Ortega</c>
+            </r>
+            <r>
+              <c>Erika Peltz</c>
+            </r>
+            <r>
+              <c>Fady Elsegeiny</c>
+            </r>
+            <r>
+              <c>Fatima Marrone</c>
+            </r>
+            <r>
+              <c>GUY HEAGNEY</c>
+            </r>
+            <r>
+              <c>Gigi Lorente</c>
+            </r>
+            <r>
+              <c>Grace (Wenjing) Yang</c>
+            </r>
+            <r>
+              <c>Grace Yang</c>
+            </r>
+            <r>
+              <c>Gregory Eyerman</c>
+            </r>
+            <r>
+              <c>Guy Heagney</c>
+            </r>
+            <r>
+              <c>Hank Peetsma</c>
+            </r>
+            <r>
+              <c>Harika Pamganamamula</c>
+            </r>
+            <r>
+              <c>Henry Law</c>
+            </r>
+            <r>
+              <c>Indu Agnihotri</c>
+            </r>
+            <r>
+              <c>Isaiah Smith</c>
+            </r>
+            <r>
+              <c>JAMES CHRISS</c>
+            </r>
+            <r>
+              <c>JOSHUA BRIGGS</c>
+            </r>
+            <r>
+              <c>Jamie Herbstman</c>
+            </r>
+            <r>
+              <c>Jared Davidove</c>
+            </r>
+            <r>
+              <c>Jodi Battle</c>
+            </r>
+            <r>
+              <c>Joe Shoffner</c>
+            </r>
+            <r>
+              <c>Johan Johansson</c>
+            </r>
+            <r>
+              <c>Jonathan Blazer</c>
+            </r>
+            <r>
+              <c>Jonathan Samaniego</c>
+            </r>
+            <r>
+              <c>Joseph Shoffner</c>
+            </r>
+            <r>
+              <c>Julianna Yu</c>
+            </r>
+            <r>
+              <c>Kapil Mankare</c>
+            </r>
+            <r>
+              <c>Kedar Chambers</c>
+            </r>
+            <r>
+              <c>Killian Dennehy</c>
+            </r>
+            <r>
+              <c>Leif Linden</c>
+            </r>
+            <r>
+              <c>Leslie Chambers</c>
+            </r>
+            <r>
+              <c>Lisa-Marie Sonia</c>
+            </r>
+            <r>
+              <c>MICHELLE NIKULSHIN</c>
+            </r>
+            <r>
+              <c>Manish Sharma</c>
+            </r>
+            <r>
+              <c>Manoj Gupta</c>
+            </r>
+            <r>
+              <c>Marina Williams</c>
+            </r>
+            <r>
+              <c>Martha Valencia</c>
+            </r>
+            <r>
+              <c>Melody Doriott</c>
+            </r>
+            <r>
+              <c>Michelle Riley</c>
+            </r>
+            <r>
+              <c>Michelle Tubbs</c>
+            </r>
+            <r>
+              <c>Milan Nagpure</c>
+            </r>
+            <r>
+              <c>Muktavali Choudhary</c>
+            </r>
+            <r>
+              <c>Nana Akuffo</c>
+            </r>
+            <r>
+              <c>Nathan Renderos</c>
+            </r>
+            <r>
+              <c>Nathan Sisk</c>
+            </r>
+            <r>
+              <c>Nicholas Solis</c>
+            </r>
+            <r>
+              <c>Niharika Shrivastav</c>
+            </r>
+            <r>
+              <c>Nikola Roehrick</c>
+            </r>
+            <r>
+              <c>PAMELA MILES</c>
+            </r>
+            <r>
+              <c>PAUL FOY</c>
+            </r>
+            <r>
+              <c>Paige Coulier</c>
+            </r>
+            <r>
+              <c>Patricia Lin</c>
+            </r>
+            <r>
+              <c>Pete Robertson</c>
+            </r>
+            <r>
+              <c>Prasad Shedge</c>
+            </r>
+            <r>
+              <c>Prashant Satam</c>
+            </r>
+            <r>
+              <c>Pratik Ajetrao</c>
+            </r>
+            <r>
+              <c>Rajesh Gadade</c>
+            </r>
+            <r>
+              <c>Ritchie Bang</c>
+            </r>
+            <r>
+              <c>Robert Weibel</c>
+            </r>
+            <r>
+              <c>Rod Gonzalez</c>
+            </r>
+            <r>
+              <c>Roselin Aruldas</c>
+            </r>
+            <r>
+              <c>Rudra Roy</c>
+            </r>
+            <r>
+              <c>Saif Sait</c>
+            </r>
+            <r>
+              <c>Sandra Moore</c>
+            </r>
+            <r>
+              <c>Satish Arakeri</c>
+            </r>
+            <r>
+              <c>Scott Blazer</c>
+            </r>
+            <r>
+              <c>Scott Fargo</c>
+            </r>
+            <r>
+              <c>Sharon Lee</c>
+            </r>
+            <r>
+              <c>Shauna McKinney</c>
+            </r>
+            <r>
+              <c>Sherry Xie</c>
+            </r>
+            <r>
+              <c>Sihem Moualhi</c>
+            </r>
+            <r>
+              <c>Steven Henry</c>
+            </r>
+            <r>
+              <c>Sunil John</c>
+            </r>
+            <r>
+              <c>Suprabha Nair</c>
+            </r>
+            <r>
+              <c>Suresh Karurkar</c>
+            </r>
+            <r>
+              <c>Suzy Finn</c>
+            </r>
+            <r>
+              <c>Swapnil Jadhav</c>
+            </r>
+            <r>
+              <c>Sydney  Nichols</c>
+            </r>
+            <r>
+              <c>Sydney Nichols</c>
+            </r>
+            <r>
+              <c>Terrence Allen Donahue</c>
+            </r>
+            <r>
+              <c>Thomas Cratty</c>
+            </r>
+            <r>
+              <c>Timothy Chan</c>
+            </r>
+            <r>
+              <c>Velu Muniswamy</c>
+            </r>
+            <r>
+              <c>Victor Ma</c>
+            </r>
+            <r>
+              <c>Vinay Bansode</c>
+            </r>
+            <r>
+              <c>Vivek Agrawal</c>
+            </r>
+            <r>
+              <c>Wenjing Yang</c>
+            </r>
+            <r>
+              <c>Widha Gautam</c>
+            </r>
+            <r>
+              <c>Xayya Chantha</c>
+            </r>
+            <r>
+              <c>Xiaochen Wang</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1675" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="157" />
+          <Fields>
+            <Field name="Current Users" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Adegeye, Dapo (dapo_adegeye@intuit.com)</c>
+            </r>
+            <r>
+              <c>Agnihotri, Indu (indu_agnihotri@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ajetrao, Pratik (pratik_ajetrao@intuit.com)</c>
+            </r>
+            <r>
+              <c>Akuffo, Nana (nana_akuffo@intuit.com)</c>
+            </r>
+            <r>
+              <c>Amidon, Dianne (Dianne_Amidon@intuit.com)</c>
+            </r>
+            <r>
+              <c>Arakeri, Satish (satish_arakeri@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ariz, Jeffrey (Jeffrey_Ariz@intuit.com)</c>
+            </r>
+            <r>
+              <c>Aruldas, Roselin (roselin_aruldas@intuit.com)</c>
+            </r>
+            <r>
+              <c>Assigned ** , ** Engagement to be (Sourcing@Intuit.com)</c>
+            </r>
+            <r>
+              <c>Baba, Ganesh (ganesh_baba@intuit.com)</c>
+            </r>
+            <r>
+              <c>Bang, Ritchie (ritchie_bang@intuit.com)</c>
+            </r>
+            <r>
+              <c>Bansode, Vinay (vinay_bansode@intuit.com)</c>
+            </r>
+            <r>
+              <c>Bays, Ashley (ashley_bays@intuit.com)</c>
+            </r>
+            <r>
+              <c>Birchett, Andy (abirchett)</c>
+            </r>
+            <r>
+              <c>Blazer, Scott (Scott_Blazer@intuit.com)</c>
+            </r>
+            <r>
+              <c>Bowers, Christopher (christopher_bowers@intuit.com)</c>
+            </r>
+            <r>
+              <c>Castro, Claudia (claudia_castro@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chambers, Kedar (kedar_chambers@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chambers, Leslie (leslie_chambers@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chan, Timothy (timothy_chan@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chandrasekar, Ashwin Gokul (ashwingokul_chandrasekar@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chantha, Xayya (xayya_chantha@intuit.com)</c>
+            </r>
+            <r>
+              <c>Cheng, Lucy (Lucy_Cheng@intuit.com)</c>
+            </r>
+            <r>
+              <c>Choudhary, Muktavali (muktavali_choudhary@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chung, Julia (Julia_Chung@intuit.com)</c>
+            </r>
+            <r>
+              <c>Collins, Andrea (andreac)</c>
+            </r>
+            <r>
+              <c>Cratty, Thomas (Thomas_Cratty@intuit.com)</c>
+            </r>
+            <r>
+              <c>Cross, Caitlin (caitlin_cross@intuit.com)</c>
+            </r>
+            <r>
+              <c>Davis, Shirah (shirah_davis@intuit.com)</c>
+            </r>
+            <r>
+              <c>Deming, Julie (Julie_Deming)</c>
+            </r>
+            <r>
+              <c>Dennehy, Killian (killian_dennehy@intuit.com)</c>
+            </r>
+            <r>
+              <c>Dinh, Chien (chien_dinh@intuit.com)</c>
+            </r>
+            <r>
+              <c>Donahue, Terrence Allen (terrenceallen_donahue@intuit.com)</c>
+            </r>
+            <r>
+              <c>Draper, Adriene (Adriene_Draper@intuit.com)</c>
+            </r>
+            <r>
+              <c>Duncan, Brandon (Brandon_Duncan@intuit.com)</c>
+            </r>
+            <r>
+              <c>Elsegeiny, Fady (fady_elsegeiny@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ely, Megan (megan_ely@intuit.com)</c>
+            </r>
+            <r>
+              <c>Eyerman, Gregory (gregory_eyerman@intuit.com)</c>
+            </r>
+            <r>
+              <c>Fargo, Scott (Scott_Fargo@intuit.com)</c>
+            </r>
+            <r>
+              <c>Finn, Suzy (Suzy_Finn@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gadade, Rajesh (rajesh_gadade@intuit.com)</c>
+            </r>
+            <r>
+              <c>Garcia, Erica (erica_garcia@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gardella, Tony (Tony_Gardella@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gautam, Widha (widha_gautam@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gomez, Kimberly (kimberly_gomez@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gomez, Romelia (romiroms)</c>
+            </r>
+            <r>
+              <c>Gonzalez, Rod (rodg)</c>
+            </r>
+            <r>
+              <c>Gudasalamani, Basavaraj (basavaraj_gudasalamani@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gupta, Manoj (manoj_gupta@intuit.com)Gupta, Manoj (manoj_gupta@intuit.com)</c>
+            </r>
+            <r>
+              <c>Heagney, Guy (Guy_Heagney@intuit.com)</c>
+            </r>
+            <r>
+              <c>Henry, Steven (steven_henry@intuit.com)</c>
+            </r>
+            <r>
+              <c>Hughes, Danielle (danielle_hughes@intuit.com)</c>
+            </r>
+            <r>
+              <c>Inturtbuydesk@intuit.com</c>
+            </r>
+            <r>
+              <c>Jadhav, Swapnil (swapnil_jadhav@intuit.com)</c>
+            </r>
+            <r>
+              <c>Jimenez-Zepeda, Alejandro (alejandro_jimenez-zepeda@intuit.com)</c>
+            </r>
+            <r>
+              <c>Johansson, Johan (Johan_Johansson@intuit.com)</c>
+            </r>
+            <r>
+              <c>John, Sunil (sunil_john@intuit.com)</c>
+            </r>
+            <r>
+              <c>Jucovics, Leslie (leslie_jucovics@intuit.com)</c>
+            </r>
+            <r>
+              <c>KS, Lokesh (lokesh_ks@intuit.com)</c>
+            </r>
+            <r>
+              <c>Kamble, Ajay (Ajay_Kamble@intuit.com)</c>
+            </r>
+            <r>
+              <c>Karurkar, Suresh (Suresh_Karurkar@intuit.com)</c>
+            </r>
+            <r>
+              <c>Keckhafer, Adriane (Adriane_Kieckhafer@inturt.com)</c>
+            </r>
+            <r>
+              <c>Kieckhafer, Adriane (Adriane_Kieckhafer@intuit.com)</c>
+            </r>
+            <r>
+              <c>Klem, Carly (Carly_Klem@intuit.com)</c>
+            </r>
+            <r>
+              <c>Kumar, Bhupender (bhupender_kumar@intuit.com)</c>
+            </r>
+            <r>
+              <c>Kyriakis, Cathy (CKyriakis)</c>
+            </r>
+            <r>
+              <c>Kyriakis, Cathy (cathy_kyrirakis@intuit.com)</c>
+            </r>
+            <r>
+              <c>Law, Henry (sirnamelaw)</c>
+            </r>
+            <r>
+              <c>Lee, Sharon (sharon_lee1@intuit.com)</c>
+            </r>
+            <r>
+              <c>Lin, Patricia (patricia_lin@intuit.com)</c>
+            </r>
+            <r>
+              <c>Lorente, Gigi (gigi_lorente@intuit.com)</c>
+            </r>
+            <r>
+              <c>Mankare, Kapil (Kapil_Mankare@intuit.com)</c>
+            </r>
+            <r>
+              <c>Mariani, Francis (Frank_Mariani@intuit.com)</c>
+            </r>
+            <r>
+              <c>Marrone, Fatima (fatima_marrone@intuit.com)</c>
+            </r>
+            <r>
+              <c>McClure, Andrea (andrea_mcclure@intuit.com)</c>
+            </r>
+            <r>
+              <c>McDaniel, Eric (Eric_McDaniel@intuit.com)</c>
+            </r>
+            <r>
+              <c>McKee, Chad (chad_mckee@intuit.com)</c>
+            </r>
+            <r>
+              <c>Mckinney, Shauna (Shauna_McKinney@intuit.com)</c>
+            </r>
+            <r>
+              <c>Mille, Matthew (matthew_mille@intuit.com)</c>
+            </r>
+            <r>
+              <c>Moore, Sandra (sandra_moore@intuit.com)</c>
+            </r>
+            <r>
+              <c>Motovilov, Daniel (Daniel_Motovilov@intuit.com)</c>
+            </r>
+            <r>
+              <c>Moualhi, Sihem (Sihem_Moualhi@intuit.com)</c>
+            </r>
+            <r>
+              <c>Muniswamy, Velu (Velu_Muniswamy@intuit.com)</c>
+            </r>
+            <r>
+              <c>Muniz, Beija (beija_muniz@intuit.com)</c>
+            </r>
+            <r>
+              <c>Myers, Donna (Donna_Myers@intuit.com)</c>
+            </r>
+            <r>
+              <c>Nagpure, Milan (milan_nagpure@intuit.com)</c>
+            </r>
+            <r>
+              <c>Nair, Suprabha (suprabha_nair@intuit.com)</c>
+            </r>
+            <r>
+              <c>New Supplier Add (Sourcing_Support1@intuit.com)</c>
+            </r>
+            <r>
+              <c>Nichols, Sydney (sydney_nichols@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ojha, Deepak (deepak_ojha@intuit.com)</c>
+            </r>
+            <r>
+              <c>Opheim, Zach (zach_opheim@intuit.com)</c>
+            </r>
+            <r>
+              <c>Orende, Bernadette (bernadette_orende@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ozbek, Arzu (arzu_ozbek@intuit.com)</c>
+            </r>
+            <r>
+              <c>Pamganamamula, Harika (harika_pamganamamula@intuit.com)</c>
+            </r>
+            <r>
+              <c>Panikesan, Badrish (badrish_Panikesan@intuit.com)</c>
+            </r>
+            <r>
+              <c>Panikesari, Badrish (Badrish_Panikesari@intuit.com)</c>
+            </r>
+            <r>
+              <c>Parenno, Dax (dax_parenno@intuit.com)</c>
+            </r>
+            <r>
+              <c>Parreno, Dax (dparreno)</c>
+            </r>
+            <r>
+              <c>Paynter, Matt (matt_paynter@intuit.com)</c>
+            </r>
+            <r>
+              <c>Peetsma, Hank (Hank_Peetsma@Intuit.com)</c>
+            </r>
+            <r>
+              <c>Pisal, Deepali (Deepali_Pisal@intuit.com)</c>
+            </r>
+            <r>
+              <c>Pitt, Adam (Adam_Pitt@intuit.com)</c>
+            </r>
+            <r>
+              <c>Rajakovich, Emily (Emily_Rajakovich@intuit.com)</c>
+            </r>
+            <r>
+              <c>Rashinkar, Abhishek (abhishek_rashinkar@intuit.com)</c>
+            </r>
+            <r>
+              <c>Reddi, Shashank (Shashank_Reddi@intuit.com)</c>
+            </r>
+            <r>
+              <c>Renderos, Nathan (nathan_renderos@intuit.com)</c>
+            </r>
+            <r>
+              <c>Riley, Michelle (michelle_riley@intuit.com)</c>
+            </r>
+            <r>
+              <c>Rimer, Devon (Devon_Rimer@intuit.com)</c>
+            </r>
+            <r>
+              <c>Roehrick, Nikola (nikola_roehrick@intuit.com)</c>
+            </r>
+            <r>
+              <c>Rojas, Alberto (Alberto_Rojas@intuit.com)</c>
+            </r>
+            <r>
+              <c>Russell, Kathleen (Kathleen_Russell@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sait, Saif (saif_sait@intuit.com)</c>
+            </r>
+            <r>
+              <c>Salathiel, Asha (Asha_Salathiel@intuit.com)</c>
+            </r>
+            <r>
+              <c>Salis, Chris (Chris_Salis@intuit.com)</c>
+            </r>
+            <r>
+              <c>Samaniego, Jonathan (jonathan_samaniego@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sampath, Vivek (vivek_sampath@intuit.com</c>
+            </r>
+            <r>
+              <c>Sampatn, vivek vivek.sampathgintuit.com)</c>
+            </r>
+            <r>
+              <c>Satam, Prashant (prashant_satam@intuit.com)</c>
+            </r>
+            <r>
+              <c>Satish, K.S (KS_SATISH@intuit.com)</c>
+            </r>
+            <r>
+              <c>Scheid, Stephen (Steve_Scheid@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sebasta, David (david_sebasta@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sharma, Manish (manish_sharmal@intuit.com)</c>
+            </r>
+            <r>
+              <c>Shedge, Prasad (prasad_shedge@intuit.com)</c>
+            </r>
+            <r>
+              <c>Shoffner, Joe (Joseph_Shoffner@intuit.com)</c>
+            </r>
+            <r>
+              <c>Shrivastav, Niharika (niharika_shrivastav@intuit.com)</c>
+            </r>
+            <r>
+              <c>Silverberg, Liz (liz_silverberg@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sisk, Nathan (eric_sisk@intuit.com)</c>
+            </r>
+            <r>
+              <c>Smith, Isaiah (isaiah_smith@intuit.com)</c>
+            </r>
+            <r>
+              <c>Solis, Nicholas (nicholas_solis@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sonia, Lisa-Marie (lisamarie_sonia@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sowaidi, Aishah (Aishah_Sowaidi@intuit.com)</c>
+            </r>
+            <r>
+              <c>Summerhays, Jacob (jsummerhays)</c>
+            </r>
+            <r>
+              <c>Supplier Management (management@intuit.com)</c>
+            </r>
+            <r>
+              <c>Support, Sourcing (sourcing_support@intuit.com)</c>
+            </r>
+            <r>
+              <c>Taqvi, Syed (syed_taqvi@intuit.com)</c>
+            </r>
+            <r>
+              <c>Thomas-Rose, Dara (dara_thomasrose@intuit.com)</c>
+            </r>
+            <r>
+              <c>Tubbs, Michelle (michelle_tubbs@intuit.com)</c>
+            </r>
+            <r>
+              <c>Vaglienti, Shane (shane_vaglienti@intuit.com)</c>
+            </r>
+            <r>
+              <c>Valencia, Martha (martha_valencial@intuit.com)</c>
+            </r>
+            <r>
+              <c>Valencia, Martha (martha_valencia|@intuit.com)</c>
+            </r>
+            <r>
+              <c>Vasquez, Dana (Dana_Vasquez@intuit.com)</c>
+            </r>
+            <r>
+              <c>Vasquez. Dana (Dana Vasquez@intuit.com)</c>
+            </r>
+            <r>
+              <c>Vildibill, Kim (kvildibill1)</c>
+            </r>
+            <r>
+              <c>Wang, Xiaochen (xiaochen_wang@intuit.com)</c>
+            </r>
+            <r>
+              <c>Webb, Anna (anna_webb@intuit.com)</c>
+            </r>
+            <r>
+              <c>Weibel, Robert (Robert_Weibel@intuit.com)</c>
+            </r>
+            <r>
+              <c>White, Michael (michael_white |@inturt.com)</c>
+            </r>
+            <r>
+              <c>White, Michael (michael_white1@intuit.com)</c>
+            </r>
+            <r>
+              <c>Williams, Marina (marina_williams@intuit.com)</c>
+            </r>
+            <r>
+              <c>Wilson, Ashley (Ashley_Wilson2@intuit.com)</c>
+            </r>
+            <r>
+              <c>Xie, Sherry (Sherry_Xie@intuit.com)</c>
+            </r>
+            <r>
+              <c>Yadav, Ajay (ajay_yadav@intuit.com)</c>
+            </r>
+            <r>
+              <c>Yang, Grace (Wenjing) (wenjing_yang@intuit.com)</c>
+            </r>
+            <r>
+              <c>Yu, Julianna (julianna_yu@intuit.com)</c>
+            </r>
+            <r>
+              <c>intuitbuydesk@intuit.com</c>
+            </r>
+            <r>
+              <c>laqvi, Syed (syed_taqvi@intuit.com)</c>
+            </r>
+            <r>
+              <c>marrone_fatima@intuit.com</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="1879" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Current Users</Field>
+          <RegExExpression value="^([^ ]+) (.*?) ?([^ ]+)$" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Current Users</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Last Name" type="V_String" size="2147483647" />
+            <Field field="First Name" type="V_String" size="2147483647" />
+            <Field field="Raw Email" type="V_String" size="2147483647" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1771" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReplaceChar([Current Users], &quot;,&quot;, &quot;&quot;)" field="Current Users" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Current Users = ReplaceChar([Current Users], ",", "")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="1975" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Raw Email</Field>
+          <RegExExpression value="\((.+?)\)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Raw Email</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Email" type="V_String" size="2147483647" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2095" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Current Users" selected="False" />
+            <SelectField field="Raw Email" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="81" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="150" />
+          <Fields>
+            <Field name="Current Users" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Adegeye, Dapo (dapo_adegeye@intuit.com)</c>
+            </r>
+            <r>
+              <c>Agnihotri, Indu (indu_agnihotri@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ajetrao, Pratik (pratik_ajetrao@intuit.com)</c>
+            </r>
+            <r>
+              <c>Akuffo, Nana (nana_akuffo@intuit.com)</c>
+            </r>
+            <r>
+              <c>Amidon, Dianne (Dianne_Amidon@intuit.com)</c>
+            </r>
+            <r>
+              <c>Arakeri, Satish (satish_arakeri@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ariz, Jeffrey (Jeffrey_Ariz@intuit.com)</c>
+            </r>
+            <r>
+              <c>Aruldas, Roselin (roselin_aruldas@intuit.com)</c>
+            </r>
+            <r>
+              <c>Baba, Ganesh (ganesh_baba@intuit.com)</c>
+            </r>
+            <r>
+              <c>Bang, Ritchie (ritchie_bang@intuit.com)</c>
+            </r>
+            <r>
+              <c>Bansode, Vinay (vinay_bansode@intuit.com)</c>
+            </r>
+            <r>
+              <c>Bays, Ashley (ashley_bays@intuit.com)</c>
+            </r>
+            <r>
+              <c>Birchett, Andy (abirchett)</c>
+            </r>
+            <r>
+              <c>Blazer, Scott (Scott_Blazer@intuit.com)</c>
+            </r>
+            <r>
+              <c>Bowers, Christopher (christopher_bowers@intuit.com)</c>
+            </r>
+            <r>
+              <c>Castro, Claudia (claudia_castro@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chambers, Kedar (kedar_chambers@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chambers, Leslie (leslie_chambers@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chan, Timothy (timothy_chan@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chandrasekar, Ashwin Gokul (ashwingokul_chandrasekar@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chantha, Xayya (xayya_chantha@intuit.com)</c>
+            </r>
+            <r>
+              <c>Cheng, Lucy (Lucy_Cheng@intuit.com)</c>
+            </r>
+            <r>
+              <c>Choudhary, Muktavali (muktavali_choudhary@intuit.com)</c>
+            </r>
+            <r>
+              <c>Chung, Julia (Julia_Chung@intuit.com)</c>
+            </r>
+            <r>
+              <c>Collins, Andrea (andreac)</c>
+            </r>
+            <r>
+              <c>Cratty, Thomas (Thomas_Cratty@intuit.com)</c>
+            </r>
+            <r>
+              <c>Cross, Caitlin (caitlin_cross@intuit.com)</c>
+            </r>
+            <r>
+              <c>Davis, Shirah (shirah_davis@intuit.com)</c>
+            </r>
+            <r>
+              <c>Deming, Julie (Julie_Deming)</c>
+            </r>
+            <r>
+              <c>Dennehy, Killian (killian_dennehy@intuit.com)</c>
+            </r>
+            <r>
+              <c>Dinh, Chien (chien_dinh@intuit.com)</c>
+            </r>
+            <r>
+              <c>Donahue, Terrence Allen (terrenceallen_donahue@intuit.com)</c>
+            </r>
+            <r>
+              <c>Draper, Adriene (Adriene_Draper@intuit.com)</c>
+            </r>
+            <r>
+              <c>Duncan, Brandon (Brandon_Duncan@intuit.com)</c>
+            </r>
+            <r>
+              <c>Elsegeiny, Fady (fady_elsegeiny@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ely, Megan (megan_ely@intuit.com)</c>
+            </r>
+            <r>
+              <c>Eyerman, Gregory (gregory_eyerman@intuit.com)</c>
+            </r>
+            <r>
+              <c>Fargo, Scott (Scott_Fargo@intuit.com)</c>
+            </r>
+            <r>
+              <c>Finn, Suzy (Suzy_Finn@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gadade, Rajesh (rajesh_gadade@intuit.com)</c>
+            </r>
+            <r>
+              <c>Garcia, Erica (erica_garcia@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gardella, Tony (Tony_Gardella@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gautam, Widha (widha_gautam@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gomez, Kimberly (kimberly_gomez@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gomez, Romelia (romiroms)</c>
+            </r>
+            <r>
+              <c>Gonzalez, Rod (rodg)</c>
+            </r>
+            <r>
+              <c>Gudasalamani, Basavaraj (basavaraj_gudasalamani@intuit.com)</c>
+            </r>
+            <r>
+              <c>Gupta, Manoj (manoj_gupta@intuit.com)Gupta, Manoj (manoj_gupta@intuit.com)</c>
+            </r>
+            <r>
+              <c>Heagney, Guy (Guy_Heagney@intuit.com)</c>
+            </r>
+            <r>
+              <c>Henry, Steven (steven_henry@intuit.com)</c>
+            </r>
+            <r>
+              <c>Hughes, Danielle (danielle_hughes@intuit.com)</c>
+            </r>
+            <r>
+              <c>Jadhav, Swapnil (swapnil_jadhav@intuit.com)</c>
+            </r>
+            <r>
+              <c>Jimenez-Zepeda, Alejandro (alejandro_jimenez-zepeda@intuit.com)</c>
+            </r>
+            <r>
+              <c>Johansson, Johan (Johan_Johansson@intuit.com)</c>
+            </r>
+            <r>
+              <c>John, Sunil (sunil_john@intuit.com)</c>
+            </r>
+            <r>
+              <c>Jucovics, Leslie (leslie_jucovics@intuit.com)</c>
+            </r>
+            <r>
+              <c>KS, Lokesh (lokesh_ks@intuit.com)</c>
+            </r>
+            <r>
+              <c>Kamble, Ajay (Ajay_Kamble@intuit.com)</c>
+            </r>
+            <r>
+              <c>Karurkar, Suresh (Suresh_Karurkar@intuit.com)</c>
+            </r>
+            <r>
+              <c>Keckhafer, Adriane (Adriane_Kieckhafer@inturt.com)</c>
+            </r>
+            <r>
+              <c>Kieckhafer, Adriane (Adriane_Kieckhafer@intuit.com)</c>
+            </r>
+            <r>
+              <c>Klem, Carly (Carly_Klem@intuit.com)</c>
+            </r>
+            <r>
+              <c>Kumar, Bhupender (bhupender_kumar@intuit.com)</c>
+            </r>
+            <r>
+              <c>Kyriakis, Cathy (cathy_kyrirakis@intuit.com)</c>
+            </r>
+            <r>
+              <c>Law, Henry (sirnamelaw)</c>
+            </r>
+            <r>
+              <c>Lee, Sharon (sharon_lee1@intuit.com)</c>
+            </r>
+            <r>
+              <c>Lin, Patricia (patricia_lin@intuit.com)</c>
+            </r>
+            <r>
+              <c>Lorente, Gigi (gigi_lorente@intuit.com)</c>
+            </r>
+            <r>
+              <c>Mankare, Kapil (Kapil_Mankare@intuit.com)</c>
+            </r>
+            <r>
+              <c>Mariani, Francis (Frank_Mariani@intuit.com)</c>
+            </r>
+            <r>
+              <c>Marrone, Fatima (fatima_marrone@intuit.com)</c>
+            </r>
+            <r>
+              <c>McClure, Andrea (andrea_mcclure@intuit.com)</c>
+            </r>
+            <r>
+              <c>McDaniel, Eric (Eric_McDaniel@intuit.com)</c>
+            </r>
+            <r>
+              <c>McKee, Chad (chad_mckee@intuit.com)</c>
+            </r>
+            <r>
+              <c>Mckinney, Shauna (Shauna_McKinney@intuit.com)</c>
+            </r>
+            <r>
+              <c>Mille, Matthew (matthew_mille@intuit.com)</c>
+            </r>
+            <r>
+              <c>Moore, Sandra (sandra_moore@intuit.com)</c>
+            </r>
+            <r>
+              <c>Motovilov, Daniel (Daniel_Motovilov@intuit.com)</c>
+            </r>
+            <r>
+              <c>Moualhi, Sihem (Sihem_Moualhi@intuit.com)</c>
+            </r>
+            <r>
+              <c>Muniswamy, Velu (Velu_Muniswamy@intuit.com)</c>
+            </r>
+            <r>
+              <c>Muniz, Beija (beija_muniz@intuit.com)</c>
+            </r>
+            <r>
+              <c>Myers, Donna (Donna_Myers@intuit.com)</c>
+            </r>
+            <r>
+              <c>Nagpure, Milan (milan_nagpure@intuit.com)</c>
+            </r>
+            <r>
+              <c>Nair, Suprabha (suprabha_nair@intuit.com)</c>
+            </r>
+            <r>
+              <c>New Supplier Add (Sourcing_Support1@intuit.com)</c>
+            </r>
+            <r>
+              <c>Nichols, Sydney (sydney_nichols@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ojha, Deepak (deepak_ojha@intuit.com)</c>
+            </r>
+            <r>
+              <c>Opheim, Zach (zach_opheim@intuit.com)</c>
+            </r>
+            <r>
+              <c>Orende, Bernadette (bernadette_orende@intuit.com)</c>
+            </r>
+            <r>
+              <c>Ozbek, Arzu (arzu_ozbek@intuit.com)</c>
+            </r>
+            <r>
+              <c>Pamganamamula, Harika (harika_pamganamamula@intuit.com)</c>
+            </r>
+            <r>
+              <c>Panikesan, Badrish (badrish_Panikesan@intuit.com)</c>
+            </r>
+            <r>
+              <c>Panikesari, Badrish (Badrish_Panikesari@intuit.com)</c>
+            </r>
+            <r>
+              <c>Parenno, Dax (dax_parenno@intuit.com)</c>
+            </r>
+            <r>
+              <c>Parreno, Dax (dparreno)</c>
+            </r>
+            <r>
+              <c>Paynter, Matt (matt_paynter@intuit.com)</c>
+            </r>
+            <r>
+              <c>Peetsma, Hank (Hank_Peetsma@Intuit.com)</c>
+            </r>
+            <r>
+              <c>Pisal, Deepali (Deepali_Pisal@intuit.com)</c>
+            </r>
+            <r>
+              <c>Pitt, Adam (Adam_Pitt@intuit.com)</c>
+            </r>
+            <r>
+              <c>Rajakovich, Emily (Emily_Rajakovich@intuit.com)</c>
+            </r>
+            <r>
+              <c>Rashinkar, Abhishek (abhishek_rashinkar@intuit.com)</c>
+            </r>
+            <r>
+              <c>Reddi, Shashank (Shashank_Reddi@intuit.com)</c>
+            </r>
+            <r>
+              <c>Renderos, Nathan (nathan_renderos@intuit.com)</c>
+            </r>
+            <r>
+              <c>Riley, Michelle (michelle_riley@intuit.com)</c>
+            </r>
+            <r>
+              <c>Rimer, Devon (Devon_Rimer@intuit.com)</c>
+            </r>
+            <r>
+              <c>Roehrick, Nikola (nikola_roehrick@intuit.com)</c>
+            </r>
+            <r>
+              <c>Rojas, Alberto (Alberto_Rojas@intuit.com)</c>
+            </r>
+            <r>
+              <c>Russell, Kathleen (Kathleen_Russell@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sait, Saif (saif_sait@intuit.com)</c>
+            </r>
+            <r>
+              <c>Salathiel, Asha (Asha_Salathiel@intuit.com)</c>
+            </r>
+            <r>
+              <c>Salis, Chris (Chris_Salis@intuit.com)</c>
+            </r>
+            <r>
+              <c>Samaniego, Jonathan (jonathan_samaniego@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sampath, Vivek (vivek_sampath@intuit.com</c>
+            </r>
+            <r>
+              <c>Sampatn, vivek vivek.sampathgintuit.com)</c>
+            </r>
+            <r>
+              <c>Satam, Prashant (prashant_satam@intuit.com)</c>
+            </r>
+            <r>
+              <c>Satish, K.S (KS_SATISH@intuit.com)</c>
+            </r>
+            <r>
+              <c>Scheid, Stephen (Steve_Scheid@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sebasta, David (david_sebasta@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sharma, Manish (manish_sharmal@intuit.com)</c>
+            </r>
+            <r>
+              <c>Shedge, Prasad (prasad_shedge@intuit.com)</c>
+            </r>
+            <r>
+              <c>Shoffner, Joe (Joseph_Shoffner@intuit.com)</c>
+            </r>
+            <r>
+              <c>Shrivastav, Niharika (niharika_shrivastav@intuit.com)</c>
+            </r>
+            <r>
+              <c>Silverberg, Liz (liz_silverberg@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sisk, Nathan (eric_sisk@intuit.com)</c>
+            </r>
+            <r>
+              <c>Smith, Isaiah (isaiah_smith@intuit.com)</c>
+            </r>
+            <r>
+              <c>Solis, Nicholas (nicholas_solis@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sonia, Lisa-Marie (lisamarie_sonia@intuit.com)</c>
+            </r>
+            <r>
+              <c>Sowaidi, Aishah (Aishah_Sowaidi@intuit.com)</c>
+            </r>
+            <r>
+              <c>Summerhays, Jacob (jsummerhays)</c>
+            </r>
+            <r>
+              <c>Taqvi, Syed (syed_taqvi@intuit.com)</c>
+            </r>
+            <r>
+              <c>Thomas-Rose, Dara (dara_thomasrose@intuit.com)</c>
+            </r>
+            <r>
+              <c>Tubbs, Michelle (michelle_tubbs@intuit.com)</c>
+            </r>
+            <r>
+              <c>Vaglienti, Shane (shane_vaglienti@intuit.com)</c>
+            </r>
+            <r>
+              <c>Valencia, Martha (martha_valencial@intuit.com)</c>
+            </r>
+            <r>
+              <c>Valencia, Martha (martha_valencia|@intuit.com)</c>
+            </r>
+            <r>
+              <c>Vasquez, Dana (Dana_Vasquez@intuit.com)</c>
+            </r>
+            <r>
+              <c>Vasquez. Dana (Dana Vasquez@intuit.com)</c>
+            </r>
+            <r>
+              <c>Vildibill, Kim (kvildibill1)</c>
+            </r>
+            <r>
+              <c>Wang, Xiaochen (xiaochen_wang@intuit.com)</c>
+            </r>
+            <r>
+              <c>Webb, Anna (anna_webb@intuit.com)</c>
+            </r>
+            <r>
+              <c>Weibel, Robert (Robert_Weibel@intuit.com)</c>
+            </r>
+            <r>
+              <c>White, Michael (michael_white |@inturt.com)</c>
+            </r>
+            <r>
+              <c>White, Michael (michael_white1@intuit.com)</c>
+            </r>
+            <r>
+              <c>Williams, Marina (marina_williams@intuit.com)</c>
+            </r>
+            <r>
+              <c>Wilson, Ashley (Ashley_Wilson2@intuit.com)</c>
+            </r>
+            <r>
+              <c>Xie, Sherry (Sherry_Xie@intuit.com)</c>
+            </r>
+            <r>
+              <c>Yadav, Ajay (ajay_yadav@intuit.com)</c>
+            </r>
+            <r>
+              <c>Yang, Grace (Wenjing) (wenjing_yang@intuit.com)</c>
+            </r>
+            <r>
+              <c>Yu, Julianna (julianna_yu@intuit.com)</c>
+            </r>
+            <r>
+              <c>laqvi, Syed (syed_taqvi@intuit.com)</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="290" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Current Users</Field>
+          <RegExExpression value="^([^ ]+) (.*?) ?([^ ]+)$" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Current Users</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Last Name" type="V_String" size="2147483647" />
+            <Field field="First Name" type="V_String" size="2147483647" />
+            <Field field="Raw Email" type="V_String" size="2147483647" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="185" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReplaceChar([Current Users], &quot;,&quot;, &quot;&quot;)" field="Current Users" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Current Users = ReplaceChar([Current Users], ",", "")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="607" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Current Users" selected="False" />
+            <SelectField field="Name" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Last Name" selected="False" />
+            <SelectField field="First Name" selected="False" />
+            <SelectField field="Raw Email" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="396" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Raw Email</Field>
+          <RegExExpression value="\((.+?)\)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Raw Email</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Email" type="V_String" size="2147483647" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="501" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[First Name] + &quot; &quot; + [Last Name]" field="Name" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Name = [First Name] + " " + [Last Name]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="823" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_28720_1ba6a6f76e174e1e9cf0fc34f01b7d84_\Engine_28720_a43682ff9032ba43bc1f8b8c149a2215~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Can Be Removed</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="714" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Email" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Email" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Email" selected="True" rename="Right_Email" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="822" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\groeper\Development\CMAPP\cmapp_unneeded_project_drivers.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cmapp_unneeded_project_drivers.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="438" y="77" width="196" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 65</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="463" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="135" />
+              <Fields>
+                <Field name="project_driver" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>ADRIENE DRAPER</c>
+                </r>
+                <r>
+                  <c>ALF JOHANSSON</c>
+                </r>
+                <r>
+                  <c>ANDREA COLLINS</c>
+                </r>
+                <r>
+                  <c>ANDREW BIRCHETT</c>
+                </r>
+                <r>
+                  <c>ASHLEY WILSON</c>
+                </r>
+                <r>
+                  <c>Abhishek Rashinkar</c>
+                </r>
+                <r>
+                  <c>Adedapo Adegeye</c>
+                </r>
+                <r>
+                  <c>Adriene Draper</c>
+                </r>
+                <r>
+                  <c>Ajay Kamble</c>
+                </r>
+                <r>
+                  <c>Ajay Yadav</c>
+                </r>
+                <r>
+                  <c>Alberto Rojas</c>
+                </r>
+                <r>
+                  <c>Alberto Rojas Field</c>
+                </r>
+                <r>
+                  <c>Alejandro Jimenez-Zepeda</c>
+                </r>
+                <r>
+                  <c>Allison Gentes</c>
+                </r>
+                <r>
+                  <c>Amy Abulatta</c>
+                </r>
+                <r>
+                  <c>Andrea Collins</c>
+                </r>
+                <r>
+                  <c>Andy Birchett</c>
+                </r>
+                <r>
+                  <c>Anna Webb</c>
+                </r>
+                <r>
+                  <c>Arzu Ozbek</c>
+                </r>
+                <r>
+                  <c>Ashley Bays</c>
+                </r>
+                <r>
+                  <c>Ashley Wilson</c>
+                </r>
+                <r>
+                  <c>Badrish Belagodu Panikesari</c>
+                </r>
+                <r>
+                  <c>Badrish Panikesari</c>
+                </r>
+                <r>
+                  <c>Beija Muniz</c>
+                </r>
+                <r>
+                  <c>Bernadette Orende</c>
+                </r>
+                <r>
+                  <c>Bhupender Kumar</c>
+                </r>
+                <r>
+                  <c>Brandon Duncan</c>
+                </r>
+                <r>
+                  <c>Caitlin Cross</c>
+                </r>
+                <r>
+                  <c>Carly Klem</c>
+                </r>
+                <r>
+                  <c>Cathy Kyriakis</c>
+                </r>
+                <r>
+                  <c>Chien Dinh</c>
+                </r>
+                <r>
+                  <c>Chris McGee</c>
+                </r>
+                <r>
+                  <c>Christopher Bowers</c>
+                </r>
+                <r>
+                  <c>Christopher Salis</c>
+                </r>
+                <r>
+                  <c>Claudia Castro</c>
+                </r>
+                <r>
+                  <c>Danielle Hughes</c>
+                </r>
+                <r>
+                  <c>Dapo Adegeye</c>
+                </r>
+                <r>
+                  <c>Dax Parreno</c>
+                </r>
+                <r>
+                  <c>Deepak Ojha</c>
+                </r>
+                <r>
+                  <c>Deepali Pisal</c>
+                </r>
+                <r>
+                  <c>Devon Rimer</c>
+                </r>
+                <r>
+                  <c>Donna Myers</c>
+                </r>
+                <r>
+                  <c>Dusan Bosnjakovic</c>
+                </r>
+                <r>
+                  <c>Eric McDaniel</c>
+                </r>
+                <r>
+                  <c>Erica Grace</c>
+                </r>
+                <r>
+                  <c>Erica Ortega</c>
+                </r>
+                <r>
+                  <c>Erika Peltz</c>
+                </r>
+                <r>
+                  <c>Fady Elsegeiny</c>
+                </r>
+                <r>
+                  <c>Fatima Marrone</c>
+                </r>
+                <r>
+                  <c>GUY HEAGNEY</c>
+                </r>
+                <r>
+                  <c>Gigi Lorente</c>
+                </r>
+                <r>
+                  <c>Grace (Wenjing) Yang</c>
+                </r>
+                <r>
+                  <c>Grace Yang</c>
+                </r>
+                <r>
+                  <c>Gregory Eyerman</c>
+                </r>
+                <r>
+                  <c>Guy Heagney</c>
+                </r>
+                <r>
+                  <c>Hank Peetsma</c>
+                </r>
+                <r>
+                  <c>Harika Pamganamamula</c>
+                </r>
+                <r>
+                  <c>Henry Law</c>
+                </r>
+                <r>
+                  <c>Indu Agnihotri</c>
+                </r>
+                <r>
+                  <c>Isaiah Smith</c>
+                </r>
+                <r>
+                  <c>JAMES CHRISS</c>
+                </r>
+                <r>
+                  <c>JOSHUA BRIGGS</c>
+                </r>
+                <r>
+                  <c>Jamie Herbstman</c>
+                </r>
+                <r>
+                  <c>Jared Davidove</c>
+                </r>
+                <r>
+                  <c>Jodi Battle</c>
+                </r>
+                <r>
+                  <c>Joe Shoffner</c>
+                </r>
+                <r>
+                  <c>Johan Johansson</c>
+                </r>
+                <r>
+                  <c>Jonathan Blazer</c>
+                </r>
+                <r>
+                  <c>Jonathan Samaniego</c>
+                </r>
+                <r>
+                  <c>Joseph Shoffner</c>
+                </r>
+                <r>
+                  <c>Julianna Yu</c>
+                </r>
+                <r>
+                  <c>Kapil Mankare</c>
+                </r>
+                <r>
+                  <c>Kedar Chambers</c>
+                </r>
+                <r>
+                  <c>Killian Dennehy</c>
+                </r>
+                <r>
+                  <c>Leif Linden</c>
+                </r>
+                <r>
+                  <c>Leslie Chambers</c>
+                </r>
+                <r>
+                  <c>Lisa-Marie Sonia</c>
+                </r>
+                <r>
+                  <c>MICHELLE NIKULSHIN</c>
+                </r>
+                <r>
+                  <c>Manish Sharma</c>
+                </r>
+                <r>
+                  <c>Manoj Gupta</c>
+                </r>
+                <r>
+                  <c>Marina Williams</c>
+                </r>
+                <r>
+                  <c>Martha Valencia</c>
+                </r>
+                <r>
+                  <c>Melody Doriott</c>
+                </r>
+                <r>
+                  <c>Michelle Riley</c>
+                </r>
+                <r>
+                  <c>Michelle Tubbs</c>
+                </r>
+                <r>
+                  <c>Milan Nagpure</c>
+                </r>
+                <r>
+                  <c>Muktavali Choudhary</c>
+                </r>
+                <r>
+                  <c>Nana Akuffo</c>
+                </r>
+                <r>
+                  <c>Nathan Renderos</c>
+                </r>
+                <r>
+                  <c>Nathan Sisk</c>
+                </r>
+                <r>
+                  <c>Nicholas Solis</c>
+                </r>
+                <r>
+                  <c>Niharika Shrivastav</c>
+                </r>
+                <r>
+                  <c>Nikola Roehrick</c>
+                </r>
+                <r>
+                  <c>PAMELA MILES</c>
+                </r>
+                <r>
+                  <c>PAUL FOY</c>
+                </r>
+                <r>
+                  <c>Paige Coulier</c>
+                </r>
+                <r>
+                  <c>Patricia Lin</c>
+                </r>
+                <r>
+                  <c>Pete Robertson</c>
+                </r>
+                <r>
+                  <c>Prasad Shedge</c>
+                </r>
+                <r>
+                  <c>Prashant Satam</c>
+                </r>
+                <r>
+                  <c>Pratik Ajetrao</c>
+                </r>
+                <r>
+                  <c>Rajesh Gadade</c>
+                </r>
+                <r>
+                  <c>Ritchie Bang</c>
+                </r>
+                <r>
+                  <c>Robert Weibel</c>
+                </r>
+                <r>
+                  <c>Rod Gonzalez</c>
+                </r>
+                <r>
+                  <c>Roselin Aruldas</c>
+                </r>
+                <r>
+                  <c>Rudra Roy</c>
+                </r>
+                <r>
+                  <c>Saif Sait</c>
+                </r>
+                <r>
+                  <c>Sandra Moore</c>
+                </r>
+                <r>
+                  <c>Satish Arakeri</c>
+                </r>
+                <r>
+                  <c>Scott Blazer</c>
+                </r>
+                <r>
+                  <c>Scott Fargo</c>
+                </r>
+                <r>
+                  <c>Sharon Lee</c>
+                </r>
+                <r>
+                  <c>Shauna McKinney</c>
+                </r>
+                <r>
+                  <c>Sherry Xie</c>
+                </r>
+                <r>
+                  <c>Sihem Moualhi</c>
+                </r>
+                <r>
+                  <c>Steven Henry</c>
+                </r>
+                <r>
+                  <c>Sunil John</c>
+                </r>
+                <r>
+                  <c>Suprabha Nair</c>
+                </r>
+                <r>
+                  <c>Suresh Karurkar</c>
+                </r>
+                <r>
+                  <c>Suzy Finn</c>
+                </r>
+                <r>
+                  <c>Swapnil Jadhav</c>
+                </r>
+                <r>
+                  <c>Sydney  Nichols</c>
+                </r>
+                <r>
+                  <c>Sydney Nichols</c>
+                </r>
+                <r>
+                  <c>Terrence Allen Donahue</c>
+                </r>
+                <r>
+                  <c>Thomas Cratty</c>
+                </r>
+                <r>
+                  <c>Timothy Chan</c>
+                </r>
+                <r>
+                  <c>Velu Muniswamy</c>
+                </r>
+                <r>
+                  <c>Victor Ma</c>
+                </r>
+                <r>
+                  <c>Vinay Bansode</c>
+                </r>
+                <r>
+                  <c>Vivek Agrawal</c>
+                </r>
+                <r>
+                  <c>Wenjing Yang</c>
+                </r>
+                <r>
+                  <c>Widha Gautam</c>
+                </r>
+                <r>
+                  <c>Xayya Chantha</c>
+                </r>
+                <r>
+                  <c>Xiaochen Wang</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1866" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\groeper\Development\CMAPP\coupa_check_project_drivers.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>coupa_check_project_drivers.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="281" width="154" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>YXDB</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>YXDB</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\groeper\Development\CMAPP\Coupa_Project_Drivers.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Coupa_Project_Drivers.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="record_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="requisition_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+                <Field name="submitted_at_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="buyer_note" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="justification" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="reject_reason" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="total" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="currency_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="requested_by_employee_number" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="requested_by_login" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="requested_by_email" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="department" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_street_1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_street_2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_city" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_state" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_postal_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_country_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_attention" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+                <Field name="ship_to_address_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ship_to_address_location_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="created_at_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="updated_at_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="approved_by_employee_number" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="approved_by_login" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="approved_by_email" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="created_by_employee_number" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="created_by_login" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="created_by_email" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="updated_by_employee_number" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="updated_by_login" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="updated_by_email" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="cmapp_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+                <Field name="prm3_engagement_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+                <Field name="project_driver" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="need_by_date" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="current_approver" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="does_the_following_statement_apply" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="do_any1_of_the_below_statements_apply" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="do_any_of_the_below_statements_apply" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="tags" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="doesthefollowingstatementapply" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="buy_desk_project_driver_full_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="previous_pr_number" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="fieldglass_wo_jira" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="sourcing_group_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="125" width="134" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DB Query</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>DB Query</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select distinct project_driver
+from DLPRD.Fin_coupa_src.coupa_req_hdr
+where project_driver is not null
+
+
+/*
+select project_driver, count(*) as activity
+from DLPRD.Fin_coupa_src.coupa_req_hdr
+where project_driver is not null
+group by project_driver
+*/</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>PITU5I</AnnotationText>
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select distinct project_driv...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="project_driver" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Left" />
+      <Destination ToolID="44" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Right" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Right" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Right" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="42" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="63" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="63" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output26" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output26" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Unique" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Unique" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>coupa_test</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="fb3a0714-de1c-4592-8336-8930b134d3f0" />
+      <Telemetry>
+        <PreviousWorkflowId value="93246c12-ebfb-48e3-9a4c-242dc713c905" />
+        <OriginWorkflowId value="9f0a633b-3a54-4331-8d1b-53dfd56606fd" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
