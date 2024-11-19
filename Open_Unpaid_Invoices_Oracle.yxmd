@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select distinct AP.AP_SUPPLIERS.VENDOR_NAME,
+	AP.AP_SUPPLIERS.VENDOR_ID,
+	ap.ap_invoices_all.VENDOR_SITE_ID,
+	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE 
+from ap.ap_invoices_all, AP.AP_INVOICE_LINES_ALL, AP.AP_INVOICE_DISTRIBUTIONS_ALL, GL.GL_CODE_COMBINATIONS GL_COMB_AP, AP.AP_SUPPLIERS 
+where (AP.AP_INVOICE_LINES_ALL.LINE_NUMBER = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_LINE_NUMBER) 
+	and (ap.ap_invoices_all.INVOICE_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_ID) 
+	and (GL_COMB_AP.CODE_COMBINATION_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.DIST_CODE_COMBINATION_ID) 
+	and (AP.AP_INVOICE_LINES_ALL.INVOICE_ID = ap.ap_invoices_all.INVOICE_ID) 
+	and AP.AP_SUPPLIERS.VENDOR_ID = ap.ap_invoices_all.VENDOR_ID 
+	and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') 
+	and ap.ap_invoices_all.PAYMENT_STATUS_FLAG not in ('Y') 
+	and AP.AP_INVOICE_DISTRIBUTIONS_ALL.MATCH_STATUS_FLAG in ('A') 
+group by AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, ap.ap_invoices_all.VENDOR_SITE_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select distinct AP.AP_SUPPLI...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	ap.ap_invoices_all.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from ap.ap_invoices_all, AP.AP_INVOICE_LINES_ALL, AP.AP_INVOICE_DISTRIBUTIONS_ALL, GL.GL_CODE_COMBINATIONS GL_COMB_AP, AP.AP_SUPPLIERS &#xA;where (AP.AP_INVOICE_LINES_ALL.LINE_NUMBER = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_LINE_NUMBER) &#xA;	and (ap.ap_invoices_all.INVOICE_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_ID) &#xA;	and (GL_COMB_AP.CODE_COMBINATION_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.DIST_CODE_COMBINATION_ID) &#xA;	and (AP.AP_INVOICE_LINES_ALL.INVOICE_ID = ap.ap_invoices_all.INVOICE_ID) &#xA;	and AP.AP_SUPPLIERS.VENDOR_ID = ap.ap_invoices_all.VENDOR_ID &#xA;	and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and ap.ap_invoices_all.PAYMENT_STATUS_FLAG not in ('Y') &#xA;	and AP.AP_INVOICE_DISTRIBUTIONS_ALL.MATCH_STATUS_FLAG in ('A') &#xA;group by AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, ap.ap_invoices_all.VENDOR_SITE_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="V_String" />
+            <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	ap.ap_invoices_all.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from ap.ap_invoices_all, AP.AP_INVOICE_LINES_ALL, AP.AP_INVOICE_DISTRIBUTIONS_ALL, GL.GL_CODE_COMBINATIONS GL_COMB_AP, AP.AP_SUPPLIERS &#xA;where (AP.AP_INVOICE_LINES_ALL.LINE_NUMBER = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_LINE_NUMBER) &#xA;	and (ap.ap_invoices_all.INVOICE_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_ID) &#xA;	and (GL_COMB_AP.CODE_COMBINATION_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.DIST_CODE_COMBINATION_ID) &#xA;	and (AP.AP_INVOICE_LINES_ALL.INVOICE_ID = ap.ap_invoices_all.INVOICE_ID) &#xA;	and AP.AP_SUPPLIERS.VENDOR_ID = ap.ap_invoices_all.VENDOR_ID &#xA;	and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and ap.ap_invoices_all.PAYMENT_STATUS_FLAG not in ('Y') &#xA;	and AP.AP_INVOICE_DISTRIBUTIONS_ALL.MATCH_STATUS_FLAG in ('A') &#xA;group by AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, ap.ap_invoices_all.VENDOR_SITE_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="Double" />
+            <Field name="VENDOR_SITE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	ap.ap_invoices_all.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from ap.ap_invoices_all, AP.AP_INVOICE_LINES_ALL, AP.AP_INVOICE_DISTRIBUTIONS_ALL, GL.GL_CODE_COMBINATIONS GL_COMB_AP, AP.AP_SUPPLIERS &#xA;where (AP.AP_INVOICE_LINES_ALL.LINE_NUMBER = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_LINE_NUMBER) &#xA;	and (ap.ap_invoices_all.INVOICE_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_ID) &#xA;	and (GL_COMB_AP.CODE_COMBINATION_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.DIST_CODE_COMBINATION_ID) &#xA;	and (AP.AP_INVOICE_LINES_ALL.INVOICE_ID = ap.ap_invoices_all.INVOICE_ID) &#xA;	and AP.AP_SUPPLIERS.VENDOR_ID = ap.ap_invoices_all.VENDOR_ID &#xA;	and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and ap.ap_invoices_all.PAYMENT_STATUS_FLAG not in ('Y') &#xA;	and AP.AP_INVOICE_DISTRIBUTIONS_ALL.MATCH_STATUS_FLAG in ('A') &#xA;group by AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, ap.ap_invoices_all.VENDOR_SITE_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="Int64" />
+            <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	ap.ap_invoices_all.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from ap.ap_invoices_all, AP.AP_INVOICE_LINES_ALL, AP.AP_INVOICE_DISTRIBUTIONS_ALL, GL.GL_CODE_COMBINATIONS GL_COMB_AP, AP.AP_SUPPLIERS &#xA;where (AP.AP_INVOICE_LINES_ALL.LINE_NUMBER = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_LINE_NUMBER) &#xA;	and (ap.ap_invoices_all.INVOICE_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.INVOICE_ID) &#xA;	and (GL_COMB_AP.CODE_COMBINATION_ID = AP.AP_INVOICE_DISTRIBUTIONS_ALL.DIST_CODE_COMBINATION_ID) &#xA;	and (AP.AP_INVOICE_LINES_ALL.INVOICE_ID = ap.ap_invoices_all.INVOICE_ID) &#xA;	and AP.AP_SUPPLIERS.VENDOR_ID = ap.ap_invoices_all.VENDOR_ID &#xA;	and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and ap.ap_invoices_all.PAYMENT_STATUS_FLAG not in ('Y') &#xA;	and AP.AP_INVOICE_DISTRIBUTIONS_ALL.MATCH_STATUS_FLAG in ('A') &#xA;group by AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, ap.ap_invoices_all.VENDOR_SITE_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_22144_cc88f3d5d03348d7a857c64030fec124_\Engine_19300_a11734809ecc4d809bc25e72a9b026b8_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Open Unpaid Invoices Oracle</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0b12978e-29b5-4afb-a9ee-78b378555889" />
+      <Telemetry>
+        <PreviousWorkflowId value="9da14515-c1b7-4fa1-8007-4c7ca74c74c5" />
+        <OriginWorkflowId value="9da14515-c1b7-4fa1-8007-4c7ca74c74c5" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

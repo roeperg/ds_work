@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||SELECT distinct
+    i.segment1        "REQ NUMBER",
+    i.creation_date   req_creation_date,
+    ph.segment1        po_num,
+    ph.creation_Date   po_create_dt,
+    pol.creation_date  po_line_create_dt,
+    pol.closed_code po_line_status,
+    s.vendor_name
+ 
+FROM
+    po.po_requisition_headers_all   i,
+    po.po_requisition_lines_all     rl,
+        ap.ap_suppliers                 s,
+    PO.PO_REQ_DISTRIBUTIONS_ALL     rd,
+    PO.PO_DISTRIBUTIONS_ALL         pod,
+    PO.PO_LINES_ALL                 pol,
+    PO.PO_HEADERS_ALL               ph,
+    PO.PO_LINE_LOCATIONS_ALL        pll
+ 
+WHERE
+    
+ ( i.REQUISITION_HEADER_ID(+)=rl.REQUISITION_HEADER_ID  ) 
+  AND  ( rl.REQUISITION_LINE_ID(+)=rd.REQUISITION_LINE_ID  )
+  AND  ( rd.DISTRIBUTION_ID(+)=pod.REQ_DISTRIBUTION_ID  )
+  AND  ( pod.LINE_LOCATION_ID=pll.LINE_LOCATION_ID(+)  )
+  AND  ( pll.PO_LINE_ID=pol.PO_LINE_ID(+)  )
+  AND  ( pol.PO_HEADER_ID=ph.PO_HEADER_ID(+)  )
+  AND ph.vendor_id=s.vendor_id
+
+
+
+and    ph.segment1 in ('103403',
+'103724',
+'669601',
+'755473',
+'763913',
+'763913',
+'763913',
+'780357',
+'789085',
+'789085',
+'789085',
+'789085',
+'789085',
+'789223',
+'796343',
+'802977',
+'802977',
+'812795',
+'815864',
+'821665',
+'826004',
+'831193',
+'831617',
+'833389',
+'833621',
+'834838',
+'839044',
+'845189',
+'845808',
+'846000',
+'850378',
+'854056',
+'859889',
+'861536',
+'861543',
+'861583',
+'861587',
+'862280',
+'862349',
+'862349',
+'862469',
+'868110',
+'868705',
+'872284',
+'873307',
+'873307',
+'876018',
+'878007',
+'881409',
+'881424',
+'881475',
+'881475',
+'883142',
+'889859',
+'897159',
+'897823',
+'897825',
+'899461',
+'899461',
+'901602',
+'901602',
+'902829',
+'905296',
+'905641',
+'913697',
+'920180',
+'921162',
+'923709',
+'926381',
+'928290',
+'928290',
+'932397',
+'932397',
+'933999',
+'937325',
+'941281',
+'949231',
+'951799',
+'952520',
+'953355',
+'953362',
+'961847',
+'962409',
+'966499',
+'971084',
+'975163',
+'977752',
+'982957',
+'988118',
+'988890',
+'991373',
+'993326',
+'994596',
+'998900',
+'999119',
+'999194',
+'1008408')</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=SELECT distinct
+    i.segmen...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="REQ NUMBER" size="20" source="File: PITU5I" type="String" />
+            <Field name="REQ_CREATION_DATE" source="File: PITU5I" type="DateTime" />
+            <Field name="PO_NUM" size="20" source="File: PITU5I" type="String" />
+            <Field name="PO_CREATE_DT" source="File: PITU5I" type="DateTime" />
+            <Field name="PO_LINE_CREATE_DT" source="File: PITU5I" type="DateTime" />
+            <Field name="PO_LINE_STATUS" size="25" source="File: PITU5I" type="String" />
+            <Field name="VENDOR_NAME" size="240" source="File: PITU5I" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_28884_3b2be3747ef0a740b5f08eedd19cf059_\Engine_28884_22b29d5638aeaf44a6fabcb1703c1eec~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>KIM OLD PR QRY</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="7e7747cf-1375-41e9-908a-120149a874a4" />
+      <Telemetry>
+        <PreviousWorkflowId value="7316a341-57fd-4962-9ffe-700c4a6bcb6c" />
+        <OriginWorkflowId value="0ecb1e65-c219-4498-9473-dca6221b8d3e" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>subscriptions*.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SubscriptionID" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="first_name" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="last_name" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="email" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="Activation Date" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="Expiration Date" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="member_level" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="billing_zip" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="sold_by_name" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="Activation_Date_Month" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="Expiration_Date_Month" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+            <Field name="Membership_Months_2018" size="254" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\subscriptions*.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Expiration Date" selected="True" type="Date" size="10" />
+            <SelectField field="Activation_Date_Month" selected="True" type="Double" size="8" />
+            <SelectField field="Expiration_Date_Month" selected="True" type="Double" size="8" />
+            <SelectField field="Membership_Months_2018" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;=</Operator>
+            <Field>Expiration Date</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-23 15:16:27</PeriodDate>
+              <PeriodType>days</PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2018-01-01</Operand>
+              <StartDate>2021-09-23 15:16:27</StartDate>
+              <EndDate>2021-09-23 15:16:27</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Expiration Date] &gt;= "2018-01-01"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="270" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_6404_068c1a6d13804f809407b307a5a1a853_\Engine_4000_9b6105a6d1dc46ebad44da8f08ded7e4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="378" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Membership_Months_2018]*9.95" field="Total Sales" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Total Sales = [Membership_Months_2018]*9.95
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="198" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\zipcode_by_state_lookup.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>zipcode_by_state_lookup.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="255" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\zipcode_by_state_lookup.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Zip_Code" size="255" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\zipcode_by_state_lookup.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="County_Name" size="255" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\zipcode_by_state_lookup.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="State_Name" size="255" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\zipcode_by_state_lookup.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="State_Abbreviation" size="255" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\zipcode_by_state_lookup.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="522" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="billing_zip" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Zip_Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Activation Date" selected="False" input="Left_" />
+                <SelectField field="Left_Expiration Date" selected="False" input="Left_" />
+                <SelectField field="Left_member_level" selected="False" input="Left_" />
+                <SelectField field="Left_Activation_Date_Month" selected="False" input="Left_" />
+                <SelectField field="Left_Expiration_Date_Month" selected="False" input="Left_" />
+                <SelectField field="Right_Name" selected="False" input="Right_" />
+                <SelectField field="Right_Zip_Code" selected="False" input="Right_" />
+                <SelectField field="Right_County_Name" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="630" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Total Sales" action="Sum" rename="Sum_Total Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sum Unknown Location Sites</AnnotationText>
+          <DefaultAnnotationText>Sum Unknown Location Sites</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="630" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="State_Name" />
+          <DataField field="Total Sales" />
+          <Methods>
+            <Method method="Sum" />
+            <Method method="TotCol" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_Alabama" source="CrossTab:Header:State_Name:Alabama:Sum:" type="Double" />
+            <Field name="Sum_Alaska" source="CrossTab:Header:State_Name:Alaska:Sum:" type="Double" />
+            <Field name="Sum_Arizona" source="CrossTab:Header:State_Name:Arizona:Sum:" type="Double" />
+            <Field name="Sum_Arkansas" source="CrossTab:Header:State_Name:Arkansas:Sum:" type="Double" />
+            <Field name="Sum_California" source="CrossTab:Header:State_Name:California:Sum:" type="Double" />
+            <Field name="Sum_Colorado" source="CrossTab:Header:State_Name:Colorado:Sum:" type="Double" />
+            <Field name="Sum_Connecticut" source="CrossTab:Header:State_Name:Connecticut:Sum:" type="Double" />
+            <Field name="Sum_Delaware" source="CrossTab:Header:State_Name:Delaware:Sum:" type="Double" />
+            <Field name="Sum_District_of_Columbia" source="CrossTab:Header:State_Name:District of Columbia:Sum:" type="Double" />
+            <Field name="Sum_Florida" source="CrossTab:Header:State_Name:Florida:Sum:" type="Double" />
+            <Field name="Sum_Georgia" source="CrossTab:Header:State_Name:Georgia:Sum:" type="Double" />
+            <Field name="Sum_Hawaii" source="CrossTab:Header:State_Name:Hawaii:Sum:" type="Double" />
+            <Field name="Sum_Idaho" source="CrossTab:Header:State_Name:Idaho:Sum:" type="Double" />
+            <Field name="Sum_Illinois" source="CrossTab:Header:State_Name:Illinois:Sum:" type="Double" />
+            <Field name="Sum_Indiana" source="CrossTab:Header:State_Name:Indiana:Sum:" type="Double" />
+            <Field name="Sum_Iowa" source="CrossTab:Header:State_Name:Iowa:Sum:" type="Double" />
+            <Field name="Sum_Kansas" source="CrossTab:Header:State_Name:Kansas:Sum:" type="Double" />
+            <Field name="Sum_Kentucky" source="CrossTab:Header:State_Name:Kentucky:Sum:" type="Double" />
+            <Field name="Sum_Louisiana" source="CrossTab:Header:State_Name:Louisiana:Sum:" type="Double" />
+            <Field name="Sum_Maine" source="CrossTab:Header:State_Name:Maine:Sum:" type="Double" />
+            <Field name="Sum_Maryland" source="CrossTab:Header:State_Name:Maryland:Sum:" type="Double" />
+            <Field name="Sum_Massachusetts" source="CrossTab:Header:State_Name:Massachusetts:Sum:" type="Double" />
+            <Field name="Sum_Michigan" source="CrossTab:Header:State_Name:Michigan:Sum:" type="Double" />
+            <Field name="Sum_Minnesota" source="CrossTab:Header:State_Name:Minnesota:Sum:" type="Double" />
+            <Field name="Sum_Mississippi" source="CrossTab:Header:State_Name:Mississippi:Sum:" type="Double" />
+            <Field name="Sum_Missouri" source="CrossTab:Header:State_Name:Missouri:Sum:" type="Double" />
+            <Field name="Sum_Montana" source="CrossTab:Header:State_Name:Montana:Sum:" type="Double" />
+            <Field name="Sum_Nebraska" source="CrossTab:Header:State_Name:Nebraska:Sum:" type="Double" />
+            <Field name="Sum_Nevada" source="CrossTab:Header:State_Name:Nevada:Sum:" type="Double" />
+            <Field name="Sum_New_Hampshire" source="CrossTab:Header:State_Name:New Hampshire:Sum:" type="Double" />
+            <Field name="Sum_New_Jersey" source="CrossTab:Header:State_Name:New Jersey:Sum:" type="Double" />
+            <Field name="Sum_New_Mexico" source="CrossTab:Header:State_Name:New Mexico:Sum:" type="Double" />
+            <Field name="Sum_New_York" source="CrossTab:Header:State_Name:New York:Sum:" type="Double" />
+            <Field name="Sum_North_Carolina" source="CrossTab:Header:State_Name:North Carolina:Sum:" type="Double" />
+            <Field name="Sum_North_Dakota" source="CrossTab:Header:State_Name:North Dakota:Sum:" type="Double" />
+            <Field name="Sum_Ohio" source="CrossTab:Header:State_Name:Ohio:Sum:" type="Double" />
+            <Field name="Sum_Oklahoma" source="CrossTab:Header:State_Name:Oklahoma:Sum:" type="Double" />
+            <Field name="Sum_Oregon" source="CrossTab:Header:State_Name:Oregon:Sum:" type="Double" />
+            <Field name="Sum_Pennsylvania" source="CrossTab:Header:State_Name:Pennsylvania:Sum:" type="Double" />
+            <Field name="Sum_Puerto_Rico" source="CrossTab:Header:State_Name:Puerto Rico:Sum:" type="Double" />
+            <Field name="Sum_Rhode_Island" source="CrossTab:Header:State_Name:Rhode Island:Sum:" type="Double" />
+            <Field name="Sum_South_Carolina" source="CrossTab:Header:State_Name:South Carolina:Sum:" type="Double" />
+            <Field name="Sum_South_Dakota" source="CrossTab:Header:State_Name:South Dakota:Sum:" type="Double" />
+            <Field name="Sum_Tennessee" source="CrossTab:Header:State_Name:Tennessee:Sum:" type="Double" />
+            <Field name="Sum_Texas" source="CrossTab:Header:State_Name:Texas:Sum:" type="Double" />
+            <Field name="Sum_Utah" source="CrossTab:Header:State_Name:Utah:Sum:" type="Double" />
+            <Field name="Sum_Vermont" source="CrossTab:Header:State_Name:Vermont:Sum:" type="Double" />
+            <Field name="Sum_Virginia" source="CrossTab:Header:State_Name:Virginia:Sum:" type="Double" />
+            <Field name="Sum_Washington" source="CrossTab:Header:State_Name:Washington:Sum:" type="Double" />
+            <Field name="Sum_West_Virginia" source="CrossTab:Header:State_Name:West Virginia:Sum:" type="Double" />
+            <Field name="Sum_Wisconsin" source="CrossTab:Header:State_Name:Wisconsin:Sum:" type="Double" />
+            <Field name="Sum_Wyoming" source="CrossTab:Header:State_Name:Wyoming:Sum:" type="Double" />
+            <Field name="Total" source="CrossTab:Total:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="726" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sum_Alabama" selected="True" rename="Alabama" />
+            <SelectField field="Sum_Alaska" selected="True" rename="Alaska" />
+            <SelectField field="Sum_Arizona" selected="True" rename="Arizona" />
+            <SelectField field="Sum_Arkansas" selected="True" rename="Arkansas" />
+            <SelectField field="Sum_California" selected="True" rename="California" />
+            <SelectField field="Sum_Colorado" selected="True" rename="Colorado" />
+            <SelectField field="Sum_Connecticut" selected="True" rename="Connecticut" />
+            <SelectField field="Sum_Delaware" selected="True" rename="Delaware" />
+            <SelectField field="Sum_District_of_Columbia" selected="True" rename="District_of_Columbia" />
+            <SelectField field="Sum_Florida" selected="True" rename="Florida" />
+            <SelectField field="Sum_Georgia" selected="True" rename="Georgia" />
+            <SelectField field="Sum_Hawaii" selected="True" rename="Hawaii" />
+            <SelectField field="Sum_Idaho" selected="True" rename="Idaho" />
+            <SelectField field="Sum_Illinois" selected="True" rename="Illinois" />
+            <SelectField field="Sum_Indiana" selected="True" rename="Indiana" />
+            <SelectField field="Sum_Iowa" selected="True" rename="Iowa" />
+            <SelectField field="Sum_Kansas" selected="True" rename="Kansas" />
+            <SelectField field="Sum_Kentucky" selected="True" rename="Kentucky" />
+            <SelectField field="Sum_Louisiana" selected="True" rename="Louisiana" />
+            <SelectField field="Sum_Maine" selected="True" rename="Maine" />
+            <SelectField field="Sum_Maryland" selected="True" rename="Maryland" />
+            <SelectField field="Sum_Massachusetts" selected="True" rename="Massachusetts" />
+            <SelectField field="Sum_Michigan" selected="True" rename="Michigan" />
+            <SelectField field="Sum_Minnesota" selected="True" rename="Minnesota" />
+            <SelectField field="Sum_Mississippi" selected="True" rename="Mississippi" />
+            <SelectField field="Sum_Missouri" selected="True" rename="Missouri" />
+            <SelectField field="Sum_Montana" selected="True" rename="Montana" />
+            <SelectField field="Sum_Nebraska" selected="True" rename="Nebraska" />
+            <SelectField field="Sum_Nevada" selected="True" rename="Nevada" />
+            <SelectField field="Sum_New_Hampshire" selected="True" rename="New_Hampshire" />
+            <SelectField field="Sum_New_Jersey" selected="True" rename="New_Jersey" />
+            <SelectField field="Sum_New_Mexico" selected="True" rename="New_Mexico" />
+            <SelectField field="Sum_New_York" selected="True" rename="New_York" />
+            <SelectField field="Sum_North_Carolina" selected="True" rename="North_Carolina" />
+            <SelectField field="Sum_North_Dakota" selected="True" rename="North_Dakota" />
+            <SelectField field="Sum_Ohio" selected="True" rename="Ohio" />
+            <SelectField field="Sum_Oklahoma" selected="True" rename="Oklahoma" />
+            <SelectField field="Sum_Oregon" selected="True" rename="Oregon" />
+            <SelectField field="Sum_Pennsylvania" selected="True" rename="Pennsylvania" />
+            <SelectField field="Sum_Puerto_Rico" selected="True" rename="Puerto_Rico" />
+            <SelectField field="Sum_Rhode_Island" selected="True" rename="Rhode_Island" />
+            <SelectField field="Sum_South_Carolina" selected="True" rename="South_Carolina" />
+            <SelectField field="Sum_South_Dakota" selected="True" rename="South_Dakota" />
+            <SelectField field="Sum_Tennessee" selected="True" rename="Tennessee" />
+            <SelectField field="Sum_Texas" selected="True" rename="Texas" />
+            <SelectField field="Sum_Utah" selected="True" rename="Utah" />
+            <SelectField field="Sum_Vermont" selected="True" rename="Vermont" />
+            <SelectField field="Sum_Virginia" selected="True" rename="Virginia" />
+            <SelectField field="Sum_Washington" selected="True" rename="Washington" />
+            <SelectField field="Sum_West_Virginia" selected="True" rename="West_Virginia" />
+            <SelectField field="Sum_Wisconsin" selected="True" rename="Wisconsin" />
+            <SelectField field="Sum_Wyoming" selected="True" rename="Wyoming" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="822" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Total" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Alabama" selected="True" />
+            <Field field="Alaska" selected="True" />
+            <Field field="Arizona" selected="True" />
+            <Field field="Arkansas" selected="True" />
+            <Field field="California" selected="True" />
+            <Field field="Colorado" selected="True" />
+            <Field field="Connecticut" selected="True" />
+            <Field field="Delaware" selected="True" />
+            <Field field="District_of_Columbia" selected="True" />
+            <Field field="Florida" selected="True" />
+            <Field field="Georgia" selected="True" />
+            <Field field="Hawaii" selected="True" />
+            <Field field="Idaho" selected="True" />
+            <Field field="Illinois" selected="True" />
+            <Field field="Indiana" selected="True" />
+            <Field field="Iowa" selected="True" />
+            <Field field="Kansas" selected="True" />
+            <Field field="Kentucky" selected="True" />
+            <Field field="Louisiana" selected="True" />
+            <Field field="Maine" selected="True" />
+            <Field field="Maryland" selected="True" />
+            <Field field="Massachusetts" selected="True" />
+            <Field field="Michigan" selected="True" />
+            <Field field="Minnesota" selected="True" />
+            <Field field="Mississippi" selected="True" />
+            <Field field="Missouri" selected="True" />
+            <Field field="Montana" selected="True" />
+            <Field field="Nebraska" selected="True" />
+            <Field field="Nevada" selected="True" />
+            <Field field="New_Hampshire" selected="True" />
+            <Field field="New_Jersey" selected="True" />
+            <Field field="New_Mexico" selected="True" />
+            <Field field="New_York" selected="True" />
+            <Field field="North_Carolina" selected="True" />
+            <Field field="North_Dakota" selected="True" />
+            <Field field="Ohio" selected="True" />
+            <Field field="Oklahoma" selected="True" />
+            <Field field="Oregon" selected="True" />
+            <Field field="Pennsylvania" selected="True" />
+            <Field field="Puerto_Rico" selected="True" />
+            <Field field="Rhode_Island" selected="True" />
+            <Field field="South_Carolina" selected="True" />
+            <Field field="South_Dakota" selected="True" />
+            <Field field="Tennessee" selected="True" />
+            <Field field="Texas" selected="True" />
+            <Field field="Utah" selected="True" />
+            <Field field="Vermont" selected="True" />
+            <Field field="Virginia" selected="True" />
+            <Field field="Washington" selected="True" />
+            <Field field="West_Virginia" selected="True" />
+            <Field field="Wisconsin" selected="True" />
+            <Field field="Wyoming" selected="True" />
+            <Field field="Total" selected="False" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="906" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Total" selected="True" rename="Total Known Sales" input="Target_" />
+                <SelectField field="Target_Name" selected="True" rename="State" input="Target_" />
+                <SelectField field="Target_Value" selected="True" rename="State Known Sales" input="Target_" />
+                <SelectField field="Source_Sum_Total Sales" selected="True" rename="Total Unknown Sales" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1038" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="([State Known Sales]/[Total Known Sales])*[Total Unknown Sales]" field="Apportioned_Unknown_Sales" size="8" type="Double" />
+            <FormulaField expression="[State Known Sales]+[Apportioned_Unknown_Sales]" field="Total_State_Sales" size="8" type="Double" />
+            <FormulaField expression="Replace([State], &quot;_&quot;, &quot; &quot;)" field="State" size="20" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Apportioned_Unknown_Sales = ([State Known Sales]/[Total Known Sales])*[Total Unk...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1038" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\state tax rates.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>state tax rates.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="255" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\state tax rates.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="State Tax Rate" source="File: C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\state tax rates.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="1194" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>State</FieldFind>
+          <FieldSearch>State</FieldSearch>
+          <ReplaceFoundField>State</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="State Tax Rate" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1290" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[State Tax Rate]*[Total_State_Sales]" field="State Taxes" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[State Taxes = [State Tax Rate]*[Total_State_Sales]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1374" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Total Known Sales" selected="False" />
+            <SelectField field="State Known Sales" selected="False" />
+            <SelectField field="Total Unknown Sales" selected="False" />
+            <SelectField field="Apportioned_Unknown_Sales" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1374" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\rcowing\Downloads\drive-download-20210923T190535Z-001 alteryx training 2\TEST.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>TEST.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="1518" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="State" selected="True" Alignment="Left" />
+            <Field name="Total_State_Sales" selected="True" Alignment="Right" Prefix="$" />
+            <Field name="State Tax Rate" selected="True" Alignment="Right" Postfix="%" />
+            <Field name="State Taxes" selected="True" Alignment="Left" Width="" Prefix="$" Places="0" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="1614" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType>pdf</TempFileType>
+          <BatchMode value="False" />
+          <DataField>Table</DataField>
+          <Separator>Continuous</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Left" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>LEARNING File</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

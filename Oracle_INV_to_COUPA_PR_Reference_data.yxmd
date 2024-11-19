@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="79" y="271" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select "dlprd"."fin_coupa_src"."coupa_po_hdr"."id",
+	"dlprd"."fin_coupa_src"."coupa_po_hdr"."custom_field_1",
+	"dlprd"."fin_coupa_src"."coupa_po_hdr"."requisition_id",
+	"dlprd"."fin_coupa_src"."coupa_po_hdr"."version" 
+from "dlprd"."fin_coupa_src"."coupa_po_hdr"</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select "dlprd"."fin_coupa_sr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+            <Field name="custom_field_1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="requisition_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+            <Field name="version" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="187" y="331" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33888_cdbb9ef0d63c4ec582a4032fb440c5c9_\Engine_33888_187170e9ce3cba4a884833a0d2cb6c23~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="403" y="187" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="segment1" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="custom_field_1" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="523" y="175" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="667" y="175" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33888_cdbb9ef0d63c4ec582a4032fb440c5c9_\Engine_33888_4574d80b3d0b5f45a425ffb7894ff444~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="217" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 5</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select "DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."invoice_num" "INVOICE_NUM",
+	Cast("DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."creation_date" as Date) as "INV_HDR_CRT_DATE",
+	"DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."invoice_date" as "INV_HDR_DATE",
+	"DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL"."invoice_payment_id",
+	"DLPRD"."UED_EBIZ_DWH"."PO_HEADERS_ALL"."po_header_id",
+	"DLPRD"."UED_EBIZ_DWH"."PO_HEADERS_ALL"."segment1",
+	"DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL"."creation_date" as "Payment_Date" 
+from "DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL" 
+	right join "DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL" on "DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."invoice_id" = "DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL"."invoice_id" 
+	inner join "DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_DISTRIBUTIONS_ALL" on "DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."invoice_id" = "DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_DISTRIBUTIONS_ALL"."invoice_id" 
+	left join "DLPRD"."UED_EBIZ_DWH"."PO_DISTRIBUTIONS_ALL" on "DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_DISTRIBUTIONS_ALL"."po_distribution_id" = "DLPRD"."UED_EBIZ_DWH"."PO_DISTRIBUTIONS_ALL"."po_distribution_id" 
+	left join "DLPRD"."UED_EBIZ_DWH"."PO_LINE_LOCATIONS_ALL" on "DLPRD"."UED_EBIZ_DWH"."PO_DISTRIBUTIONS_ALL"."line_location_id" = "DLPRD"."UED_EBIZ_DWH"."PO_LINE_LOCATIONS_ALL"."line_location_id" 
+	left join "DLPRD"."UED_EBIZ_DWH"."PO_LINES_ALL" on "DLPRD"."UED_EBIZ_DWH"."PO_LINE_LOCATIONS_ALL"."po_line_id" = "DLPRD"."UED_EBIZ_DWH"."PO_LINES_ALL"."po_line_id" 
+	left join "DLPRD"."UED_EBIZ_DWH"."PO_HEADERS_ALL" on "DLPRD"."UED_EBIZ_DWH"."PO_LINES_ALL"."po_header_id" = "DLPRD"."UED_EBIZ_DWH"."PO_HEADERS_ALL"."po_header_id" 
+	inner join "DLPRD"."UED_EBIZ_DWH"."AP_SUPPLIERS" as "AP_INV_VENDORS" on "AP_INV_VENDORS"."vendor_id" = "DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."vendor_id" 
+where "DLPRD"."UED_EBIZ_DWH"."PO_DISTRIBUTIONS_ALL"."gl_cancelled_date" is NULL 
+	and Cast("DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL"."creation_date" as Date) Between Cast("date_parse"('04/20/2023', '%m/%d/%Y') as Date) 
+	and Cast("date_parse"('05/10/2024', '%m/%d/%Y') as Date) 
+	and "AP_INV_VENDORS"."pay_group_lookup_code" not in ('INTERCO') 
+	and ("DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL"."reversal_flag" = 'N' or "DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL"."reversal_flag" is Null) 
+group by "DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."invoice_num", Cast("DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."creation_date" as Date), "DLPRD"."UED_EBIZ_DWH"."AP_INVOICES_ALL"."invoice_date", "DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL"."invoice_payment_id", "DLPRD"."UED_EBIZ_DWH"."PO_HEADERS_ALL"."po_header_id", "DLPRD"."UED_EBIZ_DWH"."PO_HEADERS_ALL"."segment1", "DLPRD"."UED_EBIZ_DWH"."AP_INVOICE_PAYMENTS_ALL"."creation_date"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select "DLPRD"."UED_EBIZ_DWH...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="INVOICE_NUM" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="INV_HDR_CRT_DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+                <Field name="INV_HDR_DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+                <Field name="invoice_payment_id" scale="0" size="39" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="po_header_id" scale="9" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+                <Field name="segment1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+                <Field name="Payment_Date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="187" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33888_cdbb9ef0d63c4ec582a4032fb440c5c9_\Engine_33888_7f68df28dbafb24997dfef2e1e916759~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Left" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Oracle INV to COUPA PR Reference data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="93246c12-ebfb-48e3-9a4c-242dc713c905" />
+      <Telemetry>
+        <PreviousWorkflowId value="9f0a633b-3a54-4331-8d1b-53dfd56606fd" />
+        <OriginWorkflowId value="9f0a633b-3a54-4331-8d1b-53dfd56606fd" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

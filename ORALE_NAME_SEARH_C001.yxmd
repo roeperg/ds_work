@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="186" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,
+	AP.AP_INVOICES_ALL.INVOICE_DATE,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,
+	AP.AP_INVOICES_ALL.PO_HEADER_ID,
+	AP.AP_SUPPLIERS.VENDOR_NAME,
+	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,
+	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as "Sum_AMOUNT_PAID" 
+from AP.AP_INVOICES_ALL 
+	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID 
+	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID 
+group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select AP.AP_INVOICES_ALL.VE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_SITE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_INVOICES_ALL.PO_HEADER_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT" type="Int64" />
+            <Field name="INVOICE_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_INVOICES_ALL.PO_HEADER_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT" type="DateTime" />
+            <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_INVOICES_ALL.PO_HEADER_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT" type="Double" />
+            <Field name="VENDOR_SITE_CODE" size="15" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_INVOICES_ALL.PO_HEADER_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT" type="String" />
+            <Field name="PO_HEADER_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_INVOICES_ALL.PO_HEADER_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT" type="Int64" />
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_INVOICES_ALL.PO_HEADER_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT" type="V_String" />
+            <Field name="VENDOR_NAME_ALT" size="320" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_INVOICES_ALL.PO_HEADER_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT" type="V_String" />
+            <Field name="Sum_AMOUNT_PAID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_INVOICES_ALL.PO_HEADER_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME_ALT,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on AP.AP_INVOICES_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;group by AP.AP_INVOICES_ALL.VENDOR_SITE_ID, AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_INVOICES_ALL.PO_HEADER_ID, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_NAME_ALT" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_17452_0b466d9939a34826b97a912285424931_\Engine_16196_484de1445805438595f39c422853de34_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ORACLE NAME SEARCH</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e9a42497-cf1a-42c8-aff5-c3444466c79b" />
+      <Telemetry>
+        <PreviousWorkflowId value="96597674-5229-4178-b429-c723c0be9950" />
+        <OriginWorkflowId value="96597674-5229-4178-b429-c723c0be9950" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

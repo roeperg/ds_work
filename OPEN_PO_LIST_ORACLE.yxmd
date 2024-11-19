@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,
+	AP.AP_SUPPLIERS.VENDOR_NAME,
+	AP.AP_SUPPLIERS.VENDOR_ID,
+	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE 
+from PO.PO_LINES_ALL 
+	inner join PO.PO_HEADERS_ALL on PO.PO_LINES_ALL.PO_HEADER_ID = PO.PO_HEADERS_ALL.PO_HEADER_ID 
+	inner join AP.AP_SUPPLIER_SITES_ALL on PO.PO_HEADERS_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID 
+	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID 
+where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') 
+	and Upper(PO.PO_LINES_ALL.CLOSED_CODE) = 'OPEN' 
+group by AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select AP.AP_SUPPLIER_SITES_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_SITE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_LINES_ALL &#xA;	inner join PO.PO_HEADERS_ALL on PO.PO_LINES_ALL.PO_HEADER_ID = PO.PO_HEADERS_ALL.PO_HEADER_ID &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on PO.PO_HEADERS_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and Upper(PO.PO_LINES_ALL.CLOSED_CODE) = 'OPEN' &#xA;group by AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="Double" />
+            <Field name="VENDOR_SITE_CODE" size="15" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_LINES_ALL &#xA;	inner join PO.PO_HEADERS_ALL on PO.PO_LINES_ALL.PO_HEADER_ID = PO.PO_HEADERS_ALL.PO_HEADER_ID &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on PO.PO_HEADERS_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and Upper(PO.PO_LINES_ALL.CLOSED_CODE) = 'OPEN' &#xA;group by AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="String" />
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_LINES_ALL &#xA;	inner join PO.PO_HEADERS_ALL on PO.PO_LINES_ALL.PO_HEADER_ID = PO.PO_HEADERS_ALL.PO_HEADER_ID &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on PO.PO_HEADERS_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and Upper(PO.PO_LINES_ALL.CLOSED_CODE) = 'OPEN' &#xA;group by AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="V_String" />
+            <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_LINES_ALL &#xA;	inner join PO.PO_HEADERS_ALL on PO.PO_LINES_ALL.PO_HEADER_ID = PO.PO_HEADERS_ALL.PO_HEADER_ID &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on PO.PO_HEADERS_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and Upper(PO.PO_LINES_ALL.CLOSED_CODE) = 'OPEN' &#xA;group by AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="Double" />
+            <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_LINES_ALL &#xA;	inner join PO.PO_HEADERS_ALL on PO.PO_LINES_ALL.PO_HEADER_ID = PO.PO_HEADERS_ALL.PO_HEADER_ID &#xA;	inner join AP.AP_SUPPLIER_SITES_ALL on PO.PO_HEADERS_ALL.VENDOR_SITE_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIERS.VENDOR_ID = AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('CUSTOMER', 'EMPLOYEE', 'LEGAL SUPPLIERS', 'TAX AUTHORITY') &#xA;	and Upper(PO.PO_LINES_ALL.CLOSED_CODE) = 'OPEN' &#xA;group by AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID, AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_SUPPLIERS.VENDOR_ID, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="234" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_22180_3a44a6060cca4bb28fc6f84279e1ef5d_\Engine_19300_e41c74c50e0f4fdbb7d39a7b346dc5ab_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>OPEN PO LIST ORACLE</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="74128f8a-aad0-49f7-a1ab-49dfe2a7e267" />
+      <Telemetry>
+        <PreviousWorkflowId value="b2896196-f131-4530-bdfb-6aa1b2abcf7a" />
+        <OriginWorkflowId value="b2896196-f131-4530-bdfb-6aa1b2abcf7a" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

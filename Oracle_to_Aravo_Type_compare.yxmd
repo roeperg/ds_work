@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_17252_0f5f34b82bb0475c9d358f61de9a91c9_\Engine_24932_cd5e1cd4d7934d8c9e2d657765f39478_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,
+	AP.AP_SUPPLIERS.VENDOR_NAME,
+	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,
+	AP.AP_INVOICES_ALL.INVOICE_ID,
+	AP.AP_INVOICES_ALL.INVOICE_DATE,
+	AP.AP_INVOICES_ALL.AMOUNT_PAID,
+	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,
+	AP.AP_SUPPLIERS.SEGMENT1 as "Supplier Number" 
+from AP.AP_INVOICES_ALL 
+	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID 
+where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'
+and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select AP.AP_SUPPLIERS.VENDO...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.AMOUNT_PAID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'&#xA;and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')" type="Double" />
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.AMOUNT_PAID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'&#xA;and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')" type="V_String" />
+            <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.AMOUNT_PAID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'&#xA;and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')" type="String" />
+            <Field name="INVOICE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.AMOUNT_PAID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'&#xA;and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')" type="Int64" />
+            <Field name="INVOICE_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.AMOUNT_PAID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'&#xA;and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')" type="DateTime" />
+            <Field name="AMOUNT_PAID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.AMOUNT_PAID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'&#xA;and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')" type="Double" />
+            <Field name="INVOICE_AMOUNT" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.AMOUNT_PAID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'&#xA;and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')" type="Double" />
+            <Field name="Supplier Number" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_ID,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.AMOUNT_PAID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_AMOUNT,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot; &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE &gt; '01-AUG-2020'&#xA;and AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE 
+from AP.AP_SUPPLIERS 
+where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')
+group by AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select AP.AP_SUPPLIERS.VENDO...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from AP.AP_SUPPLIERS &#xA;where AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE not in ('EMPLOYEE')&#xA;group by AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_17252_0f5f34b82bb0475c9d358f61de9a91c9_\Engine_24932_6d2c371788b94a54aff681e1f9051bdf_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="378" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="VENDOR_TYPE_LOOKUP_CODE" action="GroupBy" rename="VENDOR_TYPE_LOOKUP_CODE" />
+            <SummarizeField field="INVOICE_ID" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="210" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0" field="COUNT" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[COUNT = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="582" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#2</Connection>
+            <Connection>#1</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="738" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="VENDOR_TYPE_LOOKUP_CODE" action="GroupBy" rename="VENDOR_TYPE_LOOKUP_CODE" />
+            <SummarizeField field="Count" action="Sum" rename="Sum_Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RC_TPTPE_Extract.xlsx
+Query=`Sheet0$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Aravo Internal ID" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Third Party Identifier" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Third Party Name" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="ThirdPartyTypeHL" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="TPSubcategory" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="TPTpe" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Third Party Created Date" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Third Party Status" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Active?" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\RC_TPTPE_Extract.xlsx|||`Sheet0$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="534" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Supplier Number" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Third Party Identifier" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Third Party Identifier" selected="False" input="Right_" />
+                <SelectField field="Right_Third Party Created Date" selected="False" input="Right_" />
+                <SelectField field="Right_Third Party Status" selected="False" input="Right_" />
+                <SelectField field="Right_Active?" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="702" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="786" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_17252_0f5f34b82bb0475c9d358f61de9a91c9_\Engine_24932_e43b05d6fb6a4555a95fa81e90867900_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="810" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="VENDOR_TYPE_LOOKUP_CODE" action="GroupBy" rename="VENDOR_TYPE_LOOKUP_CODE" />
+            <SummarizeField field="ThirdPartyTypeHL" action="GroupBy" rename="ThirdPartyTypeHL" />
+            <SummarizeField field="TPSubcategory" action="GroupBy" rename="TPSubcategory" />
+            <SummarizeField field="TPTpe" action="GroupBy" rename="TPTpe" />
+            <SummarizeField field="INVOICE_ID" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="942" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="VENDOR_TYPE_LOOKUP_CODE" selected="True" rename="Oracle TPType" />
+            <SelectField field="ThirdPartyTypeHL" selected="True" rename="Aravo TP Type" />
+            <SelectField field="TPSubcategory" selected="False" />
+            <SelectField field="TPTpe" selected="True" rename="ARAVO SUB TYPE" />
+            <SelectField field="Count" selected="True" rename="Count of Invoices" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="14" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Oracle to Aravo Type compare</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="30532573-b6ef-4bab-913b-a5b85acda240" />
+      <Telemetry>
+        <PreviousWorkflowId value="fff358b2-e6d0-4650-b814-0ae95a3cfb70" />
+        <OriginWorkflowId value="fff358b2-e6d0-4650-b814-0ae95a3cfb70" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

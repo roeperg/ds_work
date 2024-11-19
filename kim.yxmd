@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\groeper\Development\CMAPP\projects_table.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>projects_table.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Related Agreement" source="PythonTool:" type="Double" />
+            <Field name="Link to MSA" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Technology Sector Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="MSA - Payment Terms" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Risk Screening / 3PSA - Data Sharing Overview" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Total Spend Amount ($)" source="PythonTool:" type="Double" />
+            <Field name="Contract Effective Start Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Expiration Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Ariba Upload Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Temporary Supplier Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="PR Number" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Marketing Sector Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="BU/FG" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Agreement - Oracle ID" source="PythonTool:" type="Double" />
+            <Field name="Related 3PRM Supplier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="3PRM Supplier - Oracle ID" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Oracle ID" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Master Agreement Document Selector" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Short Description Entry" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Record ID#" source="PythonTool:" type="Int64" />
+            <Field name="Total Spend Amount (USD)" source="PythonTool:" type="Double" />
+            <Field name="Related Project" source="PythonTool:" type="Double" />
+            <Field name="Related Contract" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Projects" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Minimum Commitment Check" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="CMAPP Link" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Total Savings (USD)" source="PythonTool:" type="Double" />
+            <Field name="Supplier Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Signed Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project Closed - FY" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Sector ID" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Agreement Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="3PRM Supplier - 3P Supplier Record ID#" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="3PRM Supplier - Record ID#" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="3PRM Supplier - Partner Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Min_Commitment" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="5.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="5.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="5.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="5.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Products" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract_Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Purchase Category - Account Code" source="PythonTool:" type="Double" />
+            <Field name="Purchase Category - Category Manager" source="PythonTool:" type="Double" />
+            <Field name="Purchase Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Purchase Category - Sector" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Product Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract ID#" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="6.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="6.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="6.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Contract Type" source="PythonTool:" type="Double" />
+            <Field name="Related Contract - Document Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Contract - Tags" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Minimum commitments" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Aravo Engagement #" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="EngagementCategory" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Fy spend, savings &amp; commitmentses" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Minimum Commit Cert" source="PythonTool:" type="Bool" />
+            <Field name="COUPA_ID" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="MSA Created" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Short_Description_Clean" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier_Name_Clean" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract_Name_Check" source="PythonTool:" type="Bool" />
+            <Field name="Agreement - Sourcing Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Purchase Category - Level 1" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="MSA Reference Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="75.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="75.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="75.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contracts" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Document" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Supplier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Supplier - Third Party Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier - Record ID#" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier - CMAPP Unique ID" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier - Third Party Identifier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier - Engagement Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Sector" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="MIN_COMMIT_AMOUNT" source="PythonTool:" type="Double" />
+            <Field name="MSA STATUS" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project_Contract_Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="CMAPP_REF" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Employee - Preferred Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Account Code" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Purchase Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Category Manager" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Level 1" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Sector" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Purchase Category2 - Category Manager - NEW Formula" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Min Commit Attestation" source="PythonTool:" type="Bool" />
+            <Field name="Min Commit Reason Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="534.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="534.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="534.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="75.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="6.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Project Driver" source="PythonTool:" type="Double" />
+            <Field name="534.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Category Manager" size="1073741823" source="PythonTool:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\groeper\Development\CMAPP\parent_contract_repository_table.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>parent_contract_repository_table.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Contract - Document Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="MSA Document URL" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract - Tags" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Effective Start Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Effective End Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Expiration Warning" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Expired" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Master Agreement" source="PythonTool:" type="Double" />
+            <Field name="Master Agreement - Supplier-MA Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Master Agreement - Related Supplier3 - Third Party Identifier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Master Agreement - Related Supplier3 - Third Party Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contract Description" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Record ID#" source="PythonTool:" type="Int64" />
+            <Field name="Related Supplier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier - Third Party Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier - Third Party Identifier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier - ThirdPartyTypeHL" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Projects" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Add Project" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Project" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Projects2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Add Project2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Master Agreement - Related Supplier3" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Calculated Enddate" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Master Agreement - Agreement Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Amendment Number" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Contract" source="PythonTool:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\groeper\Development\CMAPP\master_agreement_table.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>master_agreement_table.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Related Supplier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Total MSA Contracts" source="PythonTool:" type="Double" />
+            <Field name="Most Current MSA EXP Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Active MSA Document Count" source="PythonTool:" type="Double" />
+            <Field name="Related Supplier3 - Privacy and Security Exhibit in place" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="MA Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Missing Element" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Supplier3 - PSE_Required" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="PSE CHECK" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="# of Documents" source="PythonTool:" type="Double" />
+            <Field name="Most Current MSA Start Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Supplier3 - Active?" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Employee - Preferred Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Documents" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Projects" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Create New IRS (Sends Notification with Link to 3PRM)" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Intuit Contracting Entity" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Agreement Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Agreement Driver" source="PythonTool:" type="Double" />
+            <Field name="Inherent Risk Screenings" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Sector / Category" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="# of Engagements" source="PythonTool:" type="Double" />
+            <Field name="Record ID#" source="PythonTool:" type="Int64" />
+            <Field name="33.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="33.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="33.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Agreement Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Notes" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Notify Checkbox" source="PythonTool:" type="Bool" />
+            <Field name="Supplier" source="PythonTool:" type="Double" />
+            <Field name="3PRM Supplier - Third Party Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="3PRM Supplier - 3P Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Supplier Status" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="3PRM Supplier - Related Partner ID" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="3PRM Supplier - Oracle ID" source="PythonTool:" type="Double" />
+            <Field name="Sourcing Manager" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Total Spend Amount ($USD) - All Current Projects" source="PythonTool:" type="Double" />
+            <Field name="New Supplier" source="PythonTool:" type="Bool" />
+            <Field name="Temporary Supplier Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Master Agreement Supplier Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Agreement Effective Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Supplier2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Employee" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Employee - Legal Full Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Agreement Expiration Date" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="74.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="74.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="74.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Projects2" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Project" source="PythonTool:" type="Double" />
+            <Field name="Converts to month-to-month agreement upon expiration?" source="PythonTool:" type="Bool" />
+            <Field name="Related Project2" source="PythonTool:" type="Double" />
+            <Field name="Agreement_Driver_txt" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Requestor_txt" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Supplier3" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Supplier3 - Third Party Identifier" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Related Supplier3 - Third Party Name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Payment Terms" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Duplicate Remove" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="# of Projects" source="PythonTool:" type="Double" />
+            <Field name="Supplier-MA Type" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Contracts" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="TEST HIDE Invalid MA" source="PythonTool:" type="Bool" />
+            <Field name="21.value.email" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="21.value.id" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="21.value.name" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="Requestor" source="PythonTool:" type="Double" />
+            <Field name="Category Manager" source="PythonTool:" type="Double" />
+            <Field name="33.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="21.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+            <Field name="74.value.userName" size="1073741823" source="PythonTool:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Record ID#] in (4147,2007, 4083)</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Record ID#] in (4147,2007, 4083)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Record ID#" selected="True" />
+            <SelectField field="Related Project" selected="True" />
+            <SelectField field="Related Master Agreement" selected="True" />
+            <SelectField field="Master Agreement - Supplier-MA Type" selected="True" />
+            <SelectField field="Master Agreement - Related Supplier3 - Third Party Identifier" selected="True" />
+            <SelectField field="Master Agreement - Related Supplier3 - Third Party Name" selected="True" />
+            <SelectField field="Contract Description" selected="True" />
+            <SelectField field="Contract - Document Type" selected="True" />
+            <SelectField field="MSA Document URL" selected="True" />
+            <SelectField field="Contract - Tags" selected="True" />
+            <SelectField field="Contract Effective Start Date" selected="True" />
+            <SelectField field="Contract Effective End Date" selected="True" />
+            <SelectField field="Expiration Warning" selected="True" />
+            <SelectField field="Expired" selected="True" />
+            <SelectField field="Related Supplier" selected="True" />
+            <SelectField field="Supplier - Third Party Name" selected="True" />
+            <SelectField field="Supplier - Third Party Identifier" selected="True" />
+            <SelectField field="Supplier - ThirdPartyTypeHL" selected="True" />
+            <SelectField field="Projects" selected="True" />
+            <SelectField field="Add Project" selected="True" />
+            <SelectField field="Projects2" selected="True" />
+            <SelectField field="Add Project2" selected="True" />
+            <SelectField field="Master Agreement - Related Supplier3" selected="True" />
+            <SelectField field="Calculated Enddate" selected="True" />
+            <SelectField field="Master Agreement - Agreement Type" selected="True" />
+            <SelectField field="Amendment Number" selected="True" />
+            <SelectField field="Related Contract" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Record ID#" selected="True" />
+            <SelectField field="Category Manager" selected="True" />
+            <SelectField field="Supplier" selected="True" />
+            <SelectField field="3PRM Supplier - Third Party Name" selected="True" />
+            <SelectField field="3PRM Supplier - 3P Type" selected="True" />
+            <SelectField field="Supplier Status" selected="True" />
+            <SelectField field="3PRM Supplier - Related Partner ID" selected="True" />
+            <SelectField field="3PRM Supplier - Oracle ID" selected="True" />
+            <SelectField field="Related Supplier" selected="True" />
+            <SelectField field="Total MSA Contracts" selected="True" />
+            <SelectField field="Most Current MSA EXP Date" selected="True" />
+            <SelectField field="Active MSA Document Count" selected="True" />
+            <SelectField field="Related Supplier3 - Privacy and Security Exhibit in place" selected="True" />
+            <SelectField field="MA Status" selected="True" />
+            <SelectField field="Missing Element" selected="True" />
+            <SelectField field="Related Supplier3 - PSE_Required" selected="True" />
+            <SelectField field="PSE CHECK" selected="True" />
+            <SelectField field="# of Documents" selected="True" />
+            <SelectField field="Most Current MSA Start Date" selected="True" />
+            <SelectField field="Related Supplier3 - Active?" selected="True" />
+            <SelectField field="Employee - Preferred Name" selected="True" />
+            <SelectField field="Documents" selected="True" />
+            <SelectField field="Projects" selected="True" />
+            <SelectField field="Create New IRS (Sends Notification with Link to 3PRM)" selected="True" />
+            <SelectField field="Intuit Contracting Entity" selected="True" />
+            <SelectField field="Agreement Status" selected="True" />
+            <SelectField field="Agreement Driver" selected="True" />
+            <SelectField field="Inherent Risk Screenings" selected="True" />
+            <SelectField field="Sector / Category" selected="True" />
+            <SelectField field="# of Engagements" selected="True" />
+            <SelectField field="33.value.email" selected="False" />
+            <SelectField field="33.value.id" selected="False" />
+            <SelectField field="33.value.name" selected="False" />
+            <SelectField field="Agreement Type" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Notes" selected="True" />
+            <SelectField field="Notify Checkbox" selected="True" />
+            <SelectField field="Sourcing Manager" selected="True" />
+            <SelectField field="Total Spend Amount ($USD) - All Current Projects" selected="True" />
+            <SelectField field="New Supplier" selected="True" />
+            <SelectField field="Temporary Supplier Name" selected="True" />
+            <SelectField field="Master Agreement Supplier Name" selected="True" />
+            <SelectField field="Agreement Effective Date" selected="True" />
+            <SelectField field="Related Supplier2" selected="True" />
+            <SelectField field="Related Employee" selected="True" />
+            <SelectField field="Employee - Legal Full Name" selected="True" />
+            <SelectField field="Agreement Expiration Date" selected="True" />
+            <SelectField field="74.value.email" selected="False" />
+            <SelectField field="74.value.id" selected="False" />
+            <SelectField field="74.value.name" selected="False" />
+            <SelectField field="Projects2" selected="True" />
+            <SelectField field="Related Project" selected="True" />
+            <SelectField field="Converts to month-to-month agreement upon expiration?" selected="True" />
+            <SelectField field="Related Project2" selected="True" />
+            <SelectField field="Agreement_Driver_txt" selected="True" />
+            <SelectField field="Requestor_txt" selected="True" />
+            <SelectField field="Related Supplier3" selected="True" />
+            <SelectField field="Related Supplier3 - Third Party Identifier" selected="True" />
+            <SelectField field="Related Supplier3 - Third Party Name" selected="True" />
+            <SelectField field="Payment Terms" selected="True" />
+            <SelectField field="Duplicate Remove" selected="True" />
+            <SelectField field="# of Projects" selected="True" />
+            <SelectField field="Supplier-MA Type" selected="True" />
+            <SelectField field="Contracts" selected="True" />
+            <SelectField field="TEST HIDE Invalid MA" selected="True" />
+            <SelectField field="21.value.email" selected="False" />
+            <SelectField field="21.value.id" selected="False" />
+            <SelectField field="21.value.name" selected="False" />
+            <SelectField field="Requestor" selected="True" />
+            <SelectField field="33.value.userName" selected="False" />
+            <SelectField field="21.value.userName" selected="False" />
+            <SelectField field="74.value.userName" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[Record ID#] in (932,5237,5278) ]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[[Record ID#] in (932,5237,5278) ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="486" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Record ID#" selected="True" />
+            <SelectField field="Supplier" selected="True" />
+            <SelectField field="Temporary Supplier Name" selected="True" />
+            <SelectField field="Related Supplier3" selected="True" />
+            <SelectField field="Related Supplier3 - Third Party Name" selected="True" />
+            <SelectField field="Supplier-MA Type" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="486" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Contract - Document Type" selected="False" />
+            <SelectField field="MSA Document URL" selected="False" />
+            <SelectField field="Contract Effective Start Date" selected="False" />
+            <SelectField field="Contract Effective End Date" selected="False" />
+            <SelectField field="Expiration Warning" selected="False" />
+            <SelectField field="Expired" selected="False" />
+            <SelectField field="Related Supplier" selected="False" />
+            <SelectField field="Supplier - Third Party Name" selected="False" />
+            <SelectField field="Supplier - Third Party Identifier" selected="False" />
+            <SelectField field="Supplier - ThirdPartyTypeHL" selected="False" />
+            <SelectField field="Projects" selected="False" />
+            <SelectField field="Add Project" selected="False" />
+            <SelectField field="Projects2" selected="False" />
+            <SelectField field="Add Project2" selected="False" />
+            <SelectField field="Calculated Enddate" selected="False" />
+            <SelectField field="Amendment Number" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="630" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\groeper\Development\CMAPP\parent_contract_repository.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>parent_contract_repository.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="630" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\groeper\Development\CMAPP\master_agreement.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>master_agreement.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>kim</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="360feb56-f2c3-4682-9c25-5fffcf16407d" />
+      <Telemetry>
+        <PreviousWorkflowId value="e76fd21e-0847-477b-bf7c-29f44f728513" />
+        <OriginWorkflowId value="e76fd21e-0847-477b-bf7c-29f44f728513" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
