@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Smartsheets Export</AnnotationText>
+          <DefaultAnnotationText>GBS Reporting &amp; Analytics.xlsx
+Query=`GBS Reporting _ Analytics$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Status Color" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Intake Record ID" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Name" size="274" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_WString" />
+            <Field name="Description" size="4000" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_WString" />
+            <Field name="Status" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Assigned to" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Created" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Date" />
+            <Field name="Target Start" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Date" />
+            <Field name="Target End" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Date" />
+            <Field name="Actual Close Date" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Date" />
+            <Field name="Request Category" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Project Priority" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Ad Hoc / Unplanned" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Bool" />
+            <Field name="AI" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Bool" />
+            <Field name="Created by" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Requested on behalf of" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Driver" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Need by Date" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Date" />
+            <Field name="Comments" size="1487" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_WString" />
+            <Field name="Time saved by process improvement - Hours" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Time saved by automation - Hours" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Time Saved Explanation" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Contributor" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Approver" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Created by-Aha" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Analytics RPA Automation Idea" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Release" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Created Year" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Created Month" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="GBS Driver" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Submit Date" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="DateTime" />
+            <Field name="Submitted by" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Modified Date" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="DateTime" />
+            <Field name="Modified by" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Created Year Month" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Created FY" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Completed Month" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Completed Year" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Status Updated Date" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Date" />
+            <Field name="Days in Current Status" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Days Open" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Days to Close" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Request to Delete" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Bool" />
+            <Field name="Assignee Manager" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Goals" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Workspace" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Sent to Pipeline or Data Sheet" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Type of Request" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Link to Requirements" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Priority (1, 2, 3)" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Applications Impacted" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Impact" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Severity" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Progress (% Completed)" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Data &amp; Reporting Impact" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Support Needed" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Project Owner" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Process Owner" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="3P Risk Project?" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Archive: Priority" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Accountable" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Type of Enhancement" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Workspace Name" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Requested Urgency" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Initiative" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Teams Involved" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Responsible Change Control Team" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Responsible COE Team" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Impacted Teams" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Operational Risk" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Approved" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="FY24 OUTCOME METRICS" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Action" size="255" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="V_String" />
+            <Field name="Policy Update Required" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Link - Requirements" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+            <Field name="Intuit or CK" source="File: C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics.xlsx|||`GBS Reporting _ Analytics$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="450" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsEmpty</Operator>
+            <Field>Request Category</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-09-30 18:24:39</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>""</Operand>
+              <StartDate>2024-09-30 18:24:39</StartDate>
+              <EndDate>2024-09-30 18:24:39</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IsEmpty([Request Category])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-09-30 18:33:32</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>""</Operand>
+              <StartDate>2024-09-30 18:33:32</StartDate>
+              <EndDate>2024-09-30 18:33:32</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([Name])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1110" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Request Category" action="GroupBy" rename="Request Category" />
+            <SummarizeField field="Request Category" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="//        CHOICES&#xA;//     Access&#xA;//     Dashboard &amp; Enhancement&#xA;//     Other&#xA;//     RPA&#xA;//     Reporting&#xA;&#xA;IF     Contains([Name],&quot;report&quot;,1) THEN &quot;Greg thinks Reporting&quot; &#xA;ELSEIF Contains([Name],&quot;bot&quot;,1) THEN &quot;Greg thinks RPA&quot; &#xA;ELSEIF Contains([Name],&quot;access&quot;,1) THEN &quot;Greg thinks Access&quot; &#xA;ELSEIF Contains([Name],&quot;dashboard&quot;,1) THEN &quot;Greg thinks Dashboard &amp; Enhancement&quot; &#xA;ELSE &quot;Greg thinks Other&quot; ENDIF&#xA;&#xA;" field="Request Category" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Best Guess</AnnotationText>
+          <DefaultAnnotationText>Request Category = //        CHOICES
+//     Access
+//     Dashboard &amp; Enhancemen...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="714" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="846" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="RecordID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="978" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1110" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\SmartSheets\GBS Reporting &amp; Analytics Import.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>GBS Reporting &amp; Analytics Import</AnnotationText>
+          <DefaultAnnotationText>GBS Reporting &amp; Analytics Import.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="4" Connection="False" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Tickets_without_categories</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="7b4fe704-afde-416a-9845-1a8f82068bc4" />
+      <Telemetry>
+        <PreviousWorkflowId value="24148606-ae49-4dd2-9503-09602d6dc454" />
+        <OriginWorkflowId value="bc122288-4e28-4229-a65b-7f0e08c065f0" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

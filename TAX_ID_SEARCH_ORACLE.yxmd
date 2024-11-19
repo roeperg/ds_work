@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="210" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,
+	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,
+	AP.AP_SUPPLIERS.SEGMENT1 as "Supplier Number",
+	AP.AP_SUPPLIERS.VENDOR_NAME,
+	AP.AP_SUPPLIERS.CREATION_DATE as "header create date",
+	AP.AP_SUPPLIERS.START_DATE_ACTIVE as "header active date",
+	AP.AP_SUPPLIERS.END_DATE_ACTIVE as "header inactive date",
+	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,
+	HR.HR_ALL_ORGANIZATION_UNITS.NAME,
+	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,
+	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,
+	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as "site inactive date",
+	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as "site create date",
+	AP.AP_SUPPLIERS.NUM_1099,
+	AP.AP_SUPPLIERS.TYPE_1099 
+from AP.AP_SUPPLIER_SITES_ALL 
+	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID 
+	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID 
+where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) 
+	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) 
+	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select AP.AP_SUPPLIER_SITES_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDOR_SITE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="Double" />
+            <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="Double" />
+            <Field name="VENDOR_SITE_CODE" size="15" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="String" />
+            <Field name="Supplier Number" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="String" />
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="V_String" />
+            <Field name="header create date" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="DateTime" />
+            <Field name="header active date" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="DateTime" />
+            <Field name="header inactive date" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="DateTime" />
+            <Field name="ORG_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="Double" />
+            <Field name="NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="V_String" />
+            <Field name="REMITTANCE_EMAIL" size="2000" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="V_String" />
+            <Field name="EMAIL_ADDRESS" size="2000" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="V_String" />
+            <Field name="site inactive date" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="DateTime" />
+            <Field name="site create date" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="DateTime" />
+            <Field name="NUM_1099" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="String" />
+            <Field name="TYPE_1099" size="10" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID,&#xA;	AP.AP_SUPPLIER_SITES_ALL.VENDOR_SITE_CODE,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Number&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_SUPPLIERS.CREATION_DATE as &quot;header create date&quot;,&#xA;	AP.AP_SUPPLIERS.START_DATE_ACTIVE as &quot;header active date&quot;,&#xA;	AP.AP_SUPPLIERS.END_DATE_ACTIVE as &quot;header inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.ORG_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIER_SITES_ALL.REMITTANCE_EMAIL,&#xA;	AP.AP_SUPPLIER_SITES_ALL.EMAIL_ADDRESS,&#xA;	AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE as &quot;site inactive date&quot;,&#xA;	AP.AP_SUPPLIER_SITES_ALL.CREATION_DATE as &quot;site create date&quot;,&#xA;	AP.AP_SUPPLIERS.NUM_1099,&#xA;	AP.AP_SUPPLIERS.TYPE_1099 &#xA;from AP.AP_SUPPLIER_SITES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_SUPPLIER_SITES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on AP.AP_SUPPLIER_SITES_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;where (AP.AP_SUPPLIERS.END_DATE_ACTIVE is NULL or To_Date(AP.AP_SUPPLIERS.END_DATE_ACTIVE) &gt; Trunc(SysDate)) &#xA;	and AP.AP_SUPPLIER_SITES_ALL.ORG_ID not in (82, 139) &#xA;	and (AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE is NULL or To_Date(AP.AP_SUPPLIER_SITES_ALL.INACTIVE_DATE) &gt; Trunc(SysDate))" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="354" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_17876_0ab373ca5d7548fa9915298f6e42b089_\Engine_8688_3161f516d0b54692aa0f499c3cc2e2e5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>TAX ID SEARCH ORACLE</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d34cf653-7663-448d-978a-9023c83a8904" />
+      <Telemetry>
+        <PreviousWorkflowId value="dafc1352-acbb-4c30-ab10-8285fbcaf518" />
+        <OriginWorkflowId value="dafc1352-acbb-4c30-ab10-8285fbcaf518" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
