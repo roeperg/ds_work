@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="174" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||SELECT 
+        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END 
+                AS "DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)",
+        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END 
+                AS "CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND",
+        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS "SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)",
+        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS "SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)"
+FROM 
+        DLPRD.FINANCE_DM.DIM_CHANNEL
+        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT
+        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)
+        
+        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM
+        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)
+        
+        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE
+        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)
+        
+        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE
+        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) 
+WHERE
+    DIM_CHANNEL.CHANNEL IN ('Direct') 
+    AND CASE 
+                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' 
+            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'
+            ELSE 'N/A' 
+                END IN ('Shippable') 
+    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') 
+    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END 
+                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) 
+        OR 
+        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END 
+                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))
+GROUP BY
+        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,
+        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>False</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=SELECT 
+        CASE WHEN D...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)" size="255" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END &#xA;                AS &quot;DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)&quot;,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END &#xA;                AS &quot;CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND&quot;,&#xA;        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS &quot;SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)&quot;,&#xA;        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS &quot;SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)&quot;&#xA;FROM &#xA;        DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE&#xA;        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) &#xA;WHERE&#xA;    DIM_CHANNEL.CHANNEL IN ('Direct') &#xA;    AND CASE &#xA;                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' &#xA;            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'&#xA;            ELSE 'N/A' &#xA;                END IN ('Shippable') &#xA;    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') &#xA;    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) &#xA;        OR &#xA;        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))&#xA;GROUP BY&#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END" type="V_WString" />
+            <Field name="CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END &#xA;                AS &quot;DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)&quot;,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END &#xA;                AS &quot;CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND&quot;,&#xA;        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS &quot;SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)&quot;,&#xA;        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS &quot;SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)&quot;&#xA;FROM &#xA;        DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE&#xA;        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) &#xA;WHERE&#xA;    DIM_CHANNEL.CHANNEL IN ('Direct') &#xA;    AND CASE &#xA;                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' &#xA;            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'&#xA;            ELSE 'N/A' &#xA;                END IN ('Shippable') &#xA;    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') &#xA;    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) &#xA;        OR &#xA;        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))&#xA;GROUP BY&#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END" type="Int32" />
+            <Field name="SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END &#xA;                AS &quot;DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)&quot;,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END &#xA;                AS &quot;CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND&quot;,&#xA;        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS &quot;SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)&quot;,&#xA;        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS &quot;SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)&quot;&#xA;FROM &#xA;        DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE&#xA;        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) &#xA;WHERE&#xA;    DIM_CHANNEL.CHANNEL IN ('Direct') &#xA;    AND CASE &#xA;                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' &#xA;            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'&#xA;            ELSE 'N/A' &#xA;                END IN ('Shippable') &#xA;    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') &#xA;    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) &#xA;        OR &#xA;        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))&#xA;GROUP BY&#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END" type="Int64" />
+            <Field name="SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)" scale="10" size="40" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END &#xA;                AS &quot;DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)&quot;,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END &#xA;                AS &quot;CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND&quot;,&#xA;        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS &quot;SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)&quot;,&#xA;        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS &quot;SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)&quot;&#xA;FROM &#xA;        DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE&#xA;        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) &#xA;WHERE&#xA;    DIM_CHANNEL.CHANNEL IN ('Direct') &#xA;    AND CASE &#xA;                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' &#xA;            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'&#xA;            ELSE 'N/A' &#xA;                END IN ('Shippable') &#xA;    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') &#xA;    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) &#xA;        OR &#xA;        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))&#xA;GROUP BY&#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Date.Date">
+        <Position x="54" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Date (8)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Date.Date">
+        <Position x="234" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Date (8)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="78" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="210" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="414" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)" selected="True" rename="Business Unit" />
+            <SelectField field="CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND" selected="True" rename="Fiscal Year" />
+            <SelectField field="SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)" selected="True" rename="Shipped Quantity" />
+            <SelectField field="SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)" selected="True" rename="Billed Freight Cost" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END &#xA;                AS &quot;DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)&quot;,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END &#xA;                AS &quot;CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND&quot;,&#xA;        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS &quot;SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)&quot;,&#xA;        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS &quot;SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)&quot;&#xA;FROM &#xA;        DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE&#xA;        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) &#xA;WHERE&#xA;    DIM_CHANNEL.CHANNEL IN ('Direct') &#xA;    AND CASE &#xA;                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' &#xA;            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'&#xA;            ELSE 'N/A' &#xA;                END IN ('Shippable') &#xA;    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') &#xA;    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) &#xA;        OR &#xA;        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))&#xA;GROUP BY&#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END" type="V_WString" />
+            <Field name="Fiscal Year" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END &#xA;                AS &quot;DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)&quot;,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END &#xA;                AS &quot;CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND&quot;,&#xA;        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS &quot;SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)&quot;,&#xA;        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS &quot;SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)&quot;&#xA;FROM &#xA;        DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE&#xA;        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) &#xA;WHERE&#xA;    DIM_CHANNEL.CHANNEL IN ('Direct') &#xA;    AND CASE &#xA;                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' &#xA;            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'&#xA;            ELSE 'N/A' &#xA;                END IN ('Shippable') &#xA;    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') &#xA;    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) &#xA;        OR &#xA;        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))&#xA;GROUP BY&#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END" type="Int32" />
+            <Field name="Shipped Quantity" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END &#xA;                AS &quot;DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)&quot;,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END &#xA;                AS &quot;CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND&quot;,&#xA;        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS &quot;SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)&quot;,&#xA;        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS &quot;SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)&quot;&#xA;FROM &#xA;        DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE&#xA;        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) &#xA;WHERE&#xA;    DIM_CHANNEL.CHANNEL IN ('Direct') &#xA;    AND CASE &#xA;                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' &#xA;            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'&#xA;            ELSE 'N/A' &#xA;                END IN ('Shippable') &#xA;    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') &#xA;    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) &#xA;        OR &#xA;        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))&#xA;GROUP BY&#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END" type="Int64" />
+            <Field name="Billed Freight Cost" scale="10" size="40" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END &#xA;                AS &quot;DECODE(ITEM_DIM.BU_CODE_DESCRIPTION,'No Group -','N/A',ITEM_DIM.BU_CODE_DESCRIPTION)&quot;,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END &#xA;                AS &quot;CASEWHENSHIPMENT_DATE.FISCAL_YEAR&gt;1900THENSHIPMENT_DATE.FISCAL_YEARELSENULLEND&quot;,&#xA;        Sum(FACT_SHIPMENT.SHIPPED_QUANTITY)    AS &quot;SUM(SHIPMENT_FACT.SHIPPED_QUANTITY)&quot;,&#xA;        Sum(FACT_SHIPMENT.BILLED_FREIGHT_COST) AS &quot;SUM(SHIPMENT_FACT.BILLED_FREIGHT_COST)&quot;&#xA;FROM &#xA;        DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;        INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;        ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;        ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW SHIPMENT_DATE&#xA;        ON (SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY = FINANCE_DM.FACT_SHIPMENT.FK_SHIPMENT_DATE_ID)&#xA;        &#xA;        INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;        ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY) &#xA;WHERE&#xA;    DIM_CHANNEL.CHANNEL IN ('Direct') &#xA;    AND CASE &#xA;                        WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'Y' THEN 'Shippable' &#xA;            WHEN DIM_FORSETI_ITEM.SHIPPABLE_FLAG = 'N' THEN 'Non Shippable'&#xA;            ELSE 'N/A' &#xA;                END IN ('Shippable') &#xA;    AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ASI') &#xA;    AND (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2019','%d-%b-%Y') AND DATE_PARSE('31-JUL-2020','%d-%b-%Y')) &#xA;        OR &#xA;        (CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900','%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END &#xA;                        BETWEEN DATE_PARSE('01-AUG-2020','%d-%b-%Y') AND DATE_PARSE('31-JUL-2021','%d-%b-%Y'))&#xA;GROUP BY&#xA;        CASE WHEN DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION = 'No Group -' THEN 'N/A' ELSE DIM_FORSETI_ITEM.BU_CODE_DESCRIPTION END,&#xA;        CASE WHEN SHIPMENT_DATE.FISCAL_YEAR_NBR &gt; 1900 THEN SHIPMENT_DATE.FISCAL_YEAR_NBR ELSE NULL END" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="534" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Business Unit" />
+          </GroupFields>
+          <HeaderField field="Fiscal Year" />
+          <DataField field="Shipped Quantity" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Business Unit" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="534" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Business Unit" />
+          </GroupFields>
+          <HeaderField field="Fiscal Year" />
+          <DataField field="Billed Freight Cost" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Business Unit" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="654" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="2020" />
+            <Field name="2021" />
+            <Field name="*Unknown" />
+            <Field name="Business Unit" selected="False" />
+          </Fields>
+          <Expression>[_CurrentField_]+" Billed Freight Cost"</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Business Unit" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="666" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="2020" />
+            <Field name="2021" />
+            <Field name="*Unknown" />
+            <Field name="Business Unit" selected="False" />
+          </Fields>
+          <Expression>[_CurrentField_]+" Shipped Quantity"</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Business Unit" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="798" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="Business Unit" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="Business Unit" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#1_Business Unit" selected="True" />
+                <SelectField field="Input_#2_Business Unit" selected="False" rename="Input_#2_Business Unit" />
+                <SelectField field="Input_#1_2020 Shipped Quantity" selected="True" />
+                <SelectField field="Input_#1_2021 Shipped Quantity" selected="True" />
+                <SelectField field="Input_#2_2020 Billed Freight Cost" selected="True" />
+                <SelectField field="Input_#2_2021 Billed Freight Cost" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Business Unit" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="918" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Business Unit" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="1146" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>All</FieldType>
+          <Fields orderChanged="False">
+            <Field name="2020 Billed Freight Cost" />
+            <Field name="2021 Billed Freight Cost" />
+            <Field name="Business Unit" selected="False" />
+            <Field name="2020 Shipped Quantity" selected="False" />
+            <Field name="2021 Shipped Quantity" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>'$'+ToString([_CurrentField_], 2, 1)</Expression>
+          <ChangeFieldType value="True" />
+          <OutputFieldType type="V_String" size="2430" scale="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>'$'+ToString([_CurrentField_], 2, 1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1494" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Business Unit" selected="True" />
+            <SelectField field="2020 Shipped Quantity" selected="True" />
+            <SelectField field="2020 Billed Freight Cost" selected="True" />
+            <SelectField field="2021 Shipped Quantity" selected="True" />
+            <SelectField field="2021 Billed Freight Cost" selected="True" />
+            <SelectField field="FileName" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+            <SelectField field="Local_Path" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Logistics_Monthly_Metrics-Direct_Freight_FY_Compare_By_BU_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1602" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Logistics Monthly Metrics - Direct Freight FY Compare By BU.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>FileName</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Logistics Monthly Metrics - Direct Freight FY Compare By BU.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1302" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'Logistics_Monthly_Metrics-Direct_Freight_FY_Compare_By_BU_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" field="FileName" size="1073741823" type="V_WString" />
+            <FormulaField expression="'D:\Alteryx\BITools\Test\Email_File_Uplaod_BOX'" field="Local_Path" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FileName = 'Logistics_Monthly_Metrics-Direct_Freight_FY_Compare_By_BU_'+DateTime...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Logistics_Monthly_Metrics-Direct_Freight_FY_Compare_By_BU_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="Local_Path" size="1073741823" source="Formula: 'D:\Alteryx\BITools\Test\Email_File_Uplaod_BOX'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="1398" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Business Unit" selected="True" />
+            <Field field="2020 Billed Freight Cost" selected="True" />
+            <Field field="2021 Billed Freight Cost" selected="True" />
+            <Field field="FileName" selected="True" />
+            <Field field="Local_Path" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="CrossTab:Group:Sum:" type="V_WString" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Logistics_Monthly_Metrics-Direct_Freight_FY_Compare_By_BU_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="Local_Path" size="1073741823" source="Formula: 'D:\Alteryx\BITools\Test\Email_File_Uplaod_BOX'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Date.Date">
+        <Position x="390" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Date (8)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Date.Date">
+        <Position x="558" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Date (8)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="414" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="570" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="23" Connection="Question" />
+      <Destination ToolID="25" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="24" Connection="Question" />
+      <Destination ToolID="26" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="25" Connection="Action" />
+      <Destination ToolID="22" Connection="Action" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Action" />
+      <Destination ToolID="22" Connection="Action" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="66" Connection="Action" />
+      <Destination ToolID="22" Connection="Action" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="67" Connection="Action" />
+      <Destination ToolID="22" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="54" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="55" Connection="Targets" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="64" Connection="Question" />
+      <Destination ToolID="66" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="65" Connection="Question" />
+      <Destination ToolID="67" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Date (24)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Date (23)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Date (64)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Date (65)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Logistics Monthly Metrics - Direct Freight FY Compare By BU - DL</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d4b80e65-6c24-4901-95b4-40b9076a43b7" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="d4b80e65-6c24-4901-95b4-40b9076a43b7" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="26" />
+              <Expression>Replace([Destination], '31-JUL-2020', DateTimeFormat([#1], "%d-%b-%Y"))</Expression>
+              <Destination>22/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="25" />
+              <Expression>Replace([Destination], '01-AUG-2019', DateTimeFormat([#1], "%d-%b-%Y"))</Expression>
+              <Destination>22/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="67" />
+              <Expression>Replace([Destination], '31-JUL-2021', DateTimeFormat([#1], "%d-%b-%Y"))</Expression>
+              <Destination>22</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="66" />
+              <Expression>Replace([Destination], '01-AUG-2020', DateTimeFormat([#1], "%d-%b-%Y"))</Expression>
+              <Destination>22/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>Date</Type>
+              <Description>Select Previous Fiscal Year Start Date (Shipped Date)</Description>
+              <Name>Date (23)</Name>
+              <ToolId value="23" />
+            </Question>
+            <Question>
+              <Type>Date</Type>
+              <Description>Select Previous Fiscal Year End Date (Shipped Date)</Description>
+              <Name>Date (24)</Name>
+              <ToolId value="24" />
+            </Question>
+            <Question>
+              <Type>Date</Type>
+              <Description>Select Current Fiscal Year Start Date (Shipped Date)</Description>
+              <Name>Date (64)</Name>
+              <ToolId value="64" />
+            </Question>
+            <Question>
+              <Type>Date</Type>
+              <Description>Select Current Fiscal Year End Date (Shipped Date)</Description>
+              <Name>Date (65)</Name>
+              <ToolId value="65" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="27" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,1245 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\groeper\Downloads\UserExport-buhvum24p.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>All QB Users</AnnotationText>
+          <DefaultAnnotationText>UserExport-buhvum24p.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="User ID or Group ID" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="Email Address" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="User Name" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="Role in App" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="App Level Permissions" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="User Status" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="Last Visited Time" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="Date Added" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="Show In User Pickers?" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+            <Field name="On Deny List?" size="254" source="File: C:\Users\groeper\Downloads\UserExport-buhvum24p.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="258" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_33648_6a03e620e2c34eee8bcf9d12659e279e_\Engine_33648_bd923312ca657548b6f61430db21de88~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="148" />
+          <Fields>
+            <Field name="choicesLuid" />
+          </Fields>
+          <Data>
+            <r>
+              <c>60114787.cr64</c>
+            </r>
+            <r>
+              <c>60680027.tyyj</c>
+            </r>
+            <r>
+              <c>59377785.f84d</c>
+            </r>
+            <r>
+              <c>59621762.7taa</c>
+            </r>
+            <r>
+              <c>14133.df5e</c>
+            </r>
+            <r>
+              <c>31239.bqcy</c>
+            </r>
+            <r>
+              <c>54037988.bsgd</c>
+            </r>
+            <r>
+              <c>60474415.d9vy</c>
+            </r>
+            <r>
+              <c>58327571.3qwy</c>
+            </r>
+            <r>
+              <c>60587327.dpn6</c>
+            </r>
+            <r>
+              <c>53011879.bdfr</c>
+            </r>
+            <r>
+              <c>60398904.njp9</c>
+            </r>
+            <r>
+              <c>60599554.br6v</c>
+            </r>
+            <r>
+              <c>59327288.b7cn</c>
+            </r>
+            <r>
+              <c>58369035.dwiz</c>
+            </r>
+            <r>
+              <c>57409174.dgac</c>
+            </r>
+            <r>
+              <c>60596014.bkk3</c>
+            </r>
+            <r>
+              <c>60342965.mvj9</c>
+            </r>
+            <r>
+              <c>56986799.cery</c>
+            </r>
+            <r>
+              <c>60343191.b8dw</c>
+            </r>
+            <r>
+              <c>59632512.cvcg</c>
+            </r>
+            <r>
+              <c>58456349.d7j2</c>
+            </r>
+            <r>
+              <c>60323879.cjhy</c>
+            </r>
+            <r>
+              <c>54758574.babi</c>
+            </r>
+            <r>
+              <c>61092601.c68d</c>
+            </r>
+            <r>
+              <c>57513759.bcda</c>
+            </r>
+            <r>
+              <c>60615015.qy7s</c>
+            </r>
+            <r>
+              <c>60271678.vi8r</c>
+            </r>
+            <r>
+              <c>60303175.czy3</c>
+            </r>
+            <r>
+              <c>60217709.buqa</c>
+            </r>
+            <r>
+              <c>57921415.buz2</c>
+            </r>
+            <r>
+              <c>61229225.d68b</c>
+            </r>
+            <r>
+              <c>61264997.dckp</c>
+            </r>
+            <r>
+              <c>61259209.bym5</c>
+            </r>
+            <r>
+              <c>61303813.d5b8</c>
+            </r>
+            <r>
+              <c>61272092.dggi</c>
+            </r>
+            <r>
+              <c>56422.cpre</c>
+            </r>
+            <r>
+              <c>58822688.b8ju</c>
+            </r>
+            <r>
+              <c>61412939.dnba</c>
+            </r>
+            <r>
+              <c>61520923.ncge</c>
+            </r>
+            <r>
+              <c>61555113.dt9r</c>
+            </r>
+            <r>
+              <c>56229886.d8pp</c>
+            </r>
+            <r>
+              <c>61756616.3d6v</c>
+            </r>
+            <r>
+              <c>61746371.cy89</c>
+            </r>
+            <r>
+              <c>61797277.cizf</c>
+            </r>
+            <r>
+              <c>52893977.da7c</c>
+            </r>
+            <r>
+              <c>60810412.cfix</c>
+            </r>
+            <r>
+              <c>61945548.cjn6</c>
+            </r>
+            <r>
+              <c>61914519.dwa7</c>
+            </r>
+            <r>
+              <c>60772975.bh6d</c>
+            </r>
+            <r>
+              <c>61954493.b39c</c>
+            </r>
+            <r>
+              <c>61985711.dbfs</c>
+            </r>
+            <r>
+              <c>61942066.bja7</c>
+            </r>
+            <r>
+              <c>61999535.dz3z</c>
+            </r>
+            <r>
+              <c>61976127.bcax</c>
+            </r>
+            <r>
+              <c>62009822.cxck</c>
+            </r>
+            <r>
+              <c>62190720.c3eg</c>
+            </r>
+            <r>
+              <c>62347148.dfr7</c>
+            </r>
+            <r>
+              <c>62398118.dmny</c>
+            </r>
+            <r>
+              <c>62516680.d78r</c>
+            </r>
+            <r>
+              <c>62477480.b6u3</c>
+            </r>
+            <r>
+              <c>62572867.bdtm</c>
+            </r>
+            <r>
+              <c>62572863.diem</c>
+            </r>
+            <r>
+              <c>58234965.9v89</c>
+            </r>
+            <r>
+              <c>56026301.dhpd</c>
+            </r>
+            <r>
+              <c>62577034.d3br</c>
+            </r>
+            <r>
+              <c>62626283.dc9r</c>
+            </r>
+            <r>
+              <c>62680743.cz3d</c>
+            </r>
+            <r>
+              <c>62645941.m4mg</c>
+            </r>
+            <r>
+              <c>62690893.dftd</c>
+            </r>
+            <r>
+              <c>62674276.dgbj</c>
+            </r>
+            <r>
+              <c>62715947.dgsa</c>
+            </r>
+            <r>
+              <c>62715948.ddyk</c>
+            </r>
+            <r>
+              <c>62724247.dkhz</c>
+            </r>
+            <r>
+              <c>62741090.cuqy</c>
+            </r>
+            <r>
+              <c>62741084.5juj</c>
+            </r>
+            <r>
+              <c>62825379.ccqt</c>
+            </r>
+            <r>
+              <c>62821894.iud5</c>
+            </r>
+            <r>
+              <c>62845272.cdzp</c>
+            </r>
+            <r>
+              <c>62845270.dm4x</c>
+            </r>
+            <r>
+              <c>62842088.ct8i</c>
+            </r>
+            <r>
+              <c>62857780.bj6t</c>
+            </r>
+            <r>
+              <c>62897640.8emz</c>
+            </r>
+            <r>
+              <c>62848226.cq42</c>
+            </r>
+            <r>
+              <c>62979356.c3k7</c>
+            </r>
+            <r>
+              <c>63197866.csmr</c>
+            </r>
+            <r>
+              <c>63322233.dvjf</c>
+            </r>
+            <r>
+              <c>63388307.ctbu</c>
+            </r>
+            <r>
+              <c>63475002.vaxk</c>
+            </r>
+            <r>
+              <c>63466524.8kkt</c>
+            </r>
+            <r>
+              <c>63491532.ff62</c>
+            </r>
+            <r>
+              <c>63555444.cw6v</c>
+            </r>
+            <r>
+              <c>63587549.cqru</c>
+            </r>
+            <r>
+              <c>63587611.nduk</c>
+            </r>
+            <r>
+              <c>63527878.d63f</c>
+            </r>
+            <r>
+              <c>63609079.b297</c>
+            </r>
+            <r>
+              <c>64269109.5jxh</c>
+            </r>
+            <r>
+              <c>64280800.dga3</c>
+            </r>
+            <r>
+              <c>62373031.d58y</c>
+            </r>
+            <r>
+              <c>56461749.dffp</c>
+            </r>
+            <r>
+              <c>64274816.cwre</c>
+            </r>
+            <r>
+              <c>64357724.danf</c>
+            </r>
+            <r>
+              <c>64357667.b3hk</c>
+            </r>
+            <r>
+              <c>64329056.cxg7</c>
+            </r>
+            <r>
+              <c>14503.bif5</c>
+            </r>
+            <r>
+              <c>64367758.di6t</c>
+            </r>
+            <r>
+              <c>64406049.b6ph</c>
+            </r>
+            <r>
+              <c>63381334.bdph</c>
+            </r>
+            <r>
+              <c>64572279.caak</c>
+            </r>
+            <r>
+              <c>53140915.jv59</c>
+            </r>
+            <r>
+              <c>64830158.cn4m</c>
+            </r>
+            <r>
+              <c>64824502.bmy9</c>
+            </r>
+            <r>
+              <c>64849576.2p94</c>
+            </r>
+            <r>
+              <c>64843198.dvgz</c>
+            </r>
+            <r>
+              <c>64863528.dzvh</c>
+            </r>
+            <r>
+              <c>64838604.dcxp</c>
+            </r>
+            <r>
+              <c>64957288.czsd</c>
+            </r>
+            <r>
+              <c>53192664.wpag</c>
+            </r>
+            <r>
+              <c>56869928.74z7</c>
+            </r>
+            <r>
+              <c>64858331.dnk4</c>
+            </r>
+            <r>
+              <c>64552623.cjvy</c>
+            </r>
+            <r>
+              <c>64858330.qune</c>
+            </r>
+            <r>
+              <c>64858327.ddzz</c>
+            </r>
+            <r>
+              <c>64863329.cbdv</c>
+            </r>
+            <r>
+              <c>64945525.cct5</c>
+            </r>
+            <r>
+              <c>64970914.br7q</c>
+            </r>
+            <r>
+              <c>64998359.c7t7</c>
+            </r>
+            <r>
+              <c>64945060.beec</c>
+            </r>
+            <r>
+              <c>64994506.cpnc</c>
+            </r>
+            <r>
+              <c>53689776.37dy</c>
+            </r>
+            <r>
+              <c>65266930.bi38</c>
+            </r>
+            <r>
+              <c>65362511.dqdt</c>
+            </r>
+            <r>
+              <c>65374352.cvny</c>
+            </r>
+            <r>
+              <c>57944301.dkgz</c>
+            </r>
+            <r>
+              <c>54642505.c5dh</c>
+            </r>
+            <r>
+              <c>65616140.xhv2</c>
+            </r>
+            <r>
+              <c>64986795.dakr</c>
+            </r>
+            <r>
+              <c>65741487.brgs</c>
+            </r>
+            <r>
+              <c>65989962.dukh</c>
+            </r>
+            <r>
+              <c>66006637.b479</c>
+            </r>
+            <r>
+              <c>66049336.cfbb</c>
+            </r>
+            <r>
+              <c>66290955.b882</c>
+            </r>
+            <r>
+              <c>66291793.9bfq</c>
+            </r>
+            <r>
+              <c>66393620.c5w9</c>
+            </r>
+            <r>
+              <c>66423853.dq64</c>
+            </r>
+            <r>
+              <c>66425289.df8w</c>
+            </r>
+            <r>
+              <c>66423850.b2cq</c>
+            </r>
+            <r>
+              <c>66510737.c3t6</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Currently Have Access</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="954" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="User ID or Group ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="choicesLuid" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="39" />
+          <Fields>
+            <Field name="PD Name" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Dapo Adegeye</c>
+            </r>
+            <r>
+              <c>Adriene Draper</c>
+            </r>
+            <r>
+              <c>Alberto Rojas</c>
+            </r>
+            <r>
+              <c>Andrea Collins</c>
+            </r>
+            <r>
+              <c>Andrew Birchett</c>
+            </r>
+            <r>
+              <c>Anna Webb</c>
+            </r>
+            <r>
+              <c>Ashley Bays</c>
+            </r>
+            <r>
+              <c>Badrish Panikesari</c>
+            </r>
+            <r>
+              <c>Bernadette Orende</c>
+            </r>
+            <r>
+              <c>Brandon Duncan</c>
+            </r>
+            <r>
+              <c>Caitlin Cross</c>
+            </r>
+            <r>
+              <c>Carly Klem</c>
+            </r>
+            <r>
+              <c>Chien Dinh</c>
+            </r>
+            <r>
+              <c>Danielle Hughes</c>
+            </r>
+            <r>
+              <c>Dapo Adegeye</c>
+            </r>
+            <r>
+              <c>Devon Rimer</c>
+            </r>
+            <r>
+              <c>Donna Myers</c>
+            </r>
+            <r>
+              <c>Erica Grace</c>
+            </r>
+            <r>
+              <c>Grace (Wenjing) Yang</c>
+            </r>
+            <r>
+              <c>Guy Heagney</c>
+            </r>
+            <r>
+              <c>Guy Heagney</c>
+            </r>
+            <r>
+              <c>Isaiah Smith</c>
+            </r>
+            <r>
+              <c>Julianna Yu</c>
+            </r>
+            <r>
+              <c>Kedar Chambers</c>
+            </r>
+            <r>
+              <c>Michelle Tubbs</c>
+            </r>
+            <r>
+              <c>Nathan Renderos</c>
+            </r>
+            <r>
+              <c>Nathan Sisk</c>
+            </r>
+            <r>
+              <c>Nicholas Solis</c>
+            </r>
+            <r>
+              <c>Pamela Miles</c>
+            </r>
+            <r>
+              <c>Paul Foy</c>
+            </r>
+            <r>
+              <c>Robert Weibel</c>
+            </r>
+            <r>
+              <c>Scott Blazer</c>
+            </r>
+            <r>
+              <c>Shauna Mckinney</c>
+            </r>
+            <r>
+              <c>Sihem Moualhi</c>
+            </r>
+            <r>
+              <c>Steven Henry</c>
+            </r>
+            <r>
+              <c>Sydney Nichols</c>
+            </r>
+            <r>
+              <c>Thomas Cratty</c>
+            </r>
+            <r>
+              <c>Velu Muniswamy</c>
+            </r>
+            <r>
+              <c>Widha Gautam</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>CoupaPDs</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1134" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PD Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_First Name" selected="True" rename="Right_First Name" input="Right_" />
+                <SelectField field="Right_Last Name" selected="True" rename="Right_Last Name" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="Right_Name" input="Right_" />
+                <SelectField field="Right_Names" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" />
+            <SelectField field="User ID or Group ID" selected="True" />
+            <SelectField field="Email Address" selected="True" />
+            <SelectField field="User Name" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="378" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Name" />
+            <Field field="User ID or Group ID" />
+            <Field field="Email Address" />
+            <Field field="User Name" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="474" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Name</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>SplitName</RootName>
+          <Delimeters value=" " />
+          <NumFields value="3" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="570" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if IsNull([SplitName3]) then [SplitName2] else [SplitName3] endif&#xA;&#xA;" field="SplitName2" size="254" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SplitName2 = if IsNull([SplitName3]) then [SplitName2] else [SplitName3] endif
+
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="762" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SplitName1" selected="True" rename="First Name" />
+            <SelectField field="SplitName2" selected="True" rename="Last Name" />
+            <SelectField field="SplitName3" selected="False" />
+            <SelectField field="SplitName4" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="378" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if IsNull([SplitName3]) then [SplitName2] else [SplitName3] endif&#xA;&#xA;" field="SplitName2" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SplitName2 = if IsNull([SplitName3]) then [SplitName2] else [SplitName3] endif
+
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="282" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>PD Name</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>SplitName</RootName>
+          <Delimeters value=" " />
+          <NumFields value="3" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="654" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SplitName1" selected="True" rename="First Name" />
+            <SelectField field="SplitName2" selected="True" rename="Last Name" />
+            <SelectField field="SplitName3" selected="False" />
+            <SelectField field="SplitName4" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1170" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Last Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-11-18 14:22:25</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Nichols</Operand>
+              <StartDate>2024-11-18 14:22:25</StartDate>
+              <EndDate>2024-11-18 14:22:25</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Last Name] = "Nichols"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1158" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>StartsWith([Name], "And")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>StartsWith([Name], "And")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [First Name] = &quot;Andy&quot; THEN &quot;Andrew&quot;  ELSE [First Name] ENDIF" field="First Name" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[First Name = IF [First Name] = "Andy" THEN "Andrew"  ELSE [First Name] ENDIF
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="858" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [First Name] = &quot;Andy&quot; THEN &quot;Andrew&quot;  ELSE [First Name] ENDIF" field="First Name" size="254" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[First Name = IF [First Name] = "Andy" THEN "Andrew"  ELSE [First Name] ENDIF
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1170" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Last Name] in ("Miles","Grace","Birchett","Foy","Chambers")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Last Name] in ("Miles","Grace","Birchett","Foy","Chambers")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="186" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Name" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Name - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="186" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="PD Name" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PD Name - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1050" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Name" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Name - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="954" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-11-18 14:33:50</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Andrew Birchett</Operand>
+              <StartDate>2024-11-18 14:33:50</StartDate>
+              <EndDate>2024-11-18 14:33:50</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Name] = "Andrew Birchett"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Unique" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>coupa_project_drivers_audit</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="25a43755-56bb-4c79-925c-1a5b516c1fc5" />
+      <Telemetry>
+        <PreviousWorkflowId value="87c015f9-b108-46d5-aa10-ee0473149501" />
+        <OriginWorkflowId value="87c015f9-b108-46d5-aa10-ee0473149501" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

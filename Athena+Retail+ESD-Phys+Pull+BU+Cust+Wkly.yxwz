@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="774" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Retail ESD-Phys Pull BU Cust Wkly.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>FileName</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Retail ESD-Phys Pull BU Cust Wkly.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="304" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="clndr_544_year_nbr" selected="True" rename="544 Yr Num" type="Int64" size="8" />
+            <SelectField field="ver_year_cd" selected="True" rename="Version Year" />
+            <SelectField field="Net ST UNIT QTY" selected="True" rename="Sell-Thru Qty" type="Double" size="8" />
+            <SelectField field="retal_oper_bus_unit_grp_cd" selected="True" rename="BU" size="40" />
+            <SelectField field="cust_grp_nam" selected="True" rename="Customer" size="50" />
+            <SelectField field="clndr_544_week_nbr" selected="True" rename="Wk Num" type="Int64" size="8" />
+            <SelectField field="retal_oper_dlvry_methd_dsc" selected="True" rename="Delivery Method" type="V_String" size="50" />
+            <SelectField field="Net ST REV AMT" selected="True" rename="Sell-Thru Dollar" size="19.2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="544 Yr Num" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int64" />
+            <Field name="Version Year" size="255" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Sell-Thru Qty" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Double" />
+            <Field name="BU" size="40" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Customer" size="50" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Wk Num" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int64" />
+            <Field name="Delivery Method" size="50" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_String" />
+            <Field name="Sell-Thru Dollar" scale="2" size="19" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="656" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Version Year" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Version Year - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="544 Yr Num" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int64" />
+            <Field name="Version Year" size="255" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Sell-Thru Qty" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Double" />
+            <Field name="BU" size="40" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Customer" size="50" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Wk Num" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int64" />
+            <Field name="Delivery Method" size="50" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_String" />
+            <Field name="Sell-Thru Dollar" scale="2" size="19" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="FixedDecimal" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Retail_ESD_Phys_BU_Cust_Wkly_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="539" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Version Year" selected="True" />
+            <Field field="BU" selected="True" />
+            <Field field="Customer" selected="True" />
+            <Field field="Delivery Method" selected="True" />
+            <Field field="Sell-Thru Dollar" selected="True" />
+            <Field field="FileName" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="544 Yr Num" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int64" />
+            <Field name="Version Year" size="255" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Sell-Thru Qty" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Double" />
+            <Field name="BU" size="40" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Customer" size="50" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Wk Num" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int64" />
+            <Field name="Delivery Method" size="50" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_String" />
+            <Field name="Sell-Thru Dollar" scale="2" size="19" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="FixedDecimal" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Retail_ESD_Phys_BU_Cust_Wkly_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="421" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'Retail_ESD_Phys_BU_Cust_Wkly_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" field="FileName" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[FileName = 'Retail_ESD_Phys_BU_Cust_Wkly_'+DateTimeToday()+'.xlsx'+'|||Sheet1'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="544 Yr Num" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int64" />
+            <Field name="Version Year" size="255" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Sell-Thru Qty" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Double" />
+            <Field name="BU" size="40" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Customer" size="50" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Wk Num" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int64" />
+            <Field name="Delivery Method" size="50" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_String" />
+            <Field name="Sell-Thru Dollar" scale="2" size="19" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA; Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA; DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA; DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA; and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA; and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA; and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA; and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA; and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="FixedDecimal" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Retail_ESD_Phys_BU_Cust_Wkly_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="186" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp-Fin-Athena</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,
+	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as "Net ST REV AMT",
+	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as "Net ST UNIT QTY",
+	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,
+	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,
+	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,
+	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,
+	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr 
+from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY 
+where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) 
+	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) 
+	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) 
+	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key 
+	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 
+	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' 
+	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' 
+	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') 
+	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) 
+	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) 
+group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp-Fin-Athena
+Query=select DLPRD.FINANCE_DM.DIM_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="retal_oper_bus_unit_grp_cd" size="255" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA;	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA;	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="Net ST REV AMT" scale="10" size="40" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA;	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA;	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="FixedDecimal" />
+            <Field name="Net ST UNIT QTY" scale="10" size="40" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA;	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA;	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="FixedDecimal" />
+            <Field name="retal_oper_dlvry_methd_dsc" size="255" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA;	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA;	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="clndr_544_year_nbr" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA;	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA;	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int32" />
+            <Field name="ver_year_cd" size="255" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA;	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA;	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="cust_grp_nam" size="255" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA;	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA;	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="V_WString" />
+            <Field name="clndr_544_week_nbr" source="File: aka:642f2d277901ae9f4a7bd309|||select DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_rvnu_amt) as &quot;Net ST REV AMT&quot;,&#xA;	Sum(DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.calc_rcgnzd_net_st_qty) as &quot;Net ST UNIT QTY&quot;,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd,&#xA;	DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam,&#xA;	DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr &#xA;from DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW DIM_TIME_BY_DAY_WEEKLY, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM, DLPRD.FINANCE_DM.DIM_SCENARIO, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER, DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY &#xA;where (DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.intu_sale_dt_key = DIM_TIME_BY_DAY_WEEKLY.dim_time_by_day_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.dim_retal_cust_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_cust_tier2_key) &#xA;	and (DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.dim_retal_item_key = DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.retal_item_key) &#xA;	and DLPRD.FINANCE_DM.FACT_RETAIL_NOLOC_WLY.scenro_key = DLPRD.FINANCE_DM.DIM_SCENARIO.dim_scenro_key &#xA;	and DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.attr_1_nbr = 0 &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.user_grp_nam = 'RETAIL' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.crnt_scenro_ind = 'Y' &#xA;	and DLPRD.FINANCE_DM.DIM_SCENARIO.scenro_nam in ('ACTUAL') &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr in (2020) &#xA;	and DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr in (40) &#xA;group by DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_bus_unit_grp_cd, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.retal_oper_dlvry_methd_dsc, DIM_TIME_BY_DAY_WEEKLY.clndr_544_year_nbr, DLPRD.FINANCE_DM.DIM_RETAIL_ITEM.ver_year_cd, DLPRD.FINANCE_DM.DIM_RETAIL_CUSTOMER.cust_grp_nam, DIM_TIME_BY_DAY_WEEKLY.clndr_544_week_nbr" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="126" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="246" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="54" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Text Box (64)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="294" y="66" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Text Box (64)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="738" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_19188_d6ad9f0879f44c28a068f65a156432d3_\Engine_22584_8a1827dc2efc4d04b0a8821ecafd35e7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="75" Connection="Action" />
+      <Destination ToolID="74" Connection="Action" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="76" Connection="Action" />
+      <Destination ToolID="74" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="77" Connection="Question" />
+      <Destination ToolID="75" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="78" Connection="Question" />
+      <Destination ToolID="76" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (77)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (78)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Athena Retail ESD-Phys Pull BU Cust Wkly</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d45165a1-bacc-4764-8d5c-9493fe4a2985" />
+      <Telemetry>
+        <PreviousWorkflowId value="0fa16786-96e8-4bf9-bd08-f83f1ddb7cab" />
+        <OriginWorkflowId value="28827c08-22eb-418d-991d-e043856fab38" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="75" />
+              <Expression>Replace([Destination], "2020", [#1])</Expression>
+              <Destination>74/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="76" />
+              <Expression>Replace([Destination], "40", [#1])</Expression>
+              <Destination>74/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter 544 Year Number</Description>
+              <Name>Text Box (77)</Name>
+              <ToolId value="77" />
+              <Default>2025</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter values for Week Number (ex. 40, 41, 42, 43. 44, 45, 46)</Description>
+              <Name>Text Box (78)</Name>
+              <ToolId value="78" />
+              <Default>1,2,3,4</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="27" Selected="True" />
+        <Tool ToolId="79" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||SELECT 
+    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END AS "Promise Delivery Month", 
+    CAST(COUNT(DISTINCT(CASE WHEN FACT_SHIPMENT.SHIPMENT_ONTIME_INCREMENT = 1 THEN FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '') ELSE NULL END)) AS DOUBLE)
+    / CAST(COUNT(DISTINCT(FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER) || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '')) AS DOUBLE) AS "Percent Shipment" 
+FROM 
+    DLPRD.FINANCE_DM.DIM_CHANNEL
+    INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT
+    ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)
+    
+    INNER JOIN DLPRD.FINANCE_DM.DIM_CUSTOMER_1
+    ON (FINANCE_DM.DIM_CUSTOMER_1.DIM_CUST_KEY = FINANCE_DM.FACT_SHIPMENT.FK_CUSTOMER_ID)
+    
+    INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM
+    ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)
+    
+    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE
+    ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY)
+    
+    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW ORDER_PROMISE_DATE
+    ON (FINANCE_DM.FACT_SHIPMENT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.DIM_TIME_BY_DAY_KEY)
+WHERE  
+        DIM_CHANNEL.CHANNEL = 'Retail' 
+        AND CASE WHEN ORDER_PROMISE_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_DT ELSE NULL END 
+            BETWEEN DATE_PARSE('20-SEP-2021', '%d-%b-%Y') AND DATE_PARSE('24-SEP-2021', '%d-%b-%Y') 
+        AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ADS')     
+        AND DIM_CUSTOMER_1.PARTY_NAM IN ('ALBERTSONS, INC.') 
+        AND DIM_CUSTOMER_1.RETAIL_OR_DIRECT IN ('Retail') 
+GROUP BY
+    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') 
+    THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>False</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=SELECT 
+    CASE WHEN ORDER...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Month" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END AS &quot;Promise Delivery Month&quot;, &#xA;    CAST(COUNT(DISTINCT(CASE WHEN FACT_SHIPMENT.SHIPMENT_ONTIME_INCREMENT = 1 THEN FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '') ELSE NULL END)) AS DOUBLE)&#xA;    / CAST(COUNT(DISTINCT(FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER) || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '')) AS DOUBLE) AS &quot;Percent Shipment&quot; &#xA;FROM &#xA;    DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;    INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;    ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_CUSTOMER_1&#xA;    ON (FINANCE_DM.DIM_CUSTOMER_1.DIM_CUST_KEY = FINANCE_DM.FACT_SHIPMENT.FK_CUSTOMER_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;    ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW ORDER_PROMISE_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.DIM_TIME_BY_DAY_KEY)&#xA;WHERE  &#xA;        DIM_CHANNEL.CHANNEL = 'Retail' &#xA;        AND CASE WHEN ORDER_PROMISE_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_DT ELSE NULL END &#xA;            BETWEEN DATE_PARSE('20-SEP-2021', '%d-%b-%Y') AND DATE_PARSE('24-SEP-2021', '%d-%b-%Y') &#xA;        AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ADS')     &#xA;        AND DIM_CUSTOMER_1.PARTY_NAM IN ('ALBERTSONS, INC.') &#xA;        AND DIM_CUSTOMER_1.RETAIL_OR_DIRECT IN ('Retail') &#xA;GROUP BY&#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') &#xA;    THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END" type="Date" />
+            <Field name="Percent Shipment" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END AS &quot;Promise Delivery Month&quot;, &#xA;    CAST(COUNT(DISTINCT(CASE WHEN FACT_SHIPMENT.SHIPMENT_ONTIME_INCREMENT = 1 THEN FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '') ELSE NULL END)) AS DOUBLE)&#xA;    / CAST(COUNT(DISTINCT(FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER) || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '')) AS DOUBLE) AS &quot;Percent Shipment&quot; &#xA;FROM &#xA;    DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;    INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;    ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_CUSTOMER_1&#xA;    ON (FINANCE_DM.DIM_CUSTOMER_1.DIM_CUST_KEY = FINANCE_DM.FACT_SHIPMENT.FK_CUSTOMER_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;    ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW ORDER_PROMISE_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.DIM_TIME_BY_DAY_KEY)&#xA;WHERE  &#xA;        DIM_CHANNEL.CHANNEL = 'Retail' &#xA;        AND CASE WHEN ORDER_PROMISE_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_DT ELSE NULL END &#xA;            BETWEEN DATE_PARSE('20-SEP-2021', '%d-%b-%Y') AND DATE_PARSE('24-SEP-2021', '%d-%b-%Y') &#xA;        AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ADS')     &#xA;        AND DIM_CUSTOMER_1.PARTY_NAM IN ('ALBERTSONS, INC.') &#xA;        AND DIM_CUSTOMER_1.RETAIL_OR_DIRECT IN ('Retail') &#xA;GROUP BY&#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') &#xA;    THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Date.Date">
+        <Position x="54" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Date (8)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Date.Date">
+        <Position x="234" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Date (8)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="78" y="126" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="210" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'Logistics_Monthly_Metrics-Retail_Monthly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" field="FileName" size="1073741823" type="V_WString" />
+            <FormulaField expression="'D:\Alteryx\BITools\Test\Email_File_Uplaod_BOX'" field="Local_Path" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([Promise Delivery Month], '%b/%Y')" field="Promise Month Formatted" size="1073741823" type="V_WString" />
+            <FormulaField expression="ToString(Round(([Percent Shipment]*100),.01))+&quot;%&quot;" field="Percent Shipment Formatted" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FileName = 'Logistics_Monthly_Metrics-Retail_Monthly_OTC_Performance_Metric_'+Da...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Month" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END AS &quot;Promise Delivery Month&quot;, &#xA;    CAST(COUNT(DISTINCT(CASE WHEN FACT_SHIPMENT.SHIPMENT_ONTIME_INCREMENT = 1 THEN FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '') ELSE NULL END)) AS DOUBLE)&#xA;    / CAST(COUNT(DISTINCT(FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER) || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '')) AS DOUBLE) AS &quot;Percent Shipment&quot; &#xA;FROM &#xA;    DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;    INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;    ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_CUSTOMER_1&#xA;    ON (FINANCE_DM.DIM_CUSTOMER_1.DIM_CUST_KEY = FINANCE_DM.FACT_SHIPMENT.FK_CUSTOMER_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;    ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW ORDER_PROMISE_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.DIM_TIME_BY_DAY_KEY)&#xA;WHERE  &#xA;        DIM_CHANNEL.CHANNEL = 'Retail' &#xA;        AND CASE WHEN ORDER_PROMISE_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_DT ELSE NULL END &#xA;            BETWEEN DATE_PARSE('20-SEP-2021', '%d-%b-%Y') AND DATE_PARSE('24-SEP-2021', '%d-%b-%Y') &#xA;        AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ADS')     &#xA;        AND DIM_CUSTOMER_1.PARTY_NAM IN ('ALBERTSONS, INC.') &#xA;        AND DIM_CUSTOMER_1.RETAIL_OR_DIRECT IN ('Retail') &#xA;GROUP BY&#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') &#xA;    THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END" type="Date" />
+            <Field name="Percent Shipment" source="File: aka:64d51e35712dc8718e4f1bfe|||SELECT &#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END AS &quot;Promise Delivery Month&quot;, &#xA;    CAST(COUNT(DISTINCT(CASE WHEN FACT_SHIPMENT.SHIPMENT_ONTIME_INCREMENT = 1 THEN FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '') ELSE NULL END)) AS DOUBLE)&#xA;    / CAST(COUNT(DISTINCT(FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER) || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '')) AS DOUBLE) AS &quot;Percent Shipment&quot; &#xA;FROM &#xA;    DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;    INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;    ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_CUSTOMER_1&#xA;    ON (FINANCE_DM.DIM_CUSTOMER_1.DIM_CUST_KEY = FINANCE_DM.FACT_SHIPMENT.FK_CUSTOMER_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;    ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW ORDER_PROMISE_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.DIM_TIME_BY_DAY_KEY)&#xA;WHERE  &#xA;        DIM_CHANNEL.CHANNEL = 'Retail' &#xA;        AND CASE WHEN ORDER_PROMISE_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_DT ELSE NULL END &#xA;            BETWEEN DATE_PARSE('20-SEP-2021', '%d-%b-%Y') AND DATE_PARSE('24-SEP-2021', '%d-%b-%Y') &#xA;        AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ADS')     &#xA;        AND DIM_CUSTOMER_1.PARTY_NAM IN ('ALBERTSONS, INC.') &#xA;        AND DIM_CUSTOMER_1.RETAIL_OR_DIRECT IN ('Retail') &#xA;GROUP BY&#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') &#xA;    THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END" type="Double" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Logistics_Monthly_Metrics-Retail_Monthly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="Local_Path" size="1073741823" source="Formula: 'D:\Alteryx\BITools\Test\Email_File_Uplaod_BOX'" type="V_WString" />
+            <Field name="Promise Month Formatted" size="1073741823" source="Formula: DateTimeFormat([Promise Delivery Month], '%b/%Y')" type="V_WString" />
+            <Field name="Percent Shipment Formatted" size="1073741823" source="Formula: ToString(Round(([Percent Shipment]*100),.01))+&quot;%&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1026" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Logistics Monthly Metrics - Retail Monthly OTC Performance Metric.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>FileName</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Logistics Monthly Metrics - Retail Monthly OTC Performance Metric.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Promise Month Formatted" selected="True" rename="Promise Delivery Month" />
+            <SelectField field="Percent Shipment Formatted" selected="True" rename="Percent Shipment" />
+            <SelectField field="Promise Delivery Month" selected="False" />
+            <SelectField field="Percent Shipment" selected="False" />
+            <SelectField field="FileName" selected="True" />
+            <SelectField field="Local_Path" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Month" size="1073741823" source="Formula: DateTimeFormat([Promise Delivery Month], '%b/%Y')" type="V_WString" />
+            <Field name="Percent Shipment" size="1073741823" source="Formula: ToString(Round(([Percent Shipment]*100),.01))+&quot;%&quot;" type="V_WString" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Logistics_Monthly_Metrics-Retail_Monthly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="702" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="FileName" selected="True" />
+            <Field field="Local_Path" selected="True" />
+            <Field field="Promise Month Formatted" selected="True" />
+            <Field field="Percent Shipment Formatted" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Month" source="File: aka:642f2d277901ae9f4a7bd309|||SELECT &#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END AS &quot;Promise Delivery Month&quot;, &#xA;    CAST(COUNT(DISTINCT(CASE WHEN FACT_SHIPMENT.SHIPMENT_ONTIME_INCREMENT = 1 THEN FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '') ELSE NULL END)) AS DOUBLE)&#xA;    / CAST(COUNT(DISTINCT(FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER) || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '')) AS DOUBLE) AS &quot;Percent Shipment&quot; &#xA;FROM &#xA;    DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;    INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;    ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_CUSTOMER_1&#xA;    ON (FINANCE_DM.DIM_CUSTOMER_1.DIM_CUST_KEY = FINANCE_DM.FACT_SHIPMENT.FK_CUSTOMER_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;    ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW ORDER_PROMISE_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.DIM_TIME_BY_DAY_KEY)&#xA;WHERE  &#xA;        DIM_CHANNEL.CHANNEL = 'Retail' &#xA;        AND CASE WHEN ORDER_PROMISE_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_DT ELSE NULL END &#xA;            BETWEEN DATE_PARSE('20-SEP-2021', '%d-%b-%Y') AND DATE_PARSE('24-SEP-2021', '%d-%b-%Y') &#xA;        AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ADS')     &#xA;        AND DIM_CUSTOMER_1.PARTY_NAM IN ('ALBERTSONS, INC.') &#xA;        AND DIM_CUSTOMER_1.RETAIL_OR_DIRECT IN ('Retail') &#xA;GROUP BY&#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') &#xA;    THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END" type="Date" />
+            <Field name="Percent Shipment" source="File: aka:642f2d277901ae9f4a7bd309|||SELECT &#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END AS &quot;Promise Delivery Month&quot;, &#xA;    CAST(COUNT(DISTINCT(CASE WHEN FACT_SHIPMENT.SHIPMENT_ONTIME_INCREMENT = 1 THEN FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '') ELSE NULL END)) AS DOUBLE)&#xA;    / CAST(COUNT(DISTINCT(FACT_SHIPMENT.ORIGINAL_WAYBILL_NUMBER) || COALESCE(CAST(CASE WHEN INITIAL_SHIPMENT_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN INITIAL_SHIPMENT_DATE.CLNDR_DT ELSE NULL END AS VARCHAR), '')) AS DOUBLE) AS &quot;Percent Shipment&quot; &#xA;FROM &#xA;    DLPRD.FINANCE_DM.DIM_CHANNEL&#xA;    INNER JOIN DLPRD.FINANCE_DM.FACT_SHIPMENT&#xA;    ON (FINANCE_DM.DIM_CHANNEL.PK_CHANNEL_ID = FINANCE_DM.FACT_SHIPMENT.FK_CHANNEL_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_CUSTOMER_1&#xA;    ON (FINANCE_DM.DIM_CUSTOMER_1.DIM_CUST_KEY = FINANCE_DM.FACT_SHIPMENT.FK_CUSTOMER_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_FORSETI_ITEM&#xA;    ON (FINANCE_DM.DIM_FORSETI_ITEM.PK_ITEM_ID = FINANCE_DM.FACT_SHIPMENT.FK_ITEM_ID)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW INITIAL_SHIPMENT_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.DIM_TIME_BY_DAY_KEY)&#xA;    &#xA;    INNER JOIN DLPRD.FINANCE_DM.DIM_TIME_BY_DAY_VW ORDER_PROMISE_DATE&#xA;    ON (FINANCE_DM.FACT_SHIPMENT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.DIM_TIME_BY_DAY_KEY)&#xA;WHERE  &#xA;        DIM_CHANNEL.CHANNEL = 'Retail' &#xA;        AND CASE WHEN ORDER_PROMISE_DATE.CLNDR_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') THEN ORDER_PROMISE_DATE.CLNDR_DT ELSE NULL END &#xA;            BETWEEN DATE_PARSE('20-SEP-2021', '%d-%b-%Y') AND DATE_PARSE('24-SEP-2021', '%d-%b-%Y') &#xA;        AND DIM_FORSETI_ITEM.EXTRACTION_CATEGORY IN ('ADS')     &#xA;        AND DIM_CUSTOMER_1.PARTY_NAM IN ('ALBERTSONS, INC.') &#xA;        AND DIM_CUSTOMER_1.RETAIL_OR_DIRECT IN ('Retail') &#xA;GROUP BY&#xA;    CASE WHEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT &gt; DATE_PARSE('01-01-1900', '%d-%m-%Y') &#xA;    THEN ORDER_PROMISE_DATE.CLNDR_MONTH_START_DT ELSE NULL END" type="Double" />
+            <Field name="FileName" size="1073741823" source="Formula: 'Logistics_Monthly_Metrics-Retail_Monthly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="Local_Path" size="1073741823" source="Formula: 'D:\Alteryx\BITools\Test\Email_File_Uplaod_BOX'" type="V_WString" />
+            <Field name="Promise Month Formatted" size="1073741823" source="Formula: DateTimeFormat([Promise Delivery Month], '%b/%Y')" type="V_WString" />
+            <Field name="Percent Shipment Formatted" size="1073741823" source="Formula: ToString(Round(([Percent Shipment]*100),.01))+&quot;%&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="342" y="126" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+        <Position x="462" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>List Box (66)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+        <Position x="654" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>List Box (57)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="594" y="162" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="68" Connection="Question" />
+      <Destination ToolID="70" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="69" Connection="Question" />
+      <Destination ToolID="71" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="70" Connection="Action" />
+      <Destination ToolID="67" Connection="Action" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="71" Connection="Action" />
+      <Destination ToolID="67" Connection="Action" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="76" Connection="Action" />
+      <Destination ToolID="67" Connection="Action" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="79" Connection="Action" />
+      <Destination ToolID="67" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="77" Connection="Question" />
+      <Destination ToolID="76" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="78" Connection="Question" />
+      <Destination ToolID="79" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Date (68)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Date (69)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (77)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (78)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Logistics Monthly Metrics - Retail Monthly OTC Performance Metric - DL</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5b1084fa-1631-415a-983f-21a1e37c418a" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="5b1084fa-1631-415a-983f-21a1e37c418a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="71" />
+              <Expression>Replace([Destination], '24-SEP-2021', DateTimeFormat([#1], "%d-%b-%Y"))</Expression>
+              <Destination>67/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="70" />
+              <Expression>Replace([Destination],'20-SEP-2021', DateTimeFormat([#1], "%d-%b-%Y"))</Expression>
+              <Destination>67/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="76" />
+              <Expression>Replace(
+	Replace(
+		Replace([Destination], "'ALBERTSONS, INC.'", [#1]),
+		"'BJ'S Wholesale Club'",
+		"'BJ''S Wholesale Club'"),
+	"'FRY'S ELECTRONICS'",
+	"'FRY''S ELECTRONICS'"
+)</Expression>
+              <Destination>67/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="79" />
+              <Expression>Replace([Destination], "'ADS'", [#1])</Expression>
+              <Destination>67/File</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>Date</Type>
+              <Description>Select Beginning Order Promise Date</Description>
+              <Name>Date (68)</Name>
+              <ToolId value="68" />
+            </Question>
+            <Question>
+              <Type>Date</Type>
+              <Description>Select End Order Promise Date Date</Description>
+              <Name>Date (69)</Name>
+              <ToolId value="69" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Choose Your Extraction Categories</Description>
+              <Name>List Box (78)</Name>
+              <ToolId value="78" />
+              <Multiple value="True" />
+              <Multiple_Custom value="True" />
+              <Multiple_Start>'</Multiple_Start>
+              <Multiple_Separator>','</Multiple_Separator>
+              <Multiple_End>'</Multiple_End>
+              <Multiple_Default value="True" />
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[ADS
+HAR
+NIM
+TRI
+LSC
+HGD
+DUP
+IML
+ASI
+VPT
+N/A
+]]></Manual_Values>
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Choose the customers to include in this performance metric</Description>
+              <Name>List Box (77)</Name>
+              <ToolId value="77" />
+              <Multiple value="True" />
+              <Multiple_Custom value="True" />
+              <Multiple_Start>'</Multiple_Start>
+              <Multiple_Separator>','</Multiple_Separator>
+              <Multiple_End>'</Multiple_End>
+              <Multiple_Default value="True" />
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[ALBERTSONS, INC.
+AMAZON.COM
+Amazon.com.ca Inc
+AXONWARE LIMITED
+Best Buy Canada Ltd.
+BEST BUY CO, INC CONSIGNMENT
+BEST BUY PURCHASING LLC
+BJ'S Wholesale Club
+Blue Chip
+BLUESTAR
+Canada Post
+CENTRAL BANCOMPANY
+CIRCUIT CITY
+Circuit City Consignment
+CIRCUIT CITY STORES INC
+CLEARLYBUSINESS.COM LIMITED
+COMPUSA
+COMPUSA CONSIGNMENT
+Costco Canada
+COSTCO WHOLESALE
+COSTCO WHOLESALE UK LTD
+CROWN FINANCIAL MINISTRIES
+D&H DISTRIBUTING COMPANY
+DELL COMPUTERS
+Dollar General Consignment
+DOUGLAS STEWART CO, THE
+Exertis (UK) Limited
+Exertis (UK) Ltd
+Exertis LTD (Argos)
+FAIRFIELD COUNTY BANK CORP
+Fidelity Investments
+FRANCISCO GUARDERAS
+FRY'S ELECTRONICS
+HEWLETT PACKARD COMPANY
+HILLS BANK AND TRUST
+Hope Herbst
+HUNTINGTON NATIONAL BANK
+InComm Canada Prepaid, Inc.
+INGRAM MICRO
+Ingram Micro Canada CONS
+INGRAM MICRO US
+Intuit Canada ULC
+Intuit Canada- NFR/IPP
+Intuit Limited
+Intuit Product Request
+Jerry Runscotck
+LABYRINTH TECHNOLOGY LIMITED
+Le Groupe Jean Coutu (PJC) Inc
+LITCHFIELD BANCORP
+MEIJER DISTRIBUTION INC
+MICRO CENTER, INC
+MUSICLAND INC
+NAVARRE CORPORATION
+New Creature
+NORTHRIM BANK
+Veyer LLC fka Office Depot Cons
+Veyer LLC fka Office Depot
+OFFICE MAX
+OFFICE MAX CONSIGNMENT
+OFFICE MAX/BOISE COMPANY
+QCOM BizSolutions Pte Ltd
+SAMS CLUB
+SPA Inc. Consignment
+STAPLES
+STAPLES (CONSIGNMENT)
+Superior Communications, Inc.
+TD SYNNEX Canada ULC
+TD SYNNEX Canada ULC CONS
+SYNNEX CORPORATION
+T ROWE PRICE INVESTMENTS, INC
+TARGET CORPORATION
+TARGET(CONSIGNMENT)
+TARGET.COM
+TECH DATA CORPORATION
+THEIRONICS LLC.
+TransNational Computer LLC
+WAL-MART STORES INC
+WAREHOUSE PRODUCTS TESTING INC
+]]></Manual_Values>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="73" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

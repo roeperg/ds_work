@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="259" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 18</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="56">C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Jobs.xlsm
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Date" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="DateTime" />
+                <Field name="Text" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+                <Field name="Link" size="829" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+                <Field name="Yes" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="211" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Yes</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-04-19 13:26:00</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>No</Operand>
+                  <StartDate>2024-04-19 13:26:00</StartDate>
+                  <EndDate>2024-04-19 13:26:00</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Yes] = "No"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Date" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="DateTime" />
+                <Field name="Text" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+                <Field name="Link" size="829" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+                <Field name="Yes" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Date" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="DateTime" />
+                <Field name="Text" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+                <Field name="Link" size="829" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+                <Field name="Yes" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet1$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="52" y="281" width="751" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 17</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="77" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="23">odbc:DSN=Sqlite3|||select * from application_history</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=Sqlite3
+Query=select * from application_hi...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="APPLICATION_HISTORY.APPL_ID" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="Int32" />
+                <Field name="APPLICATION_HISTORY.APPL_DT" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="DateTime" />
+                <Field name="APPLICATION_HISTORY.COMPANY" size="65536" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="WString" />
+                <Field name="APPLICATION_HISTORY.TITLE" size="65536" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="WString" />
+                <Field name="APPLICATION_HISTORY.JOB" size="65536" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="WString" />
+                <Field name="APPLICATION_HISTORY.NOTES" size="65536" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="WString" />
+                <Field name="APPLICATION_HISTORY.URL" size="255" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="678" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="APPLICATION_HISTORY.APPL_ID" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>APPLICATION_HISTORY.APPL_ID - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="APPLICATION_HISTORY.APPL_ID" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Int32" />
+                <Field name="APPLICATION_HISTORY.APPL_DT" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="DateTime" />
+                <Field name="APPLICATION_HISTORY.COMPANY" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.TITLE" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.JOB" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.NOTES" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.URL" size="255" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings>
+            <Position x="366" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"APPLICATION_HISTORY.APPL_ID","APPLICATION_HISTORY.APPL_DT","APPLICATION_HISTORY.COMPANY","APPLICATION_HISTORY.TITLE","APPLICATION_HISTORY.JOB","APPLICATION_HISTORY.NOTES","APPLICATION_HISTORY.URL"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output26">
+              <RecordInfo>
+                <Field name="APPLICATION_HISTORY.APPL_ID" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Int32" />
+                <Field name="APPLICATION_HISTORY.APPL_DT" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="DateTime" />
+                <Field name="APPLICATION_HISTORY.COMPANY" size="16384" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.TITLE" size="16384" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.JOB" size="16384" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.NOTES" size="16384" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.URL" size="255" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="197" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="APPLICATION_HISTORY.COMPANY" selected="True" type="V_WString" size="16384" />
+                <SelectField field="APPLICATION_HISTORY.TITLE" selected="True" type="V_WString" size="16384" />
+                <SelectField field="APPLICATION_HISTORY.JOB" selected="True" type="V_WString" size="16384" />
+                <SelectField field="APPLICATION_HISTORY.NOTES" selected="True" type="V_WString" size="16384" />
+                <SelectField field="APPLICATION_HISTORY.URL" selected="True" type="V_WString" size="255" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="APPLICATION_HISTORY.APPL_ID" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="Int32" />
+                <Field name="APPLICATION_HISTORY.APPL_DT" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="DateTime" />
+                <Field name="APPLICATION_HISTORY.COMPANY" size="16384" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.TITLE" size="16384" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.JOB" size="16384" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.NOTES" size="16384" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.URL" size="255" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="498" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="APPLICATION_HISTORY.COMPANY" />
+                <Field field="APPLICATION_HISTORY.TITLE" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Unique">
+              <RecordInfo>
+                <Field name="APPLICATION_HISTORY.APPL_ID" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Int32" />
+                <Field name="APPLICATION_HISTORY.APPL_DT" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="DateTime" />
+                <Field name="APPLICATION_HISTORY.COMPANY" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.TITLE" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.JOB" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.NOTES" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.URL" size="255" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Duplicates">
+              <RecordInfo>
+                <Field name="APPLICATION_HISTORY.APPL_ID" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Int32" />
+                <Field name="APPLICATION_HISTORY.APPL_DT" source="File: odbc:DSN=Sqlite3|||select * from application_history" type="DateTime" />
+                <Field name="APPLICATION_HISTORY.COMPANY" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.TITLE" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.JOB" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.NOTES" size="16384" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+                <Field name="APPLICATION_HISTORY.URL" size="255" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="833" y="53" width="484" height="273" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 15</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="930" y="101" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="company" selected="True" />
+                <SelectField field="title" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+                <Field name="title" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1194" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="100" FileFormat="36">C:\Greg\SQLite\test.sqlite|||ALTERYX</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <PostSQL />
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>test.sqlite
+Query=ALTERYX</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1170" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="length([company])" field="Size" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Size = length([company])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+                <Field name="title" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+                <Field name="Size" source="Formula: length([company])" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1002" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Length([company]) &gt; 0</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Length([company]) &gt; 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="company" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+                <Field name="title" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="company" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+                <Field name="title" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="858" y="185" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="56">C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Jobs.xlsm
+Query=`Sheet2$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="company" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+                <Field name="title" size="255" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_String" />
+                <Field name="Job" size="3220" source="File: C:\Greg\Alteryx\Jobs.xlsm|||`Sheet2$`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output26" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Unique" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>jobs_test</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e996e879-b71c-4820-825f-08a10b51338d" />
+      <Telemetry>
+        <PreviousWorkflowId value="29396bb1-ebe4-4f82-8469-08608f93462b" />
+        <OriginWorkflowId value="11f1ea78-7ddc-4c58-8052-aa3cfcbe1975" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (10)</Name>
+          <ToolId value="10" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="22" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

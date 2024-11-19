@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, 
+(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE 
+From DATE_DIM ORDER_PROMISE_DATE, 
+SHIPMENT_FACT, 
+DATE_DIM INITIAL_SHIPMENT_DATE, 
+CUSTOMER_DIM, 
+CHANNEL_DIM, 
+ITEM_DIM 
+Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) 
+And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) 
+And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) 
+And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) 
+And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) 
+And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') 
+And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') 
+And (CHANNEL_DIM.CHANNEL) = 'Retail' 
+And Case 
+When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' 
+Then ORDER_PROMISE_DATE.FULL_DATE 
+Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) 
+And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=Select Case When ORDER_PROMI...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PROMISE_WEEK_START_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="DateTime" />
+            <Field name="PERCENT_SHIPMENT_ONLINE" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" field="FileName" size="1073741823" type="V_WString" />
+            <FormulaField expression="'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" field="TrueName" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Engine.TempFilePath]+[TrueName]" field="OutputPath" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FileName = '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'||...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PROMISE_WEEK_START_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="DateTime" />
+            <Field name="PERCENT_SHIPMENT_ONLINE" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Double" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1146" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">_externals\1\Test.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Path</MultiFileType>
+          <MultiFileField>FileName</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Test.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="594" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="PERCENT_SHIPMENT_ONLINE" selected="False" />
+            <Field field="FileName" selected="True" />
+            <Field field="TrueName" selected="False" />
+            <Field field="OutputPath" selected="False" />
+            <Field field="*Unknown" selected="False" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PROMISE_WEEK_START_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="DateTime" />
+            <Field name="PERCENT_SHIPMENT_ONLINE" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="822" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Promise Delivery Week" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Promise Delivery Week - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Week" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Date" />
+            <Field name="Percent Shipment Ontime" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Promise Delivery Week" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="702" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PROMISE_WEEK_START_DATE" selected="True" rename="Promise Delivery Week" type="Date" size="10" />
+            <SelectField field="PERCENT_SHIPMENT_ONLINE" selected="True" rename="Percent Shipment Ontime" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Week" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Date" />
+            <Field name="Percent Shipment Ontime" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="426" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="PERCENT_SHIPMENT_ONLINE" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>ToString([_CurrentField_] * 100,2) + "%"</Expression>
+          <ChangeFieldType value="True" />
+          <OutputFieldType type="String" size="8" scale="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ToString([_CurrentField_] * 100,2) + "%"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PROMISE_WEEK_START_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="DateTime" />
+            <Field name="PERCENT_SHIPMENT_ONLINE" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="PortfolioPluginsGui.Email.Email">
+        <Position x="1254" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SMTPServerName>wnp1.intuit.com</SMTPServerName>
+          <ToIsField value="False" />
+          <To>Japhy_Slater@intuit.com; frank_mariani@intuit.com</To>
+          <CcIsField value="False" />
+          <Cc />
+          <BccIsField value="False" />
+          <Bcc />
+          <FromIsField value="False" />
+          <From>GBSReporting@intuit.com</From>
+          <SubjectIsField value="False" />
+          <Subject>Office Depot Weekly OTC Performance Metric</Subject>
+          <BodyIsField value="False" />
+          <Body>Weekly output of Office Depot Weekly OTC Performance Metric Report</Body>
+          <UserName>wnp1-alteryx</UserName>
+          <Password>47F3E9FC8BFF994CF9DCDF3DDE6D97783BA715436F8415B3C</Password>
+          <Attachments>
+            <Attachment>
+              <ValueIsField value="True" />
+              <Value>OutputPath</Value>
+            </Attachment>
+          </Attachments>
+          <Enabled>True</Enabled>
+          <Port>587</Port>
+          <Encryption>STARTTLS</Encryption>
+          <SMTPAuth value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerEmail" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1026" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Week" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Date" />
+            <Field name="Percent Shipment Ontime" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1134" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="OutputPath" action="GroupBy" rename="OutputPath" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OutputPath" size="1073741823" source="Summarize: GroupBy - OutputPath" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="OutputPath" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="918" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Week" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Date" />
+            <Field name="Percent Shipment Ontime" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Promise Delivery Week" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output2">
+          <RecordInfo>
+            <Field name="Promise Delivery Week" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Date" />
+            <Field name="Percent Shipment Ontime" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Promise Delivery Week" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output3">
+          <RecordInfo>
+            <Field name="Promise Delivery Week" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Date" />
+            <Field name="Percent Shipment Ontime" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+            <Field name="TrueName" size="1073741823" source="Formula: 'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'" type="V_WString" />
+            <Field name="OutputPath" size="1073741823" source="Formula: [Engine.TempFilePath]+[TrueName]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Promise Delivery Week" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1038" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Promise Delivery Week" selected="True" />
+            <SelectField field="Percent Shipment Ontime" selected="True" />
+            <SelectField field="FileName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Promise Delivery Week" source="File: aka:5f11ec5cf88a2f1cc8948256|||Select Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End PROMISE_WEEK_START_DATE, &#xA;(Count(Distinct (Decode((SHIPMENT_FACT.SHIPMENT_ONTIME_INCREMENT), 1, (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End), Null))) / Count(Distinct (SHIPMENT_FACT.ORIGINAL_WAYBILL_NUMBER) || (Case When INITIAL_SHIPMENT_DATE.FULL_DATE &gt; '01-JAN-1900' Then INITIAL_SHIPMENT_DATE.FULL_DATE Else Null End))) PERCENT_SHIPMENT_ONLINE &#xA;From DATE_DIM ORDER_PROMISE_DATE, &#xA;SHIPMENT_FACT, &#xA;DATE_DIM INITIAL_SHIPMENT_DATE, &#xA;CUSTOMER_DIM, &#xA;CHANNEL_DIM, &#xA;ITEM_DIM &#xA;Where (CHANNEL_DIM.PK_CHANNEL_ID = SHIPMENT_FACT.FK_CHANNEL_ID) &#xA;And (CUSTOMER_DIM.PK_CUSTOMER_ID = SHIPMENT_FACT.FK_CUSTOMER_ID) &#xA;And (ITEM_DIM.PK_ITEM_ID = SHIPMENT_FACT.FK_ITEM_ID) &#xA;And (SHIPMENT_FACT.FK_INITIAL_SHIP_DATE_ID = INITIAL_SHIPMENT_DATE.PK_DATE_ID) &#xA;And (SHIPMENT_FACT.FK_PROMISE_DELIVERY_DATE_ID = ORDER_PROMISE_DATE.PK_DATE_ID) &#xA;And CUSTOMER_DIM.CUSTOMER_NAME In ('OFFICE DEPOT CONSIGNMENT', 'OFFICE DEPOT INC') &#xA;And CUSTOMER_DIM.RETAIL_OR_DIRECT In ('Retail') &#xA;And (CHANNEL_DIM.CHANNEL) = 'Retail' &#xA;And Case &#xA;When ORDER_PROMISE_DATE.FULL_DATE &gt; '01-JAN-1900' &#xA;Then ORDER_PROMISE_DATE.FULL_DATE &#xA;Else Null End Between add_months(trunc(sysdate), -12) And trunc(sysdate) &#xA;And ITEM_DIM.EXTRACTION_CATEGORY In ('ADS') Group By Case When ORDER_PROMISE_DATE.WEEK_START_DATE &gt; '01-JAN-1900' Then ORDER_PROMISE_DATE.WEEK_START_DATE Else Null End" type="Date" />
+            <Field name="Percent Shipment Ontime" size="8" source="Formula: ToString([_CurrentField_] * 100,2) + &quot;%&quot;" type="String" />
+            <Field name="FileName" size="1073741823" source="Formula: '%temp%'+'Weekly_OTC_Performance_Metric_'+DateTimeToday()+'.xlsx'+'|||Sheet1'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output2" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Office Depot Weekly OTC Performance Metric</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c5442a3d-d974-4673-bde0-0333a76b7d5a" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="c5442a3d-d974-4673-bde0-0333a76b7d5a" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="27" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
