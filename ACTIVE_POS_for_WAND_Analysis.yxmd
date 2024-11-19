@@ -1,0 +1,660 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp-Fin-Athena</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:642f2d277901ae9f4a7bd309|||select dlprd.fin_coupa_src.coupa_po_hdr.id,
+	dlprd.fin_coupa_src.coupa_po_hdr.status,
+	dlprd.fin_coupa_src.coupa_po_hdr.requisition_id,
+	dlprd.fin_coupa_src.coupa_po_hdr.requester_email,
+	dlprd.fin_coupa_src.coupa_po_hdr.requester_firstname,
+	dlprd.fin_coupa_src.coupa_po_hdr.requester_lastname,
+	dlprd.fin_coupa_src.coupa_po_hdr.requester_login,
+	dlprd.fin_coupa_src.coupa_po_hdr.supplier_id,
+	dlprd.fin_coupa_src.coupa_po_hdr.supplier_name,
+	dlprd.fin_coupa_src.coupa_po_hdr.supplier_number,
+	dlprd.fin_coupa_src.coupa_po_line.commodity,
+	dlprd.fin_coupa_src.coupa_po_line.status as statusline,
+	dlprd.fin_coupa_src.coupa_po_line.supplier_id as supplier_idline,
+	dlprd.fin_coupa_src.coupa_po_line.supplier_name as supplier_nameline,
+	dlprd.fin_coupa_src.coupa_po_line.supplier_number as supplier_numberline,
+	dlprd.fin_coupa_src.coupa_po_hdr.custom_field_1 
+from dlprd.fin_coupa_src.coupa_po_hdr 
+	left join dlprd.fin_coupa_src.coupa_po_line on dlprd.fin_coupa_src.coupa_po_line.order_header_id = dlprd.fin_coupa_src.coupa_po_hdr.id 
+group by dlprd.fin_coupa_src.coupa_po_hdr.id, dlprd.fin_coupa_src.coupa_po_hdr.status, dlprd.fin_coupa_src.coupa_po_hdr.requisition_id, dlprd.fin_coupa_src.coupa_po_hdr.requester_email, dlprd.fin_coupa_src.coupa_po_hdr.requester_firstname, dlprd.fin_coupa_src.coupa_po_hdr.requester_lastname, dlprd.fin_coupa_src.coupa_po_hdr.requester_login, dlprd.fin_coupa_src.coupa_po_hdr.supplier_id, dlprd.fin_coupa_src.coupa_po_hdr.supplier_name, dlprd.fin_coupa_src.coupa_po_hdr.supplier_number, dlprd.fin_coupa_src.coupa_po_line.commodity, dlprd.fin_coupa_src.coupa_po_line.status, dlprd.fin_coupa_src.coupa_po_line.supplier_id, dlprd.fin_coupa_src.coupa_po_line.supplier_name, dlprd.fin_coupa_src.coupa_po_line.supplier_number, dlprd.fin_coupa_src.coupa_po_hdr.custom_field_1</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp-Fin-Athena
+Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="status" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="requisition_id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="requester_email" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="requester_firstname" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="requester_lastname" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="requester_login" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="supplier_id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="supplier_name" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="supplier_number" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="commodity" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="statusline" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="supplier_idline" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="supplier_nameline" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="supplier_numberline" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="custom_field_1" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_44712_3c95875b6ed9d1458a98c79b14674e9f_\Engine_44712_b81cbb0cd4aadc428304d8dd808b3109~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="282" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\ADHOC\WAND\ORACLE ORDER SUPPLIERS 11-8-23.xlsx|||`ORACLE SUPP NUMBER$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ORACLE ORDER SUPPLIERS 11-8-23.xlsx
+Query=`ORACLE SUPP NUMBER$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ORACLE SUPP NUMBER" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\ADHOC\WAND\ORACLE ORDER SUPPLIERS 11-8-23.xlsx|||`ORACLE SUPP NUMBER$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="162" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>supplier_number</Field>
+          <ErrorHandling>Ignore</ErrorHandling>
+          <RootName>supplier_number</RootName>
+          <Delimeters value="-" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="546" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="supplier_number1" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ORACLE SUPP NUMBER" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_statusline" selected="False" input="Left_" />
+                <SelectField field="Left_supplier_idline" selected="False" input="Left_" />
+                <SelectField field="Left_supplier_nameline" selected="False" input="Left_" />
+                <SelectField field="Left_supplier_numberline" selected="False" input="Left_" />
+                <SelectField field="Left_supplier_number1" selected="False" input="Left_" />
+                <SelectField field="Left_supplier_number2" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="378" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ORACLE SUPP NUMBER" selected="True" type="V_WString" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_44712_3c95875b6ed9d1458a98c79b14674e9f_\Engine_44712_29eeeb73d127294d96ad9d58887ca173~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="450" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>status</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-11-08 16:13:28</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>issued</Operand>
+              <StartDate>2023-11-08 16:13:28</StartDate>
+              <EndDate>2023-11-08 16:13:28</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[status] = "issued"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="738" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="commodity" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Commodity" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Commodity" selected="True" rename="Right_Commodity" input="Right_" />
+                <SelectField field="Right_Parent 1 ID" selected="False" input="Right_" />
+                <SelectField field="Right_Parent 2 ID" selected="False" input="Right_" />
+                <SelectField field="Right_L0_ID" selected="False" input="Right_" />
+                <SelectField field="Right_SRC_REQ_FLAG" selected="False" input="Right_" />
+                <SelectField field="Right_RENEW_EXCLUDE" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="Google Sheets Input">
+        <Position x="558" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="OAuth2Overrides">False</Value>
+          <Value name="client_id">566095152514-bo26d3bkmcemliq3nve4i37bplfpdgrj.apps.googleusercontent.com</Value>
+          <Value name="AccessTokenOverride">False</Value>
+          <Value name="workbookID">1e3N9YP6zbGIWOjZegxMwCsKICzVERMT2qg1vT41UQlY</Value>
+          <Value name="firstRowContainsNames">True</Value>
+          <Value name="worksheetID">1520561469</Value>
+          <Value name="workbookName">Coupa_Purchase_Categories__FY23_GS</Value>
+          <Value name="worksheetName">Coupa_Purchase_Categories__FY23_</Value>
+          <Value name="view">4</Value>
+          <Value name="client_secret">40EDF1E5A223C6F704E2A6BFF6401F9703D5203377B8C54DB3D27F610FE76E40199C88356AA4DDE0BE32EC55648FB5EA434DD150A4F30970DA6E63B8E4F9A11DEDF10F18BF87D450F4EEE90E74F0D58C3811BC3E8873D39DFA7F0473CBD99035777EF4C38B9402FAB1E8B442257A74585B7B07434EE5DA06B79C95C5079983E6A2E815912AACC108320BA7534830E386A83DE483C1F187F238178F4300DA3D224D8AE96EEC2475DEDEDE4B37318C23BD9B77AF4265C1872A413B2F1B256DA8F8C170320A4FE1E184E23EC05851CC0097506F9356A966C</Value>
+          <Value name="refresh_token">4F9A30A8116F8E03CB5DF5BC8EDD1DB1D5729261C3CCDAF0E70343ED6898B675DF677DC369A7E4C6CEBA8FE747B7004BBD46EDCCB5AA7CD226E4A7DB4A5DAB3A4DE5F8EAA9F87FB875A1E5AA32A3DCF4FEA821B2102C235902212AECF624076E8EFE9A9FA7EDF26DFBE0D723BE479B12431D1A15A69DFF5566EC34A18B460DAB096B8598AE1B23E875208EDF731BB36A4C80D191AA63850433FA7D5305F89A64264ECACD2F8542F5010024ADCC2A05AD07C9F2F21F982AB8B59314152E97B3B6F56D7F6FB14715F3FF64ABC9C08BDA9FDE6D17482812F176149A631CCA77668227E7D41FF72096531CAF022664C4CE6D94B8DF18CE1A72A4F87D6B53DEB8A0C972A815C4564FF0DD0302295E1C25259B0BE19852E55C21CDE76B125FD2402CBF9537B2472C7CF922FFD4CE6B5624A7433AC29946513A10041695843AE3545B03199F1557085E9749E475E99DFB93EB2BA8E9E011A4638C324904C1A1BAFD8B4BB6C0719343758C3ADB330D36C7E7EC880465785BCB739A6060B668354F842DEF14B720EC68E714F84213A0F6F1730465A5977D3522CFC5405194A8B3FE2A2697E8185D168C897D2139CB1D352147D6973312670DE4329E210047F52F523EC9F17B6C1E95CB070F7BF4A892E5ABB4FC1FE7CBE499A9BE8A2A4725DD8811405506343D779DFECA0C0EBCD3C54A6FC900D03DC803771FF748E6689FD545854E7A8C371D10BCF1088655589985408BD67C7B5683929AAC7A735A8988F44061B88C80E7C20729631EA4982891E5AAFC629A4C3C4FE8E9F8D6E59D2043BF09318D570B4F6C5C287DBA8EF4F001E6F82FEDE55FAFAFF2A5ED06F822565BF05B61F75BDA31C64B5DB64BB720A4D7B962233B30172CDF2FB6A3E70C5E5FB6E899388A0E2CAB7A7FA73B92AA5FFF1A8525CC410C5A9A0A69887C28DCFBABCCD07E311B6C6E9FCC1363F0BFDC61462B257FEF952E90AD9490ABAFC675AEFE4F15AD9ABA3FD32E3169DFD9F1F1B0AD2A00255E9B1965A02725091CE4CBF170C22656C51EB441AE2E6835EF8443A9D8E66FF10D3AEB659E9CCE1270B1AA87FDE95AED2E33DFCDE6DCE2A20C8146FA6AF4CEA1E5CC8D13F4B2F32F17820B16F5F73AF99972E0DD70C23F509F39D7E815DF668DC13EED6D8340BCFB4CC0B85EAF1138A0E15C21702854568CDD079CF973629C3EE93B7</Value>
+          <Value name="accessToken">42D5992BE46BB7B5C268CE5B9FF928BFFFE71A3FCAF7F6B53B40B9E5C653BB8A81A8266B375EB53AA0373959A15EB0360131B0F6D7EE2108767C3023D61669EC9FA4FC48F2E522DE1D416F7721C35502D605F82925169E5A7C8C762F77A1835B22A5DC17D81104F5CC56E2D0F2252E19921058B75B0765ACF1C63DE88D0CA172605B9A766BD0015A7C0989DE2FBC59635E2F3A211A0E97464BF32E4677D8360D89736795FF51DD35CA1399A6D2196D57C01F52070FC48B0385D1F773003827DF19560F78C0AF9E6BDA3F4707BD92F2582AC0A3073BB772968A5FB02CF9175799F908DBCDFD304137E65C60A9A79EF4B43BCFE419DA023B207D787EAF2C1B0A4A8D829CF95ADC0D413A0D70FD0E870FF77EB9D8ADD7A10D86475CF7FB3C6FD70658FF3AB85405D0C7B48A572B24B4AC5C049836813B854E7C4FA89B959ABC3DB4A487CD640A8DF0492C4E855E4BC0338EF1100D3FF81055FAC7286D0F50CFC1B2757CD54781301EB088B2EEC635E8BC82ED19983610ACB76D7B62490D0468429C13ABC0534F173E87102805BE616F27E14D7179A2BE16D0FF7EAA3B807CCDE1F2AA72E5F89D24742C5620325F4B8B25E70BDFA8C688EE6C20A4B0E5FB7018B8444282FBC47554412740B6EF309910C4EECDDDC2FD341A49566D33F75B468ECA5E632C7DDDD5C0D4E634983FAB40337BFE7DFD2C1717B5179EA40F2F00762CAB5E495BF4FAC973F19176016A36FA6FB31BBD20E8967D3AA8F295ED1B8A5F8E4018552F45E7ADD25B8CC436F04FDEE37170BBF8A29C881A6D31FAABB03F11D2BD1C1CEA6261CDD0A879A0C5F3B0A504AD886B3341AA28ECAB7BEA67764B57038D83D57D23482483B5F5EE086C920FE5194163C613EFE5E76F182DB16B019F2CC4B42D5B790DAD8DEEF97A47C4207AE1A5CBC2A29DE1792684CA75FCB3FC41FBDFFCAFE6C2767CD17455E275110AA648FDBCB06C432A1238F464C1A2FECB3927AE1C5990C2C930BF4324B87C030A93379CC11EAE96BE97186BACC8549B16031EE1F449E8EFCDF8BCC3A6508C542F117ED38DC47EE60B374FF1039C99BFFD032692ED37B6D948F6AC89F27DCB3FFCE507DB52E83B6611E541CD3A8E2E46CE5A80EAD5BB41AB3D4AD470474EE2E654C7930FA115F8C7EF03AB6A5E73A6461AC942DC57649E2BE1DC52C777E5A10E2A7C89691A17AA2C71770A4033A465CD0ECBD4E7372EE3FDBC6AFC458BD35DA0CF41D87E31C8989AA97374791274C8A4736AF176057F6B2937F3C0022EC352DF7581D31955BE30CE51C7108591BF5CFC8ECC0B042C5B6E7E84B586DCCCDF8E92692E76D3496351B9F09D70AA4E612AED7CBCDEBC9AE8AB9BC6497F4F1637105FA0CE15C82DBE84FA640B3ECB9EC9C5FEB95DC0C69560770DC09517B4F14C7A1154BA1CFCD0DC1E6B0D233C8304A4EC16B7465274397994393CED53F3E1658FE23D65EE23FD8B936A2CB7B81B547AADC2678FE9785DB35C6FC2B94E76F5B7D12AC80F16A3ADCA1960034F3D8FC5DD0593E9C16B6BC1A0122F1F4D7C0FB22E7097EBD9D78C596E711781B5907CAAE48C5859A0A67E1C71682EE6E0C0A7F68A839F2BDECB622C97F6DB5A152E662BF14E4B4A2DFC4B6AA510BD27B9DB3983803CBA4402E6513B2F52595C983A75351AE153F6AC2243F6C54226B7A2CEEE46AC43FBE29C3041CE94279078A533F0147425C6A4B68673F005D6D06A98C141B7131D4D6FB7F231A85BCAF09E4ED87B7E24AA6B78FC92A28EA1421FCBD328C759F71455BD5BEC4D4C7F539F3A8E772AC8E10E327629B840D2627A9A413E357CDCB7A08C979FFEE445338975AD37DC18984428B5050641E93044FBD70C96502B67A7066A35C8FA248206D9917C29807196A39E0B009F8E9D6A6A0CCBB46AF6820BD48AAC2E3FFBEB042AFBF268983239140D44E0FF2186F7469FBAC12CB4C993DAA18AF81CE29DE12535B09EBD74E43A61FC22FC42F162A6B0607102C40D9A04A496A4FA17DCE8C99C064FB2F19DA609DDC021D66A7DDD11271444736A993494C0B718EF135B8161661493C260A17F4690F62AD5F210B37DD361867A5F4018C87E81CF038428AE5C3E4CC107CE55A7206F4B1AA1F08D54729BEE3A5AA55B635E70081C6A2466830D991D1E1E5B25138F9A3B848F97379F26A1AA3A80F8F406C59D5ED4A24B0C352A114C72735B45785AF70899C84E3BC648FF82361387657248D61BF7F73B4961536AEBFCBD60FD3AA5318CFBF7B59B039E5E990C192BBB8C421D903C1EEEE312F7F199D324E5F16B626FE44ACD2E48FC0069B006F87358D5D68B936998E093F970A0EEDAE2A3E230D651E400B6BF500DDDFF406DC2F6C9973DD8EA57CD0300C9E9CE7B4F89ADECEAB275D6103A0143E45D677A54F634139733798D501762E0955EA952D3B07C891F1547F7D5C707E3B4DD1E6E96332BFFAEB9BF9522561FF6F239E630E3A69869BC9F8FB4E26C6C6FA10BE1B9D665045BBBE</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Google Sheets Input\Supporting_Macros\GoogleSheetsInput.yxmc" EngineDll="Macro" EngineDllEntryPoint="Google Sheets Input\Supporting_Macros\GoogleSheetsInput.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="Google Sheets Input">
+        <Position x="714" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="OAuth2Overrides">False</Value>
+          <Value name="client_id">566095152514-bo26d3bkmcemliq3nve4i37bplfpdgrj.apps.googleusercontent.com</Value>
+          <Value name="AccessTokenOverride">False</Value>
+          <Value name="workbookID">1dcXMes24anmCVpu5wXVf0CHbEQ1PrDu-YkAedDH7ZKY</Value>
+          <Value name="firstRowContainsNames">True</Value>
+          <Value name="worksheetID">130381945</Value>
+          <Value name="workbookName">SOURCING_CM_ASSIGN_GS</Value>
+          <Value name="worksheetName">SOURCING_CM_ASSIGN</Value>
+          <Value name="view">4</Value>
+          <Value name="client_secret">40EDF1E5A223C6F704E2A6BFF6401F9703D5203377B8C54DB3D27F610FE76E40199C88356AA4DDE0BE32EC55648FB5EA434DD150A4F30970DA6E63B8E4F9A11DEDF10F18BF87D450F4EEE90E74F0D58C3811BC3E8873D39DFA7F0473CBD99035777EF4C38B9402FAB1E8B442257A74585B7B07434EE5DA06B79C95C5079983E6A2E815912AACC108320BA7534830E386A83DE483C1F187F238178F4300DA3D224D8AE96EEC2475DEDEDE4B37318C23BD9B77AF4265C1872A413B2F1B256DA8F8C170320A4FE1E184E23EC05851CC0097506F9356A966C</Value>
+          <Value name="refresh_token">49ED0CF8A14AA86E44B35734521DC2F2DA4C30E0B5CD4AC2EEF67A0B5FE8736687C3C4E714F35E4A838983323BCA979E1A8732FADB2C0CE33571D0BFFFF7F91CA84B8C735928BAF7DA3BD24804300346B3D99F69C7ED474E9ACC31D4A89F8A2CCDF0C38195B1740DBD0473C50F47D934FA6DF86F487F460373B4BCCA06D20E6A246A5BF37731BED2016D1AA5D8D7B142D094CF0E9DB035CCB5991FD97D78B11C653BF65C89316569A844B802B1C257AF29D0333BCF83708AE1E99D5E7AC2FE23B3AA3DD79364D542FC0BAE1E1C91B0B8C756D416C31183F27A3D24D31127A767846981FC8A39CBA5A267DC66E45BC417D7C332B6913883CEF7369E81804E866E6291E2F542B51F013ED2F8E44A605AA790FD13FED98CA40E83ADE6054404945FB32012BEE36367522065EC8DCC54C02252BC2ED1E5895DA7F09D2919433AE0AA77B3AA70015E8A7B0C8327000A5E39613089EB9D0B2ACAF14F839E69C61C42263E05E41D9E84C65A7752F6F6A84E9600B79F229D240363BC09C200E9779318E07D8BFE02999363DCA3272FC2EE2D275A110EDC65BD186D2B1D05DB2C588BD4CE4976A1D98E9427823E8DED9B18496CF097DF39A44323B4769418B1283D0ECB0CDBBE334E90A9FA399DF0CA362C8908EC35778458911051BEBA83D4395FEE7CE45C66F2ABE2821131B0CE64DDE63CB87E4F37851899A4CDD955BDD4C6CC32CD4D3ED80FB3AB6FD3CFEB6D3924F3DB768E6BD14FD1338D51DAD361C4CC1AAC23756AC4EFB35E4E9399C6D9BE3DA831888D293C1B9FD04D0CA37F54D154CEC5C61DB2C6C7EB4DAEA65A5B67CFFED9977E2D0C016C720CA12EE66329DA97EB1008D97FAA78A74BEA4CD0F011BE6BFCA2597FB50BBDD731A3F3C9A3E3303154DE12B42695723F96A7E43A5E9DD0A62874DA73917C908D131DC64C590644F1A0D5EA1CC3940B3887E3494CB28A346F9FF0C919A2429B09DA798723D78A53524F35D73F332B389DE5CF2E309B43DC52C25F9158C8C08723BF6B3D01EF74281BA08E5B7378C000548C61A7E4107568D23AF0AE2A417BDD2CB39A1613398D1B08E27988D9EB9704E47802B27D25486AE191E80F618F0D3BC00BD990F9EA2F224366E1B9975A3C1E55C8E980C98226D895717DAB9F911A843BC8BFC8EF1719B858D53E8707F3B921B74F96141C2CB96E61F453F</Value>
+          <Value name="accessToken">45CBA3AF00229A22A409CE95C1C4A539C5FA25F8DBFD31701CCC073297D8363CE1E9BE2D88025D8102985E1E06EE442EABCD1472D3E1A3B2ED91DB478C8C21771B297C86B8075BAD47174CD12EA4218C0EAD1E60A0DFD467E4C543EE9B76CA996937B6301A34314A17D0505CD9473D68670859106C96CECA34ADEDEAB333DACB89223086D1CB6831A23BAEA575FE2E0EA6BA1C5EFDBAE63603ACFBDD0529B7D424555FA37B558B371BE56E7856E0BDBAB48DED92DCEAF239FF847F602575EF9C7A5B027BF7097552DA25D5A57CED20B6C959823011BA36C07912D3BCCE93AD84186406D9567B0F1669BB282E6C091284DB55915EAF2B68778C8C34E9B1865724BDF594275824947D31FFF18F18B8D5725959E03D2D8A57B6CEF00D36C2F0415BE932D19B5447574F83BB003601251371073F2C31EF0D9C02831E0CC3F4AA35B444CBF67EF8B915AA3D6BAC30107BA7DDEA82A0F3C4B5BB937B4B69BB27FCA4AADD9612754B54F90CC5EDDE9FB73FC9FD93CD716FFD8438E4AD67314ACB4E9B5BA11009843889E08E34781F6472E0560FEFA41A4783B559D754DD4A524DE2AE03A54A9E756DB4D7BA84288EC0CFFD1B3006D06E72100FFCD9743507D494133029AEEECCBDF1D06F4F6883EB980A0FCE42401FC5D2D6841ECF041804AFB5733EA0E2F61CD2EABEF17DF047E4B5BCA23AE966D5879FB5069A8C1078645658F28FE2D94129C0F03DA7E80448F011B2112DB7B732DBA99FE33305AD7D069471ED5A23A4E727805412F3BEEA10A4220AD823E8ECEC7398D5D5054F0FF0DE0208A1699657B4A9AE2EAA901F9069AF16116C4C9F44C36B82219597EE1BA0F550F64A6A255CB5B1269885D4A3976174756ED5B573896AC70392E5D860666C77C91D33A9273367B0EB4C7BE21F5D18790A0B01DEEFB9AA23D2CA43189FCBB00A53226B5FF4CA6917206CAF3DFDEF07285F0F6C09F597A8AFB6E7BE7C987709FD84C64DC5AA4BB5FD1556A6ABA302343DE41FF9F318F091D1F643D7AB9D4808BD211287E389C9EA41FD65B040ABD1CD657CFDDE8EC2AD3E6ED6CFDD4DCC3551CC93347EC16FC5CD82AADBBF0F7A0619B1942D320DDABFFFEFB16240333FF6B07AF13945128797EA1C8C1968FC9E06F4A4B9ED1C13EFE3178217BFE69EC3933A1315E8C6000E263627A7989BF3E9315D8F647CAE4B347C74B1B8E6282CE3807060E9EFDD861A8AF72789F58B64CCA58A4F2CA7A5894797515D4D80C0C4D43920E448317F714F45E11DC214C8D14F846B9F39231C4E7721D6A28F06AA914F54CEFE5D3F8A850C6B7B95677FF95678B5108F1F066718E48F987FDD7551A11670753A948D0D75561139DD705BD442571CAAC3D9C2D55E0E3279CA00A2A4CACE0375A64AA849A9EBA0FD67258B7A62E49D479ADD74245BA8836B1F46158C21A1B4986698B811C6641A5AE5F466E68C9D30558FC0C312F9EC1ECD01776AF2DB923B816EB27436214699DB0A30C76BBF04124601E59C5095F8EBEA828EBE3E46F4BD081FA293748EB781BFC54B3EAF122340B2AC226C229FB1F13706725E150079FDD179E59B9E497E986EA96EAC24AF16B25B6187E4BE767642E0B8722B475525765B3F1751E414205C130108E1C21EA3EAB074C575F1299D47DA6E4F13714EEF3BF6F148F39FE2056BC539CF7D241270A24FC49165305EF41823D60CE7B189A8495D62F79F7CEB223D22608A937C7DF909E47A42F95AA5133F095AD338D2285F80541C08FE74C63EE0E80652136F9A8E7A9EF1E07C1F6B98676FEB248C6A398596533280D0760B2CC834FCA78F93439C6DB415FC1170397FD7BF2DEFAFECC078EF3D1C0BBB628271C1FACBA95D61872389CF28FABB6D689D21ED7CABDD6418EA136A6765CB4A1A81EC395701D16B6E0A38E6087D6A8E368DAAB650FE35BFDBDC9000262A9C89285A6AACB746FF34571F5B5E75375708FDF9420F40943AD692642937B0193C4D5766A6F4DC8FFAD9F7B08CB57358D3BAB0F04B9C9330DDAD9683DA1953344CE130C6EA53E9B6600DC9FA3D0434437AF868AD4E94FB0F2AB3F9E28293A2E6DFD9222C65AFDB4301BF2F1388A40D0F44EFA18B26D89B0FB287588FF52A87604D5B1C9C0481E72D4B1357C5D8D2927B95A653BDF659F2CDE54F313C63CF2A089618DA1D616585F19F5C056C2BA7A1EEEA0311E7065485B56C6BD20956499ED39B9B764DC24ADE7766D913E2B517CFB8FF26760AEEDCD7827731F27773F58C947DE4DD3351EB8D4E6F05AB2834AE717F81D8BFDD7689DFFE475997AE5A3696035F10C5D4BEE336CCBDCFAC0092D0C37947B2979901A59849F3EFF5516A1AFC2E31D15535FBB5D230168240699C99C15C975526C99261B7F937D93542BC1B33F3862ADDC0F6AA67FB6A3F5C0DFEC5A5F53C2FC6D219CB4041B911C0C79C993030D78CD203DD38813029182E0C5A531E4996DEACB7DA815DB26D36BCFA134583F93BB3EEB2EAAFDBF7487D9</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Google Sheets Input\Supporting_Macros\GoogleSheetsInput.yxmc" EngineDll="Macro" EngineDllEntryPoint="Google Sheets Input\Supporting_Macros\GoogleSheetsInput.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1002" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Commodity ID" />
+            <Field field="REGION" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="COUPA CODE" />
+            <Field field="REGION" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_supplier_number" selected="True" rename="ORACLE SUPP NUM" input="Left_" />
+                <SelectField field="Left_supplier_name" selected="True" input="Left_" />
+                <SelectField field="Left_id" selected="False" rename="PO_ID" input="Left_" />
+                <SelectField field="Left_PONUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_status" selected="True" rename="PO_STATUS" input="Left_" />
+                <SelectField field="Left_requisition_id" selected="True" rename="PR_ID" input="Left_" />
+                <SelectField field="Left_requester_email" selected="True" input="Left_" />
+                <SelectField field="Left_requester_firstname" selected="True" input="Left_" />
+                <SelectField field="Left_requester_lastname" selected="True" input="Left_" />
+                <SelectField field="Left_requester_login" selected="True" input="Left_" />
+                <SelectField field="Left_supplier_id" selected="False" input="Left_" />
+                <SelectField field="Left_commodity" selected="True" input="Left_" />
+                <SelectField field="Left_custom_field_1" selected="True" rename="PR COUNTRY" input="Left_" />
+                <SelectField field="Left_ORACLE SUPP NUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_REGION" selected="True" input="Left_" />
+                <SelectField field="Left_Right_Commodity" selected="True" input="Left_" />
+                <SelectField field="Left_Parent 1" selected="True" input="Left_" />
+                <SelectField field="Left_Parent 2" selected="True" input="Left_" />
+                <SelectField field="Left_L0" selected="True" input="Left_" />
+                <SelectField field="Left_Commodity ID" selected="False" input="Left_" />
+                <SelectField field="Right_COUPA CODE" selected="False" input="Right_" />
+                <SelectField field="Right_REGION" selected="False" input="Right_" />
+                <SelectField field="Right_EMAIL" selected="True" rename="CAT MANAGER " input="Right_" />
+                <SelectField field="Left_Parent 2 ID" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="354" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"custom_field_1"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">True</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="642" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [custom_field_1]='US' then 1 elseif&#xA;[custom_field_1]='CA' then 2 elseif&#xA;[custom_field_1] in ('INL','IND','INS','AU','TGSGP','IE') then 3 elseif&#xA;[custom_field_1] in ('GB','IL','FR') then 4 else &quot;ERROR&quot; endif &#xA; &#xA;&#xA;" field="REGION" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGION = if [custom_field_1]='US' then 1 elseif
+[custom_field_1]='CA' then 2 els...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1134" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_44712_3c95875b6ed9d1458a98c79b14674e9f_\Engine_44712_5b34eaa0ca5a7a4890473ffc852a29a3~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="834" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="id" action="GroupBy" rename="id" />
+            <SummarizeField field="status" action="GroupBy" rename="status" />
+            <SummarizeField field="requisition_id" action="GroupBy" rename="requisition_id" />
+            <SummarizeField field="requester_email" action="GroupBy" rename="requester_email" />
+            <SummarizeField field="requester_firstname" action="GroupBy" rename="requester_firstname" />
+            <SummarizeField field="requester_lastname" action="GroupBy" rename="requester_lastname" />
+            <SummarizeField field="requester_login" action="GroupBy" rename="requester_login" />
+            <SummarizeField field="supplier_id" action="GroupBy" rename="supplier_id" />
+            <SummarizeField field="supplier_name" action="GroupBy" rename="supplier_name" />
+            <SummarizeField field="supplier_number" action="GroupBy" rename="supplier_number" />
+            <SummarizeField field="PONUMBER" action="GroupBy" rename="PONUMBER" />
+            <SummarizeField field="commodity" action="GroupBy" rename="commodity" />
+            <SummarizeField field="custom_field_1" action="GroupBy" rename="custom_field_1" />
+            <SummarizeField field="ORACLE SUPP NUMBER" action="GroupBy" rename="ORACLE SUPP NUMBER" />
+            <SummarizeField field="REGION" action="GroupBy" rename="REGION" />
+            <SummarizeField field="Right_Commodity" action="GroupBy" rename="Right_Commodity" />
+            <SummarizeField field="Parent 1" action="GroupBy" rename="Parent 1" />
+            <SummarizeField field="Parent 2" action="GroupBy" rename="Parent 2" />
+            <SummarizeField field="L0" action="GroupBy" rename="L0" />
+            <SummarizeField field="Commodity ID" action="GroupBy" rename="Commodity ID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[custom_field_1]" field="PONUMBER" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[PONUMBER = [custom_field_1]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output26" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="17" Connection="Input2" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ACTIVE POS for WAND Analysis</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6370a7db-02c9-4560-b4bb-72d1f1f28663" />
+      <Telemetry>
+        <PreviousWorkflowId value="7053655a-d050-45a5-b899-3bb3c0210029" />
+        <OriginWorkflowId value="7053655a-d050-45a5-b899-3bb3c0210029" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

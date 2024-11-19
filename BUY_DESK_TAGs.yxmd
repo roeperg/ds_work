@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as REQUISITION_ID1,
+	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as SUBMITTED_AT_DATE1,
+	COUPA.DW_COUPA_REQ_HDR.STATUS as STATUS1,
+	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE as CREATED_AT_DATE1,
+	COUPA.DW_COUPA_REQ_HDR.TAGS as TAGS1,
+	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE as REQUEST_TYPE1 
+from COUPA.DW_COUPA_REQ_HDR 
+	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID 
+where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' 
+group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.TAGS, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select COUPA.DW_COUPA_REQ_HD...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="REQUISITION_ID1" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as REQUISITION_ID1,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as SUBMITTED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as STATUS1,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE as CREATED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.TAGS as TAGS1,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE as REQUEST_TYPE1 &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.TAGS, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE" type="Int64" />
+            <Field name="SUBMITTED_AT_DATE1" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as REQUISITION_ID1,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as SUBMITTED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as STATUS1,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE as CREATED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.TAGS as TAGS1,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE as REQUEST_TYPE1 &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.TAGS, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE" type="DateTime" />
+            <Field name="STATUS1" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as REQUISITION_ID1,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as SUBMITTED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as STATUS1,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE as CREATED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.TAGS as TAGS1,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE as REQUEST_TYPE1 &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.TAGS, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE" type="V_String" />
+            <Field name="CREATED_AT_DATE1" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as REQUISITION_ID1,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as SUBMITTED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as STATUS1,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE as CREATED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.TAGS as TAGS1,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE as REQUEST_TYPE1 &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.TAGS, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE" type="DateTime" />
+            <Field name="TAGS1" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as REQUISITION_ID1,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as SUBMITTED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as STATUS1,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE as CREATED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.TAGS as TAGS1,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE as REQUEST_TYPE1 &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.TAGS, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE" type="V_String" />
+            <Field name="REQUEST_TYPE1" size="19" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as REQUISITION_ID1,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as SUBMITTED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as STATUS1,&#xA;	COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE as CREATED_AT_DATE1,&#xA;	COUPA.DW_COUPA_REQ_HDR.TAGS as TAGS1,&#xA;	COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE as REQUEST_TYPE1 &#xA;from COUPA.DW_COUPA_REQ_HDR &#xA;	inner join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_REQ_HDR.CREATED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.TAGS, COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_23852_f51f16beeb784d6a8a0e162e44bee6ca_\Engine_10052_3796204dbd9f4bc58fbabf997deb55d6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>BUY DESK TAGs</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="81f1ff7e-488a-46f6-a085-f1c0539e9b19" />
+      <Telemetry>
+        <PreviousWorkflowId value="ae128f5f-243a-40fe-9501-74c20d1f85ef" />
+        <OriginWorkflowId value="ae128f5f-243a-40fe-9501-74c20d1f85ef" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

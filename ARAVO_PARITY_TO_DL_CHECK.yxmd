@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>HEADER_and_SITE_DATA.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Aravo Internal ID" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="Oracle ID" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="TPTpe" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="ThirdPartyTypeHL" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="TPAddress1" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="Address_2" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="Address_3" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="Address_4" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="TPCityRpt" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="TPCountryRpt" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="Postalcode" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="supplier name" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="site id" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="identifier" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="site name" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="isactive" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="SiteAddress1" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="siteCity" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="siteCountry" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="SiteType" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="SStateRegionProvince" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="sitePOEmailAddress" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+            <Field name="siteRemittanceEmail" size="254" source="File: C:\Users\rcowing\OneDrive - Intuit, Inc\GBS PROJECTS\DATA LAKE\Aravo\HEADER_and_SITE_DATA.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select * from dlprd.fin_aravo_src.supp_site</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select * from dlprd.fin_arav...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="aravo_internal_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="oracle_id" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="site_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="site_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="siteaddress1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sitecity" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sitecountry" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sitepoemailaddress" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sitetype" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sstateregionprovince" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="siteremittanceemail" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="ingest_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="withholdingtaxtype" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="withholdingtaxcode" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="withholdingtaxrate" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="whtstartdate" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="whtenddate" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="withholdingtaxexempt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="tpcountryrpt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="trcformifavailable" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="form10f" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="attestationofnopenop" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="isltdcapplicable" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="lutactive" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="enddate" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="lutnumber" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="reversecharge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="234" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_12860_88ec6171de7526428d03cafe4f0fbeb4_\Engine_12860_63c23e32a5f39042bbede559786d5575~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="222" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_12860_88ec6171de7526428d03cafe4f0fbeb4_\Engine_12860_23eb1c914746a84cb9c71d3d2506da89~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="306" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Aravo Internal ID" />
+            <Field field="site id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="aravo_internal_id" />
+            <Field field="site_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_identifier" selected="True" rename="Right_identifier" input="Right_" />
+                <SelectField field="Right_siteaddress1" selected="True" rename="Right_siteaddress1" input="Right_" />
+                <SelectField field="Right_sitecity" selected="True" rename="Right_sitecity" input="Right_" />
+                <SelectField field="Right_sitecountry" selected="True" rename="Right_sitecountry" input="Right_" />
+                <SelectField field="Right_sitepoemailaddress" selected="True" rename="Right_sitepoemailaddress" input="Right_" />
+                <SelectField field="Right_sitetype" selected="True" rename="Right_sitetype" input="Right_" />
+                <SelectField field="Right_sstateregionprovince" selected="True" rename="Right_sstateregionprovince" input="Right_" />
+                <SelectField field="Right_siteremittanceemail" selected="True" rename="Right_siteremittanceemail" input="Right_" />
+                <SelectField field="Right_tpcountryrpt" selected="True" rename="Right_tpcountryrpt" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="aravo_internal_id" selected="True" type="V_String" size="21" />
+            <SelectField field="site_id" selected="True" type="V_String" size="21" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="426" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_12860_88ec6171de7526428d03cafe4f0fbeb4_\Engine_12860_3c619ea61f8bd14fb025b8723c92dcfa~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_12860_88ec6171de7526428d03cafe4f0fbeb4_\Engine_12860_5b213d97e943b04d95268e23ce4f973a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_12860_88ec6171de7526428d03cafe4f0fbeb4_\Engine_12860_cbdc5eeb1ccc074a818e4e01f8a217e7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="618" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[siteRemittanceEmail]=[Right_siteremittanceemail] or ( isempty([siteRemittanceEmail]) and isnull([Right_siteremittanceemail]))</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[siteRemittanceEmail]=[Right_siteremittanceemail] or ( isempty([siteRemittanceEm...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="858" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_12860_88ec6171de7526428d03cafe4f0fbeb4_\Engine_12860_989a52c7d22d6c4ebd3e9dafc633e9de~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="774" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Aravo Internal ID" selected="True" />
+            <SelectField field="Oracle ID" selected="True" />
+            <SelectField field="TPTpe" selected="True" />
+            <SelectField field="ThirdPartyTypeHL" selected="True" />
+            <SelectField field="Address_2" selected="True" />
+            <SelectField field="Address_3" selected="True" />
+            <SelectField field="site id" selected="True" />
+            <SelectField field="identifier" selected="True" />
+            <SelectField field="site name" selected="True" />
+            <SelectField field="isactive" selected="True" />
+            <SelectField field="sitePOEmailAddress" selected="True" />
+            <SelectField field="siteRemittanceEmail" selected="True" />
+            <SelectField field="aravo_internal_id" selected="True" />
+            <SelectField field="site_id" selected="True" />
+            <SelectField field="Right_siteremittanceemail" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="606" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[isactive] = [lutactive]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[isactive] = [lutactive]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_12860_88ec6171de7526428d03cafe4f0fbeb4_\Engine_12860_b173669e8cea1b4c993c6815556ccac2~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Left" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Right" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="False" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="False" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ARAVO PARITY TO DL CHECK</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="22a0d627-2846-488f-8d3f-bf66f3f38567" />
+      <Telemetry>
+        <PreviousWorkflowId value="ec20bf76-8b15-453b-ba0d-22e94b54a713" />
+        <OriginWorkflowId value="ec20bf76-8b15-453b-ba0d-22e94b54a713" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

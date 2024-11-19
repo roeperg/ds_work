@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select dlprd.fin_aravo_src.thirdparty_status.oracle_id as HDR_ORACLE_ID,
+	dlprd.fin_aravo_src.thirdparty_status.third_party_name as HDRthird_party_name,
+	dlprd.fin_aravo_src.thirdparty_status.thirdpartytypehl,
+	dlprd.fin_aravo_src.thirdparty_status.third_party_status,
+	dlprd.fin_aravo_src.thirdparty_status.aravo_internal_id,
+	dlprd.fin_aravo_src.supp_site.oracle_id as SITE_oracle_id,
+	dlprd.fin_aravo_src.supp_site.supplier_name SITEsupplier_name,
+	dlprd.fin_aravo_src.supp_site.site_id as SITEsite_id,
+	dlprd.fin_aravo_src.supp_site.identifier as SITEidentifier,
+	dlprd.fin_aravo_src.supp_site.site_name as SITEsite_name,
+	dlprd.fin_aravo_src.supp_site.tpcountryrpt as SITEtpcountryrpt,
+	dlprd.fin_aravo_src.supp_site.enddate as siteenddate,
+	dlprd.fin_aravo_src.supp_site.sitetype,
+	dlprd.fin_aravo_src.supp_site.whtenddate as sitewhtenddate,
+	dlprd.fin_aravo_src.supp_site.whtstartdate as sitewhtstartdate,
+	dlprd.fin_aravo_src.thirdparty_status.tpcountryrpt as tpcountryrpt1,
+	dlprd.fin_aravo_src.thirdparty_status.organizationtype,
+	dlprd.fin_aravo_src.thirdparty_status.minoritytype,
+	dlprd.fin_aravo_src.thirdparty_status.active as HDRactive,
+	dlprd.fin_aravo_src.thirdparty_status.third_party_created_date,
+	dlprd.fin_aravo_src.thirdparty_status.doing_business_as,
+	dlprd.fin_aravo_src.thirdparty_status.tpsubcategory,
+	dlprd.fin_aravo_src.thirdparty_status.supplierinactivedate 
+from dlprd.fin_aravo_src.thirdparty_status 
+	left join dlprd.fin_aravo_src.supp_site on dlprd.fin_aravo_src.thirdparty_status.aravo_internal_id = dlprd.fin_aravo_src.supp_site.aravo_internal_id 
+group by dlprd.fin_aravo_src.thirdparty_status.oracle_id, dlprd.fin_aravo_src.thirdparty_status.third_party_name, dlprd.fin_aravo_src.thirdparty_status.thirdpartytypehl, dlprd.fin_aravo_src.thirdparty_status.third_party_status, dlprd.fin_aravo_src.thirdparty_status.aravo_internal_id, dlprd.fin_aravo_src.supp_site.oracle_id, dlprd.fin_aravo_src.supp_site.supplier_name, dlprd.fin_aravo_src.supp_site.site_id, dlprd.fin_aravo_src.supp_site.identifier, dlprd.fin_aravo_src.supp_site.site_name, dlprd.fin_aravo_src.supp_site.tpcountryrpt, dlprd.fin_aravo_src.supp_site.enddate, dlprd.fin_aravo_src.supp_site.sitetype, dlprd.fin_aravo_src.supp_site.whtenddate, dlprd.fin_aravo_src.supp_site.whtstartdate, dlprd.fin_aravo_src.thirdparty_status.tpcountryrpt, dlprd.fin_aravo_src.thirdparty_status.organizationtype, dlprd.fin_aravo_src.thirdparty_status.minoritytype, dlprd.fin_aravo_src.thirdparty_status.active, dlprd.fin_aravo_src.thirdparty_status.third_party_created_date, dlprd.fin_aravo_src.thirdparty_status.doing_business_as, dlprd.fin_aravo_src.thirdparty_status.tpsubcategory, dlprd.fin_aravo_src.thirdparty_status.supplierinactivedate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select dlprd.fin_aravo_src.t...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HDR_ORACLE_ID" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="HDRthird_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="thirdpartytypehl" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="third_party_status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="aravo_internal_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="SITE_oracle_id" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="SITEsupplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="SITEsite_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="SITEidentifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="SITEsite_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="SITEtpcountryrpt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="siteenddate" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="sitetype" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sitewhtenddate" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="sitewhtstartdate" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="tpcountryrpt1" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="organizationtype" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="minoritytype" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="HDRactive" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="third_party_created_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="doing_business_as" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="tpsubcategory" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="supplierinactivedate" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="330" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_18984_f1b982979580584586ca843810678aab_\Engine_18984_28086325c4098b40b048f95df9d8f3e4~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="HDR_ORACLE_ID" selected="True" />
+            <SelectField field="HDRthird_party_name" selected="True" />
+            <SelectField field="HDRactive" selected="True" />
+            <SelectField field="thirdpartytypehl" selected="True" />
+            <SelectField field="third_party_status" selected="True" />
+            <SelectField field="aravo_internal_id" selected="True" />
+            <SelectField field="tpcountryrpt1" selected="True" />
+            <SelectField field="organizationtype" selected="True" />
+            <SelectField field="minoritytype" selected="True" />
+            <SelectField field="third_party_created_date" selected="True" />
+            <SelectField field="doing_business_as" selected="True" />
+            <SelectField field="tpsubcategory" selected="True" />
+            <SelectField field="supplierinactivedate" selected="True" />
+            <SelectField field="SITE_oracle_id" selected="True" />
+            <SelectField field="SITEsupplier_name" selected="True" />
+            <SelectField field="SITEsite_id" selected="True" />
+            <SelectField field="SITEidentifier" selected="True" />
+            <SelectField field="SITEsite_name" selected="True" />
+            <SelectField field="SITEtpcountryrpt" selected="True" />
+            <SelectField field="siteenddate" selected="True" />
+            <SelectField field="sitetype" selected="True" />
+            <SelectField field="sitewhtenddate" selected="True" />
+            <SelectField field="sitewhtstartdate" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ARAVO SUPPLIER DATA COMP</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e4362777-9f47-4512-950d-6e95a2da3402" />
+      <Telemetry>
+        <PreviousWorkflowId value="c5839469-4b9c-4077-8a27-fbb3fdf0c23f" />
+        <OriginWorkflowId value="c5839469-4b9c-4077-8a27-fbb3fdf0c23f" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

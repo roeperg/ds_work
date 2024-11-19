@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||SELECT Distinct
+hou.name,
+count(distinct inv.invoice_num) inv_count,
+( case when ss.COUNTRY='IQ' then 'Iraq'
+when ss.COUNTRY='KW' then 'Kuwait'
+when ss.COUNTRY='LB' then 'Lebanon'
+when ss.COUNTRY='LY' then 'Libya'
+when ss.COUNTRY='QA' then 'Qatar'
+when ss.COUNTRY='SA' then 'Saudi Arabia'
+when ss.COUNTRY='SY' then 'Syria'
+when ss.COUNTRY='YE' then 'Republic of Yemen' end) country
+FROM apps.ap_suppliers s,
+apps.ap_supplier_sites_all ss,
+apps.hz_parties hp,
+apps.hz_party_sites hps,
+apps.ap_invoices_all inv,
+apps.hr_operating_units hou
+WHERE 1 = 1
+-- AND (( s.end_date_active IS NULL) OR (TRUNC(s.end_date_active) &gt;= '01-AUG-2015') )
+AND hou.ORGANIZATION_ID=inv.org_id
+AND s.vendor_id = inv.vendor_id
+AND inv.creation_date between '01-AUG-2022' and '31-JUL-2023'
+AND s.vendor_id = ss.vendor_id
+AND hp.party_id = s.party_id
+AND hps.party_site_id = ss.party_site_id
+-- AND s.vendor_type_lookup_code not in ('EMPLOYEE')
+AND ss.COUNTRY in ('IQ','KW','LB','LY','QA','SA','SY','YE')
+group by
+hou.name,
+( case when ss.COUNTRY='IQ' then 'Iraq'
+when ss.COUNTRY='KW' then 'Kuwait'
+when ss.COUNTRY='LB' then 'Lebanon'
+when ss.COUNTRY='LY' then 'Libya'
+when ss.COUNTRY='QA' then 'Qatar'
+when ss.COUNTRY='SA' then 'Saudi Arabia'
+when ss.COUNTRY='SY' then 'Syria'
+when ss.COUNTRY='YE' then 'Republic of Yemen' end)</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=SELECT Distinct
+hou.name,...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NAME" size="240" source="File: PITU5I" type="V_String" />
+            <Field name="INV_COUNT" source="File: PITU5I" type="Double" />
+            <Field name="COUNTRY" size="17" source="File: PITU5I" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_34464_4c8cce60ec544b1f8c04bffa1f633987_\Engine_34464_fef2b2dfc97b8d43950ad8d0cf4e5b12~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Boycotted Transactions by OU and country Audit 2023</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="db9800c7-b0ea-41bf-b530-15137a7c97f0" />
+      <Telemetry>
+        <PreviousWorkflowId value="d5cd4ce7-4d4e-4cb2-beb7-f28d84eb7a1d" />
+        <OriginWorkflowId value="d5cd4ce7-4d4e-4cb2-beb7-f28d84eb7a1d" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

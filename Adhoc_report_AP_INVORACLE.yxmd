@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,
+	AP.AP_INVOICES_ALL.INVOICE_ID,
+	AP.AP_INVOICES_ALL.VENDOR_ID,
+	AP.AP_INVOICES_ALL.INVOICE_NUM,
+	AP.AP_SUPPLIERS.VENDOR_NAME,
+	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,
+	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as "Sum_AMOUNT_PAID",
+	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,
+	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG 
+from AP.AP_INVOICES_ALL 
+	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID 
+where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' 
+	and '01-AUG-2022' 
+	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'
+group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select AP.AP_INVOICES_ALL.IN...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="INVOICE_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="DateTime" />
+            <Field name="INVOICE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="Int64" />
+            <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="Int64" />
+            <Field name="INVOICE_NUM" size="50" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="V_String" />
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="V_String" />
+            <Field name="INVOICE_CURRENCY_CODE" size="15" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="String" />
+            <Field name="Sum_AMOUNT_PAID" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="Double" />
+            <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="String" />
+            <Field name="PAYMENT_STATUS_FLAG" size="1" source="File: aka:5fda36ca022c061b0852e8f1|||select AP.AP_INVOICES_ALL.INVOICE_DATE,&#xA;	AP.AP_INVOICES_ALL.INVOICE_ID,&#xA;	AP.AP_INVOICES_ALL.VENDOR_ID,&#xA;	AP.AP_INVOICES_ALL.INVOICE_NUM,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE,&#xA;	Sum(AP.AP_INVOICES_ALL.AMOUNT_PAID) as &quot;Sum_AMOUNT_PAID&quot;,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE,&#xA;	AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG &#xA;from AP.AP_INVOICES_ALL &#xA;	inner join AP.AP_SUPPLIERS on AP.AP_INVOICES_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where AP.AP_INVOICES_ALL.INVOICE_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;	and AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG = 'Y'&#xA;group by AP.AP_INVOICES_ALL.INVOICE_DATE, AP.AP_INVOICES_ALL.INVOICE_ID, AP.AP_INVOICES_ALL.VENDOR_ID, AP.AP_INVOICES_ALL.INVOICE_NUM, AP.AP_SUPPLIERS.VENDOR_NAME, AP.AP_INVOICES_ALL.INVOICE_CURRENCY_CODE, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE, AP.AP_INVOICES_ALL.PAYMENT_STATUS_FLAG" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_22128_aca95cf71ce04ad8981855b84c20d719_\Engine_9700_096594e5bff14387affe2cada595c856_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Adhoc report AP INVORACLE</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="8e54ee6a-754e-44a5-80ae-d6b45bf21d3d" />
+      <Telemetry>
+        <PreviousWorkflowId value="3226cfb4-9737-4326-bebb-298dd0587f4a" />
+        <OriginWorkflowId value="ae84236c-9a74-425a-8ac1-aa6e6da467ee" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

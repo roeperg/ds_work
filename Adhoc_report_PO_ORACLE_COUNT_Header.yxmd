@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_21784_cac7b82cc0ba4773a00e3afbb62d023a_\Engine_7216_eb7b873c2a0e422e81961cd381df07c1_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,
+	PO.PO_HEADERS_ALL.CREATION_DATE,
+	PO.PO_HEADERS_ALL.VENDOR_ID,
+	HR.HR_ALL_ORGANIZATION_UNITS.NAME,
+	AP.AP_SUPPLIERS.VENDOR_NAME,
+	PO.PO_HEADERS_ALL.SEGMENT1 as "COUPA PO #",
+	AP.AP_SUPPLIERS.SEGMENT1 as "Supplier Num",
+	PO.PO_HEADERS_ALL.CANCEL_FLAG,
+	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE 
+from PO.PO_HEADERS_ALL 
+	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID 
+	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID 
+where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' 
+	and '01-AUG-2022' 
+group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select PO.PO_HEADERS_ALL.PO_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PO_HEADER_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="Double" />
+            <Field name="CREATION_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="DateTime" />
+            <Field name="VENDOR_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="Double" />
+            <Field name="NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="V_String" />
+            <Field name="VENDOR_NAME" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="V_String" />
+            <Field name="COUPA PO #" size="20" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="String" />
+            <Field name="Supplier Num" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="String" />
+            <Field name="CANCEL_FLAG" size="1" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="String" />
+            <Field name="VENDOR_TYPE_LOOKUP_CODE" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select PO.PO_HEADERS_ALL.PO_HEADER_ID,&#xA;	PO.PO_HEADERS_ALL.CREATION_DATE,&#xA;	PO.PO_HEADERS_ALL.VENDOR_ID,&#xA;	HR.HR_ALL_ORGANIZATION_UNITS.NAME,&#xA;	AP.AP_SUPPLIERS.VENDOR_NAME,&#xA;	PO.PO_HEADERS_ALL.SEGMENT1 as &quot;COUPA PO #&quot;,&#xA;	AP.AP_SUPPLIERS.SEGMENT1 as &quot;Supplier Num&quot;,&#xA;	PO.PO_HEADERS_ALL.CANCEL_FLAG,&#xA;	AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE &#xA;from PO.PO_HEADERS_ALL &#xA;	inner join HR.HR_ALL_ORGANIZATION_UNITS on PO.PO_HEADERS_ALL.ORG_ID = HR.HR_ALL_ORGANIZATION_UNITS.ORGANIZATION_ID &#xA;	inner join AP.AP_SUPPLIERS on PO.PO_HEADERS_ALL.VENDOR_ID = AP.AP_SUPPLIERS.VENDOR_ID &#xA;where PO.PO_HEADERS_ALL.CREATION_DATE Between '01-AUG-2021' &#xA;	and '01-AUG-2022' &#xA;group by PO.PO_HEADERS_ALL.PO_HEADER_ID, PO.PO_HEADERS_ALL.CREATION_DATE, PO.PO_HEADERS_ALL.VENDOR_ID, HR.HR_ALL_ORGANIZATION_UNITS.NAME, AP.AP_SUPPLIERS.VENDOR_NAME, PO.PO_HEADERS_ALL.SEGMENT1, AP.AP_SUPPLIERS.SEGMENT1, PO.PO_HEADERS_ALL.CANCEL_FLAG, AP.AP_SUPPLIERS.VENDOR_TYPE_LOOKUP_CODE" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Adhoc report PO ORACLE COUNT Header</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ee18f1fe-5427-4029-b968-27ed899eeefe" />
+      <Telemetry>
+        <PreviousWorkflowId value="0068ebd9-cc1f-46ae-8ec4-956dc9d1f244" />
+        <OriginWorkflowId value="973f2027-6975-486a-b6f9-26b788cc0569" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

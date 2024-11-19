@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,
+	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,
+	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,
+	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,
+	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,
+	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,
+	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,
+	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,
+	COUPA.DW_COUPA_FA_APPROVER.POSITION,
+	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,
+	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,
+	COUPA.DW_COUPA_FA_APPROVER.STATUS,
+	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,
+	COUPA.DW_COUPA_FA_APPROVER.APPROVER 
+from COUPA.DW_COUPA_FA_APPROVER</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select COUPA.DW_COUPA_FA_APP...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="APPROVAL_CHAIN_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="APPROVAL_CHAIN_NAME" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="DOCUMENT_NUMBER" size="400" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="DOCUMENT_TYPE" size="400" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="DOCUMENT_STATUS" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="APPROVER_ROLE" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="APPROVER_ID" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="APPROVAL_DATE_UTC" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="DateTime" />
+            <Field name="POSITION" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="APPROVER_TYPE" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="APPROVAL_METHOD" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="STATUS" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+            <Field name="SUBMISSION_DATE" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="DateTime" />
+            <Field name="APPROVER" size="1000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_CHAIN_NAME,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_NUMBER,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.DOCUMENT_STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ROLE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_ID,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_DATE_UTC,&#xA;	COUPA.DW_COUPA_FA_APPROVER.POSITION,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER_TYPE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVAL_METHOD,&#xA;	COUPA.DW_COUPA_FA_APPROVER.STATUS,&#xA;	COUPA.DW_COUPA_FA_APPROVER.SUBMISSION_DATE,&#xA;	COUPA.DW_COUPA_FA_APPROVER.APPROVER &#xA;from COUPA.DW_COUPA_FA_APPROVER" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="438" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_26444_0327a2209e2546cf91deda928b90a970_\Engine_26204_c60f7ca0886b41cba965e1e3dfa14e9c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="318" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>APPROVAL_CHAIN_NAME</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-01-10 11:30:12</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Buy Desk</Operand>
+              <StartDate>2022-01-10 11:30:12</StartDate>
+              <EndDate>2022-01-10 11:30:12</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([APPROVAL_CHAIN_NAME],"Buy Desk")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="558" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff([APPROVAL_DATE_UTC],[SUBMISSION_DATE],&quot;Hours&quot;)/24" field="DURATION" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DURATION = DateTimeDiff([APPROVAL_DATE_UTC],[SUBMISSION_DATE],"Hours")/24
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="666" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\rcowing\Desktop\rcowing\Documents\ALTERYX\buydesk TIME output.xlsx|||raw DURATION</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>buydesk TIME output.xlsx
+Query=raw DURATION</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>BUY DESK Duration</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="66fec784-e1bf-4170-8a28-1a43fc491c05" />
+      <Telemetry>
+        <PreviousWorkflowId value="84bc3fa4-c62f-4f44-a163-6d752e9ce761" />
+        <OriginWorkflowId value="84bc3fa4-c62f-4f44-a163-6d752e9ce761" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>EDPPRDRBI</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as "PR ID",
+	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as "PR Submit Date",
+	COUPA.DW_COUPA_REQ_HDR.STATUS as "Req Status",
+	COUPA.DW_COUPA_PO_HDR.STATUS as "PO Status",
+	COUPA.DW_COUPA_PO_HDR.ID as "PO NUMBER",
+	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as "PO ID",
+	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,
+	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,
+	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,
+	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION 
+from COUPA.DW_COUPA_PO_HDR 
+	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID 
+	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID 
+where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' 
+group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:EDPPRDRBI
+Query=select COUPA.DW_COUPA_REQ_HD...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PR ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="Int64" />
+            <Field name="PR Submit Date" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="DateTime" />
+            <Field name="Req Status" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="V_String" />
+            <Field name="PO Status" size="50" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="V_String" />
+            <Field name="PO NUMBER" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="Double" />
+            <Field name="PO ID" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="V_String" />
+            <Field name="SUPPLIER_NAME" size="100" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="V_String" />
+            <Field name="SUPPLIER_ID" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="Double" />
+            <Field name="SUPPLIER_NUMBER" size="255" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="V_String" />
+            <Field name="DESCRIPTION" size="4000" source="File: aka:5f11ec5cf88a2f1cc8948256|||select COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID as &quot;PR ID&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE as &quot;PR Submit Date&quot;,&#xA;	COUPA.DW_COUPA_REQ_HDR.STATUS as &quot;Req Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.STATUS as &quot;PO Status&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.ID as &quot;PO NUMBER&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1 as &quot;PO ID&quot;,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID,&#xA;	COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER,&#xA;	COUPA.DW_COUPA_REQ_LINE.DESCRIPTION &#xA;from COUPA.DW_COUPA_PO_HDR &#xA;	right join COUPA.DW_COUPA_REQ_HDR on COUPA.DW_COUPA_PO_HDR.REQUISITION_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;	left join COUPA.DW_COUPA_REQ_LINE on COUPA.DW_COUPA_REQ_LINE.REQUISITION_HEADER_ID = COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID &#xA;where COUPA.DW_COUPA_REQ_LINE.REQUEST_TYPE = 'Non-Catalog Request' &#xA;group by COUPA.DW_COUPA_REQ_HDR.REQUISITION_ID, COUPA.DW_COUPA_REQ_HDR.SUBMITTED_AT_DATE, COUPA.DW_COUPA_REQ_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.STATUS, COUPA.DW_COUPA_PO_HDR.ID, COUPA.DW_COUPA_PO_HDR.CUSTOM_FIELD_1, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NAME, COUPA.DW_COUPA_PO_HDR.SUPPLIER_ID, COUPA.DW_COUPA_PO_HDR.SUPPLIER_NUMBER, COUPA.DW_COUPA_REQ_LINE.DESCRIPTION" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_25304_b12655da1ae44726add45d1a05331292_\Engine_19752_82a5749f515b4c55b47172b43c7bfb40_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="246" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PR ID" action="GroupBy" rename="PR ID" />
+            <SummarizeField field="PR Submit Date" action="GroupBy" rename="PR Submit Date" />
+            <SummarizeField field="Req Status" action="GroupBy" rename="Req Status" />
+            <SummarizeField field="PO Status" action="Concat" rename="Concat_PO Status">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="PO NUMBER" action="Concat" rename="Concat_PO NUMBER">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="SUPPLIER_NAME" action="Concat" rename="Concat_SUPPLIER_NAME">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="SUPPLIER_ID" action="Concat" rename="Concat_SUPPLIER_ID">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="SUPPLIER_NUMBER" action="Concat" rename="Concat_SUPPLIER_NUMBER">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="DESCRIPTION" action="Concat" rename="Concat_DESCRIPTION">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PO NUMBER" selected="True" type="V_String" size="19" />
+            <SelectField field="SUPPLIER_ID" selected="True" type="V_String" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_25304_b12655da1ae44726add45d1a05331292_\Engine_19752_9a22d2703371409f875d3445fec38c4e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="234" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PR ID" action="GroupBy" rename="PR ID" />
+            <SummarizeField field="PO ID" action="CountDistinct" rename="CountDistinct_PO ID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PR ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PR ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_PR ID" selected="False" rename="Right_PR ID" input="Right_" />
+                <SelectField field="Right_CountDistinct_PO ID" selected="True" rename="PO COUNT Distinct" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="234" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PR ID" action="GroupBy" rename="PR ID" />
+            <SummarizeField field="SUPPLIER_ID" action="CountDistinct" rename="CountDistinct_SUPPLIER_ID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PR ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PR ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Concat_DESCRIPTION" selected="True" rename="DESCRIPTION" input="Left_" />
+                <SelectField field="Right_PR ID" selected="False" rename="Right_PR ID" input="Right_" />
+                <SelectField field="Right_CountDistinct_SUPPLIER_ID" selected="True" rename="Supplier Count Distinct" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="858" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Contains(&quot;ordered&quot;, [Req Status],1) and Contains(&quot;issued&quot;, [Concat_PO Status],1) then 1 elseif &#xA;Contains(&quot;recieved&quot;, [Req Status],1) and Contains(&quot;issued&quot;, [Concat_PO Status],1) then 1 &#xA;else 0 endif " field="PROCESS SELECT RENEW" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PROCESS SELECT RENEW = if Contains("ordered", [Req Status],1) and Contains("issu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="246" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PR ID" action="GroupBy" rename="PR ID" />
+            <SummarizeField field="PO ID" action="GroupBy" rename="PO ID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="330" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PR ID" action="GroupBy" rename="PR ID" />
+            <SummarizeField field="PO ID" action="Concat" rename="PO ID">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="570" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PR ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PR ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_PR ID" selected="True" rename="Right_PR ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ALL NC PR to PO Reference</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9eeb8271-d14c-4098-9c49-8f549f664833" />
+      <Telemetry>
+        <PreviousWorkflowId value="37645ba0-6621-4ecd-abd6-31951251bdc4" />
+        <OriginWorkflowId value="37645ba0-6621-4ecd-abd6-31951251bdc4" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

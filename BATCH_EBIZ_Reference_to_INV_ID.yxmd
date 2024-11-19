@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>PITU5I</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select xpbc.BATCH_ID,
+	aia.INVOICE_ID invoice_id,
+	aia.INVOICE_NUM invoice_number,
+	xpbc.CREATION_DATE batch_date 
+from apps.ap_invoices_all aia, apps.ap_suppliers asa, apps.ap_invoice_payments_all aip, apps.ap_checks_all aca, xxint.xxint_payment_remit_advise_hdr xpra, xxint.xxint_process_batch_control xpbc 
+where aia.VENDOR_ID = asa.VENDOR_ID 
+	and aia.INVOICE_ID = aip.INVOICE_ID 
+	and aip.CHECK_ID = aca.CHECK_ID 
+	and aip.CHECK_ID = xpra.PAYMENT_ID 
+	and xpra.PAYMENT_ID = aca.CHECK_ID 
+	and xpra.PAYMENT_NUMBER = aca.CHECK_NUMBER 
+	and xpbc.BATCH_ID = xpra.BATCH_ID 
+	and xpbc.CREATION_DATE &gt;= '01-JUN-2022'</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:PITU5I
+Query=select xpbc.BATCH_ID,
+	aia....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BATCH_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select xpbc.BATCH_ID,&#xA;	aia.INVOICE_ID invoice_id,&#xA;	aia.INVOICE_NUM invoice_number,&#xA;	xpbc.CREATION_DATE batch_date &#xA;from apps.ap_invoices_all aia, apps.ap_suppliers asa, apps.ap_invoice_payments_all aip, apps.ap_checks_all aca, xxint.xxint_payment_remit_advise_hdr xpra, xxint.xxint_process_batch_control xpbc &#xA;where aia.VENDOR_ID = asa.VENDOR_ID &#xA;	and aia.INVOICE_ID = aip.INVOICE_ID &#xA;	and aip.CHECK_ID = aca.CHECK_ID &#xA;	and aip.CHECK_ID = xpra.PAYMENT_ID &#xA;	and xpra.PAYMENT_ID = aca.CHECK_ID &#xA;	and xpra.PAYMENT_NUMBER = aca.CHECK_NUMBER &#xA;	and xpbc.BATCH_ID = xpra.BATCH_ID &#xA;	and xpbc.CREATION_DATE &gt;= '01-JUN-2022'" type="Double" />
+            <Field name="INVOICE_ID" source="File: aka:5fda36ca022c061b0852e8f1|||select xpbc.BATCH_ID,&#xA;	aia.INVOICE_ID invoice_id,&#xA;	aia.INVOICE_NUM invoice_number,&#xA;	xpbc.CREATION_DATE batch_date &#xA;from apps.ap_invoices_all aia, apps.ap_suppliers asa, apps.ap_invoice_payments_all aip, apps.ap_checks_all aca, xxint.xxint_payment_remit_advise_hdr xpra, xxint.xxint_process_batch_control xpbc &#xA;where aia.VENDOR_ID = asa.VENDOR_ID &#xA;	and aia.INVOICE_ID = aip.INVOICE_ID &#xA;	and aip.CHECK_ID = aca.CHECK_ID &#xA;	and aip.CHECK_ID = xpra.PAYMENT_ID &#xA;	and xpra.PAYMENT_ID = aca.CHECK_ID &#xA;	and xpra.PAYMENT_NUMBER = aca.CHECK_NUMBER &#xA;	and xpbc.BATCH_ID = xpra.BATCH_ID &#xA;	and xpbc.CREATION_DATE &gt;= '01-JUN-2022'" type="Int64" />
+            <Field name="INVOICE_NUMBER" size="50" source="File: aka:5fda36ca022c061b0852e8f1|||select xpbc.BATCH_ID,&#xA;	aia.INVOICE_ID invoice_id,&#xA;	aia.INVOICE_NUM invoice_number,&#xA;	xpbc.CREATION_DATE batch_date &#xA;from apps.ap_invoices_all aia, apps.ap_suppliers asa, apps.ap_invoice_payments_all aip, apps.ap_checks_all aca, xxint.xxint_payment_remit_advise_hdr xpra, xxint.xxint_process_batch_control xpbc &#xA;where aia.VENDOR_ID = asa.VENDOR_ID &#xA;	and aia.INVOICE_ID = aip.INVOICE_ID &#xA;	and aip.CHECK_ID = aca.CHECK_ID &#xA;	and aip.CHECK_ID = xpra.PAYMENT_ID &#xA;	and xpra.PAYMENT_ID = aca.CHECK_ID &#xA;	and xpra.PAYMENT_NUMBER = aca.CHECK_NUMBER &#xA;	and xpbc.BATCH_ID = xpra.BATCH_ID &#xA;	and xpbc.CREATION_DATE &gt;= '01-JUN-2022'" type="V_String" />
+            <Field name="BATCH_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select xpbc.BATCH_ID,&#xA;	aia.INVOICE_ID invoice_id,&#xA;	aia.INVOICE_NUM invoice_number,&#xA;	xpbc.CREATION_DATE batch_date &#xA;from apps.ap_invoices_all aia, apps.ap_suppliers asa, apps.ap_invoice_payments_all aip, apps.ap_checks_all aca, xxint.xxint_payment_remit_advise_hdr xpra, xxint.xxint_process_batch_control xpbc &#xA;where aia.VENDOR_ID = asa.VENDOR_ID &#xA;	and aia.INVOICE_ID = aip.INVOICE_ID &#xA;	and aip.CHECK_ID = aca.CHECK_ID &#xA;	and aip.CHECK_ID = xpra.PAYMENT_ID &#xA;	and xpra.PAYMENT_ID = aca.CHECK_ID &#xA;	and xpra.PAYMENT_NUMBER = aca.CHECK_NUMBER &#xA;	and xpbc.BATCH_ID = xpra.BATCH_ID &#xA;	and xpbc.CREATION_DATE &gt;= '01-JUN-2022'" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_26216_dd2fd6c03bb04e25b81ae1be99164915_\Engine_14172_3cee03453f244b3a8133575e5af26b42_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>BATCH EBIZ Reference to INV ID</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="fada4f7d-3fe4-4df6-a2d8-99f1e1d0920b" />
+      <Telemetry>
+        <PreviousWorkflowId value="e91bc83a-678c-48fb-8c68-e7974277d2b1" />
+        <OriginWorkflowId value="e91bc83a-678c-48fb-8c68-e7974277d2b1" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

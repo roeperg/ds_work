@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select "dlprd"."fin_gep_src"."gep_spend_details"."data_source",
+	Sum("dlprd"."fin_gep_src"."gep_spend_details"."spend_usd") as "Sum_spend_usd",
+	Count("dlprd"."fin_gep_src"."gep_spend_details"."unique_id") as "Count_unique_id",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_1_sector",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_2_category",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_3_sub_category",
+	"dlprd"."fin_gep_src"."gep_spend_details"."level_4_commodity",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep",
+	"dlprd"."fin_gep_src"."gep_spend_details"."company_code",
+	"dlprd"."fin_gep_src"."gep_spend_details"."department_code",
+	"dlprd"."fin_gep_src"."gep_spend_details"."group_code",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep" as "company_name",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name",
+	"dlprd"."fin_gep_src"."gep_spend_details"."po_line_item_description",
+	"dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_parent_gep",
+	"dlprd"."fin_gep_src"."gep_spend_details"."pcard_transaction_date",
+	"dlprd"."fin_gep_src"."gep_spend_details"."pcard_employee_e_mail_address",
+	"dlprd"."fin_gep_src"."gep_spend_details"."pcard_employee_id",
+	"dlprd"."fin_gep_src"."gep_spend_details"."pcard_employee_country_code",
+	"dlprd"."fin_gep_src"."gep_spend_details"."pcard_employee",
+	"dlprd"."fin_gep_src"."gep_spend_details"."pcard_merchant_country_code" 
+from "dlprd"."fin_gep_src"."gep_spend_details" 
+where ("dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep" Like '%RAMM%' and "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep" Like '%GRAMMAR%') 
+	or ("dlprd"."fin_gep_src"."gep_spend_details"."supplier_name" Like '%GRAMMAR%') 
+	or ("dlprd"."fin_gep_src"."gep_spend_details"."po_line_item_description" Like '%GRAMMAR%') 
+	or ("dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_parent_gep" Like '%GRAMMAR%') 
+group by "dlprd"."fin_gep_src"."gep_spend_details"."data_source", "dlprd"."fin_gep_src"."gep_spend_details"."level_1_sector", "dlprd"."fin_gep_src"."gep_spend_details"."level_2_category", "dlprd"."fin_gep_src"."gep_spend_details"."level_3_sub_category", "dlprd"."fin_gep_src"."gep_spend_details"."level_4_commodity", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_normalized_gep", "dlprd"."fin_gep_src"."gep_spend_details"."company_code", "dlprd"."fin_gep_src"."gep_spend_details"."department_code", "dlprd"."fin_gep_src"."gep_spend_details"."group_code", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name", "dlprd"."fin_gep_src"."gep_spend_details"."po_line_item_description", "dlprd"."fin_gep_src"."gep_spend_details"."supplier_name_parent_gep", "dlprd"."fin_gep_src"."gep_spend_details"."pcard_transaction_date", "dlprd"."fin_gep_src"."gep_spend_details"."pcard_employee_e_mail_address", "dlprd"."fin_gep_src"."gep_spend_details"."pcard_employee_id", "dlprd"."fin_gep_src"."gep_spend_details"."pcard_employee_country_code", "dlprd"."fin_gep_src"."gep_spend_details"."pcard_employee", "dlprd"."fin_gep_src"."gep_spend_details"."pcard_merchant_country_code"</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select "dlprd"."fin_gep_src"...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="data_source" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="Sum_spend_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+            <Field name="Count_unique_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="level_1_sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="level_2_category" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="level_3_sub_category" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="level_4_commodity" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="supplier_name_normalized_gep" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="company_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="department_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="group_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="company_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="supplier_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="po_line_item_description" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="supplier_name_parent_gep" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="pcard_transaction_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="pcard_employee_e_mail_address" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="pcard_employee_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+            <Field name="pcard_employee_country_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="pcard_employee" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="pcard_merchant_country_code" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="450" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Sum_spend_usd" action="Sum" rename="Sum_Sum_spend_usd" />
+            <SummarizeField field="Count_unique_id" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sum_spend_usd" selected="True" size="40.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_29052_6d973821631b4592ad4748f4149971a9_\Engine_29052_1aebe7a7515e094caa2e76af68d5af8e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="546" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="pcard_transaction_date" action="GroupBy" rename="pcard_transaction_date" />
+            <SummarizeField field="Sum_spend_usd" action="Sum" rename="Sum_Sum_spend_usd" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="654" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="pcard_transaction_date" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>pcard_transaction_date - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="450" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="pcard_employee" action="GroupBy" rename="pcard_employee" />
+            <SummarizeField field="Sum_spend_usd" action="Sum" rename="Sum_Sum_spend_usd" />
+            <SummarizeField field="pcard_transaction_date" action="Min" rename="Min_pcard_transaction_date" />
+            <SummarizeField field="pcard_transaction_date" action="Max" rename="Max_pcard_transaction_date" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="558" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Sum_Sum_spend_usd" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sum_Sum_spend_usd - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="data_source" selected="True" />
+            <Field field="level_1_sector" selected="True" />
+            <Field field="level_2_category" selected="True" />
+            <Field field="level_3_sub_category" selected="True" />
+            <Field field="level_4_commodity" selected="True" />
+            <Field field="supplier_name_normalized_gep" selected="True" />
+            <Field field="company_code" selected="True" />
+            <Field field="department_code" selected="True" />
+            <Field field="group_code" selected="True" />
+            <Field field="company_name" selected="True" />
+            <Field field="supplier_name" selected="True" />
+            <Field field="po_line_item_description" selected="True" />
+            <Field field="supplier_name_parent_gep" selected="True" />
+            <Field field="pcard_employee_e_mail_address" selected="True" />
+            <Field field="pcard_employee_country_code" selected="True" />
+            <Field field="pcard_employee" selected="True" />
+            <Field field="pcard_merchant_country_code" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="data_source" size="5" source="File: Corp_Fin_Athena_GBS_Restricted" type="String" />
+            <Field name="Sum_spend_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+            <Field name="Count_unique_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="level_1_sector" size="13" source="File: Corp_Fin_Athena_GBS_Restricted" type="String" />
+            <Field name="level_2_category" size="15" source="File: Corp_Fin_Athena_GBS_Restricted" type="String" />
+            <Field name="level_3_sub_category" size="43" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_String" />
+            <Field name="level_4_commodity" size="43" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_String" />
+            <Field name="supplier_name_normalized_gep" size="20" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_String" />
+            <Field name="company_code" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int16" />
+            <Field name="department_code" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int16" />
+            <Field name="group_code" size="3" source="File: Corp_Fin_Athena_GBS_Restricted" type="String" />
+            <Field name="company_name" size="20" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_String" />
+            <Field name="supplier_name" size="24" source="File: Corp_Fin_Athena_GBS_Restricted" type="String" />
+            <Field name="po_line_item_description" size="1" source="File: Corp_Fin_Athena_GBS_Restricted" type="String" />
+            <Field name="supplier_name_parent_gep" size="31" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_String" />
+            <Field name="pcard_transaction_date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="pcard_employee_e_mail_address" size="32" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_String" />
+            <Field name="pcard_employee_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int32" />
+            <Field name="pcard_employee_country_code" size="2" source="File: Corp_Fin_Athena_GBS_Restricted" type="String" />
+            <Field name="pcard_employee" size="36" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_String" />
+            <Field name="pcard_merchant_country_code" size="2" source="File: Corp_Fin_Athena_GBS_Restricted" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if ([pcard_transaction_date] &lt; '2025-00-01' and [pcard_transaction_date] &gt;= '2024-08-01' ) then &quot;FY25&quot;&#xA;elseif ([pcard_transaction_date] &lt; '2024-00-01' and [pcard_transaction_date] &gt;= '2023-08-01' ) then &quot;FY24&quot;&#xA;elseif ([pcard_transaction_date] &lt; '2023-00-01' and [pcard_transaction_date] &gt;= '2022-08-01' ) then &quot;FY24&quot;&#xA;elseif ([pcard_transaction_date] &lt; '2022-00-01' and [pcard_transaction_date] &gt;= '2021-08-01' ) then &quot;FY24&quot;&#xA;else &quot;Old&quot;&#xA;endif&#xA;&#xA;" field="Fiscal Year" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Fiscal Year = if ([pcard_transaction_date] &lt; '2025-00-01' and [pcard_transaction...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>athena_query</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0e3b2d49-75e0-41fb-a23a-a6717a54547f" />
+      <Telemetry>
+        <PreviousWorkflowId value="e655becd-221b-4923-acb1-1ff39bec1788" />
+        <OriginWorkflowId value="8f2a0c03-ca93-436d-8efb-08f4002ab984" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
