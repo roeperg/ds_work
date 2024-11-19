@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FileBrowse.FileBrowse">
+        <Position x="66" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>File Browse (4)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="66" y="198" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Copy of Copy of AGING (002).xlsx
+Query=`Sales Order_PO_Payment_Info...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx" Package="False" IsMacro="False" IsOutput="False" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer Reference" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Sales Order #" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Invoice" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Ship date" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Date" />
+            <Field name="Sales Order Status" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="DFF Status" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Intuit PO# " source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Double" />
+            <Field name="PO Line#" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Double" />
+            <Field name="PO Closure Status" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Check #" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Double" />
+            <Field name="Payment Date" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="264" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Sales Order #" action="Concat" rename="Concat_Sales Order #">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_Sales Order #" size="2147483647" source="Summarize: Concat - Sales Order #" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="369" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName>PITU5I</CachedCosmeticName>
+              <File RecordLimit="" FileFormat="17">aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,
+	l.FLOW_STATUS_CODE sales_order_status,
+	l.ATTRIBUTE5 DFF_STATUS,
+	ph.SEGMENT1 PO_Number,
+	pl.LINE_NUM PO_Line_Number,
+	ph.CLOSED_CODE po_header_status,
+	pl.CLOSED_CODE po_line_status,
+	chk.CHECK_NUMBER,
+	chk.CHECK_DATE payment_date,
+	inv.INVOICE_NUM invoice_number 
+from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp 
+where h.HEADER_ID = l.HEADER_ID(+) 
+	and h.HEADER_ID = ods.HEADER_ID(+) 
+	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) 
+	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) 
+	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) 
+	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID 
+	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID 
+	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID 
+	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID 
+	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID 
+	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) 
+	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) 
+	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) 
+	and (invp.CHECK_ID = chk.CHECK_ID(+)) 
+	and h.ORDER_NUMBER in ('243055062')</File>
+              <FormatSpecificOptions>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <ReadCentroids>False</ReadCentroids>
+                <NoProgress>False</NoProgress>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ModifySQL</Mode>
+          <Modifications>
+            <Modify Action="ReplaceString" Annotation="'243055062'">
+              <Field>Concat_Sales Order #</Field>
+              <ReplaceText>'243055062'</ReplaceText>
+            </Modify>
+          </Modifications>
+          <ErrorBehaviour>Warning</ErrorBehaviour>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ORDER_NUMBER" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="Double" />
+            <Field name="SALES_ORDER_STATUS" size="30" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="String" />
+            <Field name="DFF_STATUS" size="240" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="V_String" />
+            <Field name="PO_NUMBER" size="20" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="String" />
+            <Field name="PO_LINE_NUMBER" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="Double" />
+            <Field name="PO_HEADER_STATUS" size="25" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="String" />
+            <Field name="PO_LINE_STATUS" size="25" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="String" />
+            <Field name="CHECK_NUMBER" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="Int64" />
+            <Field name="PAYMENT_DATE" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="DateTime" />
+            <Field name="INVOICE_NUMBER" size="50" source="File: aka:5fda36ca022c061b0852e8f1|||select distinct h.ORDER_NUMBER,&#xA;	l.FLOW_STATUS_CODE sales_order_status,&#xA;	l.ATTRIBUTE5 DFF_STATUS,&#xA;	ph.SEGMENT1 PO_Number,&#xA;	pl.LINE_NUM PO_Line_Number,&#xA;	ph.CLOSED_CODE po_header_status,&#xA;	pl.CLOSED_CODE po_line_status,&#xA;	chk.CHECK_NUMBER,&#xA;	chk.CHECK_DATE payment_date,&#xA;	inv.INVOICE_NUM invoice_number &#xA;from ont.OE_DROP_SHIP_SOURCES ods, ont.oe_order_headers_all h, ont.oe_order_lines_all l, po.po_line_locations_all pll, po.po_lines_all pl, po.po_headers_all ph, po.po_requisition_headers_all prh, po.po_requisition_lines_all prl, AP.AP_INVOICES_ALL inv, AP.AP_CHECKS_ALL chk, AP.AP_INVOICE_DISTRIBUTIONS_ALL invd, PO.PO_DISTRIBUTIONS_ALL pod, AP.AP_INVOICE_PAYMENTS_ALL invp &#xA;where h.HEADER_ID = l.HEADER_ID(+) &#xA;	and h.HEADER_ID = ods.HEADER_ID(+) &#xA;	and ods.LINE_LOCATION_ID = pll.LINE_LOCATION_ID(+) &#xA;	and ods.PO_HEADER_ID = ph.PO_HEADER_ID(+) &#xA;	and ods.PO_LINE_ID = pl.PO_LINE_ID(+) &#xA;	and ph.PO_HEADER_ID(+) = pl.PO_HEADER_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = ods.REQUISITION_HEADER_ID &#xA;	and prl.REQUISITION_LINE_ID(+) = ods.REQUISITION_LINE_ID &#xA;	and prh.REQUISITION_HEADER_ID(+) = prl.REQUISITION_HEADER_ID &#xA;	and pod.LINE_LOCATION_ID(+) = pll.LINE_LOCATION_ID &#xA;	and (invd.PO_DISTRIBUTION_ID(+) = pod.PO_DISTRIBUTION_ID) &#xA;	and (inv.INVOICE_ID(+) = invd.INVOICE_ID) &#xA;	and (inv.INVOICE_ID = invp.INVOICE_ID(+)) &#xA;	and (invp.CHECK_ID = chk.CHECK_ID(+)) &#xA;	and h.ORDER_NUMBER in ('243055062')" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="159" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;'&quot;+[Sales Order #]+&quot;'&quot;" field="Sales Order #" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Sales Order # = "'"+[Sales Order #]+"'"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer Reference" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Sales Order #" size="255" source="Formula: &quot;'&quot;+[Sales Order #]+&quot;'&quot;" type="V_String" />
+            <Field name="Invoice" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Ship date" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Date" />
+            <Field name="Sales Order Status" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="DFF Status" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Intuit PO# " source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Double" />
+            <Field name="PO Line#" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Double" />
+            <Field name="PO Closure Status" size="255" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="V_String" />
+            <Field name="Check #" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Double" />
+            <Field name="Payment Date" source="File: C:\Users\atanner1\Downloads\Copy of Copy of AGING (002).xlsx|||`Sales Order_PO_Payment_Info$`" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="474" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">SCM Sales Order Detail - PO to Payment.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SCM Sales Order Detail - PO to Payment.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="2" Connection="Question" />
+      <Destination ToolID="3" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Action" />
+      <Destination ToolID="16" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>File Browse (2)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SCM - SO to AP Report v2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0078f6a5-4c04-44ec-8462-f070ff825227" />
+      <Telemetry>
+        <PreviousWorkflowId value="2e8044d5-d203-462d-a942-7fcdc7089dc7" />
+        <OriginWorkflowId value="7159eace-631f-40da-9cf6-2b9aa162ee28" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="3" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>16/File</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>FileBrowse</Type>
+              <Description>Upload Sales Order Excel Spreadsheet</Description>
+              <Name>File Browse (2)</Name>
+              <ToolId value="2" />
+              <SaveAs value="False" />
+              <Mode>DW2</Mode>
+              <DW2_SpatialOnly value="False" />
+              <DW2_FieldMap value="False" />
+              <InputToolId value="-1" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="24" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

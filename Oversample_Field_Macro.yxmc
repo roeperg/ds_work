@@ -1,0 +1,1230 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2">
+  <Nodes>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="391" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="101" />
+              <Fields>
+                <Field name="Buy" />
+                <Field name="Var1" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>No</c>
+                  <c>0.273828973062336</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.754292129771784</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>7.2177417576313e-002</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.919294251827523</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.897058906964958</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.80547032575123</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.603328745579347</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>3.9916399400681e-002</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.67440237570554</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.559171541128308</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.317177996272221</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.97673700354062</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.575827395776287</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.721661520423368</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.908943746937439</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.181943874340504</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.903669208521023</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.02810267591849</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>8.9050960494205e-002</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.558859320823103</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.285343292867765</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.668032305780798</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.726474845316261</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.623763406416401</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.941286690998822</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.658570200903341</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.407080689910799</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.310527598485351</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.475143824471161</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.743786015314981</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.545550166396424</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.933462647022679</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.626973449252546</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.504109338158742</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.457407037494704</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.468741161050275</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.667685944121331</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.456304999999702</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.823867809958756</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.792986137559637</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.474408691283315</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.637264639139175</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.319601761177182</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.488968822872266</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.298573212232441</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.738166220718995</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.775222801836208</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.540805125841871</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.356111724860966</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.131235634675249</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.790256211301312</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.235318978782743</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.493772085057572</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.822057366836816</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.498271504184231</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.387421096675098</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.970239387126639</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.902085657697171</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.110262895468622</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.580702364211902</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.123184541705996</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.632307187654078</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>1.9867630675435e-002</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.296815445413813</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.915261707967147</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.647454114397988</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.304312911583111</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.452360889641568</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.543913482455537</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.977264328859746</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.290704727638513</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.635212725959718</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.404217354720458</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.266180586535484</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>5.9618489351124e-002</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.395856832852587</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.438749506371096</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.231913102790713</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.918884797487408</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.729368078988045</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.704705036710948</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.469837769400328</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.322781522525474</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>9.6017912495881e-002</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.82744766282849</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.423005697084591</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.19766041263938</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.552425064146519</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.525295967934653</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.281031833263114</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.461987977847457</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.09096914017573</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>9.7649259492755e-002</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.143030963139609</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.453172496054322</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.240466825431213</c>
+                </r>
+                <r>
+                  <c>Yes</c>
+                  <c>0.262051299214363</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.405942884506658</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.828360852785409</c>
+                </r>
+                <r>
+                  <c>No</c>
+                  <c>0.858642553212121</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Input</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="219" y="391" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>toString([Buy]) == "Yes"</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>toString([Buy]) == "Yes"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="oversample_field__OrigOrder" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="oversample_field__OrigOrder" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="474" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="oversample_field__Uno" action="Count" rename="oversample_field__Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__Count" source="Summarize: Count - oversample_field__Uno" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="558" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+            <Field name="oversample_field__Reorder" size="64" source="Formula: MD5_ASCII(ToString([oversample_field__OrigOrder]))" type="String" />
+            <Field name="oversample_field__Count" source="Summarize: Count - oversample_field__Uno" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="640" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <StartValue>1</StartValue>
+          <FieldName>oversample_field__RecordID</FieldName>
+          <FieldType>Int32</FieldType>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+            <Field name="oversample_field__Reorder" size="64" source="Formula: MD5_ASCII(ToString([oversample_field__OrigOrder]))" type="String" />
+            <Field name="oversample_field__Count" source="Summarize: Count - oversample_field__Uno" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="oversample_field__RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="722" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>oversample_field__RecordID&lt;=((100/[Question.Desired_Pct])-1)*[oversample_field__Count]</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>oversample_field__RecordID&lt;=((100/[Question.Desired_Pct])-1)*...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="oversample_field__RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+            <Field name="oversample_field__Reorder" size="64" source="Formula: MD5_ASCII(ToString([oversample_field__OrigOrder]))" type="String" />
+            <Field name="oversample_field__Count" source="Summarize: Count - oversample_field__Uno" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="oversample_field__RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="oversample_field__RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+            <Field name="oversample_field__Reorder" size="64" source="Formula: MD5_ASCII(ToString([oversample_field__OrigOrder]))" type="String" />
+            <Field name="oversample_field__Count" source="Summarize: Count - oversample_field__Uno" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="oversample_field__RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="804" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="oversample_field__RecordID" selected="False" />
+            <SelectField field="oversample_field__Reorder" selected="False" />
+            <SelectField field="oversample_field__Count" selected="False" />
+            <SelectField field="temp_macro__RecordID" selected="False" />
+            <SelectField field="temp_macro__Count" selected="False" />
+            <SelectField field="temp_macro__Random" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="1" field="oversample_field__Uno" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[oversample_field__Uno = 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+            <Field name="oversample_field__Uno" source="Formula: 1" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="oversample_field__OrigOrder" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="900" y="391" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1048" y="391" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="oversample_field__OrigOrder" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>oversample_field__OrigOrder - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="oversample_field__OrigOrder" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1111" y="391" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="oversample_field__OrigOrder" selected="False" />
+            <SelectField field="temp_macro_RandNum" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1350" y="391" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Output</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="137" y="391" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <StartValue>1</StartValue>
+          <FieldName>oversample_field__OrigOrder</FieldName>
+          <FieldType>Int32</FieldType>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="oversample_field__OrigOrder" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="391" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="oversample_field__Reorder" type="String" size="64" expression="MD5_ASCII(ToString([oversample_field__OrigOrder]))" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>oversample_field__Reorder=MD5_ASCII(ToString([oversample_fiel...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+            <Field name="oversample_field__Reorder" size="64" source="Formula: MD5_ASCII(ToString([oversample_field__OrigOrder]))" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="oversample_field__OrigOrder" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="473" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="oversample_field__Reorder" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>oversample_field__Reorder - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="oversample_field__OrigOrder" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Buy" size="3" source="TextInput:" type="String" />
+            <Field name="Var1" source="TextInput:" type="Double" />
+            <Field name="oversample_field__Reorder" size="64" source="Formula: MD5_ASCII(ToString([oversample_field__OrigOrder]))" type="String" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="oversample_field__Reorder" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="78" y="30" width="244" height="245" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Interface Tools</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="1" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+            <Position x="103" y="79" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Selected_Field</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+            <Position x="170" y="79" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Oversample_Value</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+            <Position x="238" y="79" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Desired_Pct</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="103" y="191" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Field Selection</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="169" y="191" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Value Selection</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="26" Connection="Question" />
+      <Destination ToolID="21" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="False" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="6" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="Question.Desired_Pct">
+      <Origin ToolID="23" Connection="Question" />
+      <Destination ToolID="8" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="19" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="20" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="Selected_Field">
+      <Origin ToolID="21" Connection="Question" />
+      <Destination ToolID="19" Connection="Question" />
+    </Connection>
+    <Connection name="Oversample_Value">
+      <Origin ToolID="22" Connection="Question" />
+      <Destination ToolID="20" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Selected_Field</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Oversample_Value</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Desired_Pct</Name>
+        <Value>50</Value>
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Oversample Field</Name>
+      <Description>Sample incoming data so that there is equal representation of data values to enable effective use in a predictive model.</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>Preparation</CategoryName>
+      <SearchTags>sample, predictive, macro, bottle, data investigation category, oversample, binary, yes, no</SearchTags>
+      <Author>Ned Harding, Adam Riley, and Dan Putler</Author>
+      <Company>Alteryx, Inc.</Company>
+      <Copyright>2013 Alteryx</Copyright>
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description>Open Example</Description>
+        <File>02 Preparation\OversampleField.yxmd</File>
+      </Example>
+      <WorkflowId value="f8bd45e0-807b-4d64-911e-14fdb51c56d3" />
+      <Telemetry>
+        <PreviousWorkflowId value="1f869a97-ab59-4e04-b897-49ce7eafa938" />
+        <OriginWorkflowId value="1f869a97-ab59-4e04-b897-49ce7eafa938" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description>Selected_Field</Description>
+              <ToolId value="19" />
+              <Mode>Simple</Mode>
+              <Variable>Selected_Field</Variable>
+              <Replace value="True" />
+              <ReplaceText>[Buy]</ReplaceText>
+              <Destination>2/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description>Oversample_Value</Description>
+              <ToolId value="20" />
+              <Mode>Simple</Mode>
+              <Variable>Oversample_Value</Variable>
+              <Replace value="True" />
+              <ReplaceText>Yes</ReplaceText>
+              <Destination>2/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Configuration</Description>
+          <Name>Tab (24)</Name>
+          <ToolId value="24" />
+          <Questions>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Select the field you want to base the oversampling on</Description>
+              <Name>Selected_Field</Name>
+              <ToolId value="21" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="1" />
+              <Field_IncludeNone value="False" />
+              <MacroField_FilterTypes>String,WString,V_String,V_WString</MacroField_FilterTypes>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>The field value you wish to oversample</Description>
+              <Name>Oversample_Value</Name>
+              <ToolId value="22" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>The percentage of records that should have the desired value in the field of interest</Description>
+              <Name>Desired_Pct</Name>
+              <ToolId value="23" />
+              <Minimum value="1" />
+              <Maximum value="100" />
+              <Increment value="1" />
+              <Default value="50" />
+              <Decimals value="0" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Output</Description>
+              <Name>Output</Name>
+              <ToolId value="27" />
+            </Question>
+          </Questions>
+        </Question>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Input</Description>
+          <Name>Tab (25)</Name>
+          <ToolId value="25" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Input</Description>
+              <Name>Input</Name>
+              <ToolId value="26" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="True" />
+      <MacroCustomHelpLink>AlteryxHelp:Oversample_Field</MacroCustomHelpLink>
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="26" Selected="True" />
+        <Tool ToolId="27" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
