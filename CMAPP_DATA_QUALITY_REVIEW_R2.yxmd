@@ -1,0 +1,3242 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp-Fin-Athena</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:642f2d277901ae9f4a7bd309|||select dlprd.fin_coupa_src.coupa_req_hdr.requisition_id,
+	dlprd.fin_coupa_src.coupa_req_hdr.submitted_at_date,
+	dlprd.fin_coupa_src.coupa_req_hdr.status,
+	dlprd.fin_coupa_src.coupa_req_hdr.justification,
+	dlprd.fin_coupa_src.coupa_req_hdr.total,
+	dlprd.fin_coupa_src.coupa_req_hdr.cmapp_id as PR_CMAPPID,
+	dlprd.fin_coupa_src.coupa_req_hdr.prm3_engagement_id,
+	dlprd.fin_coupa_src.coupa_req_hdr.project_driver,
+	dlprd.fin_coupa_src.coupa_req_hdr.requested_by_email,
+	dlprd.fin_coupa_src.coupa_req_hdr.created_at_date,
+	dlprd.fin_coupa_src.coupa_req_hdr.updated_at_date,
+	dlprd.fin_coupa_src.coupa_req_hdr.created_by_email,
+	dlprd.fin_coupa_src.coupa_req_hdr.does_the_following_statement_apply,
+	dlprd.fin_coupa_src.coupa_req_hdr.do_any1_of_the_below_statements_apply,
+	dlprd.fin_coupa_src.coupa_req_hdr.do_any_of_the_below_statements_apply,
+	dlprd.fin_coupa_src.coupa_req_hdr.previous_pr_number,
+	dlprd.fin_coupa_src.coupa_req_hdr.doesthefollowingstatementapply,
+	dlprd.fin_coupa_src.coupa_req_hdr.buy_desk_project_driver_full_name,
+	dlprd.fin_coupa_src.coupa_req_hdr.ingest_date,
+	dlprd.fin_coupa_src.coupa_contract.cmapp_id as CONT_CMAPPID,
+	dlprd.fin_coupa_src.coupa_contract.contract_id,
+	dlprd.fin_coupa_src.coupa_contract.contract_name,
+	dlprd.fin_coupa_src.coupa_contract.supplier CONT_SUPPID,
+	dlprd.fin_coupa_src.coupa_contract.supplier_number CONT_SUPPNUM,
+	dlprd.fin_coupa_src.coupa_contract.contract_effective_date,
+	dlprd.fin_coupa_src.coupa_contract.contract_expiration_date,
+	dlprd.fin_coupa_src.coupa_contract.execution_date,
+	dlprd.fin_coupa_src.coupa_contract.maximum_value,
+	dlprd.fin_coupa_src.coupa_contract.minimum_value,
+	dlprd.fin_coupa_src.coupa_contract.supplier_display_name as CONT_SUPP_NAME,
+	dlprd.fin_coupa_src.coupa_req_line.supplier_number as PR_SUPPNUM,
+	dlprd.fin_coupa_src.coupa_req_line.supplier_name PR_SUPPNAME,
+	dlprd.fin_coupa_src.coupa_req_hdr.currency_code as PR_CURR,
+	dlprd.fin_coupa_src.coupa_po_hdr.id,
+	dlprd.fin_coupa_src.coupa_po_hdr.status as status1,
+	dlprd.fin_coupa_src.coupa_po_hdr.custom_field_1 as PONUM,
+	dlprd.fin_coupa_src.coupa_po_hdr.supplier_id as PO_SUPPID,
+	dlprd.fin_coupa_src.coupa_po_hdr.supplier_name as PO_SUPP_NAME,
+	dlprd.fin_coupa_src.coupa_po_hdr.supplier_number as PO_SUPP_NUM,
+	dlprd.fin_coupa_src.coupa_contract.currency as CONT_CURR,
+	dlprd.fin_coupa_src.coupa_req_line.request_type,
+	dlprd.fin_coupa_src.coupa_req_line.service_end_date,
+	dlprd.fin_coupa_src.coupa_contract.contract,
+	dlprd.fin_coupa_src.coupa_contract.status as status2,
+	dlprd.fin_coupa_src.coupa_contract.currency_code 
+from dlprd.fin_coupa_src.coupa_req_hdr 
+	left join dlprd.fin_coupa_src.coupa_po_hdr on dlprd.fin_coupa_src.coupa_req_hdr.requisition_id = dlprd.fin_coupa_src.coupa_po_hdr.requisition_id 
+	left join dlprd.fin_coupa_src.coupa_po_line on dlprd.fin_coupa_src.coupa_po_line.order_header_id = dlprd.fin_coupa_src.coupa_po_hdr.id 
+	left join dlprd.fin_coupa_src.coupa_req_line on dlprd.fin_coupa_src.coupa_req_hdr.requisition_id = dlprd.fin_coupa_src.coupa_req_line.requisition_header_id 
+	left join dlprd.fin_coupa_src.coupa_contract on dlprd.fin_coupa_src.coupa_po_line.contract_name = dlprd.fin_coupa_src.coupa_contract.contract_name 
+where dlprd.fin_coupa_src.coupa_req_line.request_type in ('Non-Catalog Request') 
+group by dlprd.fin_coupa_src.coupa_req_hdr.requisition_id, dlprd.fin_coupa_src.coupa_req_hdr.submitted_at_date, dlprd.fin_coupa_src.coupa_req_hdr.status, dlprd.fin_coupa_src.coupa_req_hdr.justification, dlprd.fin_coupa_src.coupa_req_hdr.total, dlprd.fin_coupa_src.coupa_req_hdr.cmapp_id, dlprd.fin_coupa_src.coupa_req_hdr.prm3_engagement_id, dlprd.fin_coupa_src.coupa_req_hdr.project_driver, dlprd.fin_coupa_src.coupa_req_hdr.requested_by_email, dlprd.fin_coupa_src.coupa_req_hdr.created_at_date, dlprd.fin_coupa_src.coupa_req_hdr.updated_at_date, dlprd.fin_coupa_src.coupa_req_hdr.created_by_email, dlprd.fin_coupa_src.coupa_req_hdr.does_the_following_statement_apply, dlprd.fin_coupa_src.coupa_req_hdr.do_any1_of_the_below_statements_apply, dlprd.fin_coupa_src.coupa_req_hdr.do_any_of_the_below_statements_apply, dlprd.fin_coupa_src.coupa_req_hdr.previous_pr_number, dlprd.fin_coupa_src.coupa_req_hdr.doesthefollowingstatementapply, dlprd.fin_coupa_src.coupa_req_hdr.buy_desk_project_driver_full_name, dlprd.fin_coupa_src.coupa_req_hdr.ingest_date, dlprd.fin_coupa_src.coupa_contract.cmapp_id, dlprd.fin_coupa_src.coupa_contract.contract_id, dlprd.fin_coupa_src.coupa_contract.contract_name, dlprd.fin_coupa_src.coupa_contract.supplier, dlprd.fin_coupa_src.coupa_contract.supplier_number, dlprd.fin_coupa_src.coupa_contract.contract_effective_date, dlprd.fin_coupa_src.coupa_contract.contract_expiration_date, dlprd.fin_coupa_src.coupa_contract.execution_date, dlprd.fin_coupa_src.coupa_contract.maximum_value, dlprd.fin_coupa_src.coupa_contract.minimum_value, dlprd.fin_coupa_src.coupa_contract.supplier_display_name, dlprd.fin_coupa_src.coupa_req_line.supplier_number, dlprd.fin_coupa_src.coupa_req_line.supplier_name, dlprd.fin_coupa_src.coupa_req_hdr.currency_code, dlprd.fin_coupa_src.coupa_po_hdr.id, dlprd.fin_coupa_src.coupa_po_hdr.status, dlprd.fin_coupa_src.coupa_po_hdr.custom_field_1, dlprd.fin_coupa_src.coupa_po_hdr.supplier_id, dlprd.fin_coupa_src.coupa_po_hdr.supplier_name, dlprd.fin_coupa_src.coupa_po_hdr.supplier_number, dlprd.fin_coupa_src.coupa_contract.currency, dlprd.fin_coupa_src.coupa_req_line.request_type, dlprd.fin_coupa_src.coupa_req_line.service_end_date, dlprd.fin_coupa_src.coupa_contract.contract, dlprd.fin_coupa_src.coupa_contract.status, dlprd.fin_coupa_src.coupa_contract.currency_code</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp-Fin-Athena
+Query=select dlprd.fin_coupa_src.c...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="requisition_id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="submitted_at_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="status" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="justification" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="total" scale="10" size="40" source="File: Corp-Fin-Athena" type="FixedDecimal" />
+            <Field name="PR_CMAPPID" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="prm3_engagement_id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="project_driver" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="requested_by_email" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="created_at_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="updated_at_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="created_by_email" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="does_the_following_statement_apply" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="do_any1_of_the_below_statements_apply" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="do_any_of_the_below_statements_apply" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="previous_pr_number" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="doesthefollowingstatementapply" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="buy_desk_project_driver_full_name" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="ingest_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="CONT_CMAPPID" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="contract_id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="contract_name" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="CONT_SUPPID" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="CONT_SUPPNUM" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="contract_effective_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="contract_expiration_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="execution_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="maximum_value" scale="10" size="40" source="File: Corp-Fin-Athena" type="FixedDecimal" />
+            <Field name="minimum_value" scale="10" size="40" source="File: Corp-Fin-Athena" type="FixedDecimal" />
+            <Field name="CONT_SUPP_NAME" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="PR_SUPPNUM" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="PR_SUPPNAME" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="PR_CURR" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="id" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="status1" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="PONUM" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="PO_SUPPID" source="File: Corp-Fin-Athena" type="Int32" />
+            <Field name="PO_SUPP_NAME" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="PO_SUPP_NUM" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="CONT_CURR" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="request_type" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="service_end_date" source="File: Corp-Fin-Athena" type="DateTime" />
+            <Field name="contract" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="status2" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+            <Field name="currency_code" size="255" source="File: Corp-Fin-Athena" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="222" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_3488aaee9dd49d4d9235c0c28dd99deb~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>COUPA OUTPUT.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CMAPP_PROJECT_ID" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Create Date" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="DateTime" />
+            <Field name="COUPA FLAG" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="COUPA PR NUM" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="CONTRACT SIGNED DATE" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="CONTRACT START DATE" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="CONTRACT END DATE" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="PROJECT  START DATE" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="PROJECT END DATE" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="tot_spend_amt" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="tot_sav_usd_conv" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="tot_spend_amt_usd" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="m2m_convert" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="region" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="rel_pse_select" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="rel_supp2_third_party_identifier" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="rel_supp2" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="rel_supp2_third_party_name" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="evergreen" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="contr_status" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="rel_doc" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="proj_contr_type" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="proj_driver_txt" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="sector" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="sector_merge" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="proj_notes_merge" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="link_contr" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="currency" size="255" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="curr_conv_rate" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="contr_id" source="File: C:\Users\rcowing\Desktop\rcowing\Documents\Analysis\Projects-Misc\DATA REVIEW\COUPA OUTPUT.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="246" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [contr_status] in (&quot;Complete - No Contract&quot;, &quot;Contract Complete&quot;) then &#xA;&quot;Y&quot; else &quot;N&quot; endif" field="CMAPP COMPLETE FLAG" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [contr_status] in (&quot;Contract Complete&quot;) and isempty([CONTRACT SIGNED DATE]) then &quot;MISSING SIGNED DATE&quot; elseif&#xA;[contr_status] in (&quot;Contract Complete&quot;) and [CONTRACT SIGNED DATE] &lt; todate('2010-01-01') then &quot;TOO OLD SIGN&quot; elseif&#xA;[contr_status] in (&quot;Contract Complete&quot;) and [CONTRACT SIGNED DATE] &gt; DateTimeAdd(DateTimeToday(),6,&quot;months&quot;) then &quot;FUTURE SIGN&quot; else &quot;OK&quot; ENDIF&#xA;" field="SIGNED CONTRACT ERROR" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [CMAPP COMPLETE FLAG]= &quot;Y&quot; and isempty([rel_supp2]) then &quot;NO SUPPLIER SELECTED&quot; elseif&#xA;[CMAPP COMPLETE FLAG]= &quot;Y&quot; and [rel_supp2]= &quot;NewSupplier&quot; then &quot;NEW SUPPLIER ERROR&quot; else &quot;OK&quot; endif" field="SUPPLIER SELECT ERROR" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [contr_status] not in (&quot;Contract Complete&quot;) then &quot;CONTRACT DATES NOT REQUIRED&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and isempty([CONTRACT START DATE]) and isempty([CONTRACT END DATE]) then &quot;MISSING BOTH CONTRACT DATES&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and isempty([CONTRACT END DATE]) and [m2m_convert]=&quot;no&quot; and [evergreen]=&quot;no&quot; then &quot;MISSING END DATE&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and isempty([CONTRACT START DATE]) then &quot;MISSING START DATE&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and [CONTRACT START DATE] &lt; todate('2010-01-01') then &quot;TOO OLD START&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and [CONTRACT START DATE] &gt; DateTimeAdd(DateTimeToday(),6,&quot;months&quot;) then &quot;FUTURE START&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and [CONTRACT END DATE] &lt; todate('2010-01-01') then &quot;TOO OLD END&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and [CONTRACT END DATE] &gt; DateTimeAdd(DateTimeToday(), 5,&quot;years&quot;) then &quot;FUTURE END&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and [CONTRACT START DATE] &lt; [CONTRACT END DATE] then &quot;OK&quot; elseif&#xA;[contr_status]=&quot;Contract Complete&quot; and [CONTRACT START DATE] = [CONTRACT END DATE] then &quot;ONE DAY CONTRACT&quot; else&#xA;&quot;END DATE BEFORE START DATE&quot; endif" field="CONTRACT DATE ERRORS" size="1073741823" type="V_WString" />
+            <FormulaField expression="if Contains([proj_notes_merge],'Quislex') then &quot;QUIS&quot; elseif&#xA;Contains([proj_notes_merge],'Reference MC') then &quot;MC LOAD&quot; elseIF&#xA;Contains([proj_notes_merge],'Condor') then &quot;CONDOR&quot; elseIF&#xA;Contains([proj_notes_merge],'Tushar') then &quot;TUSHAR&quot; elseIF Contains([proj_notes_merge],'Dnyanoba') then &quot;DNYANOBA&quot; else&#xA; &quot;&quot; endif" field="HISTORY LOAD FLAG" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [contr_status] not in ('Contract Complete') then &quot;OK&quot; elseif&#xA;IsEmpty([link_contr])or [link_contr] in('not applicable',&quot;.&quot;,'na','n/a','n.a','no link','xxx') then &quot;MISSING CONTRACT LINK&quot; elseif&#xA;[COUPA FLAG]in('yes') and Contains([link_contr],&quot;intuit.coupahost.com/contracts&quot;) then &quot;OK&quot; elseif&#xA;[COUPA FLAG]in('yes') and Contains([link_contr],&quot;intuit.coupahost.com/order_header&quot;) then &quot;BAD COUPA LINKED to ORDER&quot; elseif&#xA;[COUPA FLAG]in('yes') and Contains([link_contr],&quot;intuit.coupahost.com/supplier&quot;) then &quot;BAD COUPA LINKED to SUPPLIER&quot; elseif&#xA;[COUPA FLAG]in('yes') and Contains([link_contr],&quot;drive.google.com&quot;) then &quot;COUPA PROJECT LINKED to GOOGLE DRIVE&quot; elseif&#xA;[COUPA FLAG]in('yes') and not Contains([link_contr],&quot;intuit.coupahost.com/contracts&quot;) then &quot;BAD COUPA CONTRACT LINK&quot; elseif&#xA;[COUPA FLAG]in('no') and Contains([link_contr],&quot;intuit.coupahost.com&quot;) then &quot;NON COUPA PROJECT LINKED TO COUPA&quot; elseif&#xA;contains([link_contr],'drive.google.com') then &quot;OK&quot; else &quot;BAD NON COUPA CONTRACT LINK&quot; endif&#xA;" field="BAD CONTRACT LINK" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [Create Date]&lt;todate(&quot;2020-08-01&quot;) then &quot;FY20 and Back&quot; elseif&#xA;[Create Date]&lt;todate(&quot;2021-08-01&quot;) then &quot;FY21&quot; elseif&#xA;[Create Date]&lt;todate(&quot;2022-08-01&quot;) then &quot;FY22&quot; elseif  &#xA;[Create Date]&lt;todate(&quot;2023-08-01&quot;) then &quot;FY23&quot; elseif&#xA;[Create Date]&lt;todate(&quot;2024-08-01&quot;) then &quot;FY24&quot; else &quot;ERROR&quot; endif" field="FY" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [contr_status] in (&quot;Contract Complete&quot;) and isempty([link_contr]) then &quot;MISSING CONTRACT LINK&quot; elseif&#xA;[contr_status] in (&quot;Complete - No Contract&quot;) and not isempty([link_contr]) then &quot;NO CONTRACT PROJECT HAS CONTRACT LINK&quot; else &quot;OK&quot; endif" field="CONTRACT STATUS ERROR" size="1073741823" type="V_WString" />
+            <FormulaField expression="if tonumber([tot_spend_amt_usd],&quot;keepnulls&quot;)=0 or isempty([tot_spend_amt_usd]) then &quot;ZERO VALUE&quot; elseif &#xA;tonumber([tot_spend_amt_usd],&quot;keepnulls&quot;)&lt;= 100000 then &quot;G Upto $100K VALUE&quot; elseif&#xA;tonumber([tot_spend_amt_usd],&quot;keepnulls&quot;)&lt;= 500000 then &quot;F $100to$500K VALUE&quot; elseif&#xA;tonumber([tot_spend_amt_usd],&quot;keepnulls&quot;)&lt;= 1000000 then &quot;E $500Kto$1M VALUE&quot; elseif&#xA;tonumber([tot_spend_amt_usd],&quot;keepnulls&quot;)&lt;= 2000000 then &quot;D $1Mto$2M VALUE&quot; elseif&#xA;tonumber([tot_spend_amt_usd],&quot;keepnulls&quot;)&lt;= 7000000 then &quot;C $2Mto$7M VALUE&quot; elseif&#xA;tonumber([tot_spend_amt_usd],&quot;keepnulls&quot;)&lt;= 26000000 then &quot;B $7Mto$26M VALUE&quot; elseif&#xA;tonumber([tot_spend_amt_usd],&quot;keepnulls&quot;)&gt; 26000000 then &quot;A Greater than $26M VALUE&quot; else &quot;ERROR&quot; endif" field="PROJECT VALUE TIER" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMAPP COMPLETE FLAG = if [contr_status] in ("Complete - No Contract", "Contract ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="330" y="1014" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_5a40770a846ece4db9cca83e42ff0d6e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CMAPP_PROJECT_ID" selected="True" type="Int32" size="4" />
+            <SelectField field="COUPA FLAG" selected="True" />
+            <SelectField field="COUPA PR NUM" selected="True" type="Int32" size="4" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="True" />
+            <SelectField field="CONTRACT START DATE" selected="True" />
+            <SelectField field="CONTRACT END DATE" selected="True" />
+            <SelectField field="tot_spend_amt" selected="True" />
+            <SelectField field="tot_sav_usd_conv" selected="True" />
+            <SelectField field="tot_spend_amt_usd" selected="True" />
+            <SelectField field="contr_id" selected="True" />
+            <SelectField field="rel_supp2_third_party_identifier" selected="True" />
+            <SelectField field="rel_supp2_third_party_name" selected="True" />
+            <SelectField field="contr_status" selected="True" />
+            <SelectField field="currency" selected="True" rename="CMAPP CURR" />
+            <SelectField field="curr_conv_rate" selected="True" rename="CMAPP CONV RATE" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="submitted_at_date" selected="True" rename="PR CREATE DATE" />
+            <SelectField field="status" selected="True" rename="PR STATUS" />
+            <SelectField field="justification" selected="False" />
+            <SelectField field="prm3_engagement_id" selected="False" />
+            <SelectField field="requested_by_email" selected="False" />
+            <SelectField field="created_at_date" selected="False" />
+            <SelectField field="updated_at_date" selected="False" />
+            <SelectField field="created_by_email" selected="False" />
+            <SelectField field="does_the_following_statement_apply" selected="False" />
+            <SelectField field="do_any1_of_the_below_statements_apply" selected="False" />
+            <SelectField field="do_any_of_the_below_statements_apply" selected="False" />
+            <SelectField field="previous_pr_number" selected="False" />
+            <SelectField field="doesthefollowingstatementapply" selected="False" />
+            <SelectField field="ingest_date" selected="False" />
+            <SelectField field="id" selected="True" rename="PO ID" />
+            <SelectField field="status1" selected="True" rename="PO STATUS" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="requisition_id" action="GroupBy" rename="requisition_id" />
+            <SummarizeField field="PR STATUS" action="GroupBy" rename="PR STATUS" />
+            <SummarizeField field="PR_CMAPPID" action="GroupBy" rename="PR_CMAPPID" />
+            <SummarizeField field="CONT_CMAPPID" action="GroupBy" rename="CONT_CMAPPID" />
+            <SummarizeField field="contract_id" action="GroupBy" rename="contract_id" />
+            <SummarizeField field="contract_name" action="GroupBy" rename="contract_name" />
+            <SummarizeField field="CONT_SUPPID" action="GroupBy" rename="CONT_SUPPID" />
+            <SummarizeField field="CONT_SUPPNUM" action="GroupBy" rename="CONT_SUPPNUM" />
+            <SummarizeField field="contract_effective_date" action="GroupBy" rename="contract_effective_date" />
+            <SummarizeField field="contract_expiration_date" action="GroupBy" rename="contract_expiration_date" />
+            <SummarizeField field="execution_date" action="GroupBy" rename="execution_date" />
+            <SummarizeField field="maximum_value" action="GroupBy" rename="maximum_value" />
+            <SummarizeField field="CONT_SUPP_NAME" action="GroupBy" rename="CONT_SUPP_NAME" />
+            <SummarizeField field="PR_SUPPNUM" action="GroupBy" rename="PR_SUPPNUM" />
+            <SummarizeField field="PR_SUPPNAME" action="GroupBy" rename="PR_SUPPNAME" />
+            <SummarizeField field="PO ID" action="GroupBy" rename="PO ID" />
+            <SummarizeField field="PO STATUS" action="GroupBy" rename="PO STATUS" />
+            <SummarizeField field="PONUM" action="GroupBy" rename="PONUM" />
+            <SummarizeField field="PO_SUPPID" action="GroupBy" rename="PO_SUPPID" />
+            <SummarizeField field="PO_SUPP_NAME" action="GroupBy" rename="PO_SUPP_NAME" />
+            <SummarizeField field="PO_SUPP_NUM" action="GroupBy" rename="PO_SUPP_NUM" />
+            <SummarizeField field="CONT_CURR" action="GroupBy" rename="CONT_CURR" />
+            <SummarizeField field="request_type" action="GroupBy" rename="request_type" />
+            <SummarizeField field="service_end_date" action="Max" rename="Max_service_end_date" />
+            <SummarizeField field="total" action="Max" rename="PR total" />
+            <SummarizeField field="PR_CURR" action="GroupBy" rename="PR_CURR" />
+            <SummarizeField field="PR CREATE DATE" action="GroupBy" rename="PR CREATE DATE" />
+            <SummarizeField field="project_driver" action="GroupBy" rename="project_driver" />
+            <SummarizeField field="buy_desk_project_driver_full_name" action="GroupBy" rename="buy_desk_project_driver" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_44549c38be87974bbd10bb519288067c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if isnull([PR_CMAPPID]) and not isnull([CONT_CMAPPID]) then &quot;PR MISSING CMAPP ID&quot; elseif&#xA;not isnull([PR_CMAPPID]) and isnull([contract_id]) then &quot;NO CONTRACT&quot; elseif&#xA;not isnull([PR_CMAPPID]) and isnull([CONT_CMAPPID]) then &quot;CONTRACT MISSING CMAPP ID&quot; elseif&#xA;[PR_CMAPPID]=[CONT_CMAPPID] then &quot;OK&quot; elseif&#xA;tostring([PR_CMAPPID]) != tostring([CONT_CMAPPID]) then &quot;PR-CONTRACT CMAPP ID MISMATCH&quot; else &quot;ERROR&quot; endif" field="COUPA PR-CONTRACT CMAPP COMPARE" size="1073741823" type="V_WString" />
+            <FormulaField expression="if isnull([PR_SUPPNUM]) and isnull([PO_SUPP_NUM]) and isnull([CONT_SUPPNUM]) then &quot;PR-PO-CONTRACT ALL MISSING SUPPLIER&quot; elseif&#xA;([PR_SUPPNUM])=([PO_SUPP_NUM]) and ([PR_SUPPNUM])=([CONT_SUPPNUM]) then &quot;OK&quot; elseif&#xA;isnull([PR_SUPPNUM]) and isnull([PO_SUPP_NUM]) and not isnull([CONT_SUPPNUM]) then &quot;PR-PO MISSING SUPPLIER&quot; elseif&#xA;isnull([PR_SUPPNUM]) and not isnull([PO_SUPP_NUM]) and isnull([CONT_SUPPNUM]) then &quot;PR-CONTRACT MISSING SUPPLIER&quot; elseif&#xA;not isnull([PR_SUPPNUM]) and isnull([PO_SUPP_NUM]) and isnull([CONT_SUPPNUM]) then &quot;CONTRACT-PO MISSING SUPPLIER&quot; elseif&#xA;isnull([PR_SUPPNUM]) and not isnull([PO_SUPP_NUM]) and [PO_SUPP_NUM]= [CONT_SUPPNUM]  then &quot;PO CONTRACT SUPPLIER MATCH:PR MISSING SUPPLIER&quot; elseif&#xA;isnull([PR_SUPPNUM]) and not isnull([PO_SUPP_NUM]) and [PO_SUPP_NUM]!= [CONT_SUPPNUM]  then &quot;PO CONTRACT SUPPLIER MISMATCH:PR MISSING SUPPLIER&quot; elseif&#xA;isnull([PO_SUPP_NUM]) and not isnull([PR_SUPPNUM]) and [PR_SUPPNUM]= [CONT_SUPPNUM]  then &quot;PR CONTRACT SUPPLIER MATCH:PO MISSING SUPPLIER&quot; elseif&#xA;isnull([PO_SUPP_NUM]) and not isnull([PR_SUPPNUM]) and [PR_SUPPNUM]!= [CONT_SUPPNUM]   then &quot;PR CONTRACT SUPPLIER MISMATCH:PO MISSING SUPPLIER&quot; elseif&#xA;isnull([contract_id] ) and not isnull([PR_SUPPNUM]) and [PR_SUPPNUM]= [PO_SUPP_NUM]  then &quot;PR PO SUPPLIER MATCH:NO CONTRACT&quot; elseif&#xA;isnull([CONT_SUPPNUM] ) and not isnull([PR_SUPPNUM]) and [PR_SUPPNUM]= [PO_SUPP_NUM]  then &quot;PR PO SUPPLIER MATCH:CONTRACT MISSING SUPPLIER&quot; elseif&#xA;isnull([contract_id] ) and not isnull([PR_SUPPNUM]) and [PR_SUPPNUM]!= [PO_SUPP_NUM]   then &quot;PR PO SUPPLIER MISMATCH:NO CONTRACT&quot; elseif&#xA;isnull([CONT_SUPPNUM] ) and not isnull([PR_SUPPNUM]) and [PR_SUPPNUM]!= [PO_SUPP_NUM]   then &quot;PR PO SUPPLIER MISMATCH:CONTRACT MISSING SUPPLIER&quot; elseif&#xA;NOT isnull([PR_SUPPNUM]) and not isnull([PO_SUPP_NUM]) and [PO_SUPP_NUM]= [CONT_SUPPNUM]  then &quot;PO CONTRACT SUPPLIER MATCH:PR SUPPLIER MISMATCH&quot; elseif&#xA;&#xA;NOT isnull([PO_SUPP_NUM]) and not isnull([PR_SUPPNUM]) and [PR_SUPPNUM]= [CONT_SUPPNUM]  then &quot;PR CONTRACT SUPPLIER MATCH:PO SUPPLIER MISMATCH&quot; elseif&#xA;&#xA;NOT isnull([CONT_SUPPNUM]) and not isnull([PR_SUPPNUM]) and [PR_SUPPNUM]= [PO_SUPP_NUM]  then &quot;PR PO SUPPLIER MATCH:CONTRACT SUPPLIER MISMATCH&quot; else&#xA;&#xA;&quot;ERROR&quot; ENDIF" field="COUPA SUPPLIER PR-PO-CONTRACT COMPARE" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [PR CREATE DATE] &lt;todate(&quot;2020-08-01&quot;) then &quot;FY20 and Back&quot; elseif&#xA;[PR CREATE DATE]&lt;todate(&quot;2021-08-01&quot;) then &quot;FY21&quot; elseif&#xA;[PR CREATE DATE]&lt;todate(&quot;2022-08-01&quot;) then &quot;FY22&quot; elseif  &#xA;[PR CREATE DATE]&lt;todate(&quot;2023-08-01&quot;) then &quot;FY23&quot; elseif&#xA;[PR CREATE DATE]&lt;todate(&quot;2024-08-01&quot;) then &quot;FY24&quot; else &quot;ERROR&quot; endif" field="FY" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>COUPA PR-CONTRACT CMAPP COMPARE = if isnull([PR_CMAPPID]) and not isnull([CONT_C...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="594" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_38e8cf106460eb4d97a2b82f0102c3da~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="450" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[PR STATUS] in ('ordered', 'received','partially_received')</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[PR STATUS] in ('ordered', 'received','partially_received')</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CONT_CMAPPID" selected="True" type="Int32" size="4" />
+            <SelectField field="CONT_SUPPID" selected="False" />
+            <SelectField field="CONT_SUPPNUM" selected="False" />
+            <SelectField field="maximum_value" selected="True" type="Double" size="8" />
+            <SelectField field="PR_SUPPNUM" selected="False" />
+            <SelectField field="PO STATUS" selected="False" />
+            <SelectField field="PONUM" selected="False" />
+            <SelectField field="PO_SUPPID" selected="False" />
+            <SelectField field="PO_SUPP_NUM" selected="False" />
+            <SelectField field="CONT_CURR" selected="False" />
+            <SelectField field="request_type" selected="False" />
+            <SelectField field="Max_service_end_date" selected="False" />
+            <SelectField field="PR total" selected="True" type="Double" size="8" />
+            <SelectField field="CONT_SUPPNUM1" selected="True" rename="CONT SUPPNUM" />
+            <SelectField field="CONT_SUPPNUM2" selected="False" />
+            <SelectField field="PO_SUPP_NUM1" selected="True" rename="PO SUPP NUM" />
+            <SelectField field="PO_SUPP_NUM2" selected="False" />
+            <SelectField field="PR_SUPPNUM1" selected="True" rename="PR SUPP NUM" />
+            <SelectField field="PR_SUPPNUM2" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PR_CMAPPID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CMAPP_PROJECT_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_requisition_id" selected="True" rename="PR NUMBER" input="Left_" />
+                <SelectField field="Right_COUPA PR NUM" selected="True" rename="CMAPP PR NUM" input="Right_" />
+                <SelectField field="Right_contr_id" selected="True" rename="CMAPP CONTRACT ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="54" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>CONT_SUPPNUM</Field>
+          <ErrorHandling>Ignore</ErrorHandling>
+          <RootName>CONT_SUPPNUM</RootName>
+          <Delimeters value="-" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="210" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>PR_SUPPNUM</Field>
+          <ErrorHandling>Ignore</ErrorHandling>
+          <RootName>PR_SUPPNUM</RootName>
+          <Delimeters value="-" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="138" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>PO_SUPP_NUM</Field>
+          <ErrorHandling>Ignore</ErrorHandling>
+          <RootName>PO_SUPP_NUM</RootName>
+          <Delimeters value="-" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="438" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [CMAPP PR NUM]= [PR NUMBER] and [CMAPP_PROJECT_ID]= [CONT_CMAPPID] and [contract_id]=[CMAPP CONTRACT ID] then &quot;4 WAY MATCH&quot; elseif&#xA;[CMAPP PR NUM]= [PR NUMBER] and isempty([contract_id]) and not isempty([CMAPP CONTRACT ID]) then &quot;2 WAY Match: CONTRACT IN CMAPP: NO CONTRACT in COUPA&quot; elseif &#xA;[CMAPP PR NUM]= [PR NUMBER] and isempty([contract_id]) and isempty([CMAPP CONTRACT ID]) then &quot;2 WAY Match: NO CONTRACT&quot; elseif &#xA;[PR NUMBER]=[CMAPP PR NUM] and [CONT_CMAPPID]!=[CMAPP_PROJECT_ID] and tostring([contract_id])not in(tostring([CMAPP CONTRACT ID])) then &quot;2 WAY MATCH:CMAPP to CONTRACT and CONTRACT TO CMAPP MISMATCH&quot; elseif&#xA;[CMAPP PR NUM]= [PR NUMBER] and [CMAPP_PROJECT_ID]= [CONT_CMAPPID] and [contract_id]!=[CMAPP CONTRACT ID] then &quot;3 WAY MATCH: CMAPP TO CONTRACT MISMATCH&quot; elseif&#xA;[CMAPP PR NUM]= [PR NUMBER] and isempty([CONT_CMAPPID]) and [contract_id]=[CMAPP CONTRACT ID] then &quot;3 WAY Match: NO CONTRACT CMAPP ID&quot; elseif &#xA;[CMAPP PR NUM]= [PR NUMBER] and isempty([CONT_CMAPPID]) and [contract_id]!=[CMAPP CONTRACT ID] then &quot;2 WAY Match: CMAPP MISMATCH TO CONTRACT:NO CONTRACT CMAPP ID&quot; elseif &#xA;[CMAPP PR NUM]!= [PR NUMBER] and [CMAPP_PROJECT_ID]!= [CONT_CMAPPID] and not isempty([CONT_CMAPPID]) and tostring([contract_id])not in(tostring([CMAPP CONTRACT ID])) then &quot;1 WAY MATCH:CMAPP to PR an CMAPP to CONTRACT and CONTRACT TO CMAPP MISMATCH&quot; elseif&#xA;[CMAPP PR NUM]!= [PR NUMBER] and tostring([contract_id]) in(tostring([CMAPP CONTRACT ID])) and [CMAPP_PROJECT_ID]= [CONT_CMAPPID] then &quot;3 WAY MATCH: CMAPP to PR MISMATCH&quot; elseif&#xA;[CMAPP PR NUM]!= [PR NUMBER] and isempty([contract_id]) then &quot;2 WAY MATCH:CMAPP to PR MISMATCH:NO CONTRACT&quot; elseif&#xA;&#xA;[CMAPP_PROJECT_ID]= [CONT_CMAPPID] and [CMAPP PR NUM]!=[PR NUMBER] and isempty([CMAPP CONTRACT ID] ) then &quot;2 WAY MATCH:CMAPP to PR MISMATCH:NO CMAPP CONTRACT ID&quot; elseif&#xA;[CMAPP_PROJECT_ID]= [CONT_CMAPPID] and [CMAPP PR NUM]!=[PR NUMBER] and tostring([contract_id]) not in(tostring([CMAPP CONTRACT ID])) then &quot;2 WAY MATCH:CMAPP to PR and CMAPP to CONTRACT MISMATCH&quot; elseif&#xA;&#xA;&#xA;[CMAPP PR NUM]!= [PR NUMBER] and isempty([CONT_CMAPPID]) then &quot;1 WAY MATCH:CMAPP to PR MISMATCH:NO CONTRACT CMAPP ID&quot; elseif&#xA;[CMAPP_PROJECT_ID]!= [CONT_CMAPPID] and not IsEmpty([CONT_CMAPPID]) and isempty([CMAPP PR NUM]) then &quot;1 WAY MATCH:CONTRACT to CMAPP MISMATCH:NO CMAPP COUPA PR ID&quot; else &#xA;&quot;OTHER&quot; endif" field="PR TO CMAPP LINK ON CMAPP ID MATCH" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PR TO CMAPP LINK ON CMAPP ID MATCH = if [CMAPP PR NUM]= [PR NUMBER] and [CMAPP_P...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="534" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if isempty([requisition_id]) and not isempty([CMAPP_PROJECT_ID]) and isempty([COUPA PR NUM]) then &quot;CMAPP MISSING PR NUM&quot; elseif&#xA;not isempty([CMAPP_PROJECT_ID]) and not isempty([requisition_id]) and IsEmpty([COUPA PR NUM]) and IsEmpty([PR_CMAPPID]) and isempty([CONT_CMAPPID]) then &quot;NO LINKS&quot; elseif&#xA;isempty([contract_id]) and not isempty([requisition_id]) then &quot;NO COUPA CONTRACT ON PR&quot; elseif&#xA;not isempty([requisition_id]) and  isempty([PR_CMAPPID]) then &quot;PR MISSING CMAPP PROJ&quot; elseif&#xA;not isempty([contr_id]) and isempty([CONT_CMAPPID]) then &quot;CONTRACT MISSING CMAPP PROJ&quot; elseif&#xA;[CONT_CMAPPID]!=[PR_CMAPPID] then &quot;WITHIN COUPA PR &amp; CONTRACT CMAPP ID MISMATCH&quot; elseif&#xA;[CONT_CMAPPID]=[PR_CMAPPID] then &quot;WITHIN COUPA PR &amp; CONTRACT CMAPP ID MATCH&quot; else&#xA; &quot;OTHER&quot; endif&#xA;" field="CMAPP to PR JOIN COMPARE on NO CMAPP  MATCH" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMAPP to PR JOIN COMPARE on NO CMAPP  MATCH = if isempty([requisition_id]) and n...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1062" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_1b208c6b2c7cd94cad36a28f351db307~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_0283c80fad086345ae15a96195db707b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1026" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="requisition_id" />
+            <Field field="PR_CMAPPID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="COUPA PR NUM" />
+            <Field field="CMAPP_PROJECT_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_requisition_id" selected="True" rename="PR NUMBER" input="Left_" />
+                <SelectField field="Right_COUPA PR NUM" selected="True" rename="CMAPP PR NUM" input="Right_" />
+                <SelectField field="Right_contr_id" selected="True" rename="CMAPP CONTRACT ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1122" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if isempty([tot_spend_amt]) and isempty([PR total]) and isempty([maximum_value]) then &quot;ALL PR AND CONTRACT AND CMAPP VALUES BLANK&quot; elseif&#xA;isempty([tot_spend_amt]) and isempty([PR total]) and ([maximum_value]) then &quot;BOTH PR AND CMAPP VALUES BLANK: CONTRACT HAS VALUE&quot; elseif&#xA;isempty([tot_spend_amt]) then &quot;CMAPP VALUE BLANK&quot; elseif&#xA;isempty([PR total]) then &quot;PR VALUE BLANK&quot; elseif&#xA;[PR_CURR]!=[CMAPP CURR] then &quot;CMAPP to PR CURRENCY MISMATCH&quot; elseif&#xA;[maximum_value]&gt;([tot_spend_amt]*-1.05) and [maximum_value]&lt;([tot_spend_amt]*1.05) and [PR total]&gt;([tot_spend_amt]*-1.05) and [pr total]&lt;([tot_spend_amt]*1.05) then &quot;PR and CONTRACT MATCHES CMAPP VALUE&quot; elseif&#xA;isempty([maximum_value]) and [PR total]&gt;([tot_spend_amt]*-1.05) and [pr total]&lt;([tot_spend_amt]*1.05) then &quot;PR MATCHES CMAPP VALUE:CONTRACT BLANK&quot; elseif&#xA;(not [maximum_value]&gt;([tot_spend_amt]*-1.05) or not [maximum_value]&lt;([tot_spend_amt]*1.05)) and ([PR total]&gt;([tot_spend_amt]*-1.05) and [pr total]&lt;([tot_spend_amt]*1.05)) then &quot;PR MATCHES CMAPP VALUE: CONTRACT DOES NOT MATCH&quot; elseif&#xA;([maximum_value]&gt;([tot_spend_amt]*-1.05) and [maximum_value]&lt;([tot_spend_amt]*1.05)) and (not [PR total]&gt;([tot_spend_amt]*-1.05) or not [pr total]&lt;([tot_spend_amt]*1.05)) then &quot;CONTRACT MATCHES CMAPP VALUE: PR DOES NOT MATCH&quot; else &quot;NO MATCH PR TO CMAPP VALUE&quot; endif" field="PR CMAPP MATCH VALUE COMPARE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PR CMAPP MATCH VALUE COMPARE = if isempty([tot_spend_amt]) and isempty([PR total...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1290" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_d9f7d4d80772cb49aa42e442d8b4490e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[COUPA FLAG] = "yes" and [contr_status] in ("Contract Complete","Not Started")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[COUPA FLAG] = "yes" and [contr_status] in ("Contract Complete","Not Started")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="918" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[PR TO CMAPP LINK ON CMAPP ID MATCH] in ("2 WAY MATCH","3 WAY MATCH")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[PR TO CMAPP LINK ON CMAPP ID MATCH] in ("2 WAY MATCH","3 WAY MATCH")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1002" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [PR STATUS] in (&quot;ordered&quot;, &quot;received&quot;,&quot;partially_received&quot;) and [contr_status] not in (&quot;Contract Complete&quot;) then &quot;FINAL PR ATTACHED TO INCOMPLETE CMAPP PROJECT&quot; elseif&#xA;[PR STATUS] not in (&quot;ordered&quot;, &quot;received&quot;,&quot;partially_received&quot;) and [contr_status] in (&quot;Contract Complete&quot;) then &quot;FINAL CMAPP PROJECT ATTACHED TO INCOMPLETE PR&quot; elseif &#xA;[PR STATUS] in (&quot;ordered&quot;, &quot;received&quot;,&quot;partially_received&quot;) and [contr_status] in (&quot;Contract Complete&quot;) then &quot;OK&quot; else &quot;ERROR&quot; endif" field="PR AND CMAPP PROJECT COMPLETION CHECK" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PR AND CMAPP PROJECT COMPLETION CHECK = if [PR STATUS] in ("ordered", "received"...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1182" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_2af62c7f34656448b511ea69162e0bdf~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="378" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="requisition_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="COUPA PR NUM" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="requisition_id" selected="True" type="V_String" size="11" />
+            <SelectField field="PR STATUS" selected="False" />
+            <SelectField field="PR_CMAPPID" selected="False" />
+            <SelectField field="CONT_CMAPPID" selected="False" />
+            <SelectField field="contract_name" selected="False" />
+            <SelectField field="contract_effective_date" selected="False" />
+            <SelectField field="contract_expiration_date" selected="False" />
+            <SelectField field="execution_date" selected="False" />
+            <SelectField field="maximum_value" selected="False" />
+            <SelectField field="PR total" selected="False" />
+            <SelectField field="PR_CURR" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Create Date" selected="False" />
+            <SelectField field="COUPA FLAG" selected="False" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="False" />
+            <SelectField field="CONTRACT START DATE" selected="False" />
+            <SelectField field="CONTRACT END DATE" selected="False" />
+            <SelectField field="PROJECT  START DATE" selected="False" />
+            <SelectField field="PROJECT END DATE" selected="False" />
+            <SelectField field="tot_spend_amt" selected="False" />
+            <SelectField field="tot_sav_usd_conv" selected="False" />
+            <SelectField field="tot_spend_amt_usd" selected="False" />
+            <SelectField field="contr_id" selected="False" />
+            <SelectField field="m2m_convert" selected="False" />
+            <SelectField field="region" selected="False" />
+            <SelectField field="rel_pse_select" selected="False" />
+            <SelectField field="rel_supp2" selected="False" />
+            <SelectField field="evergreen" selected="False" />
+            <SelectField field="contr_status" selected="False" />
+            <SelectField field="rel_doc" selected="False" />
+            <SelectField field="proj_contr_type" selected="False" />
+            <SelectField field="proj_driver_txt" selected="False" />
+            <SelectField field="sector" selected="False" />
+            <SelectField field="sector_merge" selected="False" />
+            <SelectField field="proj_notes_merge" selected="False" />
+            <SelectField field="link_contr" selected="False" />
+            <SelectField field="currency" selected="False" />
+            <SelectField field="curr_conv_rate" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="894" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [rel_supp2_third_party_identifier]=[PR SUPP NUM] and [rel_supp2_third_party_identifier]=[CONT SUPPNUM] and [PO SUPP NUM]=[rel_supp2_third_party_identifier] then &quot;PR PO CONTRACT and CMAPP SUPPLIER MATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]=[PR SUPP NUM] and [rel_supp2_third_party_identifier]!=[CONT SUPPNUM] and [PO SUPP NUM]!=[rel_supp2_third_party_identifier] then &quot;PR and CMAPP SUPPLIER MATCH: PO and CONTRACT MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]=[PR SUPP NUM] and [rel_supp2_third_party_identifier]!=[CONT SUPPNUM] and [PO SUPP NUM]!=[rel_supp2_third_party_identifier] then &quot;PR and CMAPP SUPPLIER MATCH: PO and CONTRACT MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]!=[PR SUPP NUM] and [rel_supp2_third_party_identifier]=[CONT SUPPNUM] and [PO SUPP NUM]!=[rel_supp2_third_party_identifier] then &quot;contract and CMAPP SUPPLIER MATCH: PO and PR MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]!=[PR SUPP NUM] and [rel_supp2_third_party_identifier]!=[CONT SUPPNUM] and [PO SUPP NUM]=[rel_supp2_third_party_identifier] then &quot;PO and CMAPP SUPPLIER MATCH: PR and CONTRACT MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]=[PR SUPP NUM] and [rel_supp2_third_party_identifier]=[CONT SUPPNUM] and [PO SUPP NUM]!=[rel_supp2_third_party_identifier] then &quot;PR and CONTRACT CMAPP SUPPLIER MATCH: PO MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]=[PR SUPP NUM] and [rel_supp2_third_party_identifier]!=[CONT SUPPNUM] and [PO SUPP NUM]=[rel_supp2_third_party_identifier] then &quot;PR and PO CMAPP SUPPLIER MATCH: CONTRACT MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]!=[PR SUPP NUM] and [rel_supp2_third_party_identifier]=[CONT SUPPNUM] and [PO SUPP NUM]=[rel_supp2_third_party_identifier] then &quot;PO and CONTRACT CMAPP SUPPLIER MATCH: PR MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]!=[PR SUPP NUM] and [rel_supp2_third_party_identifier]=[CONT SUPPNUM] and [PO SUPP NUM]=[rel_supp2_third_party_identifier] then &quot;NO SUPPLIER MATCHES&quot; elseif&#xA;[rel_supp2_third_party_identifier]!=[PR SUPP NUM] and [PO SUPP NUM]=[CONT SUPPNUM] and [PO SUPP NUM]=[PR SUPP NUM] then &quot;PR PO and CONTRACT SUPPLIER MATCH: CMAPP MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]!=[PO SUPP NUM] and [PO SUPP NUM]=[CONT SUPPNUM] and [PO SUPP NUM]!=[PR SUPP NUM] then &quot;PO and CONTRACT SUPPLIER MATCH: CMAPP and PR MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]!=[PR SUPP NUM] and [PO SUPP NUM]!=[CONT SUPPNUM] and [PO SUPP NUM]=[PR SUPP NUM] then &quot;PR AND PO SUPPLIER MATCH: CMAPP and CONTRACT MISMATCH&quot; elseif&#xA;[rel_supp2_third_party_identifier]!=[PR SUPP NUM] and &#xA;[rel_supp2_third_party_identifier]!=[PO SUPP NUM] and &#xA;[rel_supp2_third_party_identifier]!=[CONT SUPPNUM] and &#xA;[PO SUPP NUM]!=[CONT SUPPNUM] and &#xA;[PO SUPP NUM]!=[PR SUPP NUM] and&#xA;[PR SUPP NUM]!=[CONT SUPPNUM] then &quot;PR PO CONTRACT and CMAPP NO SUPPLIER MATCHES&quot; else&#xA;&#xA;&quot;ERROR&quot; endif" field="CMAPP to PR MATCH SUPPLIER COMPARE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMAPP to PR MATCH SUPPLIER COMPARE = if [rel_supp2_third_party_identifier]=[PR S...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [PR SUPP NUM]=[CONT SUPPNUM] and [PO SUPP NUM]=[PR SUPP NUM] then &quot;PR PO and CONTRACT SUPPLIER MATCH&quot; elseif&#xA;[PR SUPP NUM]!=[CONT SUPPNUM] and [PO SUPP NUM]!=[PR SUPP NUM] then &quot;PR PO and CONTRACT MISMATCH&quot; elseif&#xA;[PR SUPP NUM]=[CONT SUPPNUM] and [PO SUPP NUM]!=[PR SUPP NUM] then &quot;PR and CONTRACT SUPPLIER MATCH: PO MISMATCH&quot; elseif&#xA;[PR SUPP NUM]!=[CONT SUPPNUM] and [PO SUPP NUM]=[PR SUPP NUM] then &quot;PR and PO SUPPLIER MATCH: CONTRACT MISMATCH&quot; else &quot;ERROR&quot; endif" field="NO CMAPP PR SUPPLIER MATCH" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NO CMAPP PR SUPPLIER MATCH = if [PR SUPP NUM]=[CONT SUPPNUM] and [PO SUPP NUM]=[...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="810" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_6ae7082da7d59f4495f377347e0556ff~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_f965a4f2f356784db75afd6fb85d1057~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="630" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CMAPP_PROJECT_ID" selected="True" type="Double" size="8" />
+            <SelectField field="COUPA FLAG" selected="False" />
+            <SelectField field="COUPA PR NUM" selected="False" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="False" />
+            <SelectField field="CONTRACT START DATE" selected="False" />
+            <SelectField field="CONTRACT END DATE" selected="False" />
+            <SelectField field="tot_spend_amt" selected="False" />
+            <SelectField field="tot_sav_usd_conv" selected="False" />
+            <SelectField field="tot_spend_amt_usd" selected="False" />
+            <SelectField field="contr_id" selected="False" />
+            <SelectField field="rel_supp2_third_party_identifier" selected="False" />
+            <SelectField field="rel_supp2_third_party_name" selected="False" />
+            <SelectField field="contr_status" selected="False" />
+            <SelectField field="CMAPP CURR" selected="False" />
+            <SelectField field="CMAPP CONV RATE" selected="False" />
+            <SelectField field="PR STATUS" selected="False" />
+            <SelectField field="PR_CMAPPID" selected="False" />
+            <SelectField field="CONT_CMAPPID" selected="False" />
+            <SelectField field="contract_name" selected="False" />
+            <SelectField field="contract_effective_date" selected="False" />
+            <SelectField field="contract_expiration_date" selected="False" />
+            <SelectField field="execution_date" selected="False" />
+            <SelectField field="maximum_value" selected="False" />
+            <SelectField field="CONT_SUPP_NAME" selected="False" />
+            <SelectField field="PR_SUPPNAME" selected="False" />
+            <SelectField field="PO ID" selected="False" />
+            <SelectField field="PO_SUPP_NAME" selected="False" />
+            <SelectField field="PR total" selected="False" />
+            <SelectField field="PR_CURR" selected="False" />
+            <SelectField field="CONT SUPPNUM" selected="False" />
+            <SelectField field="PO SUPP NUM" selected="False" />
+            <SelectField field="PR SUPP NUM" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1122" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PR STATUS" selected="False" />
+            <SelectField field="PR_CMAPPID" selected="False" />
+            <SelectField field="CONT_CMAPPID" selected="False" />
+            <SelectField field="contract_id" selected="False" />
+            <SelectField field="contract_name" selected="False" />
+            <SelectField field="contract_effective_date" selected="False" />
+            <SelectField field="contract_expiration_date" selected="False" />
+            <SelectField field="execution_date" selected="False" />
+            <SelectField field="maximum_value" selected="False" />
+            <SelectField field="CONT_SUPP_NAME" selected="False" />
+            <SelectField field="PR_SUPPNAME" selected="False" />
+            <SelectField field="PO ID" selected="False" />
+            <SelectField field="PO_SUPP_NAME" selected="False" />
+            <SelectField field="PR total" selected="False" />
+            <SelectField field="PR_CURR" selected="False" />
+            <SelectField field="CONT SUPPNUM" selected="False" />
+            <SelectField field="PO SUPP NUM" selected="False" />
+            <SelectField field="PR SUPP NUM" selected="False" />
+            <SelectField field="CMAPP_PROJECT_ID" selected="True" type="Double" size="8" />
+            <SelectField field="COUPA FLAG" selected="False" />
+            <SelectField field="CMAPP PR NUM" selected="False" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="False" />
+            <SelectField field="CONTRACT START DATE" selected="False" />
+            <SelectField field="CONTRACT END DATE" selected="False" />
+            <SelectField field="tot_spend_amt" selected="False" />
+            <SelectField field="tot_sav_usd_conv" selected="False" />
+            <SelectField field="tot_spend_amt_usd" selected="False" />
+            <SelectField field="CMAPP CONTRACT ID" selected="False" />
+            <SelectField field="rel_supp2_third_party_identifier" selected="False" />
+            <SelectField field="rel_supp2_third_party_name" selected="False" />
+            <SelectField field="contr_status" selected="False" />
+            <SelectField field="CMAPP CURR" selected="False" />
+            <SelectField field="CMAPP CONV RATE" selected="False" />
+            <SelectField field="PR TO CMAPP LINK ON CMAPP ID MATCH" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="978" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PR STATUS" selected="False" />
+            <SelectField field="PR_CMAPPID" selected="False" />
+            <SelectField field="CONT_CMAPPID" selected="False" />
+            <SelectField field="contract_id" selected="False" />
+            <SelectField field="contract_name" selected="False" />
+            <SelectField field="contract_effective_date" selected="False" />
+            <SelectField field="contract_expiration_date" selected="False" />
+            <SelectField field="execution_date" selected="False" />
+            <SelectField field="maximum_value" selected="False" />
+            <SelectField field="CONT_SUPP_NAME" selected="False" />
+            <SelectField field="PR_SUPPNAME" selected="False" />
+            <SelectField field="PO ID" selected="False" />
+            <SelectField field="PO_SUPP_NAME" selected="False" />
+            <SelectField field="PR total" selected="False" />
+            <SelectField field="PR_CURR" selected="False" />
+            <SelectField field="CONT SUPPNUM" selected="False" />
+            <SelectField field="PO SUPP NUM" selected="False" />
+            <SelectField field="PR SUPP NUM" selected="False" />
+            <SelectField field="CMAPP_PROJECT_ID" selected="True" type="Double" size="8" />
+            <SelectField field="COUPA FLAG" selected="False" />
+            <SelectField field="CMAPP PR NUM" selected="False" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="False" />
+            <SelectField field="CONTRACT START DATE" selected="False" />
+            <SelectField field="CONTRACT END DATE" selected="False" />
+            <SelectField field="tot_spend_amt" selected="False" />
+            <SelectField field="tot_sav_usd_conv" selected="False" />
+            <SelectField field="tot_spend_amt_usd" selected="False" />
+            <SelectField field="rel_supp2_third_party_identifier" selected="False" />
+            <SelectField field="rel_supp2_third_party_name" selected="False" />
+            <SelectField field="contr_status" selected="False" />
+            <SelectField field="CMAPP CURR" selected="False" />
+            <SelectField field="CMAPP CONV RATE" selected="False" />
+            <SelectField field="CMAPP CONTRACT ID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1218" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PR STATUS" selected="False" />
+            <SelectField field="PR_CMAPPID" selected="False" />
+            <SelectField field="CONT_CMAPPID" selected="False" />
+            <SelectField field="contract_id" selected="False" />
+            <SelectField field="contract_name" selected="False" />
+            <SelectField field="contract_effective_date" selected="False" />
+            <SelectField field="contract_expiration_date" selected="False" />
+            <SelectField field="execution_date" selected="False" />
+            <SelectField field="maximum_value" selected="False" />
+            <SelectField field="CONT_SUPP_NAME" selected="False" />
+            <SelectField field="PR_SUPPNAME" selected="False" />
+            <SelectField field="PO ID" selected="False" />
+            <SelectField field="PO_SUPP_NAME" selected="False" />
+            <SelectField field="PR total" selected="False" />
+            <SelectField field="PR_CURR" selected="False" />
+            <SelectField field="CONT SUPPNUM" selected="False" />
+            <SelectField field="PO SUPP NUM" selected="False" />
+            <SelectField field="PR SUPP NUM" selected="False" />
+            <SelectField field="CMAPP_PROJECT_ID" selected="True" type="Double" size="8" />
+            <SelectField field="COUPA FLAG" selected="False" />
+            <SelectField field="CMAPP PR NUM" selected="False" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="False" />
+            <SelectField field="CONTRACT START DATE" selected="False" />
+            <SelectField field="CONTRACT END DATE" selected="False" />
+            <SelectField field="tot_spend_amt" selected="False" />
+            <SelectField field="tot_sav_usd_conv" selected="False" />
+            <SelectField field="tot_spend_amt_usd" selected="False" />
+            <SelectField field="CMAPP CONTRACT ID" selected="False" />
+            <SelectField field="rel_supp2_third_party_identifier" selected="False" />
+            <SelectField field="rel_supp2_third_party_name" selected="False" />
+            <SelectField field="contr_status" selected="False" />
+            <SelectField field="CMAPP CURR" selected="False" />
+            <SelectField field="CMAPP CONV RATE" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_0000919e10e17947b1e07a5556960619~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="498" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="contract_id" selected="False" />
+            <SelectField field="CONT_SUPP_NAME" selected="False" />
+            <SelectField field="PR_SUPPNAME" selected="False" />
+            <SelectField field="PO ID" selected="False" />
+            <SelectField field="PO_SUPP_NAME" selected="False" />
+            <SelectField field="CONT SUPPNUM" selected="False" />
+            <SelectField field="PO SUPP NUM" selected="False" />
+            <SelectField field="PR SUPP NUM" selected="False" />
+            <SelectField field="COUPA PR NUM" selected="False" />
+            <SelectField field="rel_supp2_third_party_identifier" selected="False" />
+            <SelectField field="rel_supp2_third_party_name" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="786" y="1014" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_316db348cdc53a4dba55db5c0314e7c8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="1074" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PROJECT  START DATE" selected="False" />
+            <SelectField field="PROJECT END DATE" selected="False" />
+            <SelectField field="tot_spend_amt" selected="False" />
+            <SelectField field="tot_sav_usd_conv" selected="False" />
+            <SelectField field="m2m_convert" selected="False" />
+            <SelectField field="region" selected="False" />
+            <SelectField field="rel_pse_select" selected="False" />
+            <SelectField field="rel_supp2_third_party_identifier" selected="False" />
+            <SelectField field="evergreen" selected="False" />
+            <SelectField field="rel_doc" selected="False" />
+            <SelectField field="proj_contr_type" selected="False" />
+            <SelectField field="sector" selected="False" />
+            <SelectField field="sector_merge" selected="False" />
+            <SelectField field="proj_notes_merge" selected="False" />
+            <SelectField field="currency" selected="False" />
+            <SelectField field="curr_conv_rate" selected="False" />
+            <SelectField field="contr_id" selected="False" />
+            <SelectField field="CMAPP COMPLETE FLAG" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="738" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="contract_id" selected="False" />
+            <SelectField field="CONT_SUPP_NAME" selected="False" />
+            <SelectField field="PR_SUPPNAME" selected="False" />
+            <SelectField field="PO ID" selected="False" />
+            <SelectField field="PO_SUPP_NAME" selected="False" />
+            <SelectField field="CONT SUPPNUM" selected="False" />
+            <SelectField field="PO SUPP NUM" selected="False" />
+            <SelectField field="PR SUPP NUM" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="810" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_20f3a75682c3814db88ff39e44675927~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1062" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_514f21fce9fd4f46b5641d0a0315cce0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_e8ef86e963b4f64ebd779c1d023e92c0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1290" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_df6fa6900e371a469329ee05d486cce8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1374" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_7a60dc8d8aa911429e7eb882c54910f1~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="702" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="requisition_id" selected="True" />
+            <SelectField field="PR STATUS" selected="True" />
+            <SelectField field="contract_id" selected="True" />
+            <SelectField field="PR_CMAPPID" selected="True" />
+            <SelectField field="CONT_CMAPPID" selected="True" />
+            <SelectField field="contract_name" selected="False" />
+            <SelectField field="CONT_SUPPID" selected="False" />
+            <SelectField field="PR_SUPPNUM" selected="True" />
+            <SelectField field="PO_SUPP_NUM" selected="True" />
+            <SelectField field="CONT_SUPPNUM" selected="True" />
+            <SelectField field="PR_SUPPNAME" selected="True" />
+            <SelectField field="PO_SUPP_NAME" selected="True" />
+            <SelectField field="CONT_SUPP_NAME" selected="True" />
+            <SelectField field="contract_effective_date" selected="False" />
+            <SelectField field="contract_expiration_date" selected="False" />
+            <SelectField field="execution_date" selected="False" />
+            <SelectField field="maximum_value" selected="False" />
+            <SelectField field="PO ID" selected="False" />
+            <SelectField field="PO STATUS" selected="False" />
+            <SelectField field="PONUM" selected="False" />
+            <SelectField field="PO_SUPPID" selected="False" />
+            <SelectField field="CONT_CURR" selected="False" />
+            <SelectField field="request_type" selected="False" />
+            <SelectField field="Max_service_end_date" selected="False" />
+            <SelectField field="PR total" selected="False" />
+            <SelectField field="PR_CURR" selected="False" />
+            <SelectField field="COUPA PR-CONTRACT CMAPP COMPARE" selected="True" />
+            <SelectField field="COUPA SUPPLIER PR-PO-CONTRACT COMPARE" selected="True" />
+            <SelectField field="PR CREATE DATE" selected="False" />
+            <SelectField field="project_driver" selected="True" />
+            <SelectField field="buy_desk_project_driver" selected="True" />
+            <SelectField field="FY" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1002" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_b0aab1057b1a0f46b7abcfe68aa9be06~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="438" y="1074" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [SIGNED CONTRACT ERROR] not in (&quot;OK&quot;) or [SUPPLIER SELECT ERROR] not in (&quot;OK&quot;) or&#xA;[CONTRACT DATE ERRORS] not in (&quot;OK&quot;,&quot;CONTRACT DATES NOT REQUIRED&quot;) or [BAD CONTRACT LINK] not in (&quot;OK&quot;) or [CONTRACT STATUS ERROR] not in (&quot;OK&quot;)&#xA;then &quot;SHOW&quot; else &quot;HIDE&quot; endif" field="SHOW" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SHOW = if [SIGNED CONTRACT ERROR] not in ("OK") or [SUPPLIER SELECT ERROR] not i...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="1074" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[SHOW] IN ("SHOW","HIDE")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[SHOW] IN ("SHOW","HIDE")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1218" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [PR AND CMAPP PROJECT COMPLETION CHECK] not in (&quot;OK&quot;) then &quot;SHOW&quot; else &quot;HIDE&quot; endif " field="SHOW" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SHOW = if [PR AND CMAPP PROJECT COMPLETION CHECK] not in ("OK") then "SHOW" else...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1302" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>SHOW</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-09-12 08:50:07</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2023-09-12 08:50:07</StartDate>
+              <EndDate>2023-09-12 08:50:07</EndDate>
+              <Operand>SHOW</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[SHOW] = "SHOW"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="798" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [COUPA PR-CONTRACT CMAPP COMPARE] not in(&quot;OK&quot;,&quot;NO CONTRACT&quot;) or [COUPA SUPPLIER PR-PO-CONTRACT COMPARE] not in (&quot;OK&quot;,&quot;PR PO SUPPLIER MATCH:NO CONTRACT&quot;) then &quot;SHOW&quot; else &quot;HIDE&quot; endif" field="SHOW" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SHOW = if [COUPA PR-CONTRACT CMAPP COMPARE] not in("OK","NO CONTRACT") or [COUPA...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>SHOW</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-09-12 08:52:32</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>SHOW</Operand>
+              <StartDate>2023-09-12 08:52:32</StartDate>
+              <EndDate>2023-09-12 08:52:32</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[SHOW] = "SHOW"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="1098" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Create Date" selected="False" />
+            <SelectField field="COUPA PR NUM" selected="False" />
+            <SelectField field="SIGNED CONTRACT ERROR" selected="True" rename="ERROR VALUE" />
+            <SelectField field="SUPPLIER SELECT ERROR" selected="False" />
+            <SelectField field="CONTRACT DATE ERRORS" selected="False" />
+            <SelectField field="BAD CONTRACT LINK" selected="False" />
+            <SelectField field="CONTRACT STATUS ERROR" selected="False" />
+            <SelectField field="SHOW" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Create Date" selected="False" />
+            <SelectField field="COUPA PR NUM" selected="False" />
+            <SelectField field="SIGNED CONTRACT ERROR" selected="False" />
+            <SelectField field="SUPPLIER SELECT ERROR" selected="True" rename="ERROR VALUE" />
+            <SelectField field="CONTRACT DATE ERRORS" selected="False" />
+            <SelectField field="BAD CONTRACT LINK" selected="False" />
+            <SelectField field="CONTRACT STATUS ERROR" selected="False" />
+            <SelectField field="SHOW" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="1194" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Create Date" selected="False" />
+            <SelectField field="COUPA PR NUM" selected="False" />
+            <SelectField field="SIGNED CONTRACT ERROR" selected="False" />
+            <SelectField field="SUPPLIER SELECT ERROR" selected="False" />
+            <SelectField field="CONTRACT DATE ERRORS" selected="True" rename="ERROR VALUE" />
+            <SelectField field="BAD CONTRACT LINK" selected="False" />
+            <SelectField field="CONTRACT STATUS ERROR" selected="False" />
+            <SelectField field="SHOW" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="1242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Create Date" selected="False" />
+            <SelectField field="COUPA PR NUM" selected="False" />
+            <SelectField field="SIGNED CONTRACT ERROR" selected="False" />
+            <SelectField field="SUPPLIER SELECT ERROR" selected="False" />
+            <SelectField field="CONTRACT DATE ERRORS" selected="False" />
+            <SelectField field="BAD CONTRACT LINK" selected="True" rename="ERROR VALUE" />
+            <SelectField field="CONTRACT STATUS ERROR" selected="False" />
+            <SelectField field="SHOW" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="1098" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;SIGNED CONTRACT DATE&quot;" field="ERROR TYPE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ERROR TYPE = "SIGNED CONTRACT DATE"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;SUPPLIER SELECTION&quot;" field="ERROR TYPE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ERROR TYPE = "SUPPLIER SELECTION"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="1194" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;CONTRACT START AND END DATES&quot;" field="ERROR TYPE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ERROR TYPE = "CONTRACT START AND END DATES"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="1242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;CONTRACT LINK FORMAT&quot;" field="ERROR TYPE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ERROR TYPE = "CONTRACT LINK FORMAT"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1554" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_48c4604fbd80f64fa89436ccfa88ebe0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="630" y="1098" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[SIGNED CONTRACT ERROR] not in ("OK")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[SIGNED CONTRACT ERROR] not in ("OK")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="630" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[SUPPLIER SELECT ERROR] not in ("OK")
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[[SUPPLIER SELECT ERROR] not in ("OK")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="630" y="1194" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[
+[CONTRACT DATE ERRORS] not in ("OK","CONTRACT DATES NOT REQUIRED")]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[
+[CONTRACT DATE ERRORS] not in ("OK","CONTRACT DATES NOT REQUIRED")]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="630" y="1242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[ [BAD CONTRACT LINK] not in ("OK")
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ [BAD CONTRACT LINK] not in ("OK")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="918" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CMAPP_PROJECT_ID" selected="True" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="True" />
+            <SelectField field="CONTRACT START DATE" selected="True" />
+            <SelectField field="CONTRACT END DATE" selected="True" />
+            <SelectField field="rel_supp2" selected="True" rename="ARAVO SUPPLIER ID" />
+            <SelectField field="rel_supp2_third_party_name" selected="True" rename="SUPPLIER NAME" />
+            <SelectField field="proj_driver_txt" selected="True" rename="PROJECT DRIVER" />
+            <SelectField field="link_contr" selected="True" rename="CMAPP CONTRACT URL" />
+            <SelectField field="ERROR VALUE" selected="True" />
+            <SelectField field="HISTORY LOAD FLAG" selected="True" />
+            <SelectField field="FY" selected="True" />
+            <SelectField field="ERROR TYPE" selected="True" />
+            <SelectField field="COUPA FLAG" selected="True" />
+            <SelectField field="CMAPP VALUE USD" selected="True" />
+            <SelectField field="contr_status" selected="True" />
+            <SelectField field="PROJECT VALUE TIER" selected="True" />
+            <SelectField field="tot_spend_amt_usd" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="522" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CONT_CMAPPID" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="978" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;COUPA CMAPP REFERENCE ERROR&quot;" field="ERROR TYPE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ERROR TYPE = "COUPA CMAPP REFERENCE ERROR"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="882" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[COUPA PR-CONTRACT CMAPP COMPARE] not in("OK","NO CONTRACT")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[COUPA PR-CONTRACT CMAPP COMPARE] not in("OK","NO CONTRACT")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1074" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="COUPA PR-CONTRACT CMAPP COMPARE" selected="True" rename="ERROR VALUE" />
+            <SelectField field="COUPA SUPPLIER PR-PO-CONTRACT COMPARE" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="978" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;COUPA SUPPLIER SELECT ERROR&quot;" field="ERROR TYPE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ERROR TYPE = "COUPA SUPPLIER SELECT ERROR"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="882" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[ [COUPA SUPPLIER PR-PO-CONTRACT COMPARE] not in ("OK","PR PO SUPPLIER MATCH:NO CONTRACT")]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ [COUPA SUPPLIER PR-PO-CONTRACT COMPARE] not in ("OK","PR PO SUPPLIER MATCH:NO C...]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1074" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="COUPA PR-CONTRACT CMAPP COMPARE" selected="False" />
+            <SelectField field="COUPA SUPPLIER PR-PO-CONTRACT COMPARE" selected="True" rename="ERROR VALUE" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1158" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1446" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_0e37f3a934021b4aab879d81a9ae66c1~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_627fd562f031b045815d510bd00e10d8~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="894" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CMAPP_PROJECT_ID" selected="True" />
+            <SelectField field="PR_CMAPPID" selected="True" />
+            <SelectField field="CONT_CMAPPID" selected="True" />
+            <SelectField field="PR NUMBER" selected="True" />
+            <SelectField field="CMAPP PR NUM" selected="True" />
+            <SelectField field="contract_id" selected="True" />
+            <SelectField field="CMAPP CONTRACT ID" selected="True" />
+            <SelectField field="COUPA FLAG" selected="True" />
+            <SelectField field="PR CREATE DATE" selected="True" />
+            <SelectField field="project_driver" selected="True" />
+            <SelectField field="buy_desk_project_driver" selected="True" />
+            <SelectField field="PO ID" selected="True" />
+            <SelectField field="PR STATUS" selected="True" />
+            <SelectField field="contr_status" selected="True" />
+            <SelectField field="PR TO CMAPP LINK ON CMAPP ID MATCH" selected="True" />
+            <SelectField field="contract_name" selected="False" />
+            <SelectField field="contract_effective_date" selected="False" />
+            <SelectField field="contract_expiration_date" selected="False" />
+            <SelectField field="execution_date" selected="False" />
+            <SelectField field="maximum_value" selected="False" />
+            <SelectField field="CONT_SUPP_NAME" selected="False" />
+            <SelectField field="PR_SUPPNAME" selected="False" />
+            <SelectField field="PO_SUPP_NAME" selected="False" />
+            <SelectField field="PR total" selected="False" />
+            <SelectField field="PR_CURR" selected="False" />
+            <SelectField field="CONT SUPPNUM" selected="False" />
+            <SelectField field="PO SUPP NUM" selected="False" />
+            <SelectField field="PR SUPP NUM" selected="False" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="False" />
+            <SelectField field="CONTRACT START DATE" selected="False" />
+            <SelectField field="CONTRACT END DATE" selected="False" />
+            <SelectField field="tot_spend_amt" selected="False" />
+            <SelectField field="tot_sav_usd_conv" selected="False" />
+            <SelectField field="tot_spend_amt_usd" selected="False" />
+            <SelectField field="rel_supp2_third_party_identifier" selected="False" />
+            <SelectField field="rel_supp2_third_party_name" selected="False" />
+            <SelectField field="CMAPP CURR" selected="False" />
+            <SelectField field="CMAPP CONV RATE" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="510" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1254" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if not isempty([requisition_id]) then &quot;https://intuit.coupahost.com/requisition_headers/&quot;+tostring([requisition_id]) else &quot;&quot; endif" field="PR LINK" size="2147483647" type="V_String" />
+            <FormulaField expression="if not isempty([contract_id]) then &quot;https://intuit.coupahost.com/contracts/&quot;+tostring([contract_id]) + &quot;#summary&quot; else &quot;&quot; endif" field="CONTRACT LINK" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PR LINK = if not isempty([requisition_id]) then "https://intuit.coupahost.com/re...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1110" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if not isempty([CMAPP_PROJECT_ID]) then &quot;https://intuitcorp.quickbase.com/db/bnskksae5?a=dr&amp;rid=&quot; + tostring([CMAPP_PROJECT_ID])+ &quot;&amp;rl=bc2&quot; else &quot;&quot; endif&#xA;" field="CMAPP PROJECT LINK" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;$&quot; + tostring([tot_spend_amt_usd],0,&quot;,&quot;)" field="CMAPP VALUE USD" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMAPP PROJECT LINK = if not isempty([CMAPP_PROJECT_ID]) then "https://intuitcorp...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="105">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1206" y="1218" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="CMAPP_PROJECT_ID" action="GroupBy" rename="CMAPP_PROJECT_ID" />
+            <SummarizeField field="CONTRACT SIGNED DATE" action="GroupBy" rename="CONTRACT SIGNED DATE" />
+            <SummarizeField field="CONTRACT START DATE" action="GroupBy" rename="CONTRACT START DATE" />
+            <SummarizeField field="CONTRACT END DATE" action="GroupBy" rename="CONTRACT END DATE" />
+            <SummarizeField field="ARAVO SUPPLIER ID" action="GroupBy" rename="ARAVO SUPPLIER ID" />
+            <SummarizeField field="SUPPLIER NAME" action="GroupBy" rename="SUPPLIER NAME" />
+            <SummarizeField field="PROJECT DRIVER" action="GroupBy" rename="PROJECT DRIVER" />
+            <SummarizeField field="CMAPP CONTRACT URL" action="GroupBy" rename="CMAPP CONTRACT URL" />
+            <SummarizeField field="HISTORY LOAD FLAG" action="GroupBy" rename="HISTORY LOAD FLAG" />
+            <SummarizeField field="FY" action="GroupBy" rename="FY" />
+            <SummarizeField field="CMAPP PROJECT LINK" action="GroupBy" rename="CMAPP PROJECT LINK" />
+            <SummarizeField field="COUPA FLAG" action="GroupBy" rename="COUPA FLAG" />
+            <SummarizeField field="contr_status" action="GroupBy" rename="contr_status" />
+            <SummarizeField field="CMAPP VALUE USD" action="GroupBy" rename="CMAPP VALUE USD" />
+            <SummarizeField field="PROJECT VALUE TIER" action="GroupBy" rename="PROJECT VALUE TIER" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1206" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="CMAPP_PROJECT_ID" action="GroupBy" rename="CMAPP_PROJECT_ID" />
+            <SummarizeField field="ERROR VALUE" action="Concat" rename="ERROR VALUE">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="ERROR TYPE" action="GroupBy" rename="ERROR TYPE" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1302" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[ERROR TYPE]+&quot;:&quot;+[ERROR VALUE]" field="ERROR DESCRIPTION LIST" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ERROR DESCRIPTION LIST = [ERROR TYPE]+":"+[ERROR VALUE]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1398" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="CMAPP_PROJECT_ID" action="GroupBy" rename="CMAPP_PROJECT_ID" />
+            <SummarizeField field="ERROR DESCRIPTION LIST" action="Concat" rename="ERROR DESCRIPTION LIST">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="111">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1494" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CMAPP_PROJECT_ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CMAPP_PROJECT_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_CMAPP_PROJECT_ID" selected="False" rename="Right_CMAPP_PROJECT_ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="112">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1782" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_4632_76d9befc625e2d40b58f2568a47c01df_\Engine_4632_39a659b8d700e5408197f99c09ec5d7b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1590" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[FY] in ("FY23","FY24") and isempty([HISTORY LOAD FLAG])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[FY] in ("FY23","FY24") and isempty([HISTORY LOAD FLAG])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1686" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PROJECT DRIVER" selected="True" />
+            <SelectField field="CMAPP_PROJECT_ID" selected="True" />
+            <SelectField field="CMAPP PROJECT LINK" selected="True" />
+            <SelectField field="ERROR DESCRIPTION LIST" selected="True" />
+            <SelectField field="CONTRACT SIGNED DATE" selected="True" />
+            <SelectField field="CONTRACT START DATE" selected="True" />
+            <SelectField field="CONTRACT END DATE" selected="True" />
+            <SelectField field="ARAVO SUPPLIER ID" selected="True" />
+            <SelectField field="SUPPLIER NAME" selected="True" />
+            <SelectField field="CMAPP CONTRACT URL" selected="True" />
+            <SelectField field="COUPA FLAG" selected="True" />
+            <SelectField field="contr_status" selected="True" rename="CMAPP CONTRACT STATUS" />
+            <SelectField field="FY" selected="False" />
+            <SelectField field="HISTORY LOAD FLAG" selected="False" />
+            <SelectField field="CMAPP VALUE USD" selected="True" />
+            <SelectField field="PROJECT VALUE TIER" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="630" y="1302" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[ [CONTRACT STATUS ERROR] not in ("OK")
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ [CONTRACT STATUS ERROR] not in ("OK")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="1302" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;CONTRACT STATUS ERROR&quot;" field="ERROR TYPE" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ERROR TYPE = "CONTRACT STATUS ERROR"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="117">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="1302" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Create Date" selected="False" />
+            <SelectField field="COUPA PR NUM" selected="False" />
+            <SelectField field="SIGNED CONTRACT ERROR" selected="False" />
+            <SelectField field="SUPPLIER SELECT ERROR" selected="False" />
+            <SelectField field="CONTRACT DATE ERRORS" selected="False" />
+            <SelectField field="BAD CONTRACT LINK" selected="False" />
+            <SelectField field="CONTRACT STATUS ERROR" selected="True" rename="ERROR VALUE" />
+            <SelectField field="SHOW" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="118">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="54" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="tot_spend_amt_usd" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="26" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="26" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="True" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="17" Connection="Right" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="17" Connection="Left" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Join" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Join" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Left" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="38" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="38" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="True" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="True" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="117" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="True" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="True" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="True" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="True" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="True" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="True" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output" />
+      <Destination ToolID="111" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="109" Connection="Output" />
+      <Destination ToolID="111" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="Join" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="113" Connection="True" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="114" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="True" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="117" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="118" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CMAPP DATA QUALITY REVIEW R2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="be9da420-8375-4797-95dd-59f829d300cb" />
+      <Telemetry>
+        <PreviousWorkflowId value="bff708da-4a1a-40e0-b5d6-3d0646065e49" />
+        <OriginWorkflowId value="e220baf8-082b-41a4-8dfa-3000591dbf02" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

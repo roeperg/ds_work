@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||select dlprd.fin_cmapp_src.cmapp_projects.record_id as CMAPP_PROJECT_ID,
+	dlprd.fin_cmapp_src.cmapp_projects.dt_created as "Create Date",
+	dlprd.fin_cmapp_src.cmapp_projects.coupa_flag as "COUPA FLAG",
+	dlprd.fin_cmapp_src.cmapp_projects.coupa_id as "COUPA PR NUM",
+	dlprd.fin_cmapp_src.cmapp_projects.contr_sgd_dt as "CONTRACT SIGNED DATE",
+	dlprd.fin_cmapp_src.cmapp_projects.contr_eff_strt_dt as "CONTRACT START DATE",
+	dlprd.fin_cmapp_src.cmapp_projects.contr_expir_dt as "CONTRACT END DATE",
+	dlprd.fin_cmapp_src.cmapp_projects.proj_start_dt as "PROJECT  START DATE",
+	dlprd.fin_cmapp_src.cmapp_projects.proj_end_dt as "PROJECT END DATE",
+	dlprd.fin_cmapp_src.cmapp_projects.tot_spend_amt,
+	dlprd.fin_cmapp_src.cmapp_projects.tot_sav_usd_conv,
+	dlprd.fin_cmapp_src.cmapp_projects.tot_spend_amt_usd,
+	dlprd.fin_cmapp_src.cmapp_projects.m2m_convert,
+	dlprd.fin_cmapp_src.cmapp_projects.region,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_pse_select,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_supp2_third_party_identifier,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_supp2,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_supp2_third_party_name,
+	dlprd.fin_cmapp_src.cmapp_projects.evergreen,
+	dlprd.fin_cmapp_src.cmapp_projects.contr_status,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_doc,
+	dlprd.fin_cmapp_src.cmapp_projects.proj_contr_type,
+	dlprd.fin_cmapp_src.cmapp_projects.proj_driver_txt,
+	dlprd.fin_cmapp_src.cmapp_projects.sector,
+	dlprd.fin_cmapp_src.cmapp_projects.sector_merge,
+	dlprd.fin_cmapp_src.cmapp_projects.proj_notes_merge,
+	dlprd.fin_cmapp_src.cmapp_projects.link_contr,
+	dlprd.fin_cmapp_src.cmapp_projects.currency,
+	dlprd.fin_cmapp_src.cmapp_projects.curr_conv_rate,
+	dlprd.fin_cmapp_src.cmapp_projects.coupa_contr_id as contr_id 
+from dlprd.fin_cmapp_src.cmapp_projects</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
+Query=select dlprd.fin_cmapp_src.c...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CMAPP_PROJECT_ID" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="Create Date" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
+            <Field name="COUPA FLAG" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="COUPA PR NUM" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="CONTRACT SIGNED DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+            <Field name="CONTRACT START DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+            <Field name="CONTRACT END DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+            <Field name="PROJECT  START DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+            <Field name="PROJECT END DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
+            <Field name="tot_spend_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+            <Field name="tot_sav_usd_conv" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="tot_spend_amt_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+            <Field name="m2m_convert" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="region" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_pse_select" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_supp2_third_party_identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_supp2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_supp2_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="evergreen" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="contr_status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_doc" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="proj_contr_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="proj_driver_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sector_merge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="proj_notes_merge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="link_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="currency" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="curr_conv_rate" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+            <Field name="contr_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_33132_5fbc415fccef94468f7f5202ffc292cd_\Engine_33132_605f274f8030ab4fbbd0ba3b6e5e45bd~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="100" y="214" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\Daily\CMAPP TRACKER DATA.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMAPP TRACKER DATA.xlsx   Sheet Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CMAPP QUALITY DATA EXTRACT</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1f8582cb-e918-47a2-8bfa-5557f8c2a6b4" />
+      <Telemetry>
+        <PreviousWorkflowId value="2f140b8b-4fb0-4012-ac5f-2f6a93d8907e" />
+        <OriginWorkflowId value="2f140b8b-4fb0-4012-ac5f-2f6a93d8907e" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
