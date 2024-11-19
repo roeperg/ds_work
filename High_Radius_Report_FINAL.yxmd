@@ -3,18 +3,18 @@
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="54" />
+        <Position x="66" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
           <CachedCosmeticName>Corp_Fin_Athena_GBS_Restricted</CachedCosmeticName>
-          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||Select *
-from dlprd.finance_rpt.rpt_high_radius</File>
+          <File RecordLimit="" FileFormat="23">aka:64d51e35712dc8718e4f1bfe|||Select * from dlprd.finance_rpt.rpt_high_radius</File>
           <FormatSpecificOptions>
             <PreSQL />
             <PreSQLOnConfig>True</PreSQLOnConfig>
             <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
             <CacheData>False</CacheData>
             <TableStyle>Quoted</TableStyle>
             <ReadUncommitted>False</ReadUncommitted>
@@ -24,10 +24,12 @@ from dlprd.finance_rpt.rpt_high_radius</File>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>aka:Corp_Fin_Athena_GBS_Restricted
-Query=Select *
-from dlprd.finance_...</DefaultAnnotationText>
+Query=Select * from dlprd.finance_...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="shipment_id" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
@@ -56,7 +58,7 @@ from dlprd.finance_...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_2296_137d319c73991942b77edf56dc36fb66_\Engine_2296_c67f3cd08cc5e64b93f8cd74f45bd97f~.yxdb</TempFile>
+          <TempFile>C:\Users\groeper\AppData\Local\Temp\Engine_19120_bb3048ed13704c81a8aedd4aa1b0a56c_\Engine_19120_378423063762b44db28213305b45b5de~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -78,43 +80,9 @@ from dlprd.finance_...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="7">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="966" y="78" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <File MaxRecords="" FileFormat="0">%temp%high_radius_shipment_report.txt</File>
-          <Passwords />
-          <FormatSpecificOptions>
-            <LineEndStyle>CRLF</LineEndStyle>
-            <Delimeter>,</Delimeter>
-            <ForceQuotes>False</ForceQuotes>
-            <HeaderRow>True</HeaderRow>
-            <CodePage>28591</CodePage>
-            <WriteBOM>True</WriteBOM>
-          </FormatSpecificOptions>
-          <MultiFile value="True" />
-          <MultiFileType>FileName</MultiFileType>
-          <MultiFileField>FileName</MultiFileField>
-          <KeepField value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>%temp%high_radius_shipment_report.txt</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <Dependencies>
-          <Implicit>
-            <Dependency Path="%temp%high_radius_shipment_report.txt" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
-          </Implicit>
-        </Dependencies>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
-    </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="510" y="54" />
+        <Position x="226" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -133,47 +101,16 @@ TrueName = 'high_radius_shipment_report...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
-    <Node ToolID="19">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
-        <Position x="774" y="138" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
-    </Node>
-    <Node ToolID="20">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="870" y="78" />
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="1001" y="353" width="196" height="133" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="shipment_id" selected="True" />
-            <SelectField field="so_fulfillment_id" selected="True" type="String" size="255" />
-            <SelectField field="waybill_num" selected="True" />
-            <SelectField field="customer_name" selected="True" />
-            <SelectField field="cust_po_number" selected="True" rename="po_number" type="String" size="255" />
-            <SelectField field="order_number" selected="True" size="40.0" />
-            <SelectField field="sku_num" selected="True" rename="SKU_#" />
-            <SelectField field="ordered_quantity" selected="True" />
-            <SelectField field="shipped_quantity" selected="True" />
-            <SelectField field="date_shipped" selected="True" />
-            <SelectField field="pod_delivered_date" selected="True" />
-            <SelectField field="pod_received_by" selected="True" />
-            <SelectField field="location" selected="True" />
-            <SelectField field="freight_carrier" selected="True" />
-            <SelectField field="fulfillment_partner_code" selected="True" />
-            <SelectField field="FileName" selected="True" />
-            <SelectField field="*Unknown" selected="False" />
-          </SelectFields>
+          <Caption>Control Container 28</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -181,66 +118,66 @@ TrueName = 'high_radius_shipment_report...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="21">
-      <GuiSettings Plugin="PortfolioPluginsGui.Email.Email">
-        <Position x="510" y="354" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SMTPServerName>wnp1.intuit.com</SMTPServerName>
-          <ToIsField value="False" />
-          <To>IntuitCCGroup1@intuit.com;joseph_abinsay@intuit.com,intuit.extract@highradius.com</To>
-          <CcIsField value="False" />
-          <Cc />
-          <BccIsField value="False" />
-          <Bcc />
-          <FromIsField value="False" />
-          <From>wnp1-alteryx@intuit.com</From>
-          <SubjectIsField value="False" />
-          <Subject>TEST HIGH RADIUS REPORT DL VERSION</Subject>
-          <BodyIsField value="False" />
-          <Body><![CDATA[Attachment for upload
+      <ChildNodes>
+        <Node ToolID="27">
+          <GuiSettings Plugin="PortfolioPluginsGui.Email.Email">
+            <Position x="1026" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SMTPServerName>wnp1.intuit.com</SMTPServerName>
+              <ToIsField value="False" />
+              <To>gregory_roeper@intuit.com</To>
+              <CcIsField value="False" />
+              <Cc />
+              <BccIsField value="False" />
+              <Bcc />
+              <FromIsField value="False" />
+              <From>wnp1-alteryx@intuit.com</From>
+              <SubjectIsField value="False" />
+              <Subject>TEST HIGH RADIUS REPORT DL VERSION</Subject>
+              <BodyIsField value="False" />
+              <Body><![CDATA[Attachment for upload
 This is the weekly transaction report from Intuit for HIGH RADIUS review
 
 Attached is the High Radius Shipments Report.
 
  Please contact roy_cowing@intuit.com if you have any questions.
 ]]></Body>
-          <UserName>wnp1-alteryx</UserName>
-          <Password>43AFCC19F882786EEEFBC3812FA0246F36FF74A25D69F2836</Password>
-          <Attachments>
-            <Attachment>
-              <ValueIsField value="True" />
-              <Value>OutputPath</Value>
-            </Attachment>
-          </Attachments>
-          <Enabled>True</Enabled>
-          <Port>587</Port>
-          <Encryption>STARTTLS</Encryption>
-          <SMTPAuth value="True" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerEmail" />
+              <UserName>wnp1-alteryx</UserName>
+              <Attachments>
+                <Attachment>
+                  <ValueIsField value="True" />
+                  <Value>OutputPath</Value>
+                </Attachment>
+              </Attachments>
+              <Enabled>True</Enabled>
+              <Password>43AFCC19F882786EEEFBC3812FA0246F36FF74A25D69F2836</Password>
+              <Port>587</Port>
+              <Encryption>STARTTLS</Encryption>
+              <SMTPAuth value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerEmail" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
     </Node>
-    <Node ToolID="22">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="786" y="270" />
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="1001" y="113" width="196" height="133" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="OutputPath" selected="True" />
-            <SelectField field="*Unknown" selected="False" />
-          </SelectFields>
+          <Caption>Control Container 26</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -248,17 +185,66 @@ Attached is the High Radius Shipments Report.
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="PortfolioPluginsGui.Email.Email">
+            <Position x="1026" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SMTPServerName>wnp1.intuit.com</SMTPServerName>
+              <ToIsField value="False" />
+              <To>IntuitCCGroup1@intuit.com;joseph_abinsay@intuit.com,intuit.extract@highradius.com</To>
+              <CcIsField value="False" />
+              <Cc />
+              <BccIsField value="False" />
+              <Bcc />
+              <FromIsField value="False" />
+              <From>wnp1-alteryx@intuit.com</From>
+              <SubjectIsField value="False" />
+              <Subject>TEST HIGH RADIUS REPORT DL VERSION</Subject>
+              <BodyIsField value="False" />
+              <Body><![CDATA[Attachment for upload
+This is the weekly transaction report from Intuit for HIGH RADIUS review
+
+Attached is the High Radius Shipments Report.
+
+ Please contact roy_cowing@intuit.com if you have any questions.
+]]></Body>
+              <UserName>wnp1-alteryx</UserName>
+              <Attachments>
+                <Attachment>
+                  <ValueIsField value="True" />
+                  <Value>OutputPath</Value>
+                </Attachment>
+              </Attachments>
+              <Enabled>True</Enabled>
+              <Password>43AFCC19F882786EEEFBC3812FA0246F36FF74A25D69F2836</Password>
+              <Port>587</Port>
+              <Encryption>STARTTLS</Encryption>
+              <SMTPAuth value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerEmail" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
     </Node>
-    <Node ToolID="23">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="870" y="294" />
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="681" y="113" width="269" height="133" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="OutputPath" action="GroupBy" rename="OutputPath" />
-          </SummarizeFields>
+          <Caption>Control Container 25</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -266,7 +252,140 @@ Attached is the High Radius Shipments Report.
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="706" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="OutputPath" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="866" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="OutputPath" action="GroupBy" rename="OutputPath" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="361" y="113" width="308" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 24</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="546" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">%temp%high_radius_shipment_report.txt</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="True" />
+              <MultiFileType>FileName</MultiFileType>
+              <MultiFileField>FileName</MultiFileField>
+              <KeepField value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>%temp%high_radius_shipment_report.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit>
+                <Dependency Path="%temp%high_radius_shipment_report.txt" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+              </Implicit>
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="386" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="shipment_id" selected="True" />
+                <SelectField field="so_fulfillment_id" selected="True" type="String" size="255" />
+                <SelectField field="waybill_num" selected="True" />
+                <SelectField field="customer_name" selected="True" />
+                <SelectField field="cust_po_number" selected="True" rename="po_number" type="String" size="255" />
+                <SelectField field="order_number" selected="True" size="40.0" />
+                <SelectField field="sku_num" selected="True" rename="SKU_#" />
+                <SelectField field="ordered_quantity" selected="True" />
+                <SelectField field="shipped_quantity" selected="True" />
+                <SelectField field="date_shipped" selected="True" />
+                <SelectField field="pod_delivered_date" selected="True" />
+                <SelectField field="pod_received_by" selected="True" />
+                <SelectField field="location" selected="True" />
+                <SelectField field="freight_carrier" selected="True" />
+                <SelectField field="fulfillment_partner_code" selected="True" />
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
     </Node>
   </Nodes>
   <Connections>
@@ -280,19 +399,19 @@ Attached is the High Radius Shipments Report.
     </Connection>
     <Connection>
       <Origin ToolID="17" Connection="Output" />
-      <Destination ToolID="19" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="19" Connection="Output" />
       <Destination ToolID="20" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="19" Connection="Output2" />
+      <Origin ToolID="17" Connection="Output" />
       <Destination ToolID="22" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="20" Connection="Output" />
-      <Destination ToolID="7" Connection="Input" />
+      <Origin ToolID="26" Connection="Log" />
+      <Destination ToolID="28" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Log" />
+      <Destination ToolID="26" Connection="Control" />
     </Connection>
     <Connection>
       <Origin ToolID="22" Connection="Output" />
@@ -301,6 +420,18 @@ Attached is the High Radius Shipments Report.
     <Connection>
       <Origin ToolID="23" Connection="Output" />
       <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Log" />
+      <Destination ToolID="25" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -323,7 +454,7 @@ Attached is the High Radius Shipments Report.
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>High Radius Report FINAL</Name>
+      <Name>High_Radius_Report_FINAL</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
