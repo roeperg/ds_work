@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+<AlteryxDocument yxmdVer="2021.4">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
@@ -19,25 +19,26 @@
 	dlprd.fin_cmapp_src.cmapp_projects.proj_start_dt as "PROJECT  START DATE",
 	dlprd.fin_cmapp_src.cmapp_projects.proj_end_dt as "PROJECT END DATE",
 	dlprd.fin_cmapp_src.cmapp_projects.tot_spend_amt,
+	dlprd.fin_cmapp_src.cmapp_projects.tot_sav_usd_conv,
 	dlprd.fin_cmapp_src.cmapp_projects.tot_spend_amt_usd,
 	dlprd.fin_cmapp_src.cmapp_projects.m2m_convert,
 	dlprd.fin_cmapp_src.cmapp_projects.region,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_pse_select,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_supp2_third_party_identifier,
 	dlprd.fin_cmapp_src.cmapp_projects.rel_supp2,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_supp2_third_party_name,
+	dlprd.fin_cmapp_src.cmapp_projects.evergreen,
 	dlprd.fin_cmapp_src.cmapp_projects.contr_status,
+	dlprd.fin_cmapp_src.cmapp_projects.rel_doc,
 	dlprd.fin_cmapp_src.cmapp_projects.proj_contr_type,
 	dlprd.fin_cmapp_src.cmapp_projects.proj_driver_txt,
+	dlprd.fin_cmapp_src.cmapp_projects.sector,
 	dlprd.fin_cmapp_src.cmapp_projects.sector_merge,
 	dlprd.fin_cmapp_src.cmapp_projects.proj_notes_merge,
 	dlprd.fin_cmapp_src.cmapp_projects.link_contr,
 	dlprd.fin_cmapp_src.cmapp_projects.currency,
-	dlprd.fin_cmapp_src.cmapp_projects.coupa_contr_id as contr_id,
-	dlprd.fin_cmapp_src.cmapp_projects.purchase_cat as "Purchase Category",
-	dlprd.fin_cmapp_src.cmapp_projects.item_type as Purchase_Type,
-	dlprd.fin_cmapp_src.cmapp_projects.tot_sav_usd as tot_sav_usd_conv,
-	dlprd.fin_cmapp_src.cmapp_projects.rel_privacy_security_exhibit as rel_pse_select,
-	dlprd.fin_cmapp_src.cmapp_projects.supplier_name as rel_supp2_third_party_name,
-	dlprd.fin_cmapp_src.cmapp_projects.oracle_id as rel_supp2_third_party_identifier,
-	dlprd.fin_cmapp_src.cmapp_projects.proj_completion_ts as PROJ_COMPLETE_TIMESTAMP 
+	dlprd.fin_cmapp_src.cmapp_projects.curr_conv_rate,
+	dlprd.fin_cmapp_src.cmapp_projects.coupa_contr_id as contr_id 
 from dlprd.fin_cmapp_src.cmapp_projects</File>
           <FormatSpecificOptions>
             <PreSQL />
@@ -67,25 +68,26 @@ Query=select dlprd.fin_cmapp_src.c...</DefaultAnnotationText>
             <Field name="PROJECT  START DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
             <Field name="PROJECT END DATE" source="File: Corp_Fin_Athena_GBS_Restricted" type="Date" />
             <Field name="tot_spend_amt" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
+            <Field name="tot_sav_usd_conv" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
             <Field name="tot_spend_amt_usd" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
             <Field name="m2m_convert" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
             <Field name="region" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_pse_select" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_supp2_third_party_identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
             <Field name="rel_supp2" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_supp2_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="evergreen" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
             <Field name="contr_status" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="rel_doc" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
             <Field name="proj_contr_type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
             <Field name="proj_driver_txt" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="sector" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
             <Field name="sector_merge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
             <Field name="proj_notes_merge" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
             <Field name="link_contr" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
             <Field name="currency" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
+            <Field name="curr_conv_rate" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
             <Field name="contr_id" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
-            <Field name="Purchase Category" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
-            <Field name="Purchase_Type" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
-            <Field name="tot_sav_usd_conv" scale="10" size="40" source="File: Corp_Fin_Athena_GBS_Restricted" type="FixedDecimal" />
-            <Field name="rel_pse_select" source="File: Corp_Fin_Athena_GBS_Restricted" type="Int64" />
-            <Field name="rel_supp2_third_party_name" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
-            <Field name="rel_supp2_third_party_identifier" size="255" source="File: Corp_Fin_Athena_GBS_Restricted" type="V_WString" />
-            <Field name="PROJ_COMPLETE_TIMESTAMP" source="File: Corp_Fin_Athena_GBS_Restricted" type="DateTime" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -97,7 +99,7 @@ Query=select dlprd.fin_cmapp_src.c...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_16028_04c3a8696f3ee74681133689367bc878_\Engine_16028_70dab1f739f1f24e84ee26116257d0e7~.yxdb</TempFile>
+          <TempFile>C:\Users\rcowing\AppData\Local\Temp\Engine_33132_5fbc415fccef94468f7f5202ffc292cd_\Engine_33132_605f274f8030ab4fbbd0ba3b6e5e45bd~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -119,56 +121,33 @@ Query=select dlprd.fin_cmapp_src.c...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="5">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="329" y="89" width="145" height="133" />
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="100" y="214" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Container 5</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
-          <Folded value="False" />
+          <File MaxRecords="" FileFormat="25">C:\Users\groeper\Development\Daily\CMAPP TRACKER DATA.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText />
+          <DefaultAnnotationText>CMAPP TRACKER DATA.xlsx   Sheet Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
-      <ChildNodes>
-        <Node ToolID="3">
-          <GuiSettings Plugin="Google Sheets Output">
-            <Position x="354" y="138" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="OAuth2Overrides">False</Value>
-              <Value name="client_id">566095152514-bo26d3bkmcemliq3nve4i37bplfpdgrj.apps.googleusercontent.com</Value>
-              <Value name="AccessTokenOverride">False</Value>
-              <Value name="workbookName">CMAPP TRACKER DATA</Value>
-              <Value name="worksheetName">Sheet1</Value>
-              <Value name="workbookID">1bqROFDFVNh4oP1t17TdZx1snndyd57Qy15TJl_8RMqs</Value>
-              <Value name="worksheetID">
-              </Value>
-              <Value name="newWorkbook">No</Value>
-              <Value name="newWorksheet">Yes</Value>
-              <Value name="deleteSheets">Yes</Value>
-              <Value name="appendSheet">No</Value>
-              <Value name="view">7</Value>
-              <Value name="client_secret">40EDF1E5A223C6F704E2A6BFF6401F9703D5203377B8C54DB3D27F610FE76E40199C88356AA4DDE0BE32EC55648FB5EA434DD150A4F30970DA6E63B8E4F9A11DEDF10F18BF87D450F4EEE90E74F0D58C3811BC3E8873D39DFA7F0473CBD99035777EF4C38B9402FAB1E8B442257A74585B7B07434EE5DA06B79C95C5079983E6A2E815912AACC108320BA7534830E386A83DE483C1F187F238178F4300DA3D224D8AE96EEC2475DEDEDE4B37318C23BD9B77AF4265C1872A413B2F1B256DA8F8C170320A4FE1E184E23EC05851CC0097506F9356A966C</Value>
-              <Value name="refresh_token">4CDC9200289648F4323C71F429B917295F20519ABBE345E900634C64D33E0B960EEE60ECA14D3C04EE3F9916EBEF28D6493C1378898706D431FC2209F197F1560F440EC5C3413003AF841842F84F016ADD921E7D0F6B456638AB7218C228089DBDB2B18F6FE0F779BF106E89989243477C6D9504A0A5799AA3793160700C09ECB0CE0C08D62A248733649D2002BAF1F09DC090B776CC98B4FA209D36616C55A9484CB500FA1B0645EE1281BE89141AD3E2DF1191CC62B00E79B834B3DB86E2ABA1ADCD8395AE834242D92489433B39C9D83E41CA1EBF543D59EBE6F237664305962D83A5E035A1DC6222468C2083F05419A1DD4FA954743F7EDDBF9815F3B22BA58605EE62CC43E93CA9968C8BA9E3F72938945D1C713EDC32C72B7C9D6434D9A39862753664290FF508EED8EB5D42CBAC224763DA6F8D22566F76CDC10DFD3D0F62F9250BA8311FD5E031A833A287ECE731CE972C960FE73743A0D859747006BD5D133BA461BC1C7CC395FFFDA7604D1E2D567ED126958C21B73C72E0E611F0467E035C65676BE567C4F77E47286F1961D8815FA71775F1DA012BE4B767A7C2D4414B1189533E54F5ADD92A36A975DE28FBF012AF87AB2B02240E9663D8F3C55E7C111DBADFD7676DF9D125183ADD12245B649E47B8EAFD0DA34E6983C1B0B829B9866566094232E1109034542F4877344081E85C447CD984D1768768BAB51F16AD2777816033029F084D149736EB72681682C2A5540346E7D889676DFEC4341B779078803B873C7FE41CE7BDC0C38851850A81F277A8C10B7D31457373CA32B5359B76956298CE8BF5213445DA4426DCDAD2412B0EFF1599F50675AC931084B820F65184DB9CE4681F0F9BB380BD8E74B63E366DEB39F60C5BFC22B0E220036708111BACE3509900E51DE7D3B1446106C74874A91EF58183C94C600BBA701009E4AE99B0B85EEB1F3243F4B5232DF7EDD5F3CA6878D2292015CFE0F9A4CB6DF5752BFC79A3DBD2974927822D3C9A34F4F88DB053F0AC8030A8473531C0F5C0D0AC718A3590BB54F13F3A81A17124FF1E828BFC03D73A711C5387621D1D728B228DF5E07137D81610E5771AE123638A73C5E825270C5663CCCDCFB284C8A566F1A86750EA9852F28A5C665BA8A503DE53F785CA85C9134BA023573C15C9A0922450DC1EFF9C5A086F5DB3544225C</Value>
-              <Value name="accessToken">417E8452C1D4CF3AC3A42E3E4E84D23D22AB9282679584478E4761327BE9DC6AA4B720FEEC4CB2BCD2F123EF0AB17123D27E25FA650A0AB5D31475A17E2F1D64A5C39DA2E92E5E43B9346BF03C6F34CA730519FFBF3B20A4AD2193EB2112261FDD0F17A46972AC41FC522C7FB96A3558DD37212577E245A966D5847BC795053EB314B1D11DAD7A2C2FFC28D314FD5DE6FAAFEF7B58B50D9FD71EA79BE9A9560BEF11B4A96C5AE3516CE680843803FF0C1A8A8FAFF99CD2C26271F53AC99728B24487E56ACCC78065F40CE6BA450BCB97882539AE8D58B9122E5EE48DB82D052123F502729713D362A2E5D0F6047508AA1AE9F651ACE5F35A80C66D719A65624F7A152996DF22D2C0D899D1C72BE7351F0A87EE1B1B547894DFEDA26844A5A106E28FAA11CE2FD56DD96944466051A9E0E92ECE94163A8CA00D9F072545A5F0E84C1761842C3F84E99DF98430CDE6784400F3B07D1D4CAE33E0D724C508A59306312CB8220BD54666ED7954CE73878079385A0E2EC3E8EA13AD556F9914458258E857C186217E840ABB13028F8671E13AE4120E7B3043BF560797A6F1ACDB96A620536DAB77F67590772BA4AE747CB44137BA22D1718DB1DD291A624273283F81812996C5DE0CAA8872900282AA81BF02DAB94C82B0B3FFE0ADC3D07CE1418C71B9172524F576FF3D133AEF2FDC1395B0B4BD8B8A955578D4225507C3A354BA7500AF74EAD5F48FBA1DCB2BA6A1B00A697C432FABA3724E9A426F49ED359A6D7CF497324B77FC62CEF33A5180E6040F06CE6BB670FFF91AABDEA1736DBDBC5EB606ED0C8D68F00A4E7A9A3364F73BBEEF45A21D4058FEB33477E15609DEB05C4E02183B0A335440C82960014B7E4383F367B2201E9B2C7D938F0A144935489831567DC48303E0D9FF9C2A9161619C222DDF4D50E0F8CE550EADCFDC32A24E8B21E5E3EEC088C22FB3B2AB9263ECE95C9CA82641FA9ED246D99E7A645260832CFDAEE82ADC5E43C734AD12E47871D1755FAEE3B288013D75C939F02A4352E0B58D8681D4D86C9811D70DA039EF051B24458FC4C8685B66ADEA60EC1C0F2D77B99642A4992C9A7593E720EEA9A828195861415BBCF0EB94DA8D45655FD8EDFDE710744E03795FBF4EF7FC8E92442BEB6E26C56E3F8FF8D51660FD6C5D9DE2F517BCFBF535662C28FF43A0FBE430BAFE88190E106DBBE4272A72549BB05AC3DDEDCC1BC86CA85C5EE4115AD1EA55A1A335581D69302B9C704CD4B30DA54EE12FC3A4F1AF514B828678FFC5F86828EBE409558A41957BA75D8426FF622E4FBCFDFE81A63B7AAA882D3D7EC15E878DC692C28E6B6B155FAF610232FE020EBAB89A9AA9858038B28B125A002EB4A2B89B2761DAE75E42420E5FBA0FB8BAF69AE988A1E3D4B08DC5CF40DE6EB4A3DEB8633267DCA66E31AEAF0D29E74094D1235A6B7E91DE787A4575476F7B9795A702E1382A83FB15CACC16D681364E1D72D0C1A02BF8B1715B09AC4DED587BE54D8679F31D4A150AFA59A6830AE31F0215708D5427EF82538F959E3AB334FBE9E5C8A11874CEB9CE90DCEA07B1905594E9AE58DC22D97F8C6CB96915102487A0A9B3A396726035C4964D0A738E3F92ED58A44669D8D577DBA86F3A72A63A6CC790EB41480AF45B836E62365D82C0A33D1E5CC51DC0847E7A4B05B607672113CBE45FC984C4B58C761C809D62BCAD7ACBE161C5596F65E170ADBE3E5AC4EAED4B54C03369515C6D27EB862821C1A9DA8EEAAACF95A3547D9E65F509235502386A5A70210B333E695CD4B7DB337D0D867BC51BC2DE71B67D63937F1B6EBA86039B88799E0BC1F850A381C14B6170AEA067C7C6C48BDB89699DDA3D13CAB643A0DA68F34F2C3CC61A11572A1BA2FB453ED02865BC367681E6C50F96D796A8B5123E7727CA66E922362AFCC9D5C288EF99ABF2649C11731E213C297B2C3E7BA179785E4826458DBC27033D44200D9A12097A6B8AEDEFF7D5ED6328FCA92DE970827B0F64D0D1AA660BFE1013BE32EC80D55E1F2CB41511F77EFB94D095164AB90FBEFC61924C83756634AAF8241AA3CBE2FE5E1FA6A58AF51659D7051A420CDCFD041686600C7DA3F186381FCF5CFDE4124BFADE519F004802FFB2414E7B12948999F0B9E42157FBC4A0347D43885B24068B49DAB978094F2ECA76873B78621F961B1C190BBEC40711F71439D0DC3CD78EDE48459CE75B59710AEBEB629D40956048DDBCD0F1A45B7535CFA3428B794953FB1E9C8908EE5D95F4ECA13CBD3BD3C2E636C96A3CECB8DFD87FFDC419829E4A364509197D21714AE395D0B7B4D09D6EBAFEDE80C9B43259271F827EFE55AA922E8DB418C6CD46B80AA23E1A4DA7C46104A687A80B8902AE8FF0F178F6DEE3A3DF4BDE3F1FF9CB9C622E0D458317CD42587A34D2C8F0BC6984D7B6A42704F30686991B3B0FAE527C3EB6A9ED50681EFE1221E904A8F19FFCF4BE305B7AB8696B8E2B63748F4383303876AC46142241903E53C6F8BDAD26893F0D5194A2DA0D135652854D49E</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="Google Sheets Output\Supporting_Macros\GoogleSheetsOutput.yxmc" EngineDll="Macro" EngineDllEntryPoint="Google Sheets Output\Supporting_Macros\GoogleSheetsOutput.yxmc" />
-        </Node>
-      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
   </Nodes>
   <Connections>
@@ -216,12 +195,11 @@ Query=select dlprd.fin_cmapp_src.c...</DefaultAnnotationText>
         <Description />
         <File />
       </Example>
-      <WorkflowId value="b7b9983a-f550-43e0-914f-f39fbc15e2c9" />
+      <WorkflowId value="1f8582cb-e918-47a2-8bfa-5557f8c2a6b4" />
       <Telemetry>
-        <PreviousWorkflowId value="1f8582cb-e918-47a2-8bfa-5557f8c2a6b4" />
+        <PreviousWorkflowId value="2f140b8b-4fb0-4012-ac5f-2f6a93d8907e" />
         <OriginWorkflowId value="2f140b8b-4fb0-4012-ac5f-2f6a93d8907e" />
       </Telemetry>
-      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />
